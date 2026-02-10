@@ -30,7 +30,7 @@ title: Home
     src="{{ "/assets/img/gearbox-dashboard.png" | relative_url }}"
     alt="Reliability and asset performance dashboard example"
     class="card-image"
-  />
+   />
   </section>
 
   <section class="card">
