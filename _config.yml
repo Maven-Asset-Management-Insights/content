@@ -1,0 +1,8 @@
+title: "Maven Asset Management Solutions"
+description: "IBM Maximo & Enterprise Asset Management in Plain English — Reliability & Asset Performance Insights"
+theme: minima
+# Top navigation
+header_pages:
+  - monthly-insights.md
+  - glossary.md
+  - field-kits.md
