@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+
+        <!-- Maven Logo -->
+        <a class="brand" href="{{ "/" | relative_url }}">
+          <img
+            src="{{ "/assets/img/MavenAsset_Logo.png" | relative_url }}"
+            alt="Maven Asset Management Solutions logo"
+            class="brand-logo"
+          />
+        </a>
+
+        <!-- Navigation -->
+        <nav class="nav">
+          <a href="{{ "/" | relative_url }}">Home</a>
+          <a href="{{ "/monthly-insights" | relative_url }}">Monthly Insights</a>
+          <a href="{{ "/glossary" | relative_url }}">Glossary</a>
+          <a href="{{ "/field-kits" | relative_url }}">Field Kits</a>
+          <a class="cta" href="https://www.mavenasset.com" target="_blank">About Maven</a>
+        </nav>
+
+      </div>
+    </header>
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© {{ "now" | date: "%Y" }} Maven Asset Management Solutions</span>
+      </div>
+    </footer>
+  </body>
+</html>
