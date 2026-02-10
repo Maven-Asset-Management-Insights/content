@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Monthly Insights
+title: Maven Insights
 permalink: /maven-insights/
 ---
 
