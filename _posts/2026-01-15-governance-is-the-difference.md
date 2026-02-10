@@ -6,7 +6,7 @@ tags: [Governance, Reliability, Maximo, EAM]
 ---
 
 ## Executive Takeaway
-Most Maximo and reliability initiatives start strong—and slowly fade.
+Most Maximo and reliability initiatives start strong and then slowly fade.
 
 The difference between lasting value and stalled progress is governance.
 
@@ -62,7 +62,7 @@ Successful programs establish a predictable rhythm:
 - roadmap alignment
 - capability reassessment
 
-Governance is lightweight—but relentless.
+Governance is lightweight, but relentless.
 
 ---
 
@@ -79,7 +79,7 @@ Without governance, Maximo becomes passive.
 ## Maven Perspective
 Governance is what turns improvement into habit.
 
-It’s the difference between knowing what good looks like—and staying there.
+It’s the difference between knowing what good looks like, and staying there.
 
 ---
 
