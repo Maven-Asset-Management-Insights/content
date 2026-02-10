@@ -61,7 +61,7 @@ Work orders are not considered complete until:
 - labor and materials are accurate
 
 ### 3. Regular Data Reviews
-Data quality is reviewed routinely—not just during audits or projects.
+Data quality is reviewed routinely, not just during audits or projects.
 
 ---
 
