@@ -18,7 +18,7 @@ title: Home
       {% endfor %}
     </ul>
     <div style="margin-top:14px;">
-      <a class="button" href="{{ "/monthly-insights" | relative_url }}">View all insights</a>
+      <a class="button" href="{{ "/maven-insights" | relative_url }}">View all insights</a>
     </div>
   </section>
 
