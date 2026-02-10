@@ -295,7 +295,13 @@ main.container {
   padding: 18px;
   box-shadow: 0 6px 20px rgba(41, 44, 117, 0.08);
 }
-
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 14px;
+  border: 1px solid var(--border);
+   
 .card h2 {
   margin: 0 0 10px;
   font-size: 18px;
