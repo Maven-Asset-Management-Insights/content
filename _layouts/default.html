@@ -2,13 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ page.title }} | {{ site.title }}</title>
 
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   </head>
 
   <body>
+
+    <!-- Site Header -->
     <header class="site-header">
       <div class="container header-inner">
 
@@ -27,21 +30,25 @@
           <a href="{{ "/monthly-insights" | relative_url }}">Monthly Insights</a>
           <a href="{{ "/glossary" | relative_url }}">Glossary</a>
           <a href="{{ "/field-kits" | relative_url }}">Field Kits</a>
-          <a class="cta" href="https://www.mavenasset.com" target="_blank">About Maven</a>
+          <a class="cta" href="https://www.mavenasset.com" target="_blank" rel="noopener">
+            About Maven
+          </a>
         </nav>
 
       </div>
     </header>
 
+    <!-- Page Content -->
     <main class="container">
       {{ content }}
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="container footer-inner">
-        <span>© {{ "now" | date: "%Y" }} Maven Asset Management Solutions (n) ma·​ven ˈmā-vən 
-: one who is experienced or knowledgeable : EXPERT</span>
+        <span>© {{ "now" | date: "%Y" }} Maven Asset Management Solutions</span>
       </div>
     </footer>
+
   </body>
 </html>
