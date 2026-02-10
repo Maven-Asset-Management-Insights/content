@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Monthly Insights
-permalink: /monthly-insights/
+permalink: /maven-insights/
 ---
 
 # Maven Insights
