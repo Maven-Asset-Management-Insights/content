@@ -3,6 +3,6 @@ description: "IBM Maximo & Enterprise Asset Management in Plain English — Reli
 theme: minima
 # Top navigation
 header_pages:
-  - monthly-insights.md
+  - maven-insights.md
   - glossary.md
   - field-kits.md
