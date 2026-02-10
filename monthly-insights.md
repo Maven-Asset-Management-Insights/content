@@ -4,9 +4,9 @@ title: Monthly Insights
 permalink: /monthly-insights/
 ---
 
-# Monthly Insights
+# Maven Insights
 
-<p>Monthly perspectives on IBM Maximo, reliability strategy, and asset performance—written in plain English and grounded in outcomes.</p>
+<p>Maven perspectives on IBM Maximo, reliability strategy, and asset performance—written in plain English and grounded in outcomes.</p>
 
 {% for post in site.posts %}
 <div class="card post-card">
