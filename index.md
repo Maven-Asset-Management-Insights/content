@@ -11,7 +11,7 @@ title: Home
 <div class="grid">
   <section class="card">
     <h2>Latest Insights</h2>
-    <p>Monthly perspectives on Maximo, reliability strategy, and asset performance.</p>
+    <p>Maven perspectives on Maximo, reliability strategy, and asset performance.</p>
     <ul>
       {% for post in site.posts limit:3 %}
         <li><strong>{{ post.date | date: "%B %Y" }}:</strong> <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
