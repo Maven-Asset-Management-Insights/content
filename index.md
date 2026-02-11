@@ -26,12 +26,7 @@ title: Home
   <h2>Executive Glossary</h2>
   <p>A growing set of leadership-level definitions for Maximo and EAM concepts.</p>
   <a class="button" href="{{ "/glossary" | relative_url }}">View glossary</a>
-  <img
-    src="{{ "/assets/img/gearbox-dashboard.png" | relative_url }}"
-    alt="Reliability and asset performance dashboard example"
-    class="card-image"
-   />
-  </section>
+</section>
 
   <section class="card">
     <h2>Field Kits &amp; Tools</h2>
