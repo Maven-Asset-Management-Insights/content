@@ -133,148 +133,27 @@ main.container {
 }
 
 /* =====================================================
-   Cards / Grid
+   Page Hero Image (Maven Insights Page)
    ===================================================== */
 
-.grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
-  gap: 18px;
-  margin-top: 18px;
+.page-hero {
+  margin: 0 0 18px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #fff;
 }
 
----
----
-
-/* =====================================================
-   Maven Asset Management Solutions – Brand Styling
-   ===================================================== */
-
-/* Brand colors */
-:root {
-  --maven-blue-primary: #3e67b1;
-  --maven-blue-deep: #292c75;
-  --maven-gray-text: #545454;
-
-  --background: #f6f8fb;
-  --white: #ffffff;
-  --border: #d9deea;
-}
-
-/* Reset / base */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color: var(--maven-gray-text);
-  background: var(--background);
-  line-height: 1.6;
-}
-
-/* Layout container */
-.container {
-  width: min(1100px, 92vw);
-  margin: 0 auto;
-}
-
-/* =====================================================
-   Header / Navigation
-   ===================================================== */
-
-.site-header {
-  background: linear-gradient(
-    90deg,
-    var(--maven-blue-deep),
-    var(--maven-blue-primary)
-  );
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 0;
-  gap: 16px;
-}
-
-/* Logo */
-.brand {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.brand-logo {
-  height: 40px;
-  width: auto;
+.page-hero img {
+  width: 100%;
+  height: auto;
   display: block;
 }
 
-/* Navigation */
-.nav {
-  display: flex;
-  gap: 18px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.nav a {
-  color: #ffffff;
-  font-weight: 600;
+.page-hero-caption {
+  padding: 12px 14px;
+  color: var(--maven-gray-text);
   font-size: 14px;
-  text-decoration: none;
-  opacity: 0.95;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-  opacity: 1;
-}
-
-/* CTA button */
-.nav .cta {
-  background: rgba(255, 255, 255, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 10px 14px;
-  border-radius: 10px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.nav .cta:hover {
-  background: rgba(255, 255, 255, 0.28);
-  text-decoration: none;
-}
-
-/* =====================================================
-   Main Content
-   ===================================================== */
-
-main.container {
-  padding: 28px 0 46px;
-}
-
-/* Hero */
-.hero {
-  background: var(--maven-blue-deep);
-  color: #ffffff;
-  border-radius: 14px;
-  padding: 34px;
-}
-
-.hero h1 {
-  margin: 0 0 10px;
-  font-size: 36px;
-}
-
-.hero p {
-  margin: 0;
-  max-width: 760px;
-  color: rgba(255, 255, 255, 0.92);
 }
 
 /* =====================================================
@@ -295,13 +174,15 @@ main.container {
   padding: 18px;
   box-shadow: 0 6px 20px rgba(41, 44, 117, 0.08);
 }
+
 .card-image {
   width: 100%;
   height: auto;
   border-radius: 12px;
   margin-top: 14px;
   border: 1px solid var(--border);
-   
+}
+
 .card h2 {
   margin: 0 0 10px;
   font-size: 18px;
@@ -382,76 +263,3 @@ main.container {
   }
 }
 
-.card p {
-  margin: 0 0 12px;
-}
-
-.card ul {
-  margin: 0;
-  padding-left: 18px;
-}
-
-.card li {
-  margin: 8px 0;
-}
-
-/* Buttons */
-.button {
-  display: inline-block;
-  background: var(--maven-blue-primary);
-  color: #ffffff;
-  font-weight: 700;
-  padding: 10px 16px;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: background 0.2s ease;
-}
-
-.button:hover {
-  background: var(--maven-blue-deep);
-}
-
-/* Section labels */
-.section-title {
-  margin: 22px 0 10px;
-  font-size: 13px;
-  color: var(--maven-gray-text);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
-/* =====================================================
-   Footer
-   ===================================================== */
-
-.site-footer {
-  background: #ffffff;
-  border-top: 1px solid var(--border);
-  padding: 18px 0;
-}
-
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  font-size: 13px;
-  color: var(--maven-gray-text);
-}
-
-/* =====================================================
-   Responsive
-   ===================================================== */
-
-@media (max-width: 900px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  .nav {
-    gap: 12px;
-  }
-}
