@@ -2,6 +2,7 @@
 layout: default
 title: Search
 permalink: /search/
+search: false
 ---
 
 # Search
