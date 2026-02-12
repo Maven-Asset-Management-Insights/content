@@ -15,7 +15,7 @@ permalink: /search.json
       "id": {{ forloop.index | jsonify }},
       "title": {{ p.title | jsonify }},
       "url": {{ p.url | relative_url | jsonify }},
-      "tags": {{ p.tags | jsonify }},
+      "tags": {{ p.tags | default: "" | jsonify }},
       "excerpt": {{ p.excerpt | default: p.content | strip_html | truncate: 160 | jsonify }},
       "content": {{ p.content | strip_html | jsonify }}
     }
@@ -24,4 +24,28 @@ permalink: /search.json
 
 {%- comment -%} 2) KEY PAGES ONLY (Glossary + Field Kits + Maven Insights landing) {%- endcomment -%}
 {% assign key_pages = site.pages | where: "permalink", "/glossary/" %}
-{% assign key_pages_
+
+{% assign tmp = site.pages | where: "permalink", "/field-kits/" %}
+{% assign key_pages = key_pages | concat: tmp %}
+
+{% assign tmp = site.pages | where: "permalink", "/maven-insights/" %}
+{% assign key_pages = key_pages | concat: tmp %}
+
+{% assign tmp = site.pages | where: "permalink", "/monthly-insights/" %}
+{% assign key_pages = key_pages | concat: tmp %}
+
+{% for p in key_pages %}
+  {% if p.title and p.url and p.content and p.search != false %}
+    {% unless first %},{% endunless %}
+    {% assign first = false %}
+    {
+      "id": {{ p.url | jsonify }},
+      "title": {{ p.title | jsonify }},
+      "url": {{ p.url | relative_url | jsonify }},
+      "tags": {{ p.tags | default: "" | jsonify }},
+      "excerpt": {{ p.content | strip_html | truncate: 160 | jsonify }},
+      "content": {{ p.content | strip_html | jsonify }}
+    }
+  {% endif %}
+{% endfor %}
+]
