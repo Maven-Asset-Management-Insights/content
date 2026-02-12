@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+search: false
 ---
 
 <section class="hero">
