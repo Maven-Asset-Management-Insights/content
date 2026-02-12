@@ -1,0 +1,20 @@
+---
+layout: null
+permalink: /search.json
+---
+
+[
+{% assign items = site.posts | concat: site.pages %}
+{% for p in items %}
+  {% if p.title and p.url and p.layout != "null" %}
+  {
+    "id": "{{ forloop.index }}",
+    "title": {{ p.title | jsonify }},
+    "url": "{{ p.url | relative_url }}",
+    "tags": {{ p.tags | jsonify }},
+    "excerpt": {{ p.excerpt | strip_html | truncate: 160 | jsonify }},
+    "content": {{ p.content | strip_html | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endif %}
+{% endfor %}
+]
