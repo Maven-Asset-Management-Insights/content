@@ -82,5 +82,3 @@ Governance is what turns improvement into habit.
 It’s the difference between knowing what good looks like, and staying there.
 
 ---
-
-*Next: How to align work management discipline with reliability outcomes.*
