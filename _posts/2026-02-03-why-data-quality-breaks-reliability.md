@@ -84,4 +84,3 @@ The goal is **trusted data**.
 
 ---
 
-*Next: How governance keeps reliability standards from fading after go-live.*
