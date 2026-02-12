@@ -23,19 +23,5 @@ permalink: /search.json
 {% endfor %}
 
 {%- comment -%} 2) KEY PAGES ONLY (Glossary + Field Kits + Maven Insights landing) {%- endcomment -%}
-{% assign key_pages = site.pages | where_exp: "p", "p.permalink == '/glossary/' or p.permalink == '/field-kits/' or p.permalink == '/maven-insights/' or p.permalink == '/monthly-insights/'" %}
-{% for p in key_pages %}
-  {% if p.title and p.url and p.content and p.search != false %}
-    {% unless first %},{% endunless %}
-    {% assign first = false %}
-    {
-      "id": {{ p.url | jsonify }},
-      "title": {{ p.title | jsonify }},
-      "url": {{ p.url | relative_url | jsonify }},
-      "tags": {{ p.tags | jsonify }},
-      "excerpt": {{ p.content | strip_html | truncate: 160 | jsonify }},
-      "content": {{ p.content | strip_html | jsonify }}
-    }
-  {% endif %}
-{% endfor %}
-]
+{% assign key_pages = site.pages | where: "permalink", "/glossary/" %}
+{% assign key_pages_
