@@ -4,17 +4,20 @@ permalink: /search.json
 ---
 
 [
+{% assign first = true %}
 {% assign items = site.posts | concat: site.pages %}
 {% for p in items %}
-  {% if p.title and p.url and p.layout != "null" %}
-  {
-    "id": "{{ forloop.index }}",
-    "title": {{ p.title | jsonify }},
-    "url": "{{ p.url | relative_url }}",
-    "tags": {{ p.tags | jsonify }},
-    "excerpt": {{ p.excerpt | strip_html | truncate: 160 | jsonify }},
-    "content": {{ p.content | strip_html | jsonify }}
-  }{% unless forloop.last %},{% endunless %}
+  {% if p.title and p.url and p.content and p.layout != "null" and p.search != false %}
+    {% unless first %},{% endunless %}
+    {% assign first = false %}
+    {
+      "id": {{ forloop.index | jsonify }},
+      "title": {{ p.title | jsonify }},
+      "url": {{ p.url | relative_url | jsonify }},
+      "tags": {{ p.tags | jsonify }},
+      "excerpt": {{ p.excerpt | default: p.content | strip_html | truncate: 160 | jsonify }},
+      "content": {{ p.content | strip_html | jsonify }}
+    }
   {% endif %}
 {% endfor %}
 ]
