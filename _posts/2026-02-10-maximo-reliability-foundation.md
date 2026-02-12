@@ -108,5 +108,3 @@ If you want to improve reliability using Maximo, start here:
 4. Build reporting that drives decisions, not dashboards
 
 ---
-
-*Next month: How to structure failure coding in Maximo so reliability analysis is actually possible.*
