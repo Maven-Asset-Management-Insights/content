@@ -1,9 +1,8 @@
 ---
 layout: default
-title: "Why Most Reliability Analysis in Maximo Fails Before It Starts"
-date: 2026-02-10
+title: "Why Most Reliability Programs Fail Before They Start"
+date: 2026-02-12
 tags: [Maximo, Reliability, Asset Performance]
-draft: false
 ---
 
 ## Why Most Reliability Analysis in Maximo Fails Before It Starts
@@ -41,7 +40,7 @@ When structured correctly, failure coding enables:
 
 If your organization cannot confidently answer:
 
-> “What are the top three failure modes for this asset class?”
+“What are the top three failure modes for this asset class?”
 
 The issue is almost always structural — not analytical.
 
@@ -83,11 +82,6 @@ Before structuring or revising failure codes, ask:
 
 If the answer is yes, then the failure hierarchy must distinguish failure modes clearly and consistently.
 
-For related discussion on aligning CMMS data to reliability strategy, see:
-
-- [Designing Preventive Maintenance Programs That Actually Reduce Failure](/content/maven-insights/designing-preventive-maintenance-programs-that-actually-reduce-failure/)
-- [From Reactive to Proactive: Building a Reliability-Centered Maintenance Framework](/content/maven-insights/from-reactive-to-proactive-rcm-framework/)
-
 ---
 
 ## Build a Logical Failure Hierarchy
@@ -113,9 +107,3 @@ This allows analysis at multiple levels:
 - All seal-related causes  
 
 Without hierarchy, roll-up reporting becomes fragmented and unreliable.
-
----
-
-## Visualizing the Failure Hierarchy
-
-### ASCII View
