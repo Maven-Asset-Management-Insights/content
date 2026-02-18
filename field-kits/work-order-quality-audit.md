@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Work Order Quality Audit Kit
-permalink: /field-kits/work-order-quality-audit
+permalink: /field-kits/work-order-quality-audit/
 ---
 
 # Work Order Quality Audit Kit
