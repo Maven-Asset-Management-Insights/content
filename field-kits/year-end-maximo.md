@@ -52,10 +52,7 @@ Use the **Zero Year to Date Quantities** action to set Year-to-Date inventory is
 
 1. Navigate to the **Asset Application**
 2. In the Advanced Search dropdown, open the **Where Clause**
-3. Enter the following query to bring up only assets with YTD costs:
-
-(ytdcost != '0')
-
+3. Enter the following query to bring up only assets with YTD costs: (ytdcost != '0')
 
 > **Best Practice:** Review YTD Costs of one record to validate results before applying changes system-wide.
 
