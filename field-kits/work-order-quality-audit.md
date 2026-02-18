@@ -4,8 +4,6 @@ title: Work Order Quality Audit Kit
 permalink: /field-kits/work-order-quality-audit/
 ---
 
-# Work Order Quality Audit Kit
-
 High-quality work order data is the foundation for reliability strategy, planning effectiveness, and asset performance analytics. If work orders are missing failure details, inconsistent across crews, or closed without meaningful notes, leaders lose trust in KPIs — and improvement stalls.
 
 This kit provides a practical, repeatable way to measure and improve Work Order (WO) quality in IBM Maximo.
