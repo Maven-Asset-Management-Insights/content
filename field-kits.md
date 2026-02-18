@@ -1,5 +1,4 @@
 ---
----
 layout: default
 title: Field Kits & Tools
 permalink: /field-kits/
