@@ -33,9 +33,7 @@ search: false
     <h2>Field Kits &amp; Tools</h2>
     <p>Practical checklists and frameworks that translate strategy into execution.</p>
     <ul>
-      <li>Upgrade readiness checklists</li>
-      <li>Data governance starter frameworks</li>
-      <li>Work management discipline scorecards</li>
+      <li>Fiscal Year End Maximo Updates checklists</li>
     </ul>
     <div style="margin-top:14px;">
       <a class="button" href="{{ "/field-kits" | relative_url }}">Explore kits</a>
