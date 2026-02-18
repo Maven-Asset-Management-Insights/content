@@ -1,44 +1,48 @@
 ---
-layout: default
-title: Year-End Maximo Preparation Checklist
+layout: page
+title: "Maximo Year-End Processing Checklist"
 permalink: /field-kits/year-end-maximo/
+description: "Step-by-step Maximo year-end processing guide to ensure system readiness for the new year."
 ---
 
-# Year-End Maximo Preparation Checklist
+Year-end is one of the busiest times of the year. Many activities need to be completed and closed out quickly. Maximo is just one of them, but it can easily be forgotten in the end-of-year shuffle.
 
-Year-end is one of the busiest times of the year. Between financial closeout, reporting, audits, and operational demands, Maximo maintenance tasks can easily be forgotten in the shuffle.
-
-A few simple preparation activities will ensure Maximo is ready for the new year — and help prevent emergency support calls on New Year’s Day.
+A few simple preparation tasks will ensure that Maximo is ready for the new year — and that you won’t be fielding emergency calls on New Years’ Day.
 
 ---
 
-## Key Activities Include
+## Key Activities
 
-- Reset and roll over inventory issue history
-- Reset and roll up asset costs
-- Reset labor hours
-- Update financial periods
-- Update calendars
-- Update auto-number sequences
+- Reset and roll over inventory issue history  
+- Reset and roll up asset costs  
+- Reset labor hours  
+- Update financial periods  
+- Update calendars  
+- Update auto-number sequences  
 
-> Depending on your configuration, additional year-end processing may be needed for system interfaces (especially financial/ERP integrations).
+> **Note:** Depending on your configuration, you may have additional year-end processing to support system interfaces, particularly financial system integrations.
 
-Maven strongly recommends automating year-end processing whenever possible.
+We’ve demonstrated several of the most common year-end tasks below. To simplify the process even further, automating year-end processing is strongly recommended.
 
 ---
 
 ## Inventory Issue History
 
-Use the **Zero Year to Date Quantities** action to set Year-to-Date inventory issues to zero and roll each year’s totals forward.
+Use the **Zero Year to Date Quantities** action to set Year-to-Date inventory issues to zero and roll each year’s totals to the previous year.
 
 ### Steps
 
-1. Navigate to the **Inventory** application
+1. Navigate to the **Inventory Application**
 2. Hit **Enter** to bring up all records
-3. *(Optional Best Practice)* Review Issue History of one record to validate results
-4. Select: **More Actions → Inventory Adjustments → Zero Year to Date Quantities**
+
+> **Best Practice:** Review Issue History of one record to validate results before proceeding.
+
+3. Return to List View when finished
+4. From the Actions menu select:  
+   `More Actions > Inventory Adjustments > Zero Year to Date Quantities`
 5. Confirm the action by clicking **OK**
-6. *(Optional Best Practice)* Review Inventory Issue History to verify YTD totals have been set to zero and prior year totals have advanced
+
+> **Best Practice:** Review Inventory Issue History and verify Year-to-Date totals have been set to zero and prior year totals have been advanced.
 
 ---
 
@@ -46,62 +50,86 @@ Use the **Zero Year to Date Quantities** action to set Year-to-Date inventory is
 
 ### Steps
 
-1. Navigate to the **Asset** application
+1. Navigate to the **Asset Application**
 2. In the Advanced Search dropdown, open the **Where Clause**
-3. Enter this query to bring up only assets with YTD costs:
+3. Enter the following query to bring up only assets with YTD costs:
 
-```sql
 (ytdcost != '0')
-(Optional Best Practice) Review YTD Costs of one record to validate results
 
-Select: More Actions → Zero Asset Costs
 
-Confirm the update to all listed records by clicking OK
+> **Best Practice:** Review YTD Costs of one record to validate results before applying changes system-wide.
 
-Select: Zero Year to Date Costs? → Click OK
+4. Return to List View when finished
+5. From the Actions menu select:  
+`More Actions > Zero Asset Costs`
+6. Confirm the update to all listed records by clicking **OK**
+7. When prompted:
+- Select **Zero Year to Date Costs?**
+- Click **OK**
 
-The system may take time to complete depending on record volume
+> **Note:** The system may take time to complete the process depending on record volume.
 
-(Optional Best Practice) Review Asset Costs to confirm YTD Cost has been set to zero
+> **Best Practice:** Review Asset Costs afterward to verify YTD Cost has been set to zero.
 
-Labor Hours
+---
 
-Navigate to the Labor application: Administration → Resources → Labor
+## Labor Hours
 
-Under More Actions, select: Zero Year to Date Hours
+Navigate to:
 
-Financial Periods
+**Administration > Resources > Labor**
 
-If your financial periods are defined by calendar year, be sure to add a new period for the upcoming year.
+### Steps
 
-If a new financial period is not defined, users may be unable to record labor, issue inventory, receive inventory, or adjust inventory — and may receive:
+1. Open the **Labor Application**
+2. Under **More Actions**, select **Zero Year to Date Hours**
 
-BMXAA1198E – The date is not within a valid financial period.
+---
 
-Steps
+## Financial Periods
 
-Navigate to: Financial → Chart of Accounts
+If your financial periods are defined by calendar year, you must add a new period for the upcoming year.
 
-From the More Actions menu, select: Financial Periods
+If a valid financial period is not defined, users will be unable to:
 
-Enter a new row for the next period (example values):
+- Record labor  
+- Issue inventory  
+- Receive inventory  
+- Adjust inventory  
 
-Period: 2022
+They will receive the following error:
 
-From: 1/1/22 12:00 AM
+> **Warning:** `BMXAA1198E – The date is not within a valid financial period.`
 
-To: 1/1/23 12:00 AM
+### To Update Financial Periods
 
-Do not enter Accounting Close Date or Actual Close Date until you plan to close the period.
+1. Navigate to:  
+**Financial > Chart of Accounts**
+2. From the **More Actions** menu, select **Financial Periods**
+3. Add a new row for the next financial period
 
-Other Recommended Tasks
+### Example Entry
 
-In addition to the tasks above, consider reviewing:
+| Field  | Value           |
+|--------|-----------------|
+| Period | 2022            |
+| From   | 1/1/22 12:00 AM |
+| To     | 1/1/23 12:00 AM |
 
-calendars
+> **Important:** Do not enter Accounting Close Date or Actual Close Date until you plan to close the period.
 
-auto-number sequences
+---
 
-integration processes (especially ERP/financial integrations)
+## Other Tasks
 
-If you haven’t already, consider using Maximo Escalations to automate year-end processing going forward.
+In addition to the tasks outlined above:
+
+- Review all year-end activities listed in the introduction  
+- Check with your team to determine whether additional processing is required  
+- Pay special attention to ERP integrations  
+
+> **Recommendation:** If you haven’t already, consider using **Maximo Escalations** to automate year-end processing in the future.
+
+---
+
+Proactive preparation ensures a smooth transition into the new year and prevents avoidable system disruptions.
