@@ -108,13 +108,18 @@ They will receive the following error:
 2. From the **More Actions** menu, select **Financial Periods**
 3. Add a new row for the next financial period
 
-### Example Entry
+## Example Entry
 
-| Field  | Value           |
-|--------|-----------------|
-| Period | 2022            |
-| From   | 1/1/22 12:00 AM |
-| To     | 1/1/23 12:00 AM |
+<dl>
+  <dt><strong>Period</strong></dt>
+  <dd>2022</dd>
+
+  <dt><strong>From</strong></dt>
+  <dd>1/1/22 12:00 AM</dd>
+
+  <dt><strong>To</strong></dt>
+  <dd>1/1/23 12:00 AM</dd>
+</dl>
 
 > **Important:** Do not enter Accounting Close Date or Actual Close Date until you plan to close the period.
 
