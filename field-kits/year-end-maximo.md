@@ -2,12 +2,12 @@
 layout: page
 title: "Maximo Year-End Processing Checklist"
 permalink: /field-kits/year-end-maximo/
-description: "Step-by-step Maximo year-end processing guide to ensure system readiness for the new year."
+description: "Step-by-step Maximo year-end processing guide to ensure system readiness for the new fiscal year."
 ---
 
-Year-end is one of the busiest times of the year. Many activities need to be completed and closed out quickly. Maximo is just one of them, but it can easily be forgotten in the end-of-year shuffle.
+Fiscal year-end is one of the busiest times of the year. Many activities need to be completed and closed out quickly. Maximo is just one of them, but it can easily be forgotten in the end-of-year shuffle.
 
-A few simple preparation tasks will ensure that Maximo is ready for the new year — and that you won’t be fielding emergency calls on New Years’ Day.
+A few simple preparation tasks will ensure that Maximo is ready for the new year.
 
 ---
 
