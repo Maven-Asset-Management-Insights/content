@@ -4,6 +4,18 @@ title: "When MAS Upgrades “Work” but Don’t Move the Needle"
 subtitle: "Why technical success isn’t the same as operational impact"
 date: 2026-02-18
 categories: insights maximo mas upgrades
+field_kit: true
+maximo_versions:
+  mas:
+    - "MAS 8.10+"
+    - "MAS 9.0+"
+  maximo:
+    - "7.6.1.2+"
+deployment_models:
+  - "MAS SaaS"
+  - "MAS On-Prem"
+  - "Maximo 7.6 On-Prem"
+last_validated: 2026-02-18
 ---
 
 A lot of Maximo Application Suite (MAS) upgrades succeed technically.
