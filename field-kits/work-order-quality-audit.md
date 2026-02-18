@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Work Order Quality Audit Kit
 permalink: /field-kits/work-order-quality-audit
 ---
