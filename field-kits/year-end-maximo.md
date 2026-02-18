@@ -52,3 +52,56 @@ Use the **Zero Year to Date Quantities** action to set Year-to-Date inventory is
 
 ```sql
 (ytdcost != '0')
+(Optional Best Practice) Review YTD Costs of one record to validate results
+
+Select: More Actions → Zero Asset Costs
+
+Confirm the update to all listed records by clicking OK
+
+Select: Zero Year to Date Costs? → Click OK
+
+The system may take time to complete depending on record volume
+
+(Optional Best Practice) Review Asset Costs to confirm YTD Cost has been set to zero
+
+Labor Hours
+
+Navigate to the Labor application: Administration → Resources → Labor
+
+Under More Actions, select: Zero Year to Date Hours
+
+Financial Periods
+
+If your financial periods are defined by calendar year, be sure to add a new period for the upcoming year.
+
+If a new financial period is not defined, users may be unable to record labor, issue inventory, receive inventory, or adjust inventory — and may receive:
+
+BMXAA1198E – The date is not within a valid financial period.
+
+Steps
+
+Navigate to: Financial → Chart of Accounts
+
+From the More Actions menu, select: Financial Periods
+
+Enter a new row for the next period (example values):
+
+Period: 2022
+
+From: 1/1/22 12:00 AM
+
+To: 1/1/23 12:00 AM
+
+Do not enter Accounting Close Date or Actual Close Date until you plan to close the period.
+
+Other Recommended Tasks
+
+In addition to the tasks above, consider reviewing:
+
+calendars
+
+auto-number sequences
+
+integration processes (especially ERP/financial integrations)
+
+If you haven’t already, consider using Maximo Escalations to automate year-end processing going forward.
