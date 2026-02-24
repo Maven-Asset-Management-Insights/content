@@ -4,8 +4,6 @@ title: "Maintenance Goes Mobile at Clarios – Field Kit"
 permalink: /field-kits/maintenance-goes-mobile-clarios/
 ---
 
-# Maintenance Goes Mobile at Clarios
-
 This Field Kit highlights how Clarios successfully implemented mobile maintenance practices to improve technician productivity, data accuracy, and operational visibility.
 
 ---
