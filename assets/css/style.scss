@@ -187,6 +187,9 @@ main.container {
   border-radius: 14px;
   padding: 18px;
   box-shadow: 0 6px 20px rgba(41, 44, 117, 0.08);
+
+  display: flex;
+  flex-direction: column;
 }
 
 .card-image {
@@ -227,7 +230,10 @@ main.container {
   text-decoration: none;
   transition: background 0.2s ease;
 }
-
+/* Push button to bottom of card */
+.card .button {
+  margin-top: auto;
+}
 .button:hover {
   background: var(--maven-blue-deep);
 }
