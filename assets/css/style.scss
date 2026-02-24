@@ -230,10 +230,16 @@ main.container {
   text-decoration: none;
   transition: background 0.2s ease;
 }
-/* Push button to bottom of card */
+
+/* Push button (or its wrapper) to bottom of card */
 .card .button {
   margin-top: auto;
 }
+
+.card > div:last-child {
+  margin-top: auto;
+}
+
 .button:hover {
   background: var(--maven-blue-deep);
 }
