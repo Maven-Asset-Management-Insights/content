@@ -244,6 +244,14 @@ main.container {
   background: var(--maven-blue-deep);
 }
 
+.card > div:last-child {
+  margin-top: auto;
+}
+
+.button:hover {
+  background: var(--maven-blue-deep);
+}
+
 /* Section labels */
 .section-title {
   margin: 22px 0 10px;
