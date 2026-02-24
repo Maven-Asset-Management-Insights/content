@@ -23,10 +23,13 @@ search: false
     </div>
   </section>
 
- <section class="card">
+<section class="card">
   <h2>Executive Glossary</h2>
   <p>A growing set of leadership-level definitions for Maximo and EAM concepts.</p>
-  <a class="button" href="{{ "/glossary" | relative_url }}">View glossary</a>
+
+  <div class="card-cta">
+    <a class="button" href="{{ "/glossary" | relative_url }}">View glossary</a>
+  </div>
 </section>
 
   <section class="card">
