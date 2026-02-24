@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Work Order Quality Audit Kit
+description: This kit provides a practical, repeatable way to measure and improve Work Order (WO) quality in IBM Maximo
 permalink: /field-kits/work-order-quality-audit/
 date: 2026-01-15
 ---
