@@ -271,7 +271,21 @@ main.container {
 .footer-social a[aria-label="Facebook"]:hover {
   background: #1877F2;
 }
+/* Instagram brand hover override */
+.footer-social a[aria-label="Instagram"]:hover {
+  background: linear-gradient(
+    45deg,
+    #f58529,
+    #dd2a7b,
+    #8134af,
+    #515bd4
+  );
+}
 
+/* X (Twitter) brand hover override */
+.footer-social a[aria-label="X"]:hover {
+  background: #000000;
+}
 .footer-social svg {
   width: 18px;
   height: 18px;
