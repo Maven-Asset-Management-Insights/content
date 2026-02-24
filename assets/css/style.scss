@@ -269,10 +269,14 @@ main.container {
   color: #ffffff;
   transition: background 0.2s ease, transform 0.15s ease;
 }
-
 .footer-social a:hover {
   background: var(--maven-blue-primary);
   transform: translateY(-2px);
+}
+
+/* YouTube brand hover override */
+.footer-social a[aria-label="YouTube"]:hover {
+  background: #FF0000; /* Official YouTube red */
 }
 
 .footer-social svg {
