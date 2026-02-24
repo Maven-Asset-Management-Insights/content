@@ -21,6 +21,12 @@ Practical checklists and frameworks that translate reliability strategy into exe
     <p>A practical rubric and monthly process to improve Maximo work order data quality for better reliability and analytics.</p>
     <a class="button" href="{{ "/field-kits/work-order-quality-audit/" | relative_url }}">View kit</a>
   </section>
-
+  
+ <section class="card">
+    <h2>Customer Mobile Use Case Kit</h2>
+    <p>This Field Kit highlights how Clarios successfully implemented mobile maintenance practices to improve technician productivity, data accuracy, and operational visibility.
+</p>
+    <a class="button" href="{{ "/field-kits/work-order-quality-audit/" | relative_url }}">View kit</a>
+  </section>
 </div>
 
