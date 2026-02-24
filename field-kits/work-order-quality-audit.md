@@ -2,6 +2,7 @@
 layout: page
 title: Work Order Quality Audit Kit
 permalink: /field-kits/work-order-quality-audit/
+date: 2026-01-15
 ---
 
 High-quality work order data is the foundation for reliability strategy, planning effectiveness, and asset performance analytics. If work orders are missing failure details, inconsistent across crews, or closed without meaningful notes, leaders lose trust in KPIs — and improvement stalls.
