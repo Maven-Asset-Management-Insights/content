@@ -33,8 +33,18 @@ search: false
     <h2>Field Kits &amp; Tools</h2>
     <p>Practical checklists and frameworks that translate strategy into execution.</p>
     <ul>
-      <li>Fiscal Year End Maximo Updates checklists</li>
-    </ul>
+  {% assign kits = site.pages
+    | where_exp: "p", "p.url contains '/field-kits/'"
+    | where_exp: "p", "p.url != '/field-kits/'"
+    | sort: "date"
+    | reverse %}
+  {% for kit in kits limit:5 %}
+    <li>
+      <strong>{{ kit.date | date: "%B %Y" }}:</strong>
+      <a href="{{ kit.url | relative_url }}">{{ kit.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
     <div style="margin-top:14px;">
       <a class="button" href="{{ "/field-kits" | relative_url }}">Explore kits</a>
     </div>
