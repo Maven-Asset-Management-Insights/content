@@ -5,8 +5,8 @@ search: false
 ---
 
 <section class="hero">
-  <h1>Maven's Asset Performance Management Field Glossary</h1>
-  <p><strong>IBM Maximo &amp; Enterprise Asset Management in Plain English.</strong> Asset management is complex enough without confusing language.</p>
+  <h1>Asset Management Field Glossary by Maven</h1>
+  <p><strong>IBM Maximo & Enterprise Asset Management Clearly Explained: Asset management is challenging enough without adding unnecessary complexity.</strong> </p>
 </section>
 
 <div class="grid">
@@ -56,6 +56,5 @@ search: false
 
 <p class="section-title">Why we built this</p>
 <div class="card">
-  <p>Too often, organizations invest in systems like Maximo without shared clarity on what key concepts actually mean in practice, reliability that reduces surprise failures, governance that sustains standards, data leaders can trust, and work management that improves predictability.</p>
-  <p>This site is designed to be useful.</p>
-</div>
+  <p>We built this site to help organizations grow with clarity and confidence in Maximo by strengthening reliability, governance, trusted data, and predictable work management. At Maven, a maven is an experienced expert who helps others grow, and this resource is designed to do exactly that: align teams, elevate understanding, and turn asset management into measurable performance.</p>
+  </div>
