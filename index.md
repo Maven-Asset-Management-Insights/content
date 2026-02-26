@@ -5,7 +5,7 @@ search: false
 ---
 
 <section class="hero">
-  <h1>Asset Management Field Glossary by Maven</h1>
+  <h1>Maven's Asset Performance Management Field Glossary</h1>
   <p><strong>IBM Maximo & Enterprise Asset Management Clearly Explained: Asset management is challenging enough without adding unnecessary complexity.</strong> </p>
 </section>
 
