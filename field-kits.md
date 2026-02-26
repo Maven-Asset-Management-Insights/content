@@ -18,7 +18,7 @@ permalink: /field-kits/
   <h2 style="margin-top:0;">The Maximo Upgrade Process</h2>
 
   <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
-    An executive-ready framework to reduce upgrade risk, align stakeholders, and ensure your Maximo upgrade delivers measurable performance—not just a new version.
+    An executive-ready framework to reduce upgrade risk, align stakeholders, and ensure your Maximo upgrade delivers measurable performance, not just a new version.
   </p>
 
   <div style="margin-top:14px; opacity:.8;">
