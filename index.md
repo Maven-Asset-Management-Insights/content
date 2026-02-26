@@ -27,7 +27,7 @@ search: false
   </section>
 
   <section class="card">
-    <h2>Executive Glossary</h2>
+    <h2>Glossary</h2>
     <p>A growing set of leadership-level definitions for Maximo and EAM concepts.</p>
 
     <div class="card-cta">
