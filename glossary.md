@@ -4,69 +4,152 @@ title: Glossary
 permalink: /glossary/
 ---
 
-# Glossary
+<section class="hero">
+  <h1>Executive Glossary</h1>
+  <p><strong>Clear definitions for Maximo, reliability, and asset performance concepts — grounded in outcomes.</strong></p>
+</section>
 
-This page is the public version of Maven’s executive-level glossary. Add terms over time in plain English, grounded in outcomes.
+<nav class="glossary-nav">
+  <a href="#A">A</a>
+  <a href="#B">B</a>
+  <a href="#C">C</a>
+  <a href="#D">D</a>
+  <a href="#F">F</a>
+  <a href="#K">K</a>
+  <a href="#M">M</a>
+  <a href="#P">P</a>
+  <a href="#R">R</a>
+  <a href="#S">S</a>
+  <a href="#W">W</a>
+</nav>
 
-## IBM Maximo
-A leading enterprise asset management platform used to manage assets, work, inventory, and maintenance execution across asset-intensive organizations.
+<div class="glossary">
 
-## Asset Criticality
-A method for ranking assets based on risk (safety, environment, production, cost). Criticality helps prioritize reliability work, PM optimization, spares strategy, and where Maximo data standards must be strongest.
+<h2 id="A">A</h2>
 
-## Asset Hierarchy
-The structured way assets are organized in your EAM system (site → system → equipment → component). A good hierarchy reflects how the organization operates and maintains assets. A weak hierarchy makes reporting misleading and reliability analysis unreliable.
+<div class="glossary-term">
+<h3>IBM Maximo</h3>
+<p>A leading enterprise asset management platform used to manage assets, work, inventory, and maintenance execution across asset-intensive organizations.</p>
+</div>
 
-## Asset Performance
-How well assets deliver intended outcomes over time (availability, reliability, cost, risk), supported by good data and disciplined execution.
+<div class="glossary-term">
+<h3>Asset Criticality</h3>
+<p>A method for ranking assets based on risk (safety, environment, production, cost). Criticality helps prioritize reliability work, PM optimization, spares strategy, and where Maximo data standards must be strongest.</p>
+</div>
 
-## Asset Performance Management (APM)
-A capability set that connects asset condition, risk, and performance data to decisions—helping organizations optimize maintenance, reduce downtime, and manage lifecycle cost. APM depends on strong foundations in hierarchy, work management, and data standards.
+<div class="glossary-term">
+<h3>Asset Hierarchy</h3>
+<p>The structured way assets are organized in your EAM system (site → system → equipment → component). A good hierarchy reflects how the organization operates and maintains assets. A weak hierarchy makes reporting misleading and reliability analysis unreliable.</p>
+</div>
 
-## Backlog Health
-A view of whether the maintenance backlog is manageable and prioritized. Healthy backlogs are risk-based and achievable; unhealthy backlogs grow without clear priorities and hide reliability risk.
+<div class="glossary-term">
+<h3>Asset Performance</h3>
+<p>How well assets deliver intended outcomes over time (availability, reliability, cost, risk), supported by good data and disciplined execution.</p>
+</div>
 
-## Condition Monitoring
-Tracking asset condition indicators (vibration, temperature, oil analysis, run hours, alarms) to detect emerging problems before failure. Condition monitoring supports predictive actions when paired with clear thresholds and governance.
+<div class="glossary-term">
+<h3>Asset Performance Management (APM)</h3>
+<p>A capability set that connects asset condition, risk, and performance data to decisions—helping organizations optimize maintenance, reduce downtime, and manage lifecycle cost. APM depends on strong foundations in hierarchy, work management, and data standards.</p>
+</div>
 
-## Data Governance
-The standards, ownership, and routines that keep Maximo/EAM data accurate and consistent over time (naming rules, mandatory fields, quality checks, change control). Governance prevents “data drift” after go-live.
+<h2 id="B">B</h2>
 
-## Failure Code
-A standardized way to record what failed and why. Consistent failure codes turn work history into reliability insight; inconsistent codes turn history into noise.
+<div class="glossary-term">
+<h3>Backlog Health</h3>
+<p>A view of whether the maintenance backlog is manageable and prioritized. Healthy backlogs are risk-based and achievable; unhealthy backlogs grow without clear priorities and hide reliability risk.</p>
+</div>
 
-## Failure Mode
-The specific way an asset fails (e.g., bearing seizure, seal leak, motor winding failure). Identifying failure modes helps teams select the right preventive, predictive, or corrective strategy.
+<h2 id="C">C</h2>
 
-## KPI (Key Performance Indicator)
-A metric used to track progress toward operational outcomes. Effective KPIs are tied to decisions and behaviors (not just dashboards) and rely on trustworthy underlying data.
+<div class="glossary-term">
+<h3>Condition Monitoring</h3>
+<p>Tracking asset condition indicators (vibration, temperature, oil analysis, run hours, alarms) to detect emerging problems before failure.</p>
+</div>
 
-## Mean Time Between Failures (MTBF)
-A reliability metric representing the average time between failures for a repairable asset. MTBF can be useful, but only when failure definitions and data quality are consistent.
+<h2 id="D">D</h2>
 
-## Mean Time To Repair (MTTR)
-A metric representing the average time required to restore an asset after failure. MTTR reflects maintainability, spares readiness, work execution quality, and operational coordination.
+<div class="glossary-term">
+<h3>Data Governance</h3>
+<p>The standards, ownership, and routines that keep Maximo/EAM data accurate and consistent over time.</p>
+</div>
 
-## Planned vs. Unplanned Work
-Planned work is prepared in advance (scope, parts, labor, schedule). Unplanned work is reactive. High-performing organizations steadily increase the percentage of planned work to improve reliability and reduce cost.
+<h2 id="F">F</h2>
 
-## Planning and Scheduling
-Planning defines the job (steps, labor, materials, permits). Scheduling assigns the timing and sequence. Together, they create predictable execution and reduce emergency work.
+<div class="glossary-term">
+<h3>Failure Code</h3>
+<p>A standardized way to record what failed and why. Consistent failure codes turn work history into reliability insight.</p>
+</div>
 
-## PM Compliance
-A measure of whether preventive maintenance work is completed as planned (on time, complete, and correctly documented). PM compliance is a leading indicator of discipline and reliability maturity.
+<div class="glossary-term">
+<h3>Failure Mode</h3>
+<p>The specific way an asset fails (e.g., bearing seizure, seal leak, motor winding failure).</p>
+</div>
 
-## Predictive Maintenance (PdM)
-Maintenance triggered by measured condition or predicted failure risk rather than time. PdM works best when the organization has disciplined work execution and trustworthy data.
+<h2 id="K">K</h2>
 
-## Reliability Strategy
-The set of decisions that define what maintenance is performed, how often, and why—based on risk, failure modes, and operational impact. A reliability strategy is only effective when it is kept current and governed over time.
+<div class="glossary-term">
+<h3>KPI (Key Performance Indicator)</h3>
+<p>A metric used to track progress toward operational outcomes. Effective KPIs are tied to decisions and behaviors.</p>
+</div>
 
-## Standard Job Plan
-A reusable work template that defines how a job should be performed (steps, labor, materials, safety notes). Job plans reduce variability and improve quality and speed of execution.
+<h2 id="M">M</h2>
 
-## Work Management Discipline
-The habits and standards that make work predictable: clear prioritization, planning, scheduling, execution, and quality closeout. Reliability outcomes improve when work management discipline is consistent.
+<div class="glossary-term">
+<h3>Mean Time Between Failures (MTBF)</h3>
+<p>A reliability metric representing the average time between failures for a repairable asset.</p>
+</div>
 
-## Work Order Closeout Quality
-How consistently teams capture the information needed at completion—failure codes, downtime, labor, materials, cause notes, and asset impact. Closeout quality determines whether Maximo history can be trusted.
+<div class="glossary-term">
+<h3>Mean Time To Repair (MTTR)</h3>
+<p>The average time required to restore an asset after failure.</p>
+</div>
+
+<h2 id="P">P</h2>
+
+<div class="glossary-term">
+<h3>Planned vs. Unplanned Work</h3>
+<p>Planned work is prepared in advance. Unplanned work is reactive.</p>
+</div>
+
+<div class="glossary-term">
+<h3>Planning and Scheduling</h3>
+<p>Planning defines the job. Scheduling assigns timing and sequence.</p>
+</div>
+
+<div class="glossary-term">
+<h3>PM Compliance</h3>
+<p>A measure of whether preventive maintenance work is completed as planned.</p>
+</div>
+
+<div class="glossary-term">
+<h3>Predictive Maintenance (PdM)</h3>
+<p>Maintenance triggered by measured condition or predicted failure risk.</p>
+</div>
+
+<h2 id="R">R</h2>
+
+<div class="glossary-term">
+<h3>Reliability Strategy</h3>
+<p>The set of decisions that define what maintenance is performed, how often, and why—based on risk and failure modes.</p>
+</div>
+
+<h2 id="S">S</h2>
+
+<div class="glossary-term">
+<h3>Standard Job Plan</h3>
+<p>A reusable work template that defines how a job should be performed.</p>
+</div>
+
+<h2 id="W">W</h2>
+
+<div class="glossary-term">
+<h3>Work Management Discipline</h3>
+<p>The habits and standards that make work predictable.</p>
+</div>
+
+<div class="glossary-term">
+<h3>Work Order Closeout Quality</h3>
+<p>How consistently teams capture the information needed at completion.</p>
+</div>
+
+</div>
