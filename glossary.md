@@ -4,7 +4,7 @@ title: Glossary
 permalink: /glossary/
 ---
 
-# Executive Glossary
+# Glossary
 
 This page is the public version of Maven’s executive-level glossary. Add terms over time in plain English, grounded in outcomes.
 
