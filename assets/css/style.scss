@@ -334,3 +334,95 @@ main.container {
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
+
+/* =====================================================
+   Field Kits – Premium Hierarchy Enhancements
+   ===================================================== */
+
+.kits-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.kit-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 28px rgba(41, 44, 117, 0.10);
+  display: flex;
+  flex-direction: column;
+}
+
+.kit-card h2 {
+  margin: 8px 0 10px;
+  font-size: 20px;
+  color: var(--maven-blue-deep);
+  letter-spacing: -0.01em;
+}
+
+.kit-card p {
+  margin: 0 0 12px;
+  line-height: 1.65;
+}
+
+.kit-meta {
+  margin-top: 6px;
+  font-size: 13px;
+  color: rgba(84, 84, 84, 0.9);
+}
+
+.kit-meta strong {
+  color: var(--maven-blue-deep);
+}
+
+.kit-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(41, 44, 117, 0.15);
+  background: rgba(62, 103, 177, 0.08);
+  color: var(--maven-blue-deep);
+  width: fit-content;
+}
+
+/* Featured kit */
+.kit-featured {
+  background: linear-gradient(
+    135deg,
+    rgba(41, 44, 117, 0.06),
+    rgba(62, 103, 177, 0.04)
+  );
+  border: 1px solid rgba(41, 44, 117, 0.18);
+  padding: 24px;
+}
+
+.kit-featured h2 {
+  font-size: 24px;
+}
+
+.kit-featured .kit-badge {
+  background: rgba(41, 44, 117, 0.12);
+  border-color: rgba(41, 44, 117, 0.22);
+}
+
+/* Button alignment */
+.kit-card .button {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .kits-grid {
+    grid-template-columns: 1fr;
+  }
+}
