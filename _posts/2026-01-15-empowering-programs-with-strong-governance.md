@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Governance Is the Difference Between a Project and a Program"
+title: "Empowering Programs with Strong Governance for Lasting Impact"
 date: 2026-01-15
 tags: [Governance, Reliability, Maximo, EAM]
 ---
 
-## Executive Takeaway
+## Empowering Programs with Strong Governance for Lasting Impact
 Most Maximo and reliability initiatives start strong and then slowly fade.
 
 The difference between lasting value and stalled progress is governance.
