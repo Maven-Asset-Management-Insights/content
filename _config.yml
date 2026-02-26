@@ -2,6 +2,7 @@ title: "Maven Asset Management Solutions"
 description: "IBM Maximo & Enterprise Asset Management in Plain English — Reliability & Asset Performance Insights"
 theme: minima
 baseurl: "/content"
+
 # Top navigation
 header_pages:
   - maven-insights.md
