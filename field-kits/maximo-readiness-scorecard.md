@@ -11,7 +11,7 @@ date: 2026-02-26
 
 <p>
   <a class="button"
-     href="{{ '/assets/pdf/maximo-readiness-scorecard.pdf' | relative_url }}">
+     href="{{ '/assets/maximo-readiness-scorecard.pdf' | relative_url }}">
      Download PDF
   </a>
 </p>
