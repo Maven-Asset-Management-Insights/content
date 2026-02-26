@@ -52,7 +52,7 @@ search: false
       {% endfor %}
     </ul>
     <div style="margin-top:14px;">
-      <a class="button" href="{{ "/field-kits" | relative_url }}">Explore kits</a>
+      <a class="button" href="{{ "/field-kits" | relative_url }}">Explore all kits</a>
     </div>
   </section>
 </div>
