@@ -12,7 +12,7 @@ date: 2026-02-26
 <div class="card">
   <h2>Executive Summary</h2>
   <p>
-    A Maximo upgrade isn’t just an IT project—it changes how the business runs day to day. Done well, it protects uptime, reduces compliance         risk, controls cost, and makes it easier for teams to actually use the system. This field kit lays out a practical, repeatable approach to       get everyone aligned, keep scope under control, manage risk early, and turn the upgrade into lasting performance gains.
+    A Maximo upgrade isn’t just an IT project, it changes how the business runs day to day. Done well, it protects uptime, reduces compliance         risk, controls cost, and makes it easier for teams to actually use the system. This field kit lays out a practical, repeatable approach to       get everyone aligned, keep scope under control, manage risk early, and turn the upgrade into lasting performance gains.
   </p>
 
   <div class="card-cta" style="margin-top:18px;">
