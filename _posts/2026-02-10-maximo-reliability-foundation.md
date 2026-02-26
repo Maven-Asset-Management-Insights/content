@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "The Reliability Foundation Most Maximo Programs Miss"
+title: "Building a Strong Reliability Foundation for Maximo Success"
 date: 2026-02-10
 tags: [Maximo, Reliability, Asset Performance]
 ---
 
-## Executive Takeaway
+## Building a Strong Reliability Foundation for Maximo Success
 Most organizations don’t fail at IBM Maximo because of the software.  
 They fail because they implement Maximo without a reliability foundation that supports consistent execution.
 
