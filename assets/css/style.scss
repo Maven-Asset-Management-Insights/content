@@ -426,3 +426,44 @@ main.container {
     grid-template-columns: 1fr;
   }
 }
+/* Glossary Improvements */
+
+.glossary-nav {
+  margin: 18px 0;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.glossary-nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: var(--maven-blue-deep);
+}
+
+.glossary-nav a:hover {
+  text-decoration: underline;
+}
+
+.glossary h2 {
+  margin-top: 40px;
+  font-size: 22px;
+  color: var(--maven-blue-deep);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+}
+
+.glossary-term {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+.glossary-term h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  color: var(--maven-blue-deep);
+}
+
+.glossary-term p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.65;
+}
