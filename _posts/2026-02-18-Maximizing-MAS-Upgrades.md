@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "When MAS Upgrades “Work” but Don’t Move the Needle"
+title: "Maximizing MAS Upgrades to Drive Real Results"
 subtitle: "Why technical success isn’t the same as operational impact"
 date: 2026-02-18
 categories: insights maximo mas upgrades
