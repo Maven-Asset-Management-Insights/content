@@ -2,6 +2,7 @@
 layout: default
 title: The Maximo Upgrade Process
 date: 2026-02-26
+permalink: /field-kits/maximo-upgrade-process/
 ---
 
 <section class="hero">
