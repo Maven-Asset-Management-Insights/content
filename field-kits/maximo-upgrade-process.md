@@ -107,7 +107,7 @@ permalink: /field-kits/maximo-upgrade-process/
   <section class="card">
     <h2>5) Conduct Testing</h2>
     <p>
-      Testing is where leadership buys down risk. Focus on real workflows and failure scenarios—not just happy-path clicks.
+      Testing is where leadership buys down risk. Focus on real workflows and failure scenarios, not just happy-path clicks.
     </p>
     <ul>
       <li><strong>Process-based testing:</strong> end-to-end scenarios for critical work (planning → execution → closeout)</li>
