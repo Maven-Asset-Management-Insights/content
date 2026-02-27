@@ -78,7 +78,7 @@ permalink: /field-kits/maximo-upgrade-process/
   <section class="card">
     <h2>3) Develop a Plan</h2>
     <p>
-      Convert objectives into a controllable plan—sequenced, resourced, and governed. Plan for testing and change management early.
+      Convert objectives into a controllable plan: sequenced, resourced, and governed. Plan for testing and change management early.
     </p>
     <ul>
       <li><strong>Delivery approach:</strong> big-bang vs. phased; environment strategy; cutover strategy</li>
