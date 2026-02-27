@@ -30,6 +30,30 @@ permalink: /field-kits/
   </div>
 </div>
 
+<!-- SCORECARD PREVIEW -->
+<div class="card" style="padding:22px; margin-bottom:18px;">
+  <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
+    Featured Tool
+  </div>
+
+  <h2 style="margin-top:0;">Maximo Readiness Scorecard</h2>
+
+  <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
+    A 20-point scorecard to quickly assess whether Maximo is positioned to drive performance across strategy, reliability execution, and data governance.
+  </p>
+
+  <a href="{{ "/field-kits/maximo-readiness-scorecard.html" | relative_url }}" style="display:block; margin-top:14px; text-decoration:none;">
+    <img
+      src="{{ "/assets/maximo-readiness-scorecard-preview.png" | relative_url }}"
+      alt="Preview of Maximo Readiness Scorecard"
+      style="width:100%; height:auto; border-radius:12px; border:1px solid var(--border); box-shadow: 0 10px 24px rgba(41, 44, 117, 0.08);" />
+  </a>
+
+  <div style="margin-top:16px;">
+    <a class="button" href="{{ "/field-kits/maximo-readiness-scorecard.html" | relative_url }}">View scorecard</a>
+  </div>
+</div>
+
 <!-- ALL KITS -->
 <div class="grid">
 
