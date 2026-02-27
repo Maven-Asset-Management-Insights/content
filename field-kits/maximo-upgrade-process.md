@@ -92,7 +92,7 @@ permalink: /field-kits/maximo-upgrade-process/
   <section class="card">
     <h2>4) Upgrade Configurations and Integrations</h2>
     <p>
-      Protect business continuity by deliberately managing what changes—and what must not break. Integration failures are a common
+      Protect business continuity by deliberately managing what changes and what must not break. Integration failures are a common
       upgrade risk multiplier.
     </p>
     <ul>
