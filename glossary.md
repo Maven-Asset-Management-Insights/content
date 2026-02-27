@@ -6,7 +6,7 @@ permalink: /glossary/
 
 <section class="hero">
   <h1>Glossary</h1>
-  <p><strong>Clear definitions for Maximo, reliability, and asset performance concepts — grounded in outcomes.</strong></p>
+  <p><strong>Clear definitions for Maximo, reliability, and asset performance concepts, grounded in outcomes.</strong></p>
 </section>
 
 <nav class="glossary-nav">
