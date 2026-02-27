@@ -156,7 +156,7 @@ permalink: /field-kits/maximo-upgrade-process/
       <li><strong>Reliability maturity:</strong> improve failure coding, PM effectiveness, planning discipline, analytics adoption</li>
       <li><strong>Release strategy:</strong> establish a sustainable approach to ongoing Maximo changes</li>
     </ul>
-    <p style="margin-top:12px;"><strong>Executive output:</strong> Maximo evolves into a performance platform—not a maintained system.</p>
+    <p style="margin-top:12px;"><strong>Executive output:</strong> Maximo evolves into a performance platform, not a maintained system.</p>
   </section>
 
 </div>
