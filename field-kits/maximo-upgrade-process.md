@@ -50,7 +50,7 @@ permalink: /field-kits/maximo-upgrade-process/
   <section class="card">
     <h2>1) Assess Current State</h2>
     <p>
-      Establish a fact base before decisions are made. Capture technical realities and operational realities—not opinions.
+      Establish a fact base before decisions are made. Capture technical realities and operational realities, not opinions.
     </p>
     <ul>
       <li><strong>Platform baseline:</strong> version, modules, environments, integrations, interfaces, security model</li>
