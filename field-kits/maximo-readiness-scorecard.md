@@ -6,7 +6,7 @@ date: 2026-02-26
 
 <section class="hero">
   <h1>Maximo Readiness Scorecard</h1>
-  <p><strong>A leadership-level assessment to understand whether Maximo is driving performance—or simply processing transactions.</strong></p>
+  <p><strong>A leadership-level assessment to understand whether Maximo is driving performance or simply processing transactions.</strong></p>
 </section>
 
 <div class="grid">
