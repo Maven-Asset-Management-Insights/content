@@ -44,8 +44,8 @@
             About Maven
           </a>
 
-          <a class="email-btn" href="mailto:mas@mavenasset.com">
-            Email Maven
+        <a class="email-btn" id="emailMaven" href="mailto:mas@mavenasset.com">
+          Email Maven
           </a>
         </nav>
 
@@ -121,6 +121,25 @@
 
       </div> <!-- closes footer-inner -->
     </footer>
+<script>
+  (function () {
+    var a = document.getElementById("emailMaven");
+    if (!a) return;
 
+    var pageUrl = window.location.href;
+
+    var subject = "Maven site inquiry (GitHub Pages content site)";
+    var body =
+      "Hi Maven,%0D%0A%0D%0A" +
+      "I'm reaching out from the Maven content site.%0D%0A" +
+      "Source page: " + encodeURIComponent(pageUrl) + "%0D%0A%0D%0A" +
+      "Message:%0D%0A";
+
+    a.href =
+      "mailto:mas@mavenasset.com" +
+      "?subject=" + encodeURIComponent(subject) +
+      "&body=" + body;
+  })();
+</script>
   </body>
 </html>
