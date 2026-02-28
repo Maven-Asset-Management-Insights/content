@@ -9,6 +9,14 @@ permalink: /glossary/
   <p><strong>Clear definitions for Maximo, reliability, and asset performance concepts, grounded in outcomes.</strong></p>
 </section>
 
+<!-- FEATURED TERM -->
+<div class="glossary-term" style="margin-top:28px; padding-bottom:18px; border-bottom:2px solid var(--border);">
+  <h3 style="font-size:22px;">IBM Maximo</h3>
+  <p>
+    A leading enterprise asset management platform used to manage assets, work, inventory, and maintenance execution across asset-intensive organizations.
+  </p>
+</div>
+
 <nav class="glossary-nav">
   <a href="#A">A</a>
   <a href="#B">B</a>
