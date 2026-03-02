@@ -36,11 +36,6 @@ permalink: /glossary/
 <h2 id="A">A</h2>
 
 <div class="glossary-term">
-<h3>IBM Maximo</h3>
-<p>A leading enterprise asset management platform used to manage assets, work, inventory, and maintenance execution across asset-intensive organizations.</p>
-</div>
-
-<div class="glossary-term">
 <h3>Asset Criticality</h3>
 <p>A method for ranking assets based on risk (safety, environment, production, cost). Criticality helps prioritize reliability work, PM optimization, spares strategy, and where Maximo data standards must be strongest.</p>
 </div>
