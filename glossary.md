@@ -22,6 +22,7 @@ permalink: /glossary/
   <a href="#B">B</a>
   <a href="#C">C</a>
   <a href="#D">D</a>
+  <a href="#E">E</a>
   <a href="#F">F</a>
   <a href="#K">K</a>
   <a href="#M">M</a>
@@ -74,6 +75,15 @@ permalink: /glossary/
 <div class="glossary-term">
 <h3>Data Governance</h3>
 <p>The standards, ownership, and routines that keep Maximo/EAM data accurate and consistent over time.</p>
+</div>
+
+<h2 id="E">E</h2>
+
+<div class="glossary-term">
+  <h3>Enterprise Asset Management (EAM)</h3>
+  <p>
+    A structured approach to managing physical assets from acquisition through retirement. EAM integrates work management, asset data, maintenance strategy, and lifecycle cost control to improve reliability, reduce risk, and support long-term operational performance.
+  </p>
 </div>
 
 <h2 id="F">F</h2>
