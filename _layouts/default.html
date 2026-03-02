@@ -105,26 +105,19 @@
       </div>
     </footer>
 
-    <!-- Email Tracking Script -->
-    <script>
-      (function () {
-        var a = document.getElementById("emailMaven");
-        if (!a) return;
+  <!-- Email Tracking Script -->
+<script>
+  (function () {
+    var a = document.getElementById("emailMaven");
+    if (!a) return;
 
-        var pageUrl = window.location.href;
+    var subject = "Maven inquiry - Asset Performance Management Insights";
 
-        var subject = "Maven inquiry - Asset Peformance Management Insights";
-
-        var body =
-          "Hi Maven,+
-          "I'm reaching out from the Maven content site.%0D%0A";
-
-        a.href =
-          "mailto:mas@mavenasset.com" +
-          "?subject=" + encodeURIComponent(subject) +
-          "&body=" + body;
-      })();
-    </script>
+    a.href =
+      "mailto:mas@mavenasset.com" +
+      "?subject=" + encodeURIComponent(subject);
+  })();
+</script>
 
   </body>
 </html>
