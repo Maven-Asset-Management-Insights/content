@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ page.title }} | {{ site.title }}</title>
+
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon.png' | relative_url }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon.png' | relative_url }}">
     <link rel="shortcut icon" href="{{ '/favicon.png' | relative_url }}">
-    <link rel="apple-touch-icon" href="{{ '/favicon.png' | relative_url }}"> 
+    <link rel="apple-touch-icon" href="{{ '/favicon.png' | relative_url }}">
 
-    <!-- Main stylesheet -->
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   </head>
 
@@ -19,7 +19,6 @@
     <header class="site-header">
       <div class="container header-inner">
 
-        <!-- Maven Logo -->
         <a class="brand" href="{{ "/" | relative_url }}">
           <img
             src="{{ "/assets/img/MavenAsset_Logo.png" | relative_url }}"
@@ -28,7 +27,6 @@
           />
         </a>
 
-        <!-- Navigation -->
         <nav class="nav">
           <a href="{{ "/" | relative_url }}">Home</a>
           <a href="{{ "/maven-insights" | relative_url }}">Maven Insights</a>
@@ -44,8 +42,8 @@
             About Maven
           </a>
 
-        <a class="email-btn" id="emailMaven" href="mailto:mas@mavenasset.com">
-          Email Maven
+          <a class="email-btn" id="emailMaven" href="mailto:mas@mavenasset.com">
+            Email Maven
           </a>
         </nav>
 
@@ -68,78 +66,67 @@
         <div class="footer-social">
 
           <!-- Facebook -->
-          <a href="https://www.facebook.com/mavenasset/"
-             target="_blank"
-             rel="noopener"
-             aria-label="Facebook">
+          <a href="https://www.facebook.com/mavenasset/" target="_blank" rel="noopener" aria-label="Facebook">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.8v-2.9h2.8V9.4c0-2.8 1.7-4.4 4.2-4.4 1.2 0 2.4.2 2.4.2v2.6h-1.4c-1.4 0-1.8.9-1.8 1.8v2.2h3.1l-.5 2.9h-2.6v7A10 10 0 0 0 22 12z"/>
             </svg>
           </a>
 
           <!-- Instagram -->
-          <a href="https://www.instagram.com/mavenasset/"
-             target="_blank"
-             rel="noopener"
-             aria-label="Instagram">
+          <a href="https://www.instagram.com/mavenasset/" target="_blank" rel="noopener" aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.32 4 20 5.68 20 7.75v8.5c0 2.07-1.68 3.75-3.75 3.75h-8.5C5.68 20 4 18.32 4 16.25v-8.5C4 5.68 5.68 4 7.75 4zm4.25 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.75-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"/>
             </svg>
           </a>
 
-          <!-- X (Twitter) -->
-          <a href="https://x.com/mavenasset"
-             target="_blank"
-             rel="noopener"
-             aria-label="X">
+          <!-- X -->
+          <a href="https://x.com/mavenasset" target="_blank" rel="noopener" aria-label="X">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M18.244 2H21.5l-7.25 8.29L22 22h-6.83l-5.34-6.99L3.5 22H.244l7.75-8.86L2 2h6.97l4.84 6.4L18.244 2z"/>
             </svg>
           </a>
 
           <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/company/maven-asset-management"
-             target="_blank"
-             rel="noopener"
-             aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/company/maven-asset-management" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1 4.98 2.12 4.98 3.5zM.5 8h4v15h-4V8zm7 0h3.8v2h.05c.53-1 1.82-2.05 3.75-2.05 4.01 0 4.75 2.64 4.75 6.08V23h-4v-7.5c0-1.79-.03-4.1-2.5-4.1-2.5 0-2.88 1.95-2.88 3.97V23h-4V8z"/>
             </svg>
           </a>
 
           <!-- YouTube -->
-          <a href="https://www.youtube.com/@mavenasset"
-             target="_blank"
-             rel="noopener"
-             aria-label="YouTube">
+          <a href="https://www.youtube.com/@mavenasset" target="_blank" rel="noopener" aria-label="YouTube">
             <svg viewBox="0 0 24 24" fill="currentColor">
               <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.75 15.5v-7l6 3.5-6 3.5z"/>
             </svg>
           </a>
 
-        </div> <!-- closes footer-social -->
+        </div>
 
-      </div> <!-- closes footer-inner -->
+      </div>
     </footer>
-<script>
-  (function () {
-    var a = document.getElementById("emailMaven");
-    if (!a) return;
 
-    var pageUrl = window.location.href;
+    <!-- Email Tracking Script -->
+    <script>
+      (function () {
+        var a = document.getElementById("emailMaven");
+        if (!a) return;
 
-    var subject = "Maven site inquiry (GitHub Pages content site)";
-    var body =
-      "Hi Maven,%0D%0A%0D%0A" +
-      "I'm reaching out from the Maven content site.%0D%0A" +
-      "Source page: " + encodeURIComponent(pageUrl) + "%0D%0A%0D%0A" +
-      "Message:%0D%0A";
+        var pageUrl = window.location.href;
 
-    a.href =
-      "mailto:mas@mavenasset.com" +
-      "?subject=" + encodeURIComponent(subject) +
-      "&body=" + body;
-  })();
-</script>
+        var subject = "Maven inquiry — " + window.location.pathname;
+
+        var body =
+          "Hi Maven,%0D%0A%0D%0A" +
+          "I'm reaching out from the Maven content site.%0D%0A" +
+          "Source page: " + encodeURIComponent(pageUrl) + "%0D%0A%0D%0A" +
+          "Message:%0D%0A";
+
+        a.href =
+          "mailto:mas@mavenasset.com" +
+          "?subject=" + encodeURIComponent(subject) +
+          "&body=" + body;
+      })();
+    </script>
+
   </body>
 </html>
