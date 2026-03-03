@@ -67,22 +67,6 @@ permalink: /field-kits/
 
   <section class="card">
     <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.8rem; opacity:.7; margin-bottom:8px;">
-      Field Kit
-    </div>
-    <h2 style="margin-top:0;">Work Order Quality Audit</h2>
-    <p>
-      A practical rubric and monthly cadence to improve work order quality so reliability insights and reporting are based on trusted data.
-    </p>
-    <div style="margin-top:12px; opacity:.8;">
-      Best for: Reliability leaders, planners, supervisors
-    </div>
-    <div style="margin-top:16px;">
-      <a class="button" href="{{ "/field-kits/work-order-quality-audit/" | relative_url }}">View kit</a>
-    </div>
-  </section>
-
-  <section class="card">
-    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.8rem; opacity:.7; margin-bottom:8px;">
       Customer Use Case
     </div>
     <h2 style="margin-top:0;">Maintenance Goes Mobile (Clarios)</h2>
