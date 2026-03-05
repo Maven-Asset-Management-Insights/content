@@ -17,7 +17,7 @@ tags:
   - digital-transformation
   - governance
 
-field_kit: true
+field_kit: /content/field-kits/maximo-upgrade-process/
 
 maximo_versions:
   mas:
