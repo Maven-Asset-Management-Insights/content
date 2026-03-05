@@ -1,10 +1,55 @@
 ---
-layout: default
+layout: post
 title: "Setting Reliability Programs Up for Success from the Start"
+subtitle: "Why reliability analysis begins with structured failure coding"
 date: 2026-02-12
-tags: [Maximo, Reliability, Asset Performance]
----
 
+categories:
+  - insights
+  - reliability
+  - maximo
+  - asset-performance
+
+tags:
+  - reliability
+  - failure-coding
+  - maximo
+  - data-governance
+  - asset-performance
+
+content_type: insight
+
+maximo_versions:
+  mas:
+    - "MAS 8+"
+    - "MAS 9+"
+  maximo:
+    - "7.6+"
+
+deployment_models:
+  - "MAS SaaS"
+  - "MAS On-Prem"
+  - "Maximo 7.6 On-Prem"
+
+reliability_topics:
+  - "failure coding"
+  - "failure modes"
+  - "reliability analysis"
+  - "MTBF analysis"
+  - "Weibull analysis"
+  - "preventive maintenance optimization"
+
+related_glossary:
+  - failure-code
+  - failure-mode
+  - reliability-strategy
+  - asset-performance
+  - root-cause-analysis
+
+reading_time: 5
+
+last_validated: 2026-02-12
+---
 ## Setting Reliability Programs Up for Success from the Start
 
 Organizations often invest in dashboards, KPIs, and analytics tools expecting reliability insights to follow.
