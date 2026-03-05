@@ -69,3 +69,26 @@ The real question isn’t whether the upgrade worked. It’s whether the work im
 At Maven Asset Management, we help organizations align MAS upgrades with execution and asset performance outcomes before and after go-live, ensuring stability leads to measurable operational improvement.
 
 Because reliability isn’t achieved at deployment. It’s proven in execution.
+
+## Put This Into Practice
+
+If you're planning a Maximo Application Suite upgrade, the key question is not just whether the platform will run — it's whether execution will improve.
+
+Many organizations complete technically successful upgrades only to discover that the underlying workflows, data standards, and decision practices remain unchanged. The system is newer, but the operational outcomes stay the same.
+
+To help leadership teams avoid this trap, we created a practical framework that aligns MAS upgrades with business outcomes and operational execution.
+
+👉 **Field Kit:** [The Maximo Upgrade Process](/content/field-kits/maximo-upgrade-process/)
+
+This field kit provides a structured roadmap for:
+
+- Assessing the current Maximo environment and operational baseline  
+- Defining upgrade success in business terms  
+- Planning technical and operational workstreams  
+- Reducing integration and configuration risk  
+- Structuring testing around real workflows  
+- Driving adoption through training and governance  
+- Capturing continuous improvement after go-live
+
+Upgrades deliver real value when they improve execution, not just software versions.  
+This framework helps ensure your upgrade does both.
