@@ -1,20 +1,36 @@
 ---
 layout: post
-title: "Maximizing MAS Upgrades to Drive Real Results"
+title: "Maximizing MAS Upgrades to Drive Real Results"
 subtitle: "Why technical success isn’t the same as operational impact"
 date: 2026-02-18
-categories: insights maximo mas upgrades
+
+categories:
+  - insights
+  - maximo
+  - mas
+  - upgrades
+
+tags:
+  - MAS
+  - Maximo
+  - upgrades
+  - digital-transformation
+  - governance
+
 field_kit: true
+
 maximo_versions:
   mas:
     - "MAS 8.10+"
     - "MAS 9.0+"
   maximo:
     - "7.6.1.2+"
+
 deployment_models:
   - "MAS SaaS"
   - "MAS On-Prem"
   - "Maximo 7.6 On-Prem"
+
 last_validated: 2026-02-18
 ---
 
