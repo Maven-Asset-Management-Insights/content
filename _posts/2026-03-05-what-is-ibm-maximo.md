@@ -86,6 +86,14 @@ Organizations use Maximo to enhance asset control and visibility, driven by seve
 - **Creating a Single Source of Truth**  
   Maximo consolidates operational data, supporting reporting, compliance, and strategic decision-making.
 
+<div style="border:1px solid #ddd; padding:20px; margin:30px 0; background:#f8f8f8;">
+  <strong>Quick Overview:</strong> Why organizations use IBM Maximo.
+  <br><br>
+  <a href="/content/assets/Maven-Why-Use-Maximo.pdf" download>
+  Download the PDF →
+  </a>
+</div>
+
 ## Maximo and Reliability Strategy
 
 Maximo’s value is maximized when paired with disciplined asset management practices such as:
