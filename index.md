@@ -43,7 +43,7 @@ search: false
   </ul>
 
   <div class="card-cta">
-    <a class="button" href="{{ "/glossary" | relative_url }}">View glossary</a>
+    <a class="button" href="{{ "/glossary" | relative_url }}">View full glossary</a>
   </div>
 </section>
 
