@@ -33,7 +33,6 @@ search: false
   <ul>
     <li><a href="{{ '/glossary/#asset-criticality' | relative_url }}">Asset Criticality</a></li>
     <li><a href="{{ '/glossary/#asset-health-index-ahi' | relative_url }}">Asset Health Index (AHI)</a></li>
-    <li><a href="{{ '/glossary/#asset-hierarchy' | relative_url }}">Asset Hierarchy</a></li>
     <li><a href="{{ '/glossary/#asset-performance' | relative_url }}">Asset Performance</a></li>
     <li><a href="{{ '/glossary/#condition-based-maintenance-cbm' | relative_url }}">Condition-Based Maintenance (CBM)</a></li>
     <li><a href="{{ '/glossary/#enterprise-asset-management-eam' | relative_url }}">Enterprise Asset Management (EAM)</a></li>
