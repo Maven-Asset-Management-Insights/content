@@ -2,6 +2,8 @@
 layout: default
 title: Glossary
 permalink: /glossary/
+categories: - glossary
+search: true
 ---
 
 <section class="hero">
