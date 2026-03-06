@@ -36,6 +36,11 @@ search: false
     <li><a href="{{ '/glossary/#asset-hierarchy' | relative_url }}">Asset Hierarchy</a></li>
     <li><a href="{{ '/glossary/#asset-lifecycle-cost' | relative_url }}">Asset Lifecycle Cost</a></li>
     <li><a href="{{ '/glossary/#asset-performance' | relative_url }}">Asset Performance</a></li>
+    <li><a href="{{ '/glossary/#enterprise-asset-management-eam' | relative_url }}">Enterprise Asset Management (EAM)</a></li>
+    <li><a href="{{ '/glossary/#failure-code' | relative_url }}">Failure Code</a></li>
+    <li><a href="{{ '/glossary/#failure-mode' | relative_url }}">Failure Mode</a></li>
+    <li><a href="{{ '/glossary/#condition-based-maintenance-cbm' | relative_url }}">Condition-Based Maintenance (CBM)</a></li>
+    <li><a href="{{ '/glossary/#predictive-maintenance-pdm' | relative_url }}">Predictive Maintenance (PdM)</a></li>
   </ul>
 
   <div class="card-cta">
