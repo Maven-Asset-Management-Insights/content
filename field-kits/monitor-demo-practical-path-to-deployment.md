@@ -26,7 +26,7 @@ This field kit outlines a practical path from demonstration to deployment.
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 24px 0;">
   <iframe 
-    src="https://www.youtube.com/watch?v=_9-HVZwddaI"
+    src="https://www.youtube.com/embed/_9-HVZwddaI"
     title="Monitor Demo and Practical Path to Deployment"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
