@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Monitor Demo and Practical Path to Deployment"
+title: "Maximo Application Suite Monitor Demo and Practical Path to Deployment"
 permalink: /field-kits/monitor-demo-practical-path-to-deployment/
 description: "A practical guide to moving from a Maximo Monitor demonstration to a deployment that delivers measurable operational value."
 category: field-kits
@@ -8,7 +8,7 @@ date: 2026-03-06
 ---
 
 <section class="hero">
-  <h1>Monitor Demo and Practical Path to Deployment</h1>
+  <h1>Maximo Application Suite Monitor Demo and Practical Path to Deployment</h1>
   <p><strong>How organizations move from a compelling Maximo Monitor demo to a deployment that delivers operational value.</strong></p>
 </section>
 
