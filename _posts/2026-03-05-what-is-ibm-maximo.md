@@ -49,7 +49,6 @@ reading_time: 7
 
 last_validated: 2026-03-05
 ---
-## What Is IBM Maximo?
 
 IBM Maximo is a leading [Enterprise Asset Management (EAM)](/content/glossary/#enterprise-asset-management-eam) platform that helps organizations manage complex physical infrastructure. It enables structured control over assets, maintenance activities, and operational data throughout the asset lifecycle, from installation to replacement. When implemented effectively, Maximo serves as a foundation for improving [asset performance](/content/glossary/#asset-performance), operational visibility, and strategic decision-making. platform that helps organizations manage complex physical infrastructure. It enables structured control over assets, maintenance activities, and operational data throughout the asset lifecycle, from installation to replacement. When implemented effectively, Maximo serves as a foundation for improving [asset performance](/content/glossary/#asset-performance), operational visibility, and strategic decision-making.
 
