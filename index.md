@@ -14,7 +14,7 @@ search: false
     <h2>Latest Insights</h2>
     <p>Maven perspectives on Maximo, reliability strategy, and asset performance.</p>
     <ul>
-      {% for post in site.posts limit:3 %}
+      {% for post in site.posts limit:5 %}
         <li>
           <strong>{{ post.date | date: "%B %-d, %Y" }}:</strong>
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
