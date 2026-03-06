@@ -26,14 +26,22 @@ search: false
     </div>
   </section>
 
-  <section class="card">
-    <h2>Glossary</h2>
-    <p>A growing set of leadership-level definitions for Maximo and EAM concepts.</p>
+ <section class="card">
+  <h2>Glossary</h2>
+  <p>A growing set of leadership-level definitions for Maximo and EAM concepts.</p>
 
-    <div class="card-cta">
-      <a class="button" href="{{ "/glossary" | relative_url }}">View glossary</a>
-    </div>
-  </section>
+  <ul>
+    <li><a href="{{ '/glossary/#asset-criticality' | relative_url }}">Asset Criticality</a></li>
+    <li><a href="{{ '/glossary/#asset-health-index-ahi' | relative_url }}">Asset Health Index (AHI)</a></li>
+    <li><a href="{{ '/glossary/#asset-hierarchy' | relative_url }}">Asset Hierarchy</a></li>
+    <li><a href="{{ '/glossary/#asset-lifecycle-cost' | relative_url }}">Asset Lifecycle Cost</a></li>
+    <li><a href="{{ '/glossary/#asset-performance' | relative_url }}">Asset Performance</a></li>
+  </ul>
+
+  <div class="card-cta">
+    <a class="button" href="{{ "/glossary" | relative_url }}">View glossary</a>
+  </div>
+</section>
 
   <section class="card">
     <h2>Field Kits &amp; Tools</h2>
