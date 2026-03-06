@@ -1,7 +1,10 @@
 ---
-layout: default
-title: Monitor Demo and Practical Path to Deployment
-permalink: /content/field-kits/monitor-demo-practical-path-to-deployment/
+layout: page
+title: "Monitor Demo and Practical Path to Deployment"
+permalink: /field-kits/monitor-demo-practical-path-to-deployment/
+description: "A practical guide to moving from a Maximo Monitor demonstration to a deployment that delivers measurable operational value."
+category: field-kits
+date: 2026-03-06
 ---
 
 <section class="hero">
