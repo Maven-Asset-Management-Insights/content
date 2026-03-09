@@ -468,59 +468,34 @@ main.container {
   line-height: 1.65;
 }
 <style>
-  .glossary-nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 12px 0;
-    margin: 0 0 24px 0;
-    background: #fff;
-    border-bottom: 1px solid var(--border);
-  }
+ .glossary-nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 0;
+  margin: 0 0 24px 0;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
 
-  .glossary-nav a {
-    display: inline-block;
-    min-width: 28px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 600;
-    color: inherit;
-    padding: 4px 6px;
-    border-radius: 6px;
-    transition: background 0.2s ease, color 0.2s ease;
-  }
+.glossary-nav a {
+  display: inline-block;
+  min-width: 28px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
 
- <style>
-  .glossary-nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 12px 0;
-    margin: 0 0 24px 0;
-    background: #fff;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .glossary-nav a {
-    display: inline-block;
-    min-width: 28px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 600;
-    color: inherit;
-    padding: 4px 6px;
-    border-radius: 6px;
-  }
-
-  .glossary h2,
-  .glossary-term h3,
-  #top {
-    scroll-margin-top: 90px;
-  }
+.glossary h2,
+.glossary-term h3,
+#top {
+  scroll-margin-top: 90px;
+}
 </style>
