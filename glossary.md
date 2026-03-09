@@ -283,13 +283,13 @@ search: true
 </div>
 
 <div class="glossary-term">
-<h3 id="internet-of-things-iot">Internet of Things (IoT)</h3>
-<p>A network of physical devices, sensors, and connected equipment that collect and transmit data over communication networks. In asset management environments such as IBM Maximo, IoT technologies enable organizations to monitor asset condition, track operational performance, and capture real-time data from equipment. This information supports condition monitoring, predictive maintenance, and improved operational decision-making.</p>
+<h3 id="it-service-management">IT Service Management (ITSM)</h3>
+<p>A structured approach for designing, delivering, operating, and improving IT services to support organizational outcomes. ITSM focuses on managing service requests, incidents, changes, assets, and service performance through defined workflows, governance, and service level agreements.</p>
 </div>
 
 <div class="glossary-term">
-<h3 id="it-service-management">IT Service Management (ITSM)</h3>
-<p>A structured approach for designing, delivering, operating, and improving IT services to support organizational outcomes. ITSM focuses on managing service requests, incidents, changes, assets, and service performance through defined workflows, governance, and service level agreements.</p>
+<h3 id="internet-of-things-iot">Internet of Things (IoT)</h3>
+<p>A network of physical devices, sensors, and connected equipment that collect and transmit data over communication networks. In asset management environments such as IBM Maximo, IoT technologies enable organizations to monitor asset condition, track operational performance, and capture real-time data from equipment. This information supports condition monitoring, predictive maintenance, and improved operational decision-making.</p>
 </div>
 
 <h2 id="J">J</h2>
