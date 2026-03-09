@@ -214,6 +214,11 @@ search: true
 <p>Tracking asset condition indicators such as vibration, temperature, or oil analysis.</p>
 </div>
 
+<div class="glossary-term">
+<h3 id="corrective-maintenance-cm">Corrective Maintenance (CM)</h3>
+<p>A work order type in IBM Maximo used to perform maintenance that restores an asset after a fault, defect, or failure has been identified. Corrective maintenance addresses issues discovered through inspections, monitoring, or operational reports and focuses on returning the asset to normal operating condition. In reliability programs, corrective work is typically planned and scheduled when possible to prevent minor issues from escalating into reactive or emergency failures.</p>
+</div>
+
 <h2 id="D">D</h2>
 
 <div class="glossary-term">
