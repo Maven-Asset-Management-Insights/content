@@ -277,6 +277,13 @@ search: true
 <p>The process of balancing spare parts availability with carrying costs.</p>
 </div>
 
+<h2 id="J">J</h2>
+
+<div class="glossary-term">
+<h3 id="job-plan">Job Plan</h3>
+<p>A reusable template in IBM Maximo that defines the standard steps, labor requirements, tools, materials, and safety procedures needed to perform a specific maintenance task. Job plans improve consistency, reduce planning time, and support more accurate scheduling and resource estimation across maintenance operations.</p>
+</div>
+
 <div class="glossary-term">
 <h3 id="it-service-management">IT Service Management (ITSM)</h3>
 <p>A structured approach for designing, delivering, operating, and improving IT services to support organizational outcomes. ITSM focuses on managing service requests, incidents, changes, assets, and service performance through defined workflows, governance, and service level agreements.</p>
