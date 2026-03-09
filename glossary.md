@@ -230,7 +230,12 @@ search: true
 </div>
 
 <div class="glossary-term">
-<h3 id="pm-compliance">PM Compliance</h3>
+<h3 id="preventive-maintenance-pm">Preventive Maintenance (PM)</h3>
+<p>A maintenance strategy that schedules inspections, servicing, or component replacements at defined time or usage intervals to reduce the likelihood of asset failure and maintain reliable operation.</p>
+</div>
+
+<div class="glossary-term">
+<h3 id="pm-compliance">Preventive Maintenance (PM) Compliance</h3>
 <p>A measure of whether preventive maintenance work is completed as planned.</p>
 </div>
 
