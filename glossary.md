@@ -93,7 +93,7 @@ search: true
 
 <div class="glossary-term">
 <h3 id="backlog-health">Backlog Health</h3>
-<p>A view of whether the maintenance backlog is manageable and prioritized.</p>
+<p>An indicator of how well maintenance work is prioritized, planned, and manageable within available resources, ensuring that critical reliability work can be scheduled and completed without excessive delays.</p>
 </div>
 
 <div class="glossary-term">
