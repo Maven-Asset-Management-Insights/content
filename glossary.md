@@ -161,6 +161,11 @@ search: true
 </div>
 
 <div class="glossary-term">
+<h3 id="asset-maximo">Asset</h3>
+<p>In IBM Maximo, an asset is a physical piece of equipment or infrastructure that an organization owns, operates, and maintains. Assets are tracked as individual records within the system and include identifying information, location, hierarchy placement, maintenance history, and operational data. Managing assets in Maximo enables organizations to monitor performance, plan maintenance activities, analyze failures, and manage the asset throughout its lifecycle from installation to retirement.</p>
+</div>
+
+<div class="glossary-term">
 <h3 id="asset-criticality">Asset Criticality</h3>
 <p>A method for ranking assets based on risk (safety, environment, production, cost). Criticality helps prioritize reliability work, PM optimization, spares strategy, and where Maximo data standards must be strongest.</p>
 </div>
