@@ -282,6 +282,11 @@ search: true
 <p>The process of balancing spare parts availability with carrying costs.</p>
 </div>
 
+<div class="glossary-term">
+<h3 id="internet-of-things-iot">Internet of Things (IoT)</h3>
+<p>A network of physical devices, sensors, and connected equipment that collect and transmit data over communication networks. In asset management environments such as IBM Maximo, IoT technologies enable organizations to monitor asset condition, track operational performance, and capture real-time data from equipment. This information supports condition monitoring, predictive maintenance, and improved operational decision-making.</p>
+</div>
+
 <h2 id="J">J</h2>
 
 <div class="glossary-term">
