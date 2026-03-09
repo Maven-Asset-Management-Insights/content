@@ -20,8 +20,7 @@ search: true
   </p>
 </div>
 
-<div id="top"></div>
-<nav class="glossary-nav" aria-label="Glossary index">
+<nav id="top" class="glossary-nav" aria-label="Glossary index">
   <a href="#A">A</a>
   <a href="#B">B</a>
   <a href="#C">C</a>
