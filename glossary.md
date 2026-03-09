@@ -300,4 +300,8 @@ search: true
 <p>How consistently teams capture the information needed at completion.</p>
 </div>
 
+<div class="glossary-term">
+<h3 id="maximo-work-type">Work Type</h3>
+<p>A classification in IBM Maximo used to categorize different kinds of work orders, such as preventive maintenance, corrective maintenance, inspections, or capital work. Work types help organizations organize maintenance activities, apply appropriate workflows, and support reporting on how maintenance resources are being used.</p>
+</div>
 </div>
