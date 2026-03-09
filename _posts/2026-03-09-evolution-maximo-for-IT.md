@@ -1,4 +1,55 @@
-<!DOCTYPE html>
+---
+layout: post
+title: "The Evolution of Maximo for IT"
+subtitle: "From IBM Control Desk to Maximo Application Suite and what it means for modern IT service management"
+date: 2026-03-09
+
+categories:
+  - insights
+  - maximo
+  - itsm
+  - digital-transformation
+
+tags:
+  - maximo
+  - ibm-control-desk
+  - maximo-application-suite
+  - itsm
+  - it-asset-management
+  - apppoints
+
+content_type: insight
+
+maximo_versions:
+  mas:
+    - "MAS 8+"
+    - "MAS 9+"
+  maximo:
+    - "7.6+"
+
+deployment_models:
+  - "MAS SaaS"
+  - "MAS On-Prem"
+  - "Maximo 7.6 On-Prem"
+
+reliability_topics:
+  - "it service management"
+  - "it asset management"
+  - "service workflows"
+  - "platform governance"
+  - "enterprise service management"
+
+related_glossary:
+  - ibm-control-desk
+  - maximo-application-suite
+  - apppoints-licensing
+  - it-service-management
+  - it-asset-management
+
+reading_time: 6
+
+last_validated: 2026-03-09
+---<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
