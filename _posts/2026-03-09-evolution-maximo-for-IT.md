@@ -59,7 +59,7 @@ IBM’s IT service management capabilities — commonly known as [IBM Control De
 
 Understanding this history is not just interesting background. It often determines whether modernization efforts become smooth migrations or disruptive transformations.
 
-![Evolution of Maximo for IT](/content/assets/maximo-for-it-evolution.png)
+![Evolution of Maximo for IT](/content/assets/img/maximo-for-it-evolution.png)
 
 ## Control Desk and Maximo Have Evolved Together
 
