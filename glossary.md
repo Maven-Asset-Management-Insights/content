@@ -19,8 +19,8 @@ search: true
     A leading enterprise asset management platform used to manage assets, work, inventory, and maintenance execution across asset-intensive organizations.
   </p>
 </div>
-
-<nav class="glossary-nav">
+<div id="top"></div>
+<nav class="glossary-nav" aria-label="Glossary index">
   <a href="#A">A</a>
   <a href="#B">B</a>
   <a href="#C">C</a>
