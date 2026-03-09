@@ -144,6 +144,11 @@ search: true
 <h2 id="I">I</h2>
 
 <div class="glossary-term">
+<h3 id="ibm-control-desk">IBM Control Desk</h3>
+<p>An IBM platform for IT service management and IT asset management that operated as a separate product within the broader Maximo ecosystem before related capabilities returned within the Maximo Application Suite.</p>
+</div>
+
+<div class="glossary-term">
 <h3 id="inventory-optimization">Inventory Optimization</h3>
 <p>The process of balancing spare parts availability with carrying costs.</p>
 </div>
