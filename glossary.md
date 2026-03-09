@@ -21,13 +21,82 @@ search: true
 </div>
 
 <style>
-.glossary-nav {
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 9999 !important;
-  background: yellow !important;
-  border: 3px solid red !important;
-}
+  .glossary-nav {
+    position: sticky;
+    top: 12px;
+    z-index: 9999;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 22px 0 28px;
+    padding: 14px 16px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(41, 44, 117, 0.10);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .glossary-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 34px;
+    height: 34px;
+    padding: 0 10px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--maven-blue-deep);
+    background: #eef3fb;
+    border: 1px solid transparent;
+    transition:
+      background 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease,
+      transform 0.15s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .glossary-nav a:hover,
+  .glossary-nav a:focus-visible {
+    background: var(--maven-blue-primary);
+    color: #ffffff;
+    border-color: var(--maven-blue-primary);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(62, 103, 177, 0.22);
+    outline: none;
+  }
+
+  .glossary-nav a.active {
+    background: var(--maven-blue-deep);
+    color: #ffffff;
+    border-color: var(--maven-blue-deep);
+    box-shadow: 0 6px 14px rgba(41, 44, 117, 0.22);
+  }
+
+  .glossary h2,
+  .glossary-term h3,
+  #top {
+    scroll-margin-top: 95px;
+  }
+
+  @media (max-width: 640px) {
+    .glossary-nav {
+      top: 8px;
+      padding: 12px;
+      gap: 6px;
+    }
+
+    .glossary-nav a {
+      min-width: 30px;
+      height: 30px;
+      font-size: 12px;
+      padding: 0 8px;
+    }
+  }
 </style>
 
 <nav id="top" class="glossary-nav" aria-label="Glossary index">
