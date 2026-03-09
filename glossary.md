@@ -20,6 +20,16 @@ search: true
   </p>
 </div>
 
+<style>
+.glossary-nav {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+  background: yellow !important;
+  border: 3px solid red !important;
+}
+</style>
+
 <nav id="top" class="glossary-nav" aria-label="Glossary index">
   <a href="#A">A</a>
   <a href="#B">B</a>
