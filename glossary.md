@@ -402,6 +402,11 @@ search: true
 </div>
 
 <div class="glossary-term">
+<h3 id="work-order-wo">Work Order (WO)</h3>
+<p>A structured record in IBM Maximo used to plan, authorize, execute, and document maintenance work. Work orders track labor, materials, tools, failure information, and completion details, providing a central mechanism for managing maintenance activities and maintaining asset history. Effective work order management supports reliability analysis, maintenance planning, and operational accountability.</p>
+</div>
+
+<div class="glossary-term">
 <h3 id="work-order-closeout-quality">Work Order Closeout Quality</h3>
 <p>How consistently teams capture the information needed at completion.</p>
 </div>
