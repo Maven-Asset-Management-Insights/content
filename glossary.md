@@ -153,6 +153,11 @@ search: true
 <p>The process of balancing spare parts availability with carrying costs.</p>
 </div>
 
+<div class="glossary-term">
+<h3 id="it-service-management">IT Service Management (ITSM)</h3>
+<p>A structured approach for designing, delivering, operating, and improving IT services to support organizational outcomes. ITSM focuses on managing service requests, incidents, changes, assets, and service performance through defined workflows, governance, and service level agreements.</p>
+</div>
+
 <h2 id="K">K</h2>
 
 <div class="glossary-term">
