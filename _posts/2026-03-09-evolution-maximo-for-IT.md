@@ -49,12 +49,7 @@ related_glossary:
 reading_time: 6
 
 last_validated: 2026-03-09
----<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+---
   <title>The Evolution of Maximo for IT: From IBM Control Desk to Maximo Application Suite | Maven Asset Management</title>
   <meta name="description" content="Learn how IBM Control Desk evolved into Maximo Application Suite and what that means for Maximo for IT, ITSM design, AppPoints licensing, and modern migration planning." />
   <meta name="robots" content="index, follow" />
