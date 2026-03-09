@@ -42,6 +42,11 @@ search: true
 <h2 id="A">A</h2>
 
 <div class="glossary-term">
+<h3 id="apppoints-licensing">AppPoints Licensing</h3>
+<p>A licensing model used in the Maximo Application Suite (MAS) where application usage consumes shared capacity units called AppPoints. Instead of licensing individual products separately, organizations allocate AppPoints across MAS applications such as Manage, Monitor, Health, and Visual Inspection based on actual usage and system activity.</p>
+</div>
+
+<div class="glossary-term">
 <h3 id="asset-criticality">Asset Criticality</h3>
 <p>A method for ranking assets based on risk (safety, environment, production, cost). Criticality helps prioritize reliability work, PM optimization, spares strategy, and where Maximo data standards must be strongest.</p>
 </div>
