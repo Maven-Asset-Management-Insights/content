@@ -178,6 +178,11 @@ search: true
 </div>
 
 <div class="glossary-term">
+<h3 id="maximo-application-suite">Maximo Application Suite (MAS)</h3>
+<p>A modern platform that extends IBM Maximo with integrated applications for asset management, monitoring, predictive analytics, and operational intelligence. MAS brings capabilities such as condition monitoring, visual inspection, and advanced analytics together with Maximo’s core EAM functionality, using a shared architecture and AppPoints licensing model.</p>
+</div>
+
+<div class="glossary-term">
 <h3 id="mtbf">Mean Time Between Failures (MTBF)</h3>
 <p>A reliability metric representing the average time between failures.</p>
 </div>
