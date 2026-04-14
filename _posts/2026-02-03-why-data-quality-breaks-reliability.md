@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why Data Quality Breaks Reliability in Maximo (and What to Fix First)"
+title: "How Data Quality Impacts Reliability in Maximo (and What to Improve First)"
 date: 2026-02-03
 categories: [Maximo, Data Quality, Reliability]
 series: maximo-data-quality-reliability
