@@ -83,4 +83,4 @@ When that alignment exists, it becomes a powerful tool for understanding perform
 
 It is one of the clearest examples of how strengthening data quality directly supports better outcomes.
 
-👉 [See how data quality connects to reliability overall](../03/why-data-quality-breaks-reliability.html)
+👉 [Why Data Quality Breaks Reliability in Maximo](../03/why-data-quality-breaks-reliability.html)
