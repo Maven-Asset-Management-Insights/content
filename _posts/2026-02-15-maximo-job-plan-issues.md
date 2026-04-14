@@ -3,6 +3,7 @@ layout: post
 title: "Keeping Job Plans in Maximo Aligned with Real Work"
 date: 2026-02-15
 categories: [Maximo, Data Quality, Reliability]
+series: maximo-data-quality-reliability
 tags: [Maximo, job plans, maintenance planning, data quality]
 description: "Job plans in Maximo are most effective when they stay aligned with real work. Learn how to keep them accurate and useful over time."
 permalink: /content/2026/02/15/maximo-job-plan-issues.html
