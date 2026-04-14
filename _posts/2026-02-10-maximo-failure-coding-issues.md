@@ -2,6 +2,7 @@
 layout: post
 title: "How to Improve Failure Coding in Maximo for Better Reliability Insights"
 date: 2026-02-10
+series: maximo-data-quality-reliability
 categories: [Maximo, Data Quality, Reliability]
 tags: [Maximo, failure coding, data quality, reliability, root cause]
 description: "Failure coding in Maximo can become a powerful source of insight when applied consistently. Learn how to strengthen it for better reliability outcomes."
