@@ -1,86 +1,145 @@
 ---
-layout: default
-title: "Why Data Quality Is the Silent Killer of Reliability Programs"
+layout: post
+title: "Why Data Quality Breaks Reliability in Maximo (and What to Fix First)"
 date: 2026-02-03
-tags: [Maximo, Reliability, Data, Asset Performance]
+categories: [Maximo, Data Quality, Reliability]
+tags: [Maximo, data quality, reliability, asset management, EAM]
+description: "Poor data quality in Maximo does not just affect reporting. It breaks reliability. Learn the most common data failure patterns and what to fix first."
+permalink: /content/2026/02/03/why-data-quality-breaks-reliability.html
 ---
 
-## Executive Takeaway
-Reliability programs don’t fail because teams don’t care.  
-They fail because decision-makers stop trusting the data.
+# Why Data Quality Breaks Reliability in Maximo (and What to Fix First)
 
-When data credibility erodes, reliability becomes guesswork—no matter how good the tools are.
+Most organizations do not struggle to collect data in Maximo. They struggle to **trust it**.
 
----
+If you are thinking about how Maximo data can become a true competitive advantage, we have explored that here:  
+👉 [Maximo Data Into a Competitive Advantage](https://www.mavenasset.com/blog/maximo-data-into-a-competitive-advantage/)
 
-## The Hidden Problem in Most Maximo Environments
-Most organizations technically *have* the data they need:
-- work history
-- failure codes
-- downtime records
-- PM compliance
+Before data can drive better decisions, planning, and performance, it must first survive a more basic challenge: **day-to-day operational reality**.
 
-The issue is not availability.  
-It’s **confidence**.
+This is where things usually break.
 
-Leaders quietly stop using reports when:
-- failure descriptions are inconsistent
-- downtime is optional or estimated
-- work orders are closed without meaningful detail
-- asset hierarchies don’t reflect reality
+Data quality in Maximo directly impacts reliability. When data is inconsistent, incomplete, or misaligned with actual work, it does not just create reporting issues. It also undermines planning, decision-making, and asset performance.
 
-At that point, reliability discussions revert to opinion.
+These problems are not random. They follow predictable patterns.
+
+This article focuses on that side of the equation:  
+**why data quality breaks down in real environments and what that does to reliability.**
 
 ---
 
-## Why Data Quality Is a Leadership Issue
-Data quality is often treated as a technical or clerical problem.
+## Data Does Not Fail Randomly. It Fails in Patterns.
 
-In reality, it reflects:
-- what leaders choose to enforce
-- what standards are optional
-- what behaviors are tolerated during closeout
+Poor data quality rarely results from a single mistake. It stems from systemic breakdowns in how data is created, managed, and maintained.
 
-Maximo only reflects the discipline of the organization using it.
+Over time, small inconsistencies compound:
 
----
+- Different naming conventions across teams  
+- Incomplete or optional fields  
+- Workarounds to “get the job done”  
+- Lack of enforcement around standards  
 
-## What High-Performing Organizations Do
-Organizations with reliable data share three characteristics:
-
-### 1. Clear Definitions
-Everyone agrees on what:
-- “failure” means
-- “downtime” means
-- “complete work order” means
-
-### 2. Enforced Closeout Standards
-Work orders are not considered complete until:
-- failure codes are populated
-- asset impacts are recorded
-- labor and materials are accurate
-
-### 3. Regular Data Reviews
-Data quality is reviewed routinely, not just during audits or projects.
+Individually, these issues may seem minor. Collectively, they make the system unreliable.
 
 ---
 
-## Why This Matters for Asset Performance
-Reliable data enables:
-- meaningful reliability analysis
-- targeted PM optimization
-- defensible capital planning
-- confidence in asset health indicators
+## Where Data Quality Breaks Down in Real Environments
 
-Without it, reliability strategy stalls.
+In most Maximo environments, data issues originate from a few common conditions:
 
----
+- No clear ownership of data standards  
+- Inconsistent processes across sites or teams  
+- Over-customization of fields and workflows  
+- Limited validation or enforcement at the point of entry  
 
-## Maven Perspective
-Data quality improves when standards are simple, visible, and consistently enforced.
-
-The goal is not perfect data.  
-The goal is **trusted data**.
+The result is a system that reflects how people work around processes rather than how work is actually performed.
 
 ---
 
+## The Most Common Failure Points in Maximo Data
+
+### Duplicate and Fragmented Asset Records
+
+Assets are often created multiple times under slightly different names or structures. This fragments history and makes it difficult to track true performance.
+
+### Inconsistent Naming and Classification
+
+Without standardized naming conventions, searching, reporting, and grouping assets becomes unreliable.
+
+### Failure Codes That Do Not Reflect Actual Work
+
+Failure data is often vague, inconsistent, or skipped entirely, making root cause analysis nearly impossible.
+
+### Job Plans That Do Not Match Execution
+
+Planned work and actual work often diverge over time, reducing the usefulness of job plans for planning and forecasting.
+
+---
+
+## Why Bad Data Disrupts Reliability (Not Just Reporting)
+
+Data quality issues do not just affect dashboards. They directly impact reliability.
+
+When data is unreliable:
+
+- Failure trends cannot be trusted  
+- Preventive maintenance cannot be optimized  
+- Planning becomes reactive instead of proactive  
+- KPIs lose credibility  
+
+Reliability depends on accurate, structured, and consistent data. Without it, even experienced teams are forced to rely on guesswork.
+
+---
+
+## Why These Problems Persist in Most Organizations
+
+Most teams are aware of data quality issues, but they persist because the root causes are not addressed.
+
+Common reasons include:
+
+- No defined ownership for data quality  
+- Lack of enforcement of standards  
+- Disconnect between operations and system design  
+- Pressure to prioritize speed over accuracy  
+
+Without clear accountability and governance, data quality issues continue to compound, preventing organizations from reaching the point where data can be used strategically.
+
+---
+
+## What to Fix First: A Practical Starting Point
+
+Improving data quality does not require a complete system overhaul. It starts with a few foundational steps:
+
+- Establish standard naming conventions  
+- Define and enforce required data fields  
+- Improve failure coding structure and usage  
+- Align job plans with actual work execution  
+- Assign clear ownership for data quality  
+
+These changes create consistency, which is the foundation for reliable data.
+
+---
+
+## From Cleanup to Confidence
+
+Data quality problems in Maximo rarely stem from the system itself. They result from unclear standards, inconsistent execution, and lack of ownership.
+
+When those gaps exist, reliability suffers not because teams lack effort, but because they lack trustworthy inputs for decision-making. Planning becomes reactive, failure trends become unclear, and KPIs lose meaning.
+
+The organizations that break out of this cycle do not start with advanced analytics or new tools. They start with fundamentals:
+
+- Clear data standards  
+- Consistent structures  
+- Defined ownership  
+- Disciplined execution  
+
+Once those are in place, data stops being noise and becomes a reliable foundation for action.
+
+That is the point where the conversation shifts from fixing data issues to actually **using data as a competitive advantage**.
+
+If you want to explore what that looks like at a strategic level, start here:  
+👉 [Maximo Data Into a Competitive Advantage](https://www.mavenasset.com/blog/maximo-data-into-a-competitive-advantage/)
+
+---
+
+*This article is part of the Maven Asset Management Insights series on Maximo data quality and reliability.*
