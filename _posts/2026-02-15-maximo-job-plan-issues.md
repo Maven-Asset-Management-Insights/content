@@ -8,8 +8,6 @@ description: "Job plans in Maximo are most effective when they stay aligned with
 permalink: /content/2026/02/15/maximo-job-plan-issues.html
 ---
 
-# Keeping Job Plans in Maximo Aligned with Real Work
-
 Job plans are designed to bring consistency to how work is performed in Maximo.
 
 They define:
