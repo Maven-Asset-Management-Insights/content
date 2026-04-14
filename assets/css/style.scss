@@ -524,3 +524,49 @@ main.container {
   text-transform: uppercase;
   opacity: 0.6;
 }
+.post-nav-cards {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.post-card {
+  flex: 1;
+  display: block;
+  padding: 1.25rem 1.4rem;
+  border-radius: 10px;
+  text-decoration: none;
+  background: #f8f9fb;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.post-card:hover {
+  background: #ffffff;
+  border-color: #d1d5db;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.post-card__label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  margin-bottom: 0.4rem;
+}
+
+.post-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.4;
+}
+
+/* alignment */
+.post-card.prev {
+  text-align: left;
+}
+
+.post-card.next {
+  text-align: right;
+}
