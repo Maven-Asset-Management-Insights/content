@@ -3,6 +3,7 @@ layout: post
 title: "How Consistent Asset Hierarchies Improve Reliability in Maximo"
 date: 2026-02-12
 categories: [Maximo, Data Quality, Reliability]
+series: maximo-data-quality-reliability
 tags: [Maximo, asset hierarchy, data quality, asset structure]
 description: "Consistent asset hierarchies in Maximo create a strong foundation for reporting, planning, and reliability. Learn how to strengthen structure over time."
 permalink: /content/2026/02/12/maximo-asset-hierarchy-problems.html
