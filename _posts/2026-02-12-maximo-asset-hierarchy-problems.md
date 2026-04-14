@@ -8,8 +8,6 @@ description: "Consistent asset hierarchies in Maximo create a strong foundation 
 permalink: /content/2026/02/12/maximo-asset-hierarchy-problems.html
 ---
 
-# How Consistent Asset Hierarchies Improve Reliability in Maximo
-
 Asset hierarchies are the foundation of how data is structured in Maximo.
 
 When they are consistent and well-defined, they make it easier to understand performance, plan work, and improve reliability.
