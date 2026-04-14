@@ -501,4 +501,26 @@ main.container {
 #top {
   scroll-margin-top: 90px;
 }
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
 
+.post-nav__prev,
+.post-nav__next {
+  flex: 1;
+}
+
+.post-nav__next {
+  text-align: right;
+}
+
+.post-nav__label {
+  margin-bottom: 0.3rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
