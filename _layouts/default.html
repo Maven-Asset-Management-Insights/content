@@ -51,9 +51,9 @@
     </header>
 
     <!-- Page Content -->
-    <main class="container">
-      {{ content }}
-      <hr>
+  <main class="container">
+  {{ content }}
+  <hr>
 
 {% if page.series %}
   {% assign series_posts = site.posts | where: "series", page.series | sort: "date" %}
@@ -71,19 +71,19 @@
     <div class="post-nav__prev">
       {% if series_prev %}
         <p class="post-nav__label">Earlier in this series</p>
-        <a href="{{ series_prev.url }}">{{ series_prev.title }}</a>
+        <a href="{{ series_prev.url | relative_url }}">{{ series_prev.title }}</a>
       {% endif %}
     </div>
 
     <div class="post-nav__next">
       {% if series_next %}
         <p class="post-nav__label">Next in this series</p>
-        <a href="{{ series_next.url }}">{{ series_next.title }}</a>
+        <a href="{{ series_next.url | relative_url }}">{{ series_next.title }}</a>
       {% endif %}
     </div>
   </nav>
 {% endif %}
-    </main>
+</main>
 
     <!-- Footer -->
     <footer class="site-footer">
