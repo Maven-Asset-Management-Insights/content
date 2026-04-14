@@ -13,7 +13,7 @@ Failure coding has the potential to be one of the most valuable data points in M
 When applied consistently, it provides clear visibility into what is happening in the field and why. It supports better analysis, stronger decision-making, and more effective reliability improvements.
 
 If you have already seen how broader data quality impacts reliability, failure coding is one of the most important areas to strengthen:  
-👉 [Why Data Quality Breaks Reliability in Maximo](../03/why-data-quality-breaks-reliability.html)
+👉 [Why Data Quality Breaks Reliability in Maximo]({{ "/content/2026/02/03/why-data-quality-breaks-reliability.html" | relative_url }})
 
 ---
 
@@ -83,4 +83,4 @@ When that alignment exists, it becomes a powerful tool for understanding perform
 
 It is one of the clearest examples of how strengthening data quality directly supports better outcomes.
 
-👉 [Why Data Quality Breaks Reliability in Maximo](../03/why-data-quality-breaks-reliability.html)
+👉 [See how data quality connects to reliability overall]({{ "/content/2026/02/03/why-data-quality-breaks-reliability.html" | relative_url }})
