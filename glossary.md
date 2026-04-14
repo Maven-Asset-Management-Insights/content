@@ -154,371 +154,222 @@ search: true
 
 <h2 id="A">A</h2>
 
+<!-- ONLY showing content section updated; your header + styles remain unchanged -->
+
+<div class="glossary">
+
+<h2 id="A">A</h2>
+
 <div class="glossary-term">
 <h3 id="apppoints-licensing">AppPoints Licensing</h3>
-<p>A licensing model used in the Maximo Application Suite (MAS) where application usage consumes shared capacity units called AppPoints. Instead of licensing individual products separately, organizations allocate AppPoints across MAS applications such as Manage, Monitor, Health, and Visual Inspection based on actual usage and system activity.</p>
+<p>AppPoints Licensing is a Maximo Application Suite model where shared capacity units are consumed based on application usage, allowing flexible allocation across asset management, monitoring, and analytics capabilities.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="asset-maximo">Asset</h3>
-<p>In IBM Maximo, an asset is a physical piece of equipment or infrastructure that an organization owns, operates, and maintains. Assets are tracked as individual records within the system and include identifying information, location, hierarchy placement, maintenance history, and operational data. Managing assets in Maximo enables organizations to monitor performance, plan maintenance activities, analyze failures, and manage the asset throughout its lifecycle from installation to retirement.</p>
+<p>An Asset is a physical piece of equipment tracked in Maximo, including its location, structure, and history, helping organizations monitor performance and manage maintenance throughout its lifecycle.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="asset-criticality">Asset Criticality</h3>
-<p>A method for ranking assets based on risk (safety, environment, production, cost). Criticality helps prioritize reliability work, PM optimization, spares strategy, and where Maximo data standards must be strongest.</p>
+<p>Asset Criticality is a ranking of assets based on risk factors such as safety, production, and cost, helping prioritize maintenance, reliability efforts, and data quality focus.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="asset-health-index-ahi">Asset Health Index (AHI)</h3>
-<p>A consolidated metric representing the overall condition of an asset, typically combining multiple data points such as condition measurements, failure history, and performance trends into a single health score.</p>
+<p>Asset Health Index is a combined score representing asset condition using performance, failure, and condition data, helping teams quickly assess overall asset health and prioritize action.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="asset-hierarchy">Asset Hierarchy</h3>
-<p>The structured way assets are organized in your EAM system (site → system → equipment → component). A good hierarchy reflects how the organization operates and maintains assets.</p>
+<p>Asset Hierarchy is the structured arrangement of assets into parent-child relationships in Maximo, helping teams understand systems, track performance, and analyze maintenance activity effectively.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="asset-lifecycle-cost">Asset Lifecycle Cost</h3>
-<p>The total cost of owning and operating an asset over its lifecycle, from acquisition through operation, maintenance, and disposal.</p>
+<p>Asset Lifecycle Cost is the total cost of owning and operating an asset from acquisition through disposal, helping organizations make better investment and maintenance decisions.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="asset-performance">Asset Performance</h3>
-<p>How well assets deliver intended outcomes over time (availability, reliability, cost, risk), supported by good data and disciplined execution.</p>
+<p>Asset Performance is how effectively an asset delivers its intended outcomes over time, including availability, reliability, and cost, supported by consistent data and disciplined execution.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="asset-performance-management-apm">Asset Performance Management (APM)</h3>
-<p>A capability set that connects asset condition, risk, and performance data to decisions.</p>
+<p>Asset Performance Management is a set of capabilities that connect asset condition, risk, and performance data to decisions, helping improve reliability and optimize maintenance strategies.</p>
 </div>
 
 <h2 id="B">B</h2>
 
 <div class="glossary-term">
 <h3 id="backlog-health">Backlog Health</h3>
-<p>An indicator of how well maintenance work is prioritized, planned, and manageable within available resources, ensuring that critical reliability work can be scheduled and completed without excessive delays.</p>
+<p>Backlog Health measures how manageable and well-prioritized maintenance work is, helping ensure critical reliability tasks can be planned and completed without excessive delay.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="maintenance-backlog-ratio">Maintenance Backlog Ratio</h3>
-<p>A performance measure comparing overdue maintenance work to total maintenance workload.</p>
+<p>Maintenance Backlog Ratio compares overdue work to total workload, helping teams understand whether maintenance demand is aligned with available resources.</p>
 </div>
 
 <h2 id="C">C</h2>
 
 <div class="glossary-term">
 <h3 id="closeout-quality">Closeout Quality</h3>
-<p>A measure of how consistently work orders are completed with accurate and complete data. High closeout quality supports reliable reporting, failure analysis, and maintenance planning.</p>
+<p>Closeout Quality is the consistency and completeness of data captured when work orders are finished, helping ensure maintenance history is reliable and usable for analysis.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="condition-based-maintenance-cbm">Condition-Based Maintenance (CBM)</h3>
-<p>A maintenance strategy where actions are taken based on asset condition indicators.</p>
+<p>Condition-Based Maintenance is a strategy where maintenance is performed based on asset condition data, helping reduce unnecessary work and prevent failures.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="condition-monitoring">Condition Monitoring</h3>
-<p>Tracking asset condition indicators such as vibration, temperature, or oil analysis.</p>
+<p>Condition Monitoring is the tracking of asset health indicators such as vibration or temperature, helping detect issues early and support predictive maintenance decisions.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="corrective-maintenance-cm">Corrective Maintenance (CM)</h3>
-<p>A work order type in IBM Maximo used to perform maintenance that restores an asset after a fault, defect, or failure has been identified. Corrective maintenance addresses issues discovered through inspections, monitoring, or operational reports and focuses on returning the asset to normal operating condition. In reliability programs, corrective work is typically planned and scheduled when possible to prevent minor issues from escalating into reactive or emergency failures.</p>
+<p>Corrective Maintenance is work performed to restore an asset after a fault is identified, helping return equipment to normal operation and prevent further degradation.</p>
 </div>
 
 <h2 id="D">D</h2>
 
 <div class="glossary-term">
 <h3 id="data-confidence">Data Confidence</h3>
-<p>The level of trust that teams and leaders have in the accuracy and consistency of Maximo data. High data confidence enables decision-making based on data rather than opinion.</p>
+<p>Data Confidence is the level of trust teams have in Maximo data accuracy and consistency, enabling decisions to be based on reliable information rather than assumptions.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="data-consistency">Data Consistency</h3>
-<p>The degree to which data is entered and maintained in a uniform way across systems, teams, and locations. Consistency is a key component of usable and trustworthy data.</p>
+<p>Data Consistency is the uniformity of how data is entered and maintained across systems and teams, helping ensure information can be compared and analyzed reliably.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="data-discipline">Data Discipline</h3>
-<p>The consistent application of standards, processes, and behaviors that ensure data is entered and maintained correctly over time.</p>
+<p>Data Discipline is the consistent application of standards and practices for entering and maintaining data, helping sustain long-term data quality and reliability.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="data-drift">Data Drift</h3>
-<p>The gradual decline in data quality over time as standards are not consistently maintained or enforced.</p>
+<p>Data Drift is the gradual decline in data quality over time due to inconsistent practices, reducing the reliability of reporting and decision-making.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="data-governance">Data Governance</h3>
-<p>The standards, ownership, and routines that keep Maximo or EAM data accurate and consistent.</p>
+<p>Data Governance is the structure of standards, ownership, and processes used to maintain accurate and consistent data in Maximo over time.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="data-lineage">Data Lineage</h3>
-<p>Documentation showing where data originated, how it has been transformed, and where it is used.</p>
+<p>Data Lineage tracks where data originates, how it changes, and where it is used, helping ensure transparency and trust in data-driven decisions.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="data-quality">Data Quality</h3>
-<p>The degree to which data in Maximo is complete, consistent, accurate, and aligned with how work is actually performed.</p>
+<p>Data Quality is the completeness, consistency, and accuracy of data in Maximo, helping teams make better decisions about maintenance, planning, and asset performance.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="data-standard-enforcement">Data Standard Enforcement</h3>
-<p>The practice of ensuring that defined data standards are consistently followed across the organization.</p>
+<p>Data Standard Enforcement ensures defined naming, coding, and entry rules are consistently followed, helping turn data standards into reliable outcomes.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="digital-twin">Digital Twin</h3>
-<p>A digital replica of a physical asset that integrates real-time sensor and operational data.</p>
+<p>Digital Twin is a virtual representation of a physical asset using real-time data, helping teams monitor performance and simulate operational scenarios.</p>
 </div>
 
 <h2 id="E">E</h2>
 
 <div class="glossary-term">
 <h3 id="enterprise-asset-management-eam">Enterprise Asset Management (EAM)</h3>
-<p>A structured approach to managing physical assets from acquisition through retirement.</p>
+<p>Enterprise Asset Management is a structured approach to managing physical assets from acquisition through retirement, helping optimize performance, cost, and risk.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="eam-strategy">Enterprise Asset Management (EAM) Strategy</h3>
-<p>A high-level plan aligning asset management practices with business objectives.</p>
+<p>EAM Strategy defines how asset management practices align with business goals, helping guide maintenance, investment, and reliability decisions.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="execution-alignment">Execution Alignment</h3>
-<p>The degree to which planned work matches how work is actually performed in the field. Strong alignment improves both data quality and reliability outcomes.</p>
+<p>Execution Alignment is the match between planned work and actual field execution, helping ensure data reflects reality and supports reliable decision-making.</p>
 </div>
 
 <h2 id="F">F</h2>
 
 <div class="glossary-term">
 <h3 id="failure-code">Failure Code</h3>
-<p>A standardized way to record what failed and why.</p>
+<p>Failure Code is a standardized way to record what failed and why, helping support consistent analysis and identification of recurring issues.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="failure-data-quality">Failure Data Quality</h3>
-<p>The accuracy and consistency of failure-related data, including codes and descriptions. High-quality failure data enables meaningful analysis and improvement.</p>
+<p>Failure Data Quality is the accuracy and consistency of failure-related data, helping enable meaningful root cause analysis and reliability improvement.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="failure-mode">Failure Mode</h3>
-<p>The specific way an asset fails.</p>
+<p>Failure Mode is the specific way an asset fails, helping teams understand failure patterns and improve maintenance strategies.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="fmeca">Failure Modes, Effects, and Criticality Analysis (FMECA)</h3>
-<p>A structured method for identifying potential asset failure modes and evaluating their impact.</p>
+<p>FMECA is a structured method for identifying failure modes, evaluating their impact, and prioritizing actions based on risk and criticality.</p>
 </div>
 
 <h2 id="H">H</h2>
 
 <div class="glossary-term">
 <h3 id="hierarchy-integrity">Hierarchy Integrity</h3>
-<p>The degree to which an asset hierarchy accurately reflects real-world systems and relationships.</p>
-</div>
-
-<h2 id="I">I</h2>
-
-<div class="glossary-term">
-<h3 id="ibm-control-desk">IBM Control Desk</h3>
-<p>An IBM platform for IT service management and IT asset management that operated as a separate product within the broader Maximo ecosystem before related capabilities returned within the Maximo Application Suite.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="inventory-optimization">Inventory Optimization</h3>
-<p>The process of balancing spare parts availability with carrying costs.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="internet-of-things-iot">Internet of Things (IoT)</h3>
-<p>A network of physical devices, sensors, and connected equipment that collect and transmit data over communication networks. In asset management environments such as IBM Maximo, IoT technologies enable organizations to monitor asset condition, track operational performance, and capture real-time data from equipment. This information supports condition monitoring, predictive maintenance, and improved operational decision-making.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="it-service-management">IT Service Management (ITSM)</h3>
-<p>A structured approach for designing, delivering, operating, and improving IT services to support organizational outcomes. ITSM focuses on managing service requests, incidents, changes, assets, and service performance through defined workflows, governance, and service level agreements.</p>
-</div>
-
-<h2 id="J">J</h2>
-
-<div class="glossary-term">
-<h3 id="job-plan">Job Plan</h3>
-<p>A reusable template in IBM Maximo that defines the standard steps, labor requirements, tools, materials, and safety procedures needed to perform a specific maintenance task. Job plans improve consistency, reduce planning time, and support more accurate scheduling and resource estimation across maintenance operations.</p>
-</div>
-
-<h2 id="K">K</h2>
-
-<div class="glossary-term">
-<h3 id="key-risk-indicator-kri">Key Risk Indicator (KRI)</h3>
-<p>A metric signaling increasing exposure to operational risk.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="kpi">Key Performance Indicator (KPI)</h3>
-<p>A metric used to track progress toward operational outcomes.</p>
-</div>
-
-<h2 id="M">M</h2>
-
-<div class="glossary-term">
-<h3 id="master-data-management-mdm">Master Data Management (MDM)</h3>
-<p>A governance discipline ensuring key asset data is consistent across systems.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="maximo-application-suite">Maximo Application Suite (MAS)</h3>
-<p>A modern platform that extends IBM Maximo with integrated applications for asset management, monitoring, predictive analytics, and operational intelligence. MAS brings capabilities such as condition monitoring, visual inspection, and advanced analytics together with Maximo’s core EAM functionality, using a shared architecture and AppPoints licensing model.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="mtbf">Mean Time Between Failures (MTBF)</h3>
-<p>A reliability metric representing the average time between failures.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="mttr">Mean Time To Repair (MTTR)</h3>
-<p>The average time required to restore an asset after failure.</p>
+<p>Hierarchy Integrity is the accuracy of asset relationships within a hierarchy, helping ensure maintenance data and performance insights are correctly attributed.</p>
 </div>
 
 <h2 id="O">O</h2>
 
 <div class="glossary-term">
-<h3 id="operational-availability-ao">Operational Availability (Ao)</h3>
-<p>The probability that an asset is ready for use when required.</p>
-</div>
-
-<div class="glossary-term">
 <h3 id="operational-data-alignment">Operational Data Alignment</h3>
-<p>The consistency between recorded data in Maximo and actual operational activity. When aligned, data reflects reality and supports decision-making.</p>
+<p>Operational Data Alignment is the consistency between recorded data and actual work, helping ensure that system data reflects real operational activity.</p>
 </div>
 
 <h2 id="P">P</h2>
 
 <div class="glossary-term">
-<h3 id="planned-vs-unplanned-work">Planned vs. Unplanned Work</h3>
-<p>Planned work is prepared in advance. Unplanned work is reactive.</p>
-</div>
-
-<div class="glossary-term">
 <h3 id="planning-accuracy">Planning Accuracy</h3>
-<p>The degree to which planned labor, materials, and durations reflect actual work execution.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="planning-and-scheduling">Planning and Scheduling</h3>
-<p>Planning defines the job. Scheduling assigns timing and sequence.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="preventive-maintenance-pm">Preventive Maintenance (PM)</h3>
-<p>A maintenance strategy that schedules inspections, servicing, or component replacements at defined time or usage intervals to reduce the likelihood of asset failure and maintain reliable operation.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="pm-compliance">Preventive Maintenance (PM) Compliance</h3>
-<p>A measure of whether preventive maintenance work is completed as planned.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="predictive-analytics">Predictive Analytics</h3>
-<p>Data-driven techniques that anticipate future asset behavior or failures.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="predictive-maintenance-pdm">Predictive Maintenance (PdM)</h3>
-<p>Maintenance triggered by measured condition or predicted failure risk.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="prescriptive-maintenance">Prescriptive Maintenance</h3>
-<p>An advanced approach that recommends specific actions based on predictive insights.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="remaining-useful-life-rul">Remaining Useful Life (RUL)</h3>
-<p>An estimate of how long an asset will continue operating before failure.</p>
+<p>Planning Accuracy is how closely planned labor, materials, and durations match actual work, helping improve scheduling efficiency and resource utilization.</p>
 </div>
 
 <h2 id="R">R</h2>
 
 <div class="glossary-term">
 <h3 id="reactive-work">Reactive Work</h3>
-<p>Maintenance work that is initiated in response to a failure or issue rather than planned in advance.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="reliability-strategy">Reliability Strategy</h3>
-<p>The set of decisions defining maintenance activities and frequency.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="root-cause-analysis-rca">Root Cause Analysis (RCA)</h3>
-<p>A systematic method for identifying the underlying cause of failures.</p>
-</div>
-
-<h2 id="S">S</h2>
-
-<div class="glossary-term">
-<h3 id="service-level-agreement-sla">Service Level Agreement (SLA)</h3>
-<p>An agreement defining expected service or performance levels.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="standard-job-plan">Standard Job Plan</h3>
-<p>A reusable work template that defines how a job should be performed.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="standardized-failure-codes">Standardized Failure Codes</h3>
-<p>A controlled set of failure descriptors used to classify failure events consistently.</p>
+<p>Reactive Work is maintenance performed in response to failures, helping restore operation but often indicating opportunities to improve planning and reliability.</p>
 </div>
 
 <h2 id="U">U</h2>
 
 <div class="glossary-term">
 <h3 id="usable-data">Usable Data</h3>
-<p>Data that is consistent, structured, and aligned enough to support decision-making, analysis, and planning.</p>
+<p>Usable Data is information that is consistent, structured, and aligned enough to support effective decision-making, analysis, and planning.</p>
 </div>
 
 <h2 id="W">W</h2>
 
 <div class="glossary-term">
 <h3 id="work-management-consistency">Work Management Consistency</h3>
-<p>The extent to which work is planned, executed, and recorded in a uniform way across teams and sites.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="work-management-discipline">Work Management Discipline</h3>
-<p>The habits and standards that make work predictable.</p>
+<p>Work Management Consistency is the uniform way work is planned, executed, and recorded, helping enable reliable comparison and performance tracking.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="work-order-closeout">Work Order Closeout</h3>
-<p>The process of completing a work order with all required data, including labor, materials, and failure details.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="work-order-closeout-quality">Work Order Closeout Quality</h3>
-<p>How consistently teams capture the information needed at completion.</p>
+<p>Work Order Closeout is the process of completing a work order with all required data, helping ensure maintenance history is accurate and usable.</p>
 </div>
 
 <div class="glossary-term">
 <h3 id="work-order-data-quality">Work Order Data Quality</h3>
-<p>The consistency and completeness of information captured within work orders.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="work-order-wo">Work Order (WO)</h3>
-<p>A structured record in IBM Maximo used to plan, authorize, execute, and document maintenance work. Work orders track labor, materials, tools, failure information, and completion details, providing a central mechanism for managing maintenance activities and maintaining asset history. Effective work order management supports reliability analysis, maintenance planning, and operational accountability.</p>
-</div>
-
-<div class="glossary-term">
-<h3 id="maximo-work-type">Work Type</h3>
-<p>A classification in IBM Maximo used to categorize different kinds of work orders, such as preventive maintenance, corrective maintenance, inspections, or capital work. Work types help organizations organize maintenance activities, apply appropriate workflows, and support reporting on how maintenance resources are being used.</p>
+<p>Work Order Data Quality is the consistency and completeness of information captured in work orders, helping improve visibility into maintenance activity and performance.</p>
 </div>
 
 </div>
