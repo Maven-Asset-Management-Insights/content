@@ -70,14 +70,14 @@
   <div class="post-nav-cards">
 
     {% if series_prev %}
-      <a href="{{ series_prev.url }}" class="post-card prev">
+     <a href="{{ series_prev.url | relative_url }}" class="post-card prev">
         <div class="post-card__label">Earlier in this series</div>
         <div class="post-card__title">{{ series_prev.title }}</div>
       </a>
     {% endif %}
 
     {% if series_next %}
-      <a href="{{ series_next.url }}" class="post-card next">
+     <a href="{{ series_next.url | relative_url }}" class="post-card next">
         <div class="post-card__label">Next in this series</div>
         <div class="post-card__title">{{ series_next.title }}</div>
       </a>
