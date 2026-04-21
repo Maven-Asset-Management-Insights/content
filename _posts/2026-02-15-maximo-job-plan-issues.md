@@ -6,7 +6,7 @@ categories: [Maximo, Data Quality, Reliability]
 series: maximo-data-quality-reliability
 tags: [Maximo, job plans, maintenance planning, data quality]
 description: "Job plans in Maximo are most effective when they stay aligned with real work. Learn how to keep them accurate and useful over time."
-permalink: /content/2026/02/15/maximo-job-plan-issues.html
+permalink: /2026/02/15/maximo-job-plan-issues.html
 ---
 
 Job plans are designed to bring consistency to how work is performed in Maximo.
