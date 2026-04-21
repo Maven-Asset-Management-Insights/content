@@ -83,4 +83,4 @@ When that alignment exists, it becomes a powerful tool for understanding perform
 
 It is one of the clearest examples of how strengthening data quality directly supports better outcomes.
 
-👉 [See how data quality connects to reliability overall]({{ "/content/2026/02/03/why-data-quality-breaks-reliability.html" | relative_url }})
+👉 [See how data quality connects to reliability overall]({{ "/2026/02/03/why-data-quality-breaks-reliability.html" | relative_url }})
