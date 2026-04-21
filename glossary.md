@@ -31,15 +31,7 @@ search: true
     </div>
   </div>
 
-  <div class="glossary-filters" aria-label="Glossary category filters">
-    <button type="button" class="glossary-filter is-active" data-filter="all">All</button>
-    <button type="button" class="glossary-filter" data-filter="maximo">Maximo</button>
-    <button type="button" class="glossary-filter" data-filter="data-quality">Data Quality</button>
-    <button type="button" class="glossary-filter" data-filter="reliability">Reliability</button>
-    <button type="button" class="glossary-filter" data-filter="maintenance">Maintenance</button>
-    <button type="button" class="glossary-filter" data-filter="analytics">Analytics</button>
-    <button type="button" class="glossary-filter" data-filter="strategy">Strategy</button>
-  </div>
+ <div class="glossary-filters" id="glossary-filters" aria-label="Glossary category filters"></div>
 
   <nav id="top" class="glossary-nav" aria-label="Glossary index">
     <a href="#A">A</a>
@@ -917,7 +909,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const clearButton = document.getElementById('glossary-clear');
   const countEl = document.getElementById('glossary-count');
   const emptyEl = document.getElementById('glossary-empty');
-  const filterButtons = Array.from(document.querySelectorAll('.glossary-filter'));
+  const filtersWrap = document.getElementById('glossary-filters');
   const terms = Array.from(document.querySelectorAll('.glossary-term'));
   const headings = Array.from(document.querySelectorAll('.glossary h2'));
 
@@ -925,6 +917,75 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function normalize(text) {
     return (text || '').toLowerCase().trim();
+  }
+
+  function slugToLabel(slug) {
+    return slug
+      .split('-')
+      .map(part => part.charAt(0).toUpperCase() + part.slice(1))
+      .join(' ');
+  }
+
+  function labelToSlug(label) {
+    return normalize(label).replace(/\s+/g, '-');
+  }
+
+  function sortAndNormalizeTermCategories() {
+    terms.forEach(term => {
+      const tagContainer = term.querySelector('.glossary-tags');
+      if (!tagContainer) return;
+
+      const tags = Array.from(tagContainer.querySelectorAll('span'));
+
+      tags.sort((a, b) => a.textContent.localeCompare(b.textContent));
+
+      tagContainer.innerHTML = '';
+      tags.forEach(tag => tagContainer.appendChild(tag));
+
+      const sortedSlugs = tags.map(tag => labelToSlug(tag.textContent));
+      term.dataset.category = sortedSlugs.join(' ');
+    });
+  }
+
+  function collectCategories() {
+    const categorySet = new Set();
+
+    terms.forEach(term => {
+      const raw = normalize(term.dataset.category);
+      if (!raw) return;
+
+      raw.split(/\s+/).forEach(cat => {
+        if (cat) categorySet.add(cat);
+      });
+    });
+
+    return Array.from(categorySet).sort((a, b) => a.localeCompare(b));
+  }
+
+  function renderFilterButtons() {
+    const categories = collectCategories();
+
+    filtersWrap.innerHTML = '';
+
+    const allButton = document.createElement('button');
+    allButton.type = 'button';
+    allButton.className = 'glossary-filter is-active';
+    allButton.dataset.filter = 'all';
+    allButton.textContent = 'All';
+    filtersWrap.appendChild(allButton);
+
+    categories.forEach(category => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'glossary-filter';
+      button.dataset.filter = category;
+      button.textContent = slugToLabel(category);
+      filtersWrap.appendChild(button);
+    });
+  }
+
+  function getFilterButtons() {
+    return Array.from(document.querySelectorAll('.glossary-filter'));
   }
 
   function updateGlossary() {
@@ -962,26 +1023,32 @@ document.addEventListener('DOMContentLoaded', function () {
     emptyEl.hidden = visibleCount !== 0;
   }
 
-  filterButtons.forEach(button => {
-    button.addEventListener('click', function () {
-      filterButtons.forEach(btn => btn.classList.remove('is-active'));
-      button.classList.add('is-active');
-      activeFilter = button.dataset.filter;
-      updateGlossary();
+  function bindFilterEvents() {
+    getFilterButtons().forEach(button => {
+      button.addEventListener('click', function () {
+        getFilterButtons().forEach(btn => btn.classList.remove('is-active'));
+        button.classList.add('is-active');
+        activeFilter = button.dataset.filter;
+        updateGlossary();
+      });
     });
-  });
-
-  searchInput.addEventListener('input', updateGlossary);
+  }
 
   clearButton.addEventListener('click', function () {
     searchInput.value = '';
     activeFilter = 'all';
-    filterButtons.forEach(btn => btn.classList.remove('is-active'));
-    document.querySelector('.glossary-filter[data-filter="all"]').classList.add('is-active');
+    getFilterButtons().forEach(btn => btn.classList.remove('is-active'));
+    const allButton = document.querySelector('.glossary-filter[data-filter="all"]');
+    if (allButton) allButton.classList.add('is-active');
     updateGlossary();
     searchInput.focus();
   });
 
+  searchInput.addEventListener('input', updateGlossary);
+
+  sortAndNormalizeTermCategories();
+  renderFilterButtons();
+  bindFilterEvents();
   updateGlossary();
 });
 </script>
