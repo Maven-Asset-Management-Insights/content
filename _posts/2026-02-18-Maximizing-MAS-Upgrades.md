@@ -94,7 +94,7 @@ Many organizations complete technically successful upgrades only to discover tha
 
 To help leadership teams avoid this trap, we created a practical framework that aligns MAS upgrades with business outcomes and operational execution.
 
-👉 **Field Kit:** [The Maximo Upgrade Process](/content/field-kits/maximo-upgrade-process/)
+👉 **Field Kit:** [The Maximo Upgrade Process](/field-kits/maximo-upgrade-process/)
 
 This field kit provides a structured roadmap for:
 
