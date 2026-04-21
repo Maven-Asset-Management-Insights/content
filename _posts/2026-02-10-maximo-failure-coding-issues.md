@@ -6,7 +6,7 @@ series: maximo-data-quality-reliability
 categories: [Maximo, Data Quality, Reliability]
 tags: [Maximo, failure coding, data quality, reliability, root cause]
 description: "Failure coding in Maximo can become a powerful source of insight when applied consistently. Learn how to strengthen it for better reliability outcomes."
-permalink: /content/2026/02/10/maximo-failure-coding-issues.html
+permalink: /2026/02/10/maximo-failure-coding-issues.html
 ---
 Failure coding has the potential to be one of the most valuable data points in Maximo.
 
