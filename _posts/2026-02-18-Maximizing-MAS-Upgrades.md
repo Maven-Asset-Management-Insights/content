@@ -3,6 +3,7 @@ layout: post
 title: "Maximizing MAS Upgrades to Drive Real Results"
 subtitle: "Why technical success isn’t the same as operational impact"
 date: 2026-02-18
+permalink: /2026/02/18/maximizing-mas-upgrades.html
 
 categories:
   - insights
