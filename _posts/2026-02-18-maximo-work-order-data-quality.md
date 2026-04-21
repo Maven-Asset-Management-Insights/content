@@ -14,7 +14,7 @@ Work orders are at the center of how work is planned, executed, and recorded in 
 They capture what was done, how it was done, and what was observed. When this data is complete and consistent, it becomes one of the most valuable sources of insight for improving reliability.
 
 If you have seen how data quality impacts reliability overall, work orders are where that connection becomes most visible:  
-👉 [Why Data Quality Breaks Reliability in Maximo (and What to Fix First)](content/posts/2026/02/03/why-data-quality-breaks-reliability.html)
+👉 [Why Data Quality Breaks Reliability in Maximo (and What to Fix First)](/posts/2026/02/03/why-data-quality-breaks-reliability.html)
 
 ---
 
