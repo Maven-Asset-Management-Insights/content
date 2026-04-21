@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Glossary
-permalink: /content/glossary/
+permalink: /glossary/
 categories:
   - glossary
 search: true
