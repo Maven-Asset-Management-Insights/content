@@ -6,7 +6,7 @@ categories: [Maximo, Data Quality, Reliability]
 series: maximo-data-quality-reliability
 tags: [Maximo, work orders, data quality, maintenance, reliability]
 description: "Work order data is at the center of Maximo. Learn how improving data quality in work orders supports better planning, reporting, and reliability."
-permalink: /content/2026/02/18/maximo-work-order-data-quality.html
+permalink: /2026/02/18/maximo-work-order-data-quality.html
 ---
 
 Work orders are at the center of how work is planned, executed, and recorded in Maximo.
