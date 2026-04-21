@@ -74,9 +74,9 @@ Work order quality is closely tied to other areas of Maximo data:
 
 When these elements are aligned, work orders become a strong, connected source of information.
 
-- 👉 [How to Improve Failure Coding in Maximo for Better Reliability Insights](/2026/02/10/maximo-failure-coding-issues.html)  
-- 👉 [How Consistent Asset Hierarchies Improve Reliability in Maximo](/2026/02/12/maximo-asset-hierarchy-problems.html)  
-- 👉 [Keeping Job Plans in Maximo Aligned with Real Work](/2026/02/15/maximo-job-plan-issues.html)
+- 👉 [How to Improve Failure Coding in Maximo for Better Reliability Insights]({{ "/2026/02/10/maximo-failure-coding-issues.html" | relative_url }})  
+- 👉 [How Consistent Asset Hierarchies Improve Reliability in Maximo]({{ "/2026/02/12/maximo-asset-hierarchy-problems.html" | relative_url }})  
+- 👉 [Keeping Job Plans in Maximo Aligned with Real Work]({{ "/2026/02/15/maximo-job-plan-issues.html" | relative_url }})
 
 ---
 
