@@ -6,7 +6,7 @@ categories: [Maximo, Data Quality, Reliability]
 series: maximo-data-quality-reliability
 tags: [Maximo, data quality, reliability, asset management, EAM]
 description: "Poor data quality in Maximo does not just affect reporting. It breaks reliability. Learn the most common data failure patterns and what to fix first."
-permalink: /content/2026/02/03/why-data-quality-breaks-reliability.html
+permalink: /2026/02/03/why-data-quality-breaks-reliability.html
 ---
 
 Most organizations do not struggle to collect data in Maximo. They struggle to **trust it**.
