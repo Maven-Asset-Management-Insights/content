@@ -1,4 +1,3 @@
-```markdown
 ---
 layout: post
 title: "Maximo Is a System of Discipline, Not Just a System of Record"
