@@ -83,5 +83,3 @@ Asset hierarchy is more than a data structure—it is how the system reflects yo
 When it is consistent, it creates a strong foundation for insight, planning, and performance.
 
 That foundation is essential for turning data into meaningful action.
-
-👉 [See how structure fits into overall data quality and reliability](../03/why-data-quality-breaks-reliability.html)
