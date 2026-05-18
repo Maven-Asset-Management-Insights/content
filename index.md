@@ -7,7 +7,7 @@ search: false
 <section class="hero">
   <h1>Maven's Asset Performance Management Field Glossary</h1>
   <h2>Start here. What Is the Maven Field Glossary Resource Hub?</h2>
-<div class="video-container" style="max-width: 600px; margin: 1.5rem auto 2rem auto;">
+<div class="video-container" style="max-width: 600px; margin: 1.5rem auto 2rem auto; padding-bottom: 40%;">
   <iframe
     src="https://www.youtube.com/embed/bMbEX0IYHe8"
     title="Maven Asset Performance Management Field Glossary Overview"
