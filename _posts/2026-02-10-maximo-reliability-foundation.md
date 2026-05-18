@@ -35,4 +35,4 @@ Advanced analytics, predictive maintenance, MAS AI capabilities, all of it depen
 
 Get these right first. Everything advanced becomes significantly easier — and significantly more valuable — when they're in place.
 
-<!-- → [Read the full article](https://www.mavenasset.com/blog/maximo-reliability-foundation) -->
+→ [Read the full article](https://www.mavenasset.com/blog/maximo-reliability-foundation) -->
