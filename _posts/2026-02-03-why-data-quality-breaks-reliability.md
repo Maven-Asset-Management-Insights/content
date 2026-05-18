@@ -2,7 +2,7 @@
 layout: post
 title: "We Have Maximo. So Why Aren't We Getting Value From It?"
 subtitle: "The reliability gap most Maximo programs don't see coming"
-date: 2026-05-15
+date: 2026-02-03
 categories:
   - insights
   - maximo
