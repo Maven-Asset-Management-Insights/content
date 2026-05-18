@@ -20,7 +20,6 @@ They define:
 When they stay aligned with actual work, they become a powerful tool for planning and execution.
 
 If you have seen how data quality impacts reliability, job plans play a key role in that connection:  
-👉 [Why Data Quality Breaks Reliability in Maximo](../03/why-data-quality-breaks-reliability.html)
 
 ---
 
@@ -88,5 +87,3 @@ Job plans are most effective when they evolve with the operation.
 When they do, they become a reliable foundation for consistent execution and improved performance.
 
 This is another example of how strong data practices directly support reliability.
-
-👉 [See how job plans connect to overall data quality and reliability](../03/why-data-quality-breaks-reliability.html)
