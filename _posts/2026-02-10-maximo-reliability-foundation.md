@@ -27,11 +27,11 @@ Advanced analytics, predictive maintenance, MAS AI capabilities, all of it depen
 
 ## Three fundamentals that have to come first
 
-**An asset hierarchy that matches reality.** If assets aren't structured consistently, maintenance history is fragmented and reporting is meaningless.
+**1. An asset hierarchy that matches reality.** If assets aren't structured consistently, maintenance history is fragmented and reporting is meaningless.
 
-**Work management discipline.** Consistent planning, failure coding, and closeout quality are what turn work orders into usable data. Without them, the history in Maximo reflects workarounds, not actual work.
+**2. Work management discipline.** Consistent planning, failure coding, and closeout quality are what turn work orders into usable data. Without them, the history in Maximo reflects workarounds, not actual work.
 
-**Governance that doesn't fade.** Someone has to be accountable for keeping standards alive after the project team leaves. Monthly reviews, quarterly PM updates, defined ownership — that's what separates improvement that lasts from improvement that stalls.
+**3. Governance that doesn't fade.** Someone has to be accountable for keeping standards alive after the project team leaves. Monthly reviews, quarterly PM updates, defined ownership — that's what separates improvement that lasts from improvement that stalls.
 
 Get these right first. Everything advanced becomes significantly easier — and significantly more valuable — when they're in place.
 
