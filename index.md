@@ -6,9 +6,9 @@ search: false
 
 <section class="hero">
   <h1>Maven's Asset Performance Management Field Glossary</h1>
-  <div class="video-container">
+<div class="video-container">
   <iframe
-    src="https://www.youtube.com/watch?v=bMbEX0IYHe8"
+    src="https://www.youtube.com/embed/bMbEX0IYHe8"
     title="Maven Asset Performance Management Field Glossary Overview"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
