@@ -34,6 +34,5 @@ If you bring your old Control Desk workflows into MAS, you might hit some bumps.
 The best place to start? Figure out which era shaped your Maximo setup. That way, you can modernize with your eyes wide open.
 
 <!-- → [Read the full article](https://www.mavenasset.com/blog/evolution-maximo-for-it) -->
-```
 
 Additional guidance and technical insights are available throughout the Maven Insights library.
