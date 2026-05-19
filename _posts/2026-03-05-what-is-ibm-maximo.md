@@ -34,4 +34,3 @@ How assets are classified, how work is planned and closed out, how failures are 
 Whether you're evaluating Maximo for the first time or preparing for a MAS upgrade, this distinction matters more than any feature comparison. The question isn't whether Maximo can deliver better asset performance. It's whether your organization has built the operating model that enables it.
 
 <!-- → [Read the full article](https://www.mavenasset.com/blog/what-is-ibm-maximo) -->
-```
