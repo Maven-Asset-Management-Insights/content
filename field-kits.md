@@ -30,6 +30,13 @@ permalink: /field-kits/
   </div>
 </div>
 
+## Resolving Inspection Form Revision Errors in Maximo
+
+A field-tested troubleshooting guide for the -803 database error and inconsistent revision behavior in Maximo Inspection Forms — including root cause diagnosis, a safe resolution sequence, and key lessons learned.
+
+Best for: Maximo administrators, EAM technical leads, implementation teams
+
+[View kit](https://maven-asset-management-insights.github.io/content/field-kits/resolving-inspection-form-revision-errors/)
 <!-- SCORECARD PREVIEW -->
 <div class="card" style="padding:22px; margin-bottom:18px;">
   <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
