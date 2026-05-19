@@ -128,10 +128,32 @@ A -803 constraint error suggests duplication — but the actual problem here was
 ## Quick Reference
 
 | Symptom | Root Cause | Fix |
-|---|---|---|
-| -803 error on APPDOCTYPE | Missing CONTMASTER / DOCTYPE = CONTADM entry | Create dummy form with CONTADM attachment reference |
-| Form visible but revision fails | HASREVISION = 0 after failed mid-transaction update | SQL reset of HASREVISION flag |
-| Inconsistent UI behavior | Mismatch between application logic and DB state | Resolve both issues above in sequence |
+<table style="width:100%; border-collapse:collapse; margin:1.5rem 0;">
+  <thead>
+    <tr>
+      <th style="text-align:left; padding:10px 14px; border-bottom:2px solid #292C75; color:#292C75;">Symptom</th>
+      <th style="text-align:left; padding:10px 14px; border-bottom:2px solid #292C75; color:#292C75;">Root Cause</th>
+      <th style="text-align:left; padding:10px 14px; border-bottom:2px solid #292C75; color:#292C75;">Fix</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom:1px solid #e0e0e0;">
+      <td style="padding:10px 14px; vertical-align:top;"><code>-803</code> error on APPDOCTYPE</td>
+      <td style="padding:10px 14px; vertical-align:top;">Missing CONTMASTER / DOCTYPE = CONTADM entry</td>
+      <td style="padding:10px 14px; vertical-align:top;">Create dummy form with CONTADM attachment reference</td>
+    </tr>
+    <tr style="border-bottom:1px solid #e0e0e0;">
+      <td style="padding:10px 14px; vertical-align:top;">Form visible but revision fails</td>
+      <td style="padding:10px 14px; vertical-align:top;"><code>HASREVISION = 0</code> after failed mid-transaction update</td>
+      <td style="padding:10px 14px; vertical-align:top;">SQL reset of HASREVISION flag</td>
+    </tr>
+    <tr>
+      <td style="padding:10px 14px; vertical-align:top;">Inconsistent UI behavior</td>
+      <td style="padding:10px 14px; vertical-align:top;">Mismatch between application logic and DB state</td>
+      <td style="padding:10px 14px; vertical-align:top;">Resolve both issues above in sequence</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
