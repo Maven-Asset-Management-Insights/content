@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Resolving Inspection Form Revision Errors in Maximo | Maven Asset Management Solutions"
+permalink: /field-kits/resolving-inspection-form-revision-errors/
 date: 2026-05-19
 categories:
   - field-kits
