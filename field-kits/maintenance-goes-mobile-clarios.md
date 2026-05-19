@@ -13,7 +13,7 @@ This Field Kit highlights how Clarios successfully implemented mobile maintenanc
 
 Mobile execution of maintenance work orders is a strategic capability for asset-intensive organizations. In this Field Kit, we explore how Clarios enhanced technician productivity, improved data accuracy, and unlocked new operational insights by going mobile within an enterprise asset management framework aligned with Maximo best practices.
 
-Maven Asset Management Solutions brings deep expertise in applying mobile strategies in complex environments, helping organizations realize measurable performance improvements and sustain long-term reliability gains.
+Maven Asset Management brings deep expertise in applying mobile strategies in complex environments, helping organizations realize measurable performance improvements and sustain long-term reliability gains.
 
 ---
 
