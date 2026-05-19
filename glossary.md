@@ -79,6 +79,15 @@ search: true
       <p>AppPoints Licensing is a Maximo Application Suite model where shared capacity units are consumed based on application usage, allowing flexible allocation across asset management, monitoring, and analytics capabilities.</p>
     </div>
 
+    <div class="glossary-term" data-category="maximo troubleshooting">
+      <h3 id="appdoctype">APPDOCTYPE</h3>
+      <div class="glossary-tags">
+        <span>Maximo</span>
+        <span>Troubleshooting</span>
+      </div>
+      <p>APPDOCTYPE is a Maximo system table that defines document type configurations for applications, helping manage how attachments and document references are associated with records like Inspection Forms.</p>
+    </div>
+
     <div class="glossary-term" data-category="maximo maintenance">
       <h3 id="asset-maximo">Asset</h3>
       <div class="glossary-tags">
@@ -360,6 +369,24 @@ search: true
       <p>IBM Control Desk is an IBM IT service and asset management platform that historically sat alongside Maximo before related capabilities shifted into newer suites.</p>
     </div>
 
+    <div class="glossary-term" data-category="maximo troubleshooting">
+      <h3 id="inspection-form">Inspection Form</h3>
+      <div class="glossary-tags">
+        <span>Maximo</span>
+        <span>Troubleshooting</span>
+      </div>
+      <p>Inspection Form is a structured Maximo record used to capture field inspection data through defined questions and responses, helping standardize condition assessments and support maintenance decisions.</p>
+    </div>
+
+    <div class="glossary-term" data-category="maximo troubleshooting">
+      <h3 id="inspection-form-revision">Inspection Form Revision</h3>
+      <div class="glossary-tags">
+        <span>Maximo</span>
+        <span>Troubleshooting</span>
+      </div>
+      <p>Inspection Form Revision is the process of creating an updated version of an existing Inspection Form in Maximo, helping teams keep inspection criteria current while preserving prior response history.</p>
+    </div>
+
     <div class="glossary-term" data-category="maintenance strategy">
       <h3 id="inventory-optimization">Inventory Optimization</h3>
       <div class="glossary-tags">
@@ -434,7 +461,7 @@ search: true
         <span>Maximo</span>
         <span>Strategy</span>
       </div>
-      <p>Maximo Application Suite is IBM’s modern platform for asset management and operational intelligence, bringing Maximo together with monitoring, analytics, and visual capabilities.</p>
+      <p>Maximo Application Suite is IBM's modern platform for asset management and operational intelligence, bringing Maximo together with monitoring, analytics, and visual capabilities.</p>
     </div>
 
     <div class="glossary-term" data-category="reliability analytics">
@@ -453,6 +480,15 @@ search: true
         <span>Analytics</span>
       </div>
       <p>Mean Time To Repair is the average time needed to restore an asset after failure, helping teams assess repair efficiency and maintainability.</p>
+    </div>
+
+    <div class="glossary-term" data-category="maximo troubleshooting">
+      <h3 id="mid-transaction-failure">Mid-Transaction Failure</h3>
+      <div class="glossary-tags">
+        <span>Maximo</span>
+        <span>Troubleshooting</span>
+      </div>
+      <p>Mid-Transaction Failure occurs when a Maximo operation fails partway through a save or update, leaving system flags and status fields in an inconsistent state that may cause unexpected application behavior until resolved.</p>
     </div>
 
     <h2 id="O">O</h2>
@@ -578,6 +614,15 @@ search: true
       <p>Remaining Useful Life is an estimate of how long an asset can continue operating before failure, helping prioritize maintenance and replacement decisions.</p>
     </div>
 
+    <div class="glossary-term" data-category="maximo troubleshooting">
+      <h3 id="residual-state">Residual State</h3>
+      <div class="glossary-tags">
+        <span>Maximo</span>
+        <span>Troubleshooting</span>
+      </div>
+      <p>Residual State is the condition left in Maximo after a failed or incomplete operation, where system flags or records reflect a prior action rather than actual data, helping explain inconsistent behavior during troubleshooting.</p>
+    </div>
+
     <div class="glossary-term" data-category="reliability analytics">
       <h3 id="root-cause-analysis-rca">Root Cause Analysis (RCA)</h3>
       <div class="glossary-tags">
@@ -613,6 +658,26 @@ search: true
         <span>Reliability</span>
       </div>
       <p>Standardized Failure Codes are a controlled set of descriptors used to classify failure events consistently, helping improve data quality and trend analysis.</p>
+    </div>
+
+    <div class="glossary-term" data-category="maximo data-quality">
+      <h3 id="system-record-integrity">System Record Integrity</h3>
+      <div class="glossary-tags">
+        <span>Data Quality</span>
+        <span>Maximo</span>
+      </div>
+      <p>System Record Integrity is the accuracy and completeness of Maximo's internal configuration records, helping ensure application logic, workflows, and dependent relationships function as expected.</p>
+    </div>
+
+    <h2 id="T">T</h2>
+
+    <div class="glossary-term" data-category="maximo troubleshooting">
+      <h3 id="transaction-rollback">Transaction Rollback</h3>
+      <div class="glossary-tags">
+        <span>Maximo</span>
+        <span>Troubleshooting</span>
+      </div>
+      <p>Transaction Rollback is the process of reversing a failed database operation to restore a consistent system state, helping prevent residual data issues when Maximo operations fail mid-execution.</p>
     </div>
 
     <h2 id="U">U</h2>
