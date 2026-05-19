@@ -37,4 +37,3 @@ This is where good lifecycle management really shines. If your EAM platform has 
 Retirement is the final chapter for your asset — but how well you write that ending depends on every page that came before.
 
 → [Read the full article](https://www.mavenasset.com/blog/what-is-asset-lifecycle-management/)
-```
