@@ -61,4 +61,4 @@ Maven Asset Management Solutions brings deep expertise in applying mobile strate
 
 ---
 
-For additional guidance on mobile enablement strategies within IBM Maximo environments, contact Maven Asset Management Solutions.
+For additional guidance on mobile enablement strategies within IBM Maximo environments, contact Maven Asset Management.
