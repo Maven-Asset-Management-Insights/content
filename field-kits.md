@@ -30,13 +30,6 @@ permalink: /field-kits/
   </div>
 </div>
 
-## Resolving Inspection Form Revision Errors in Maximo
-
-A field-tested troubleshooting guide for the -803 database error and inconsistent revision behavior in Maximo Inspection Forms — including root cause diagnosis, a safe resolution sequence, and key lessons learned.
-
-Best for: Maximo administrators, EAM technical leads, implementation teams
-
-[View kit](https://maven-asset-management-insights.github.io/content/field-kits/resolving-inspection-form-revision-errors/)
 <!-- SCORECARD PREVIEW -->
 <div class="card" style="padding:22px; margin-bottom:18px;">
   <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
@@ -55,6 +48,22 @@ Best for: Maximo administrators, EAM technical leads, implementation teams
 
 <!-- ALL KITS -->
 <div class="grid">
+
+  <section class="card">
+    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.8rem; opacity:.7; margin-bottom:8px;">
+      Field Kit
+    </div>
+    <h2 style="margin-top:0;">Resolving Inspection Form Revision Errors in Maximo</h2>
+    <p>
+      A field-tested troubleshooting guide for the -803 database error and inconsistent revision behavior in Maximo Inspection Forms — including root cause diagnosis, a safe resolution sequence, and key lessons learned.
+    </p>
+    <div style="margin-top:12px; opacity:.8;">
+      Best for: Maximo administrators, EAM technical leads, implementation teams
+    </div>
+    <div style="margin-top:16px;">
+      <a class="button" href="{{ "/field-kits/resolving-inspection-form-revision-errors/" | relative_url }}">View kit</a>
+    </div>
+  </section>
 
   <section class="card">
     <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.8rem; opacity:.7; margin-bottom:8px;">
@@ -88,19 +97,21 @@ Best for: Maximo administrators, EAM technical leads, implementation teams
     </div>
   </section>
 
-<section class="card">
-  <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.8rem; opacity:.7; margin-bottom:8px;">
-    Field Kit
-  </div>
-  <h2 style="margin-top:0;">Monitor Demo and Practical Path to Deployment</h2>
-  <p>
-    A practical framework for moving from a compelling Maximo Monitor demo to a deployment that delivers measurable operational value through trusted data, clear workflows, and focused execution.
-  </p>
-  <div style="margin-top:12px; opacity:.8;">
-    Best for: Operations leaders, Reliability teams, EAM owners, digital transformation stakeholders
-  </div>
-  <div style="margin-top:16px;">
-    <a class="button" href="{{ "/field-kits/monitor-demo-practical-path-to-deployment/" | relative_url }}">View kit</a>
-  </div>
-</section>
+  <section class="card">
+    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.8rem; opacity:.7; margin-bottom:8px;">
+      Field Kit
+    </div>
+    <h2 style="margin-top:0;">Monitor Demo and Practical Path to Deployment</h2>
+    <p>
+      A practical framework for moving from a compelling Maximo Monitor demo to a deployment that delivers measurable operational value through trusted data, clear workflows, and focused execution.
+    </p>
+    <div style="margin-top:12px; opacity:.8;">
+      Best for: Operations leaders, Reliability teams, EAM owners, digital transformation stakeholders
+    </div>
+    <div style="margin-top:16px;">
+      <a class="button" href="{{ "/field-kits/monitor-demo-practical-path-to-deployment/" | relative_url }}">View kit</a>
+    </div>
+  </section>
+
 </div>
+```
