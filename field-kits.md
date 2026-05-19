@@ -114,4 +114,3 @@ permalink: /field-kits/
   </section>
 
 </div>
-```
