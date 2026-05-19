@@ -70,15 +70,6 @@ search: true
 
     <h2 id="A">A</h2>
 
-    <div class="glossary-term" data-category="maximo maintenance">
-      <h3 id="apppoints-licensing">AppPoints Licensing</h3>
-      <div class="glossary-tags">
-        <span>Maximo</span>
-        <span>Maintenance</span>
-      </div>
-      <p>AppPoints Licensing is a Maximo Application Suite model where shared capacity units are consumed based on application usage, allowing flexible allocation across asset management, monitoring, and analytics capabilities.</p>
-    </div>
-
     <div class="glossary-term" data-category="maximo troubleshooting">
       <h3 id="appdoctype">APPDOCTYPE</h3>
       <div class="glossary-tags">
@@ -86,6 +77,15 @@ search: true
         <span>Troubleshooting</span>
       </div>
       <p>APPDOCTYPE is a Maximo system table that defines document type configurations for applications, helping manage how attachments and document references are associated with records like Inspection Forms.</p>
+    </div>
+
+    <div class="glossary-term" data-category="maximo maintenance">
+      <h3 id="apppoints-licensing">AppPoints Licensing</h3>
+      <div class="glossary-tags">
+        <span>Maximo</span>
+        <span>Maintenance</span>
+      </div>
+      <p>AppPoints Licensing is a Maximo Application Suite model where shared capacity units are consumed based on application usage, allowing flexible allocation across asset management, monitoring, and analytics capabilities.</p>
     </div>
 
     <div class="glossary-term" data-category="maximo maintenance">
@@ -151,6 +151,7 @@ search: true
       <p>Asset Performance Management is a set of capabilities that connect asset condition, risk, and performance data to decisions, helping improve reliability and optimize maintenance strategies.</p>
     </div>
 
+
     <h2 id="B">B</h2>
 
     <div class="glossary-term" data-category="maintenance reliability">
@@ -161,6 +162,7 @@ search: true
       </div>
       <p>Backlog Health measures how manageable and well-prioritized maintenance work is, helping ensure critical reliability tasks can be planned and completed without excessive delay.</p>
     </div>
+
 
     <h2 id="C">C</h2>
 
@@ -173,15 +175,6 @@ search: true
       <p>Closeout Quality is the consistency and completeness of data captured when work orders are finished, helping ensure maintenance history is reliable and usable for analysis.</p>
     </div>
 
-    <div class="glossary-term" data-category="maintenance reliability">
-      <h3 id="condition-based-maintenance-cbm">Condition-Based Maintenance (CBM)</h3>
-      <div class="glossary-tags">
-        <span>Maintenance</span>
-        <span>Reliability</span>
-      </div>
-      <p>Condition-Based Maintenance is a strategy where maintenance is performed based on asset condition data, helping reduce unnecessary work and prevent failures.</p>
-    </div>
-
     <div class="glossary-term" data-category="analytics reliability">
       <h3 id="condition-monitoring">Condition Monitoring</h3>
       <div class="glossary-tags">
@@ -192,6 +185,15 @@ search: true
     </div>
 
     <div class="glossary-term" data-category="maintenance reliability">
+      <h3 id="condition-based-maintenance-cbm">Condition-Based Maintenance (CBM)</h3>
+      <div class="glossary-tags">
+        <span>Maintenance</span>
+        <span>Reliability</span>
+      </div>
+      <p>Condition-Based Maintenance is a strategy where maintenance is performed based on asset condition data, helping reduce unnecessary work and prevent failures.</p>
+    </div>
+
+    <div class="glossary-term" data-category="maintenance reliability">
       <h3 id="corrective-maintenance-cm">Corrective Maintenance (CM)</h3>
       <div class="glossary-tags">
         <span>Maintenance</span>
@@ -199,6 +201,7 @@ search: true
       </div>
       <p>Corrective Maintenance is work performed to restore an asset after a fault is identified, helping return equipment to normal operation and prevent further degradation.</p>
     </div>
+
 
     <h2 id="D">D</h2>
 
@@ -281,16 +284,8 @@ search: true
       <p>Digital Twin is a virtual representation of a physical asset using real-time data, helping teams monitor performance and simulate operational scenarios.</p>
     </div>
 
-    <h2 id="E">E</h2>
 
-    <div class="glossary-term" data-category="strategy maximo">
-      <h3 id="eam-strategy">Enterprise Asset Management (EAM) Strategy</h3>
-      <div class="glossary-tags">
-        <span>Strategy</span>
-        <span>Maximo</span>
-      </div>
-      <p>EAM Strategy defines how asset management practices align with business goals, helping guide maintenance, investment, and reliability decisions.</p>
-    </div>
+    <h2 id="E">E</h2>
 
     <div class="glossary-term" data-category="strategy maximo">
       <h3 id="enterprise-asset-management-eam">Enterprise Asset Management (EAM)</h3>
@@ -301,6 +296,15 @@ search: true
       <p>Enterprise Asset Management is a structured approach to managing physical assets from acquisition through retirement, helping optimize performance, cost, and risk.</p>
     </div>
 
+    <div class="glossary-term" data-category="strategy maximo">
+      <h3 id="eam-strategy">Enterprise Asset Management (EAM) Strategy</h3>
+      <div class="glossary-tags">
+        <span>Strategy</span>
+        <span>Maximo</span>
+      </div>
+      <p>EAM Strategy defines how asset management practices align with business goals, helping guide maintenance, investment, and reliability decisions.</p>
+    </div>
+
     <div class="glossary-term" data-category="data-quality maintenance">
       <h3 id="execution-alignment">Execution Alignment</h3>
       <div class="glossary-tags">
@@ -309,6 +313,7 @@ search: true
       </div>
       <p>Execution Alignment is the match between planned work and actual field execution, helping ensure data reflects reality and supports reliable decision-making.</p>
     </div>
+
 
     <h2 id="F">F</h2>
 
@@ -347,6 +352,7 @@ search: true
       <p>FMECA is a structured method for identifying failure modes, evaluating their impact, and prioritizing actions based on risk and criticality.</p>
     </div>
 
+
     <h2 id="H">H</h2>
 
     <div class="glossary-term" data-category="data-quality maximo">
@@ -357,6 +363,7 @@ search: true
       </div>
       <p>Hierarchy Integrity is the accuracy of asset relationships within a hierarchy, helping ensure maintenance data and performance insights are correctly attributed.</p>
     </div>
+
 
     <h2 id="I">I</h2>
 
@@ -387,15 +394,6 @@ search: true
       <p>Inspection Form Revision is the process of creating an updated version of an existing Inspection Form in Maximo, helping teams keep inspection criteria current while preserving prior response history.</p>
     </div>
 
-    <div class="glossary-term" data-category="maintenance strategy">
-      <h3 id="inventory-optimization">Inventory Optimization</h3>
-      <div class="glossary-tags">
-        <span>Maintenance</span>
-        <span>Strategy</span>
-      </div>
-      <p>Inventory Optimization is the balancing of spare parts availability with carrying cost, helping ensure critical materials are available without overstocking.</p>
-    </div>
-
     <div class="glossary-term" data-category="analytics maximo">
       <h3 id="internet-of-things-iot">Internet of Things (IoT)</h3>
       <div class="glossary-tags">
@@ -405,6 +403,15 @@ search: true
       <p>Internet of Things is a network of connected devices and sensors that collect real-time data, helping Maximo users monitor condition and improve maintenance decisions.</p>
     </div>
 
+    <div class="glossary-term" data-category="maintenance strategy">
+      <h3 id="inventory-optimization">Inventory Optimization</h3>
+      <div class="glossary-tags">
+        <span>Maintenance</span>
+        <span>Strategy</span>
+      </div>
+      <p>Inventory Optimization is the balancing of spare parts availability with carrying cost, helping ensure critical materials are available without overstocking.</p>
+    </div>
+
     <div class="glossary-term" data-category="strategy">
       <h3 id="it-service-management">IT Service Management (ITSM)</h3>
       <div class="glossary-tags">
@@ -412,6 +419,7 @@ search: true
       </div>
       <p>IT Service Management is a structured approach to delivering and improving IT services through defined workflows, helping manage requests, incidents, changes, and service performance.</p>
     </div>
+
 
     <h2 id="J">J</h2>
 
@@ -424,7 +432,17 @@ search: true
       <p>Job Plan is a reusable Maximo template that defines the steps, labor, materials, and tools needed for a maintenance task, helping improve consistency and planning accuracy.</p>
     </div>
 
+
     <h2 id="K">K</h2>
+
+    <div class="glossary-term" data-category="analytics strategy">
+      <h3 id="kpi">Key Performance Indicator (KPI)</h3>
+      <div class="glossary-tags">
+        <span>Analytics</span>
+        <span>Strategy</span>
+      </div>
+      <p>Key Performance Indicator is a metric used to measure progress toward operational goals, helping track outcomes such as reliability, backlog, or maintenance performance.</p>
+    </div>
 
     <div class="glossary-term" data-category="analytics strategy">
       <h3 id="key-risk-indicator-kri">Key Risk Indicator (KRI)</h3>
@@ -435,14 +453,6 @@ search: true
       <p>Key Risk Indicator is a metric that signals increasing operational risk, helping teams identify exposure before it affects performance or reliability.</p>
     </div>
 
-    <div class="glossary-term" data-category="analytics strategy">
-      <h3 id="kpi">Key Performance Indicator (KPI)</h3>
-      <div class="glossary-tags">
-        <span>Analytics</span>
-        <span>Strategy</span>
-      </div>
-      <p>Key Performance Indicator is a metric used to measure progress toward operational goals, helping track outcomes such as reliability, backlog, or maintenance performance.</p>
-    </div>
 
     <h2 id="M">M</h2>
 
@@ -491,6 +501,7 @@ search: true
       <p>Mid-Transaction Failure occurs when a Maximo operation fails partway through a save or update, leaving system flags and status fields in an inconsistent state that may cause unexpected application behavior until resolved.</p>
     </div>
 
+
     <h2 id="O">O</h2>
 
     <div class="glossary-term" data-category="reliability analytics">
@@ -510,6 +521,7 @@ search: true
       </div>
       <p>Operational Data Alignment is the consistency between recorded data and actual work, helping ensure that system data reflects real operational activity.</p>
     </div>
+
 
     <h2 id="P">P</h2>
 
@@ -540,24 +552,6 @@ search: true
       <p>Planning and Scheduling is the process of defining work requirements and assigning timing, helping improve execution efficiency and workforce coordination.</p>
     </div>
 
-    <div class="glossary-term" data-category="maintenance reliability">
-      <h3 id="pm-compliance">Preventive Maintenance (PM) Compliance</h3>
-      <div class="glossary-tags">
-        <span>Maintenance</span>
-        <span>Reliability</span>
-      </div>
-      <p>Preventive Maintenance Compliance measures whether scheduled PM work is completed as planned, helping indicate the consistency of maintenance execution.</p>
-    </div>
-
-    <div class="glossary-term" data-category="maintenance reliability">
-      <h3 id="preventive-maintenance-pm">Preventive Maintenance (PM)</h3>
-      <div class="glossary-tags">
-        <span>Maintenance</span>
-        <span>Reliability</span>
-      </div>
-      <p>Preventive Maintenance is scheduled maintenance performed at defined intervals, helping reduce the likelihood of failure and support reliable asset operation.</p>
-    </div>
-
     <div class="glossary-term" data-category="analytics reliability">
       <h3 id="predictive-analytics">Predictive Analytics</h3>
       <div class="glossary-tags">
@@ -584,6 +578,25 @@ search: true
       </div>
       <p>Prescriptive Maintenance is an advanced approach that recommends specific maintenance actions based on predictive insight, helping improve timing and decision quality.</p>
     </div>
+
+    <div class="glossary-term" data-category="maintenance reliability">
+      <h3 id="preventive-maintenance-pm">Preventive Maintenance (PM)</h3>
+      <div class="glossary-tags">
+        <span>Maintenance</span>
+        <span>Reliability</span>
+      </div>
+      <p>Preventive Maintenance is scheduled maintenance performed at defined intervals, helping reduce the likelihood of failure and support reliable asset operation.</p>
+    </div>
+
+    <div class="glossary-term" data-category="maintenance reliability">
+      <h3 id="pm-compliance">Preventive Maintenance (PM) Compliance</h3>
+      <div class="glossary-tags">
+        <span>Maintenance</span>
+        <span>Reliability</span>
+      </div>
+      <p>Preventive Maintenance Compliance measures whether scheduled PM work is completed as planned, helping indicate the consistency of maintenance execution.</p>
+    </div>
+
 
     <h2 id="R">R</h2>
 
@@ -632,6 +645,7 @@ search: true
       <p>Root Cause Analysis is a structured method for identifying the underlying cause of failures, helping prevent recurrence and improve reliability outcomes.</p>
     </div>
 
+
     <h2 id="S">S</h2>
 
     <div class="glossary-term" data-category="strategy">
@@ -669,6 +683,7 @@ search: true
       <p>System Record Integrity is the accuracy and completeness of Maximo's internal configuration records, helping ensure application logic, workflows, and dependent relationships function as expected.</p>
     </div>
 
+
     <h2 id="T">T</h2>
 
     <div class="glossary-term" data-category="maximo troubleshooting">
@@ -680,6 +695,7 @@ search: true
       <p>Transaction Rollback is the process of reversing a failed database operation to restore a consistent system state, helping prevent residual data issues when Maximo operations fail mid-execution.</p>
     </div>
 
+
     <h2 id="U">U</h2>
 
     <div class="glossary-term" data-category="data-quality analytics">
@@ -690,6 +706,7 @@ search: true
       </div>
       <p>Usable Data is information that is consistent, structured, and aligned enough to support effective decision-making, analysis, and planning.</p>
     </div>
+
 
     <h2 id="W">W</h2>
 
@@ -709,6 +726,15 @@ search: true
         <span>Strategy</span>
       </div>
       <p>Work Management Discipline is the set of habits and standards that make maintenance work predictable, helping improve execution quality and planning reliability.</p>
+    </div>
+
+    <div class="glossary-term" data-category="maximo maintenance">
+      <h3 id="work-order-wo">Work Order (WO)</h3>
+      <div class="glossary-tags">
+        <span>Maximo</span>
+        <span>Maintenance</span>
+      </div>
+      <p>Work Order is a structured Maximo record used to plan, execute, and document maintenance work, helping track activity, history, and accountability.</p>
     </div>
 
     <div class="glossary-term" data-category="maintenance data-quality">
@@ -739,15 +765,6 @@ search: true
     </div>
 
     <div class="glossary-term" data-category="maximo maintenance">
-      <h3 id="work-order-wo">Work Order (WO)</h3>
-      <div class="glossary-tags">
-        <span>Maximo</span>
-        <span>Maintenance</span>
-      </div>
-      <p>Work Order is a structured Maximo record used to plan, execute, and document maintenance work, helping track activity, history, and accountability.</p>
-    </div>
-
-    <div class="glossary-term" data-category="maximo maintenance">
       <h3 id="maximo-work-type">Work Type</h3>
       <div class="glossary-tags">
         <span>Maximo</span>
@@ -755,6 +772,7 @@ search: true
       </div>
       <p>Work Type is a Maximo classification used to categorize work orders, helping apply the right workflows and report on how maintenance resources are used.</p>
     </div>
+
 
   </div>
 </div>
