@@ -97,11 +97,11 @@ Maximo will automatically:
 
 After completing both steps, confirm the following before closing out:
 
-- [ ] Inspection form is visible and accessible in the application
-- [ ] New revision can be initiated without error
-- [ ] `APPDOCTYPE` contains a `CONTMASTER` entry with `DOCTYPE = CONTADM`
-- [ ] `HASREVISION` flag reflects accurate revision state
-- [ ] Dummy inspection form is inactivated or removed after system record is confirmed
+- Inspection form is visible and accessible in the application
+- New revision can be initiated without error
+- `APPDOCTYPE` contains a `CONTMASTER` entry with `DOCTYPE = CONTADM`
+- `HASREVISION` flag reflects accurate revision state
+- Dummy inspection form is inactivated or removed after system record is confirmed
 
 ---
 
@@ -127,7 +127,6 @@ A -803 constraint error suggests duplication — but the actual problem here was
 
 ## Quick Reference
 
-| Symptom | Root Cause | Fix |
 <table style="width:100%; border-collapse:collapse; margin:1.5rem 0;">
   <thead>
     <tr>
