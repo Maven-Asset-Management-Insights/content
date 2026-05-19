@@ -79,11 +79,11 @@ search: true
       <p>APPDOCTYPE is a Maximo system table that defines document type configurations for applications, helping manage how attachments and document references are associated with records like Inspection Forms.</p>
     </div>
 
-    <div class="glossary-term" data-category="maximo maintenance">
+    <div class="glossary-term" data-category="licensing maximo">
       <h3 id="apppoints-licensing">AppPoints Licensing</h3>
       <div class="glossary-tags">
+        <span>Licensing</span>
         <span>Maximo</span>
-        <span>Maintenance</span>
       </div>
       <p>AppPoints Licensing is a Maximo Application Suite model where shared capacity units are consumed based on application usage, allowing flexible allocation across asset management, monitoring, and analytics capabilities.</p>
     </div>
@@ -91,8 +91,8 @@ search: true
     <div class="glossary-term" data-category="maximo maintenance">
       <h3 id="asset-maximo">Asset</h3>
       <div class="glossary-tags">
-        <span>Maximo</span>
         <span>Maintenance</span>
+        <span>Maximo</span>
       </div>
       <p>An Asset is a physical piece of equipment tracked in Maximo, including its location, structure, and history, helping organizations monitor performance and manage maintenance throughout its lifecycle.</p>
     </div>
@@ -118,8 +118,8 @@ search: true
     <div class="glossary-term" data-category="maximo data-quality">
       <h3 id="asset-hierarchy">Asset Hierarchy</h3>
       <div class="glossary-tags">
-        <span>Maximo</span>
         <span>Data Quality</span>
+        <span>Maximo</span>
       </div>
       <p>Asset Hierarchy is the structured arrangement of assets into parent-child relationships in Maximo, helping teams understand systems, track performance, and analyze maintenance activity effectively.</p>
     </div>
@@ -127,8 +127,8 @@ search: true
     <div class="glossary-term" data-category="strategy analytics">
       <h3 id="asset-lifecycle-cost">Asset Lifecycle Cost</h3>
       <div class="glossary-tags">
-        <span>Strategy</span>
         <span>Analytics</span>
+        <span>Strategy</span>
       </div>
       <p>Asset Lifecycle Cost is the total cost of owning and operating an asset from acquisition through disposal, helping organizations make better investment and maintenance decisions.</p>
     </div>
@@ -136,8 +136,8 @@ search: true
     <div class="glossary-term" data-category="reliability analytics">
       <h3 id="asset-performance">Asset Performance</h3>
       <div class="glossary-tags">
-        <span>Reliability</span>
         <span>Analytics</span>
+        <span>Reliability</span>
       </div>
       <p>Asset Performance is how effectively an asset delivers its intended outcomes over time, including availability, reliability, and cost, supported by consistent data and disciplined execution.</p>
     </div>
@@ -145,8 +145,8 @@ search: true
     <div class="glossary-term" data-category="strategy analytics">
       <h3 id="asset-performance-management-apm">Asset Performance Management (APM)</h3>
       <div class="glossary-tags">
-        <span>Strategy</span>
         <span>Analytics</span>
+        <span>Strategy</span>
       </div>
       <p>Asset Performance Management is a set of capabilities that connect asset condition, risk, and performance data to decisions, helping improve reliability and optimize maintenance strategies.</p>
     </div>
@@ -175,10 +175,11 @@ search: true
       <p>Closeout Quality is the consistency and completeness of data captured when work orders are finished, helping ensure maintenance history is reliable and usable for analysis.</p>
     </div>
 
-    <div class="glossary-term" data-category="analytics reliability">
+    <div class="glossary-term" data-category="analytics reliability integration">
       <h3 id="condition-monitoring">Condition Monitoring</h3>
       <div class="glossary-tags">
         <span>Analytics</span>
+        <span>Integration</span>
         <span>Reliability</span>
       </div>
       <p>Condition Monitoring is the tracking of asset health indicators such as vibration or temperature, helping detect issues early and support predictive maintenance decisions.</p>
@@ -208,8 +209,8 @@ search: true
     <div class="glossary-term" data-category="data-quality analytics">
       <h3 id="data-confidence">Data Confidence</h3>
       <div class="glossary-tags">
-        <span>Data Quality</span>
         <span>Analytics</span>
+        <span>Data Quality</span>
       </div>
       <p>Data Confidence is the level of trust teams have in Maximo data accuracy and consistency, enabling decisions to be based on reliable information rather than assumptions.</p>
     </div>
@@ -222,37 +223,40 @@ search: true
       <p>Data Consistency is the uniformity of how data is entered and maintained across systems and teams, helping ensure information can be compared and analyzed reliably.</p>
     </div>
 
-    <div class="glossary-term" data-category="data-quality strategy">
+    <div class="glossary-term" data-category="data-quality governance">
       <h3 id="data-discipline">Data Discipline</h3>
       <div class="glossary-tags">
         <span>Data Quality</span>
-        <span>Strategy</span>
+        <span>Governance</span>
       </div>
       <p>Data Discipline is the consistent application of standards and practices for entering and maintaining data, helping sustain long-term data quality and reliability.</p>
     </div>
 
-    <div class="glossary-term" data-category="data-quality">
+    <div class="glossary-term" data-category="data-quality governance">
       <h3 id="data-drift">Data Drift</h3>
       <div class="glossary-tags">
         <span>Data Quality</span>
+        <span>Governance</span>
       </div>
       <p>Data Drift is the gradual decline in data quality over time due to inconsistent practices, reducing the reliability of reporting and decision-making.</p>
     </div>
 
-    <div class="glossary-term" data-category="data-quality strategy">
+    <div class="glossary-term" data-category="data-quality governance strategy">
       <h3 id="data-governance">Data Governance</h3>
       <div class="glossary-tags">
         <span>Data Quality</span>
+        <span>Governance</span>
         <span>Strategy</span>
       </div>
       <p>Data Governance is the structure of standards, ownership, and processes used to maintain accurate and consistent data in Maximo over time.</p>
     </div>
 
-    <div class="glossary-term" data-category="analytics data-quality">
+    <div class="glossary-term" data-category="analytics data-quality governance">
       <h3 id="data-lineage">Data Lineage</h3>
       <div class="glossary-tags">
         <span>Analytics</span>
         <span>Data Quality</span>
+        <span>Governance</span>
       </div>
       <p>Data Lineage tracks where data originates, how it changes, and where it is used, helping ensure transparency and trust in data-driven decisions.</p>
     </div>
@@ -266,19 +270,20 @@ search: true
       <p>Data Quality is the completeness, consistency, and accuracy of data in Maximo, helping teams make better decisions about maintenance, planning, and asset performance.</p>
     </div>
 
-    <div class="glossary-term" data-category="data-quality strategy">
+    <div class="glossary-term" data-category="data-quality governance">
       <h3 id="data-standard-enforcement">Data Standard Enforcement</h3>
       <div class="glossary-tags">
         <span>Data Quality</span>
-        <span>Strategy</span>
+        <span>Governance</span>
       </div>
       <p>Data Standard Enforcement ensures defined naming, coding, and entry rules are consistently followed, helping turn data standards into reliable outcomes.</p>
     </div>
 
-    <div class="glossary-term" data-category="analytics maximo">
+    <div class="glossary-term" data-category="analytics integration maximo">
       <h3 id="digital-twin">Digital Twin</h3>
       <div class="glossary-tags">
         <span>Analytics</span>
+        <span>Integration</span>
         <span>Maximo</span>
       </div>
       <p>Digital Twin is a virtual representation of a physical asset using real-time data, helping teams monitor performance and simulate operational scenarios.</p>
@@ -290,8 +295,8 @@ search: true
     <div class="glossary-term" data-category="strategy maximo">
       <h3 id="enterprise-asset-management-eam">Enterprise Asset Management (EAM)</h3>
       <div class="glossary-tags">
-        <span>Strategy</span>
         <span>Maximo</span>
+        <span>Strategy</span>
       </div>
       <p>Enterprise Asset Management is a structured approach to managing physical assets from acquisition through retirement, helping optimize performance, cost, and risk.</p>
     </div>
@@ -299,8 +304,8 @@ search: true
     <div class="glossary-term" data-category="strategy maximo">
       <h3 id="eam-strategy">Enterprise Asset Management (EAM) Strategy</h3>
       <div class="glossary-tags">
-        <span>Strategy</span>
         <span>Maximo</span>
+        <span>Strategy</span>
       </div>
       <p>EAM Strategy defines how asset management practices align with business goals, helping guide maintenance, investment, and reliability decisions.</p>
     </div>
@@ -320,8 +325,8 @@ search: true
     <div class="glossary-term" data-category="reliability data-quality">
       <h3 id="failure-code">Failure Code</h3>
       <div class="glossary-tags">
-        <span>Reliability</span>
         <span>Data Quality</span>
+        <span>Reliability</span>
       </div>
       <p>Failure Code is a standardized way to record what failed and why, helping support consistent analysis and identification of recurring issues.</p>
     </div>
@@ -346,8 +351,8 @@ search: true
     <div class="glossary-term" data-category="reliability analytics">
       <h3 id="fmeca">Failure Modes, Effects, and Criticality Analysis (FMECA)</h3>
       <div class="glossary-tags">
-        <span>Reliability</span>
         <span>Analytics</span>
+        <span>Reliability</span>
       </div>
       <p>FMECA is a structured method for identifying failure modes, evaluating their impact, and prioritizing actions based on risk and criticality.</p>
     </div>
@@ -367,19 +372,21 @@ search: true
 
     <h2 id="I">I</h2>
 
-    <div class="glossary-term" data-category="maximo strategy">
+    <div class="glossary-term" data-category="maximo strategy licensing">
       <h3 id="ibm-control-desk">IBM Control Desk</h3>
       <div class="glossary-tags">
+        <span>Licensing</span>
         <span>Maximo</span>
         <span>Strategy</span>
       </div>
       <p>IBM Control Desk is an IBM IT service and asset management platform that historically sat alongside Maximo before related capabilities shifted into newer suites.</p>
     </div>
 
-    <div class="glossary-term" data-category="maximo troubleshooting">
+    <div class="glossary-term" data-category="maximo troubleshooting mobile">
       <h3 id="inspection-form">Inspection Form</h3>
       <div class="glossary-tags">
         <span>Maximo</span>
+        <span>Mobile</span>
         <span>Troubleshooting</span>
       </div>
       <p>Inspection Form is a structured Maximo record used to capture field inspection data through defined questions and responses, helping standardize condition assessments and support maintenance decisions.</p>
@@ -394,10 +401,11 @@ search: true
       <p>Inspection Form Revision is the process of creating an updated version of an existing Inspection Form in Maximo, helping teams keep inspection criteria current while preserving prior response history.</p>
     </div>
 
-    <div class="glossary-term" data-category="analytics maximo">
+    <div class="glossary-term" data-category="analytics integration maximo">
       <h3 id="internet-of-things-iot">Internet of Things (IoT)</h3>
       <div class="glossary-tags">
         <span>Analytics</span>
+        <span>Integration</span>
         <span>Maximo</span>
       </div>
       <p>Internet of Things is a network of connected devices and sensors that collect real-time data, helping Maximo users monitor condition and improve maintenance decisions.</p>
@@ -412,9 +420,10 @@ search: true
       <p>Inventory Optimization is the balancing of spare parts availability with carrying cost, helping ensure critical materials are available without overstocking.</p>
     </div>
 
-    <div class="glossary-term" data-category="strategy">
+    <div class="glossary-term" data-category="strategy integration">
       <h3 id="it-service-management">IT Service Management (ITSM)</h3>
       <div class="glossary-tags">
+        <span>Integration</span>
         <span>Strategy</span>
       </div>
       <p>IT Service Management is a structured approach to delivering and improving IT services through defined workflows, helping manage requests, incidents, changes, and service performance.</p>
@@ -423,11 +432,12 @@ search: true
 
     <h2 id="J">J</h2>
 
-    <div class="glossary-term" data-category="maximo maintenance">
+    <div class="glossary-term" data-category="maximo maintenance mobile">
       <h3 id="job-plan">Job Plan</h3>
       <div class="glossary-tags">
-        <span>Maximo</span>
         <span>Maintenance</span>
+        <span>Maximo</span>
+        <span>Mobile</span>
       </div>
       <p>Job Plan is a reusable Maximo template that defines the steps, labor, materials, and tools needed for a maintenance task, helping improve consistency and planning accuracy.</p>
     </div>
@@ -435,10 +445,11 @@ search: true
 
     <h2 id="K">K</h2>
 
-    <div class="glossary-term" data-category="analytics strategy">
+    <div class="glossary-term" data-category="analytics strategy governance">
       <h3 id="kpi">Key Performance Indicator (KPI)</h3>
       <div class="glossary-tags">
         <span>Analytics</span>
+        <span>Governance</span>
         <span>Strategy</span>
       </div>
       <p>Key Performance Indicator is a metric used to measure progress toward operational goals, helping track outcomes such as reliability, backlog, or maintenance performance.</p>
@@ -456,18 +467,20 @@ search: true
 
     <h2 id="M">M</h2>
 
-    <div class="glossary-term" data-category="data-quality strategy">
+    <div class="glossary-term" data-category="data-quality governance strategy">
       <h3 id="master-data-management-mdm">Master Data Management (MDM)</h3>
       <div class="glossary-tags">
         <span>Data Quality</span>
+        <span>Governance</span>
         <span>Strategy</span>
       </div>
       <p>Master Data Management is a governance discipline that keeps core data consistent across systems, helping organizations maintain trusted records for assets, locations, and materials.</p>
     </div>
 
-    <div class="glossary-term" data-category="maximo strategy">
+    <div class="glossary-term" data-category="licensing maximo strategy">
       <h3 id="maximo-application-suite">Maximo Application Suite (MAS)</h3>
       <div class="glossary-tags">
+        <span>Licensing</span>
         <span>Maximo</span>
         <span>Strategy</span>
       </div>
@@ -477,8 +490,8 @@ search: true
     <div class="glossary-term" data-category="reliability analytics">
       <h3 id="mtbf">Mean Time Between Failures (MTBF)</h3>
       <div class="glossary-tags">
-        <span>Reliability</span>
         <span>Analytics</span>
+        <span>Reliability</span>
       </div>
       <p>Mean Time Between Failures is the average operating time between asset failures, helping teams evaluate reliability and compare performance over time.</p>
     </div>
@@ -486,8 +499,8 @@ search: true
     <div class="glossary-term" data-category="reliability analytics">
       <h3 id="mttr">Mean Time To Repair (MTTR)</h3>
       <div class="glossary-tags">
-        <span>Reliability</span>
         <span>Analytics</span>
+        <span>Reliability</span>
       </div>
       <p>Mean Time To Repair is the average time needed to restore an asset after failure, helping teams assess repair efficiency and maintainability.</p>
     </div>
@@ -507,8 +520,8 @@ search: true
     <div class="glossary-term" data-category="reliability analytics">
       <h3 id="operational-availability-ao">Operational Availability (Ao)</h3>
       <div class="glossary-tags">
-        <span>Reliability</span>
         <span>Analytics</span>
+        <span>Reliability</span>
       </div>
       <p>Operational Availability is the probability that an asset is ready for use when needed, helping measure the practical availability of equipment in operation.</p>
     </div>
@@ -537,8 +550,8 @@ search: true
     <div class="glossary-term" data-category="maintenance analytics">
       <h3 id="planning-accuracy">Planning Accuracy</h3>
       <div class="glossary-tags">
-        <span>Maintenance</span>
         <span>Analytics</span>
+        <span>Maintenance</span>
       </div>
       <p>Planning Accuracy is how closely planned labor, materials, and durations match actual work, helping improve scheduling efficiency and resource utilization.</p>
     </div>
@@ -552,20 +565,22 @@ search: true
       <p>Planning and Scheduling is the process of defining work requirements and assigning timing, helping improve execution efficiency and workforce coordination.</p>
     </div>
 
-    <div class="glossary-term" data-category="analytics reliability">
+    <div class="glossary-term" data-category="analytics reliability integration">
       <h3 id="predictive-analytics">Predictive Analytics</h3>
       <div class="glossary-tags">
         <span>Analytics</span>
+        <span>Integration</span>
         <span>Reliability</span>
       </div>
       <p>Predictive Analytics uses data and models to anticipate future asset behavior, helping teams identify likely failures and plan earlier intervention.</p>
     </div>
 
-    <div class="glossary-term" data-category="maintenance analytics">
+    <div class="glossary-term" data-category="maintenance analytics integration">
       <h3 id="predictive-maintenance-pdm">Predictive Maintenance (PdM)</h3>
       <div class="glossary-tags">
-        <span>Maintenance</span>
         <span>Analytics</span>
+        <span>Integration</span>
+        <span>Maintenance</span>
       </div>
       <p>Predictive Maintenance is maintenance triggered by condition data or predicted failure risk, helping teams act before equipment performance declines.</p>
     </div>
@@ -573,8 +588,8 @@ search: true
     <div class="glossary-term" data-category="maintenance analytics">
       <h3 id="prescriptive-maintenance">Prescriptive Maintenance</h3>
       <div class="glossary-tags">
-        <span>Maintenance</span>
         <span>Analytics</span>
+        <span>Maintenance</span>
       </div>
       <p>Prescriptive Maintenance is an advanced approach that recommends specific maintenance actions based on predictive insight, helping improve timing and decision quality.</p>
     </div>
@@ -588,9 +603,10 @@ search: true
       <p>Preventive Maintenance is scheduled maintenance performed at defined intervals, helping reduce the likelihood of failure and support reliable asset operation.</p>
     </div>
 
-    <div class="glossary-term" data-category="maintenance reliability">
+    <div class="glossary-term" data-category="maintenance reliability governance">
       <h3 id="pm-compliance">Preventive Maintenance (PM) Compliance</h3>
       <div class="glossary-tags">
+        <span>Governance</span>
         <span>Maintenance</span>
         <span>Reliability</span>
       </div>
@@ -609,9 +625,10 @@ search: true
       <p>Reactive Work is maintenance performed in response to failures, helping restore operation but often indicating opportunities to improve planning and reliability.</p>
     </div>
 
-    <div class="glossary-term" data-category="reliability strategy">
+    <div class="glossary-term" data-category="reliability strategy governance">
       <h3 id="reliability-strategy">Reliability Strategy</h3>
       <div class="glossary-tags">
+        <span>Governance</span>
         <span>Reliability</span>
         <span>Strategy</span>
       </div>
@@ -621,8 +638,8 @@ search: true
     <div class="glossary-term" data-category="reliability analytics">
       <h3 id="remaining-useful-life-rul">Remaining Useful Life (RUL)</h3>
       <div class="glossary-tags">
-        <span>Reliability</span>
         <span>Analytics</span>
+        <span>Reliability</span>
       </div>
       <p>Remaining Useful Life is an estimate of how long an asset can continue operating before failure, helping prioritize maintenance and replacement decisions.</p>
     </div>
@@ -639,8 +656,8 @@ search: true
     <div class="glossary-term" data-category="reliability analytics">
       <h3 id="root-cause-analysis-rca">Root Cause Analysis (RCA)</h3>
       <div class="glossary-tags">
-        <span>Reliability</span>
         <span>Analytics</span>
+        <span>Reliability</span>
       </div>
       <p>Root Cause Analysis is a structured method for identifying the underlying cause of failures, helping prevent recurrence and improve reliability outcomes.</p>
     </div>
@@ -648,37 +665,41 @@ search: true
 
     <h2 id="S">S</h2>
 
-    <div class="glossary-term" data-category="strategy">
+    <div class="glossary-term" data-category="governance strategy">
       <h3 id="service-level-agreement-sla">Service Level Agreement (SLA)</h3>
       <div class="glossary-tags">
+        <span>Governance</span>
         <span>Strategy</span>
       </div>
       <p>Service Level Agreement is a documented commitment to expected service performance, helping define accountability and response expectations.</p>
     </div>
 
-    <div class="glossary-term" data-category="maintenance maximo">
+    <div class="glossary-term" data-category="maintenance maximo mobile">
       <h3 id="standard-job-plan">Standard Job Plan</h3>
       <div class="glossary-tags">
         <span>Maintenance</span>
         <span>Maximo</span>
+        <span>Mobile</span>
       </div>
       <p>Standard Job Plan is a reusable work template that defines how a job should be completed, helping improve consistency across repeated maintenance tasks.</p>
     </div>
 
-    <div class="glossary-term" data-category="data-quality reliability">
+    <div class="glossary-term" data-category="data-quality reliability governance">
       <h3 id="standardized-failure-codes">Standardized Failure Codes</h3>
       <div class="glossary-tags">
         <span>Data Quality</span>
+        <span>Governance</span>
         <span>Reliability</span>
       </div>
       <p>Standardized Failure Codes are a controlled set of descriptors used to classify failure events consistently, helping improve data quality and trend analysis.</p>
     </div>
 
-    <div class="glossary-term" data-category="maximo data-quality">
+    <div class="glossary-term" data-category="maximo data-quality troubleshooting">
       <h3 id="system-record-integrity">System Record Integrity</h3>
       <div class="glossary-tags">
         <span>Data Quality</span>
         <span>Maximo</span>
+        <span>Troubleshooting</span>
       </div>
       <p>System Record Integrity is the accuracy and completeness of Maximo's internal configuration records, helping ensure application logic, workflows, and dependent relationships function as expected.</p>
     </div>
@@ -701,8 +722,8 @@ search: true
     <div class="glossary-term" data-category="data-quality analytics">
       <h3 id="usable-data">Usable Data</h3>
       <div class="glossary-tags">
-        <span>Data Quality</span>
         <span>Analytics</span>
+        <span>Data Quality</span>
       </div>
       <p>Usable Data is information that is consistent, structured, and aligned enough to support effective decision-making, analysis, and planning.</p>
     </div>
@@ -710,38 +731,42 @@ search: true
 
     <h2 id="W">W</h2>
 
-    <div class="glossary-term" data-category="maintenance strategy">
+    <div class="glossary-term" data-category="maintenance strategy governance">
       <h3 id="work-management-consistency">Work Management Consistency</h3>
       <div class="glossary-tags">
+        <span>Governance</span>
         <span>Maintenance</span>
         <span>Strategy</span>
       </div>
       <p>Work Management Consistency is the uniform way work is planned, executed, and recorded, helping enable reliable comparison and performance tracking.</p>
     </div>
 
-    <div class="glossary-term" data-category="maintenance strategy">
+    <div class="glossary-term" data-category="maintenance strategy governance">
       <h3 id="work-management-discipline">Work Management Discipline</h3>
       <div class="glossary-tags">
+        <span>Governance</span>
         <span>Maintenance</span>
         <span>Strategy</span>
       </div>
       <p>Work Management Discipline is the set of habits and standards that make maintenance work predictable, helping improve execution quality and planning reliability.</p>
     </div>
 
-    <div class="glossary-term" data-category="maximo maintenance">
+    <div class="glossary-term" data-category="maximo maintenance mobile">
       <h3 id="work-order-wo">Work Order (WO)</h3>
       <div class="glossary-tags">
-        <span>Maximo</span>
         <span>Maintenance</span>
+        <span>Maximo</span>
+        <span>Mobile</span>
       </div>
       <p>Work Order is a structured Maximo record used to plan, execute, and document maintenance work, helping track activity, history, and accountability.</p>
     </div>
 
-    <div class="glossary-term" data-category="maintenance data-quality">
+    <div class="glossary-term" data-category="maintenance data-quality mobile">
       <h3 id="work-order-closeout">Work Order Closeout</h3>
       <div class="glossary-tags">
-        <span>Maintenance</span>
         <span>Data Quality</span>
+        <span>Maintenance</span>
+        <span>Mobile</span>
       </div>
       <p>Work Order Closeout is the process of completing a work order with all required data, helping ensure maintenance history is accurate and usable.</p>
     </div>
@@ -749,8 +774,8 @@ search: true
     <div class="glossary-term" data-category="maintenance data-quality">
       <h3 id="work-order-closeout-quality">Work Order Closeout Quality</h3>
       <div class="glossary-tags">
-        <span>Maintenance</span>
         <span>Data Quality</span>
+        <span>Maintenance</span>
       </div>
       <p>Work Order Closeout Quality is how consistently teams capture the information needed when work is completed, helping maintain accurate history and analysis.</p>
     </div>
@@ -758,8 +783,8 @@ search: true
     <div class="glossary-term" data-category="maintenance data-quality">
       <h3 id="work-order-data-quality">Work Order Data Quality</h3>
       <div class="glossary-tags">
-        <span>Maintenance</span>
         <span>Data Quality</span>
+        <span>Maintenance</span>
       </div>
       <p>Work Order Data Quality is the consistency and completeness of information captured in work orders, helping improve visibility into maintenance activity and performance.</p>
     </div>
@@ -767,8 +792,8 @@ search: true
     <div class="glossary-term" data-category="maximo maintenance">
       <h3 id="maximo-work-type">Work Type</h3>
       <div class="glossary-tags">
-        <span>Maximo</span>
         <span>Maintenance</span>
+        <span>Maximo</span>
       </div>
       <p>Work Type is a Maximo classification used to categorize work orders, helping apply the right workflows and report on how maintenance resources are used.</p>
     </div>
