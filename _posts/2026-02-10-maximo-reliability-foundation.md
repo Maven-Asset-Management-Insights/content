@@ -2,7 +2,7 @@
 layout: post
 title: "Before You Scale Maximo, Build These Three Things First"
 subtitle: "The operational foundation every Maximo program needs before advanced capabilities deliver real value"
-date: 2026-05-15
+date: 2026-02-10
 categories:
   - insights
   - maximo
