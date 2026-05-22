@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maven-asset-management-insights.github.io/content/sitemap.xml
