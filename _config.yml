@@ -8,3 +8,5 @@ header_pages:
   - maven-insights.md
   - glossary.md
   - field-kits.md
+plugins:
+  - jekyll-sitemap
