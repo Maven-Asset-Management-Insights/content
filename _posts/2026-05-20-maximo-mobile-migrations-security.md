@@ -17,10 +17,7 @@ tags:
 content_type: insight
 maximo_versions:
   mas:
-    - "MAS 8+"
-    - "MAS 9+"
-  maximo:
-    - "7.6+"
+   - "MAS 9+"
 ---
 
 Migrating Maximo Mobile application XML between environments is straightforward in concept — copy the XML from the source, paste it into the destination — but a few consistent pitfalls cause most of the compilation errors teams encounter during migrations.
