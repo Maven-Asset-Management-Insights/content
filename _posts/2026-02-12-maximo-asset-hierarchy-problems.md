@@ -9,23 +9,23 @@ description: "Consistent asset hierarchies in Maximo create a strong foundation 
 permalink: /2026/02/12/maximo-asset-hierarchy-problems.html
 ---
 
-Asset hierarchies are the foundation of how data is structured in Maximo.
+[Asset hierarchies](https://maven-asset-management-insights.github.io/content/glossary/#asset-hierarchy) are the foundation of how data is structured in Maximo.
 
-When they are consistent and well-defined, they make it easier to understand performance, plan work, and improve reliability.
+When they are consistent and well-defined, they make it easier to understand [asset performance](https://maven-asset-management-insights.github.io/content/glossary/#asset-performance), plan work, and improve reliability.
 
-If you have seen how data quality impacts reliability overall, asset hierarchy is one of the most important areas to get right:  
+If you have seen how [data quality](https://maven-asset-management-insights.github.io/content/glossary/#data-quality) impacts reliability overall, asset hierarchy is one of the most important areas to get right:  
 👉 [Why Data Quality Breaks Reliability in Maximo](../03/why-data-quality-breaks-reliability.html)
 
 ---
 
 ## Strong Hierarchies Support Better Insight
 
-A well-structured hierarchy makes it possible to:
+A well-structured [asset hierarchy](https://maven-asset-management-insights.github.io/content/glossary/#asset-hierarchy) makes it possible to:
 
-- Track asset performance accurately  
-- Understand system-level behavior  
-- Group and analyze data effectively  
-- Support better planning decisions  
+- Track [asset performance](https://maven-asset-management-insights.github.io/content/glossary/#asset-performance) accurately
+- Understand system-level behavior
+- Group and analyze data effectively
+- Support better [planning and scheduling](https://maven-asset-management-insights.github.io/content/glossary/#planning-and-scheduling) decisions
 
 Over time, maintaining this structure becomes just as important as creating it.
 
@@ -33,21 +33,21 @@ Over time, maintaining this structure becomes just as important as creating it.
 
 ## Where Structure Can Drift
 
-As environments evolve, asset hierarchies naturally change.
+As environments evolve, asset hierarchies naturally change. Left unmanaged, this is a common source of [data drift](https://maven-asset-management-insights.github.io/content/glossary/#data-drift).
 
 Common areas to monitor include:
 
 ### Consistent Asset Creation
 
-Ensuring new assets follow defined standards helps maintain structure.
+Ensuring new assets follow defined standards helps maintain structure and supports [master data management](https://maven-asset-management-insights.github.io/content/glossary/#master-data-management-mdm) over time.
 
 ### Clear Hierarchy Levels
 
-Keeping levels consistent improves reporting and analysis.
+Keeping levels consistent improves reporting and analysis. Inconsistent levels are one of the most frequent causes of [hierarchy integrity](https://maven-asset-management-insights.github.io/content/glossary/#hierarchy-integrity) problems.
 
 ### Accurate Relationships
 
-Aligning assets correctly within systems ensures reliable performance tracking.
+Aligning assets correctly within systems ensures reliable [asset performance](https://maven-asset-management-insights.github.io/content/glossary/#asset-performance) tracking and supports meaningful [root cause analysis](https://maven-asset-management-insights.github.io/content/glossary/#root-cause-analysis-rca) when failures occur.
 
 ---
 
@@ -55,10 +55,10 @@ Aligning assets correctly within systems ensures reliable performance tracking.
 
 When hierarchies are consistent:
 
-- Failure history remains connected  
-- System-level insights become clearer  
-- Maintenance strategies become more effective  
-- Reporting becomes more reliable  
+- Failure history remains connected
+- System-level insights become clearer
+- [Maintenance strategies](https://maven-asset-management-insights.github.io/content/glossary/#reliability-strategy) become more effective
+- Reporting becomes more reliable, supporting stronger [data confidence](https://maven-asset-management-insights.github.io/content/glossary/#data-confidence)
 
 Structure enables understanding, and understanding supports reliability.
 
@@ -68,18 +68,18 @@ Structure enables understanding, and understanding supports reliability.
 
 Improvement starts with a few practical steps:
 
-- Define and document hierarchy standards  
-- Review and align existing structures  
-- Address duplicate or overlapping assets  
-- Validate parent-child relationships  
-- Apply standards consistently going forward  
+- Define and document hierarchy standards through [data governance](https://maven-asset-management-insights.github.io/content/glossary/#data-governance)
+- Review and align existing structures
+- Address duplicate or overlapping [assets](https://maven-asset-management-insights.github.io/content/glossary/#asset)
+- Validate parent-child relationships to restore [hierarchy integrity](https://maven-asset-management-insights.github.io/content/glossary/#hierarchy-integrity)
+- Apply [data standard enforcement](https://maven-asset-management-insights.github.io/content/glossary/#data-standard-enforcement) consistently going forward
 
 ---
 
 ## Building a Reliable Foundation
 
-Asset hierarchy is more than a data structure—it is how the system reflects your operation.
+[Asset hierarchy](https://maven-asset-management-insights.github.io/content/glossary/#asset-hierarchy) is more than a data structure — it is how the system reflects your operation.
 
-When it is consistent, it creates a strong foundation for insight, planning, and performance.
+When it is consistent, it creates a strong foundation for insight, planning, and [asset performance management](https://maven-asset-management-insights.github.io/content/glossary/#asset-performance-management-apm).
 
-That foundation is essential for turning data into meaningful action.
+That foundation is essential for turning [usable data](https://maven-asset-management-insights.github.io/content/glossary/#usable-data) into meaningful action.
