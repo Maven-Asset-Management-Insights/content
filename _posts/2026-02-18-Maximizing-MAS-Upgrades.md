@@ -18,7 +18,7 @@ tags:
   - digital-transformation
   - governance
 
-field_kit: /field-kits/maximo-upgrade-process/
+field_kit: https://maven-asset-management-insights.github.io/content/field-kits/maximo-upgrade-process/
 
 maximo_versions:
   mas:
@@ -95,7 +95,7 @@ Many organizations complete technically successful upgrades only to discover tha
 
 To help leadership teams avoid this trap, we created a practical framework that aligns MAS upgrades with business outcomes and operational execution.
 
-👉 **Field Kit:** [The Maximo Upgrade Process](/field-kits/maximo-upgrade-process/)
+👉 **Field Kit:** [The Maximo Upgrade Process](https://maven-asset-management-insights.github.io/content/field-kits/maximo-upgrade-process/)
 
 This field kit provides a structured roadmap for:
 
@@ -105,7 +105,7 @@ This field kit provides a structured roadmap for:
 - Reducing integration and configuration risk
 - Structuring testing around real [work management consistency](https://maven-asset-management-insights.github.io/content/glossary/#work-management-consistency)
 - Driving adoption through training and [governance](https://maven-asset-management-insights.github.io/content/glossary/#data-governance)
-- Capturing [continuous improvement](https://maven-asset-management-insights.github.io/content/glossary/#asset-performance-management-apm) after go-live
+- Capturing continuous improvement after go-live
 
 Upgrades deliver real value when they improve execution, not just software versions.  
 This framework helps ensure your upgrade does both.
