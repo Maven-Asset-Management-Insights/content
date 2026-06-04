@@ -70,45 +70,33 @@ search: false
       <text x="64" y="82" font-family="Arial Black, Arial" font-weight="900" font-size="42" fill="#FFFFFF" letter-spacing="1">GLOSSARY</text>
       <text x="64" y="116" font-family="Arial" font-size="20" fill="#C8DCF4">Leadership-level definitions for</text>
       <text x="64" y="142" font-family="Arial" font-size="20" fill="#C8DCF4">Maximo and EAM concepts.</text>
-      <rect x="430" y="18" width="224" height="166" rx="6" fill="#292C75" opacity="0.3"/>
-      <rect x="430" y="18" width="224" height="166" rx="6" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.3"/>
-      <text x="446" y="48" font-family="Arial" font-weight="700" font-size="17" fill="#FFFFFF">A</text>
-      <text x="464" y="48" font-family="Arial" font-size="17" fill="#C8DCF4">Asset Criticality</text>
-      <text x="446" y="70" font-family="Arial" font-weight="700" font-size="17" fill="#FFFFFF">C</text>
-      <text x="464" y="70" font-family="Arial" font-size="17" fill="#C8DCF4">Condition-Based Maintenance</text>
-      <text x="446" y="92" font-family="Arial" font-weight="700" font-size="17" fill="#FFFFFF">D</text>
-      <text x="464" y="92" font-family="Arial" font-size="17" fill="#C8DCF4">Data Governance</text>
-      <text x="446" y="114" font-family="Arial" font-weight="700" font-size="17" fill="#FFFFFF">F</text>
-      <text x="464" y="114" font-family="Arial" font-size="17" fill="#C8DCF4">Failure Mode</text>
-      <text x="446" y="136" font-family="Arial" font-weight="700" font-size="17" fill="#FFFFFF">M</text>
-      <text x="464" y="136" font-family="Arial" font-size="17" fill="#C8DCF4">MTBF</text>
-      <text x="446" y="158" font-family="Arial" font-weight="700" font-size="17" fill="#FFFFFF">P</text>
-      <text x="464" y="158" font-family="Arial" font-size="17" fill="#C8DCF4">Predictive Maintenance</text>
-      <text x="446" y="178" font-family="Arial" font-weight="700" font-size="17" fill="#FFFFFF">R</text>
-      <text x="464" y="178" font-family="Arial" font-size="17" fill="#C8DCF4">Root Cause Analysis</text>
+      <circle cx="580" cy="100" r="60" fill="#292C75" opacity="0.2"/>
+      <circle cx="580" cy="100" r="42" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.2"/>
+      <text x="580" y="88" font-family="Arial Black, Arial" font-weight="900" font-size="36" fill="#FFFFFF" opacity="0.25" text-anchor="middle">A–Z</text>
+      <text x="580" y="122" font-family="Arial" font-size="18" fill="#C8DCF4" opacity="0.5" text-anchor="middle">EAM defined</text>
     </svg>
     <div style="padding: 1.25rem 1.5rem 1.5rem;">
       <h2>Glossary</h2>
       <p>A growing set of leadership-level definitions for Maximo and EAM concepts.</p>
       <ul>
-        <li><strong>A</strong> — <a href="{{ '/glossary/#asset-criticality' | relative_url }}">Asset Criticality</a></li>
-        <li><strong>B</strong> — <a href="{{ '/glossary/#backlog-health' | relative_url }}">Backlog Health</a></li>
-        <li><strong>C</strong> — <a href="{{ '/glossary/#condition-based-maintenance-cbm' | relative_url }}">Condition-Based Maintenance (CBM)</a></li>
-        <li><strong>D</strong> — <a href="{{ '/glossary/#data-governance' | relative_url }}">Data Governance</a></li>
-        <li><strong>E</strong> — <a href="{{ '/glossary/#enterprise-asset-management-eam' | relative_url }}">Enterprise Asset Management (EAM)</a></li>
-        <li><strong>F</strong> — <a href="{{ '/glossary/#failure-mode' | relative_url }}">Failure Mode</a></li>
-        <li><strong>H</strong> — <a href="{{ '/glossary/#hierarchy-integrity' | relative_url }}">Hierarchy Integrity</a></li>
-        <li><strong>I</strong> — <a href="{{ '/glossary/#internet-of-things-iot' | relative_url }}">Internet of Things (IoT)</a></li>
-        <li><strong>J</strong> — <a href="{{ '/glossary/#job-plan' | relative_url }}">Job Plan</a></li>
-        <li><strong>K</strong> — <a href="{{ '/glossary/#key-performance-indicator-kpi' | relative_url }}">Key Performance Indicator (KPI)</a></li>
-        <li><strong>M</strong> — <a href="{{ '/glossary/#mean-time-between-failures-mtbf' | relative_url }}">Mean Time Between Failures (MTBF)</a></li>
-        <li><strong>O</strong> — <a href="{{ '/glossary/#operational-availability-ao' | relative_url }}">Operational Availability (Ao)</a></li>
-        <li><strong>P</strong> — <a href="{{ '/glossary/#predictive-maintenance-pdm' | relative_url }}">Predictive Maintenance (PdM)</a></li>
-        <li><strong>R</strong> — <a href="{{ '/glossary/#root-cause-analysis-rca' | relative_url }}">Root Cause Analysis (RCA)</a></li>
-        <li><strong>S</strong> — <a href="{{ '/glossary/#standardized-failure-codes' | relative_url }}">Standardized Failure Codes</a></li>
-        <li><strong>T</strong> — <a href="{{ '/glossary/#transaction-rollback' | relative_url }}">Transaction Rollback</a></li>
-        <li><strong>U</strong> — <a href="{{ '/glossary/#usable-data' | relative_url }}">Usable Data</a></li>
-        <li><strong>W</strong> — <a href="{{ '/glossary/#work-order-wo' | relative_url }}">Work Order (WO)</a></li>
+        <li><a href="{{ '/glossary/#asset-criticality' | relative_url }}">Asset Criticality</a></li>
+        <li><a href="{{ '/glossary/#backlog-health' | relative_url }}">Backlog Health</a></li>
+        <li><a href="{{ '/glossary/#condition-based-maintenance-cbm' | relative_url }}">Condition-Based Maintenance (CBM)</a></li>
+        <li><a href="{{ '/glossary/#data-governance' | relative_url }}">Data Governance</a></li>
+        <li><a href="{{ '/glossary/#enterprise-asset-management-eam' | relative_url }}">Enterprise Asset Management (EAM)</a></li>
+        <li><a href="{{ '/glossary/#failure-mode' | relative_url }}">Failure Mode</a></li>
+        <li><a href="{{ '/glossary/#hierarchy-integrity' | relative_url }}">Hierarchy Integrity</a></li>
+        <li><a href="{{ '/glossary/#internet-of-things-iot' | relative_url }}">Internet of Things (IoT)</a></li>
+        <li><a href="{{ '/glossary/#job-plan' | relative_url }}">Job Plan</a></li>
+        <li><a href="{{ '/glossary/#key-performance-indicator-kpi' | relative_url }}">Key Performance Indicator (KPI)</a></li>
+        <li><a href="{{ '/glossary/#mean-time-between-failures-mtbf' | relative_url }}">Mean Time Between Failures (MTBF)</a></li>
+        <li><a href="{{ '/glossary/#operational-availability-ao' | relative_url }}">Operational Availability (Ao)</a></li>
+        <li><a href="{{ '/glossary/#predictive-maintenance-pdm' | relative_url }}">Predictive Maintenance (PdM)</a></li>
+        <li><a href="{{ '/glossary/#root-cause-analysis-rca' | relative_url }}">Root Cause Analysis (RCA)</a></li>
+        <li><a href="{{ '/glossary/#standardized-failure-codes' | relative_url }}">Standardized Failure Codes</a></li>
+        <li><a href="{{ '/glossary/#transaction-rollback' | relative_url }}">Transaction Rollback</a></li>
+        <li><a href="{{ '/glossary/#usable-data' | relative_url }}">Usable Data</a></li>
+        <li><a href="{{ '/glossary/#work-order-wo' | relative_url }}">Work Order (WO)</a></li>
       </ul>
       <div class="card-cta">
         <a class="button" href="{{ "/glossary" | relative_url }}">View full glossary</a>
