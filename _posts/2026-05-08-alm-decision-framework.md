@@ -22,14 +22,14 @@ maximo_versions:
     - "7.6+"
 ---
 
-Let's be honest: most teams are stuck in reactive mode. Something breaks? Fix it. Something fails? Replace it. Something's pricey? Kick the can down the road. But asset lifecycle management flips the script. It challenges us to ask: at every stage of an asset's life, are we making the right calls — and are we using the data that actually matters?
+Let's be honest: most teams are stuck in reactive mode. Something breaks? Fix it. Something fails? Replace it. Something's pricey? Kick the can down the road. But asset lifecycle management flips the script. It challenges us to ask: at every stage of an [asset's](https://maven-asset-management-insights.github.io/content/glossary/#asset) life, are we making the right calls — and are we using [data quality](https://maven-asset-management-insights.github.io/content/glossary/#data-quality) that actually matters?
 
 ## The lifecycle is five stages. Most organizations are only paying attention to one.
 
-Planning, procurement, operation, maintenance, retirement — ALM covers the whole journey. But let's be real: most of the budget, brainpower, and late-night troubleshooting gets poured into maintenance. And hey, that makes sense. Maintenance is where the action is. But here's the catch: when planning and procurement decisions — like total cost of ownership, criticality, or spare parts — get made without solid data, you're rolling the dice.
+Planning, procurement, operation, maintenance, retirement — ALM covers the whole journey. But let's be real: most of the budget, brainpower, and late-night troubleshooting gets poured into maintenance. And hey, that makes sense. Maintenance is where the action is. But here's the catch: when planning and procurement decisions — like [asset lifecycle cost](https://maven-asset-management-insights.github.io/content/glossary/#asset-lifecycle-cost), [asset criticality](https://maven-asset-management-insights.github.io/content/glossary/#asset-criticality), or spare parts — get made without solid [data confidence](https://maven-asset-management-insights.github.io/content/glossary/#data-confidence), you're rolling the dice.
 
-Teams that nail ALM aren't just better at maintenance. They're making sharper decisions from start to finish — what to buy, how to roll it out, when to fix or swap, and when it's time to retire and reinvest.
+Teams that nail ALM aren't just better at maintenance. They're making sharper decisions from start to finish — what to buy, how to roll it out, when to apply [corrective maintenance](https://maven-asset-management-insights.github.io/content/glossary/#corrective-maintenance-cm) or swap, and when [remaining useful life](https://maven-asset-management-insights.github.io/content/glossary/#remaining-useful-life-rul) data says it's time to retire and reinvest. That kind of [asset performance management](https://maven-asset-management-insights.github.io/content/glossary/#asset-performance-management-apm) is driven by [reliability strategy](https://maven-asset-management-insights.github.io/content/glossary/#reliability-strategy), not just reaction.
 
-That's not just a software win. It's a discipline thing — software just helps you get there.
+That's not just a software win. It's a [work management discipline](https://maven-asset-management-insights.github.io/content/glossary/#work-management-discipline) thing — software just helps you get there.
 
 → [Read the full article](https://www.mavenasset.com/blog/what-is-asset-lifecycle-management/)
