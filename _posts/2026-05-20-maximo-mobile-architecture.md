@@ -53,3 +53,5 @@ https://<manageServer>/maximo/oslc/graphite/mobile/schema?regenerate=1
 ```
 
 This is a critical step when troubleshooting mobile behavior after configuration changes — especially if the mobile app appears out of sync with what has been configured.
+
+→ [Maximo Mobile 9.0: Advancing Technician Productivity](https://www.mavenasset.com/blog/maximo-mobile-9-0-advancing-technician-productivity/)
