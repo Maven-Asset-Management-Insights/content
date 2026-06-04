@@ -56,3 +56,5 @@ https://<manageServer>/maximo/oslc/graphite/mobile/schema?regenerate=1
 ```
 
 If mobile behavior doesn't reflect your latest changes, regenerating the schema is often the first step — not a reconfiguration of the application XML.
+
+→ [Maximo Mobile 9.0: Advancing Technician Productivity](https://www.mavenasset.com/blog/maximo-mobile-9-0-advancing-technician-productivity/)
