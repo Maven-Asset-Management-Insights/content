@@ -23,14 +23,14 @@ maximo_versions:
     - "7.6+"
 ---
 
-This is a common story with Maximo programs. At first, the implementation goes smoothly, standards are set, and the data looks good. But once the project team moves on, things start to slip. Six months later, work order closeout is inconsistent again. Failure codes are missed, and the PM strategy hasn’t been reviewed since go-live. No one planned for this, but without a system in place, it’s hard to prevent.
+This is a common story with Maximo programs. At first, the implementation goes smoothly, standards are set, and the data looks good. But once the project team moves on, things start to slip. Six months later, [work order closeout](https://maven-asset-management-insights.github.io/content/glossary/#work-order-closeout) is inconsistent again. [Failure codes](https://maven-asset-management-insights.github.io/content/glossary/#failure-code) are missed, and the [PM strategy](https://maven-asset-management-insights.github.io/content/glossary/#preventive-maintenance-pm) hasn't been reviewed since go-live. No one planned for this, but without a system in place, it's hard to prevent.
 
 ## That system is governance — and it's simpler than it sounds.
 
-The organizations that sustain reliability improvement don't have more willpower. They have a rhythm: monthly data quality reviews that catch exceptions before they compound, quarterly reliability strategy refreshes that keep PM programs aligned with actual asset performance, and clear ownership so someone is always accountable for keeping standards alive.
+The organizations that sustain reliability improvement don't have more willpower. They have a rhythm: monthly [data quality](https://maven-asset-management-insights.github.io/content/glossary/#data-quality) reviews that catch exceptions before they compound into [data drift](https://maven-asset-management-insights.github.io/content/glossary/#data-drift), quarterly [reliability strategy](https://maven-asset-management-insights.github.io/content/glossary/#reliability-strategy) refreshes that keep [PM programs](https://maven-asset-management-insights.github.io/content/glossary/#preventive-maintenance-pm-compliance) aligned with actual [asset performance](https://maven-asset-management-insights.github.io/content/glossary/#asset-performance), and clear ownership so someone is always accountable for keeping [data standards](https://maven-asset-management-insights.github.io/content/glossary/#data-standard-enforcement) alive.
 
-Each touchpoint is lightweight on its own. Together, they're what separates a Maximo program that keeps improving from one that quietly reverts to where it started.
+Each touchpoint is lightweight on its own. Together, they're what separates a Maximo program built on [work management discipline](https://maven-asset-management-insights.github.io/content/glossary/#work-management-discipline) that keeps improving from one that quietly reverts to where it started.
 
-Governance isn't bureaucracy. It's the difference between a one-time project and a permanent operating standard.
+[Governance](https://maven-asset-management-insights.github.io/content/glossary/#data-governance) isn't bureaucracy. It's the difference between a one-time project and a permanent operating standard.
 
-→ [Read the full article](https://www.mavenasset.com/blog/building-a-strong-reliability-foundation-for-maximo-success/) -->
+→ [Read the full article](https://www.mavenasset.com/blog/building-a-strong-reliability-foundation-for-maximo-success/)
