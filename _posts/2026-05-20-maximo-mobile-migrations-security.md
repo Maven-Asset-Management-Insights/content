@@ -74,3 +74,5 @@ Before completing a mobile migration:
 5. Test on both RBA and mobile device before signoff
 
 [System record integrity](https://maven-asset-management-insights.github.io/content/glossary/#system-record-integrity) in mobile deployments depends on all five steps completing cleanly — a migration that skips the schema refresh or security check can produce inconsistent behavior that's hard to diagnose after the fact.
+
+→ [Maximo Mobile 9.0: Advancing Technician Productivity](https://www.mavenasset.com/blog/maximo-mobile-9-0-advancing-technician-productivity/)
