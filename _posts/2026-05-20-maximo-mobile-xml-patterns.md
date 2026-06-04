@@ -82,3 +82,5 @@ Beyond field-level configuration, mobile queries themselves can be overridden th
 The `saved-query` attribute references a named query defined in the Object Structure's Query Definition. Modifying the query clause there — rather than in the application XML — controls what data the mobile database pulls down. In the example above, the MYWORK query filters out completed, cancelled, closed, and waiting-for-approval work orders from the technician's list view.
 
 These four patterns — conditional hiding, required fields, read-only fields, and query overrides — cover the majority of mobile [work management consistency](https://maven-asset-management-insights.github.io/content/glossary/#work-management-consistency) customizations encountered in the field.
+
+→ [Maximo Mobile 9.0: Advancing Technician Productivity](https://www.mavenasset.com/blog/maximo-mobile-9-0-advancing-technician-productivity/)
