@@ -15,34 +15,31 @@ search: false
     allowfullscreen>
   </iframe>
 </div>
-  <p><strong>IBM Maximo & Enterprise Asset Management Clearly Explained: Asset management is challenging enough without adding unnecessary complexity.</strong></p>
+  <p><strong>IBM Maximo &amp; Enterprise Asset Management Clearly Explained: Asset management is challenging enough without adding unnecessary complexity.</strong></p>
 </section>
 
 <div class="grid">
 
   <!-- ── INSIGHTS ── -->
   <section class="card" style="padding:0; overflow:hidden;">
-    <svg width="100%" viewBox="0 0 680 160" role="img" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+    <svg width="100%" height="140" viewBox="0 0 680 200" role="img" xmlns="http://www.w3.org/2000/svg" style="display:block;">
       <title>Latest Insights</title>
       <desc>Maven branded header for the Latest Insights section</desc>
       <defs><marker id="arr-ins" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
-      <rect width="680" height="160" fill="#292C75"/>
-      <rect x="0" y="0" width="6" height="160" fill="#3E67B1"/>
-      <rect x="0" y="152" width="680" height="8" fill="#3E67B1"/>
-      <rect x="40" y="28" width="280" height="104" rx="8" fill="#3E67B1" opacity="0.18"/>
-      <text x="64" y="72" font-family="Arial Black, Arial" font-weight="900" font-size="32" fill="#FFFFFF" letter-spacing="1">INSIGHTS</text>
-      <text x="64" y="100" font-family="Arial" font-size="13" fill="#A8C0E0">Maven perspectives on Maximo,</text>
-      <text x="64" y="118" font-family="Arial" font-size="13" fill="#A8C0E0">reliability strategy, and asset performance.</text>
-      <circle cx="570" cy="76" r="44" fill="#3E67B1" opacity="0.22"/>
-      <circle cx="570" cy="76" r="32" fill="none" stroke="#3E67B1" stroke-width="1.5" opacity="0.5"/>
-      <polyline points="530,100 548,82 562,90 580,62 598,50" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr-ins)"/>
-      <circle cx="530" cy="100" r="3" fill="#A8C0E0"/>
-      <circle cx="548" cy="82" r="3" fill="#A8C0E0"/>
-      <circle cx="562" cy="90" r="3" fill="#A8C0E0"/>
-      <circle cx="580" cy="62" r="3" fill="#A8C0E0"/>
-      <rect x="40" y="148" width="40" height="3" rx="1.5" fill="#3E67B1"/>
-      <rect x="88" y="148" width="20" height="3" rx="1.5" fill="#3E67B1" opacity="0.5"/>
-      <rect x="116" y="148" width="10" height="3" rx="1.5" fill="#3E67B1" opacity="0.25"/>
+      <rect width="680" height="200" fill="#292C75"/>
+      <rect x="0" y="0" width="7" height="200" fill="#3E67B1"/>
+      <rect x="0" y="190" width="680" height="10" fill="#3E67B1"/>
+      <rect x="40" y="24" width="360" height="148" rx="8" fill="#3E67B1" opacity="0.18"/>
+      <text x="64" y="82" font-family="Arial Black, Arial" font-weight="900" font-size="42" fill="#FFFFFF" letter-spacing="1">INSIGHTS</text>
+      <text x="64" y="116" font-family="Arial" font-size="20" fill="#A8C0E0">Maven perspectives on Maximo,</text>
+      <text x="64" y="142" font-family="Arial" font-size="20" fill="#A8C0E0">reliability &amp; asset performance.</text>
+      <circle cx="590" cy="96" r="52" fill="#3E67B1" opacity="0.22"/>
+      <circle cx="590" cy="96" r="38" fill="none" stroke="#3E67B1" stroke-width="2" opacity="0.5"/>
+      <polyline points="548,128 568,104 584,116 604,82 624,64" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arr-ins)"/>
+      <circle cx="548" cy="128" r="4" fill="#A8C0E0"/>
+      <circle cx="568" cy="104" r="4" fill="#A8C0E0"/>
+      <circle cx="584" cy="116" r="4" fill="#A8C0E0"/>
+      <circle cx="604" cy="82" r="4" fill="#A8C0E0"/>
     </svg>
     <div style="padding: 1.25rem 1.5rem 1.5rem;">
       <h2>Latest Insights</h2>
@@ -63,29 +60,26 @@ search: false
 
   <!-- ── GLOSSARY ── -->
   <section class="card" style="padding:0; overflow:hidden;">
-    <svg width="100%" viewBox="0 0 680 160" role="img" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+    <svg width="100%" height="140" viewBox="0 0 680 200" role="img" xmlns="http://www.w3.org/2000/svg" style="display:block;">
       <title>Glossary</title>
       <desc>Maven branded header for the Glossary section</desc>
-      <rect width="680" height="160" fill="#3E67B1"/>
-      <rect x="0" y="0" width="6" height="160" fill="#FFFFFF" opacity="0.3"/>
-      <rect x="0" y="152" width="680" height="8" fill="#292C75"/>
-      <rect x="40" y="28" width="280" height="104" rx="8" fill="#292C75" opacity="0.25"/>
-      <text x="64" y="72" font-family="Arial Black, Arial" font-weight="900" font-size="32" fill="#FFFFFF" letter-spacing="1">GLOSSARY</text>
-      <text x="64" y="100" font-family="Arial" font-size="13" fill="#C8DCF4">Leadership-level definitions for</text>
-      <text x="64" y="118" font-family="Arial" font-size="13" fill="#C8DCF4">Maximo and EAM concepts.</text>
-      <rect x="490" y="38" width="148" height="90" rx="6" fill="#292C75" opacity="0.3"/>
-      <rect x="490" y="38" width="148" height="90" rx="6" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.3"/>
-      <text x="510" y="66" font-family="Arial" font-weight="700" font-size="13" fill="#FFFFFF" opacity="0.9">A</text>
-      <text x="524" y="66" font-family="Arial" font-size="12" fill="#C8DCF4">Asset Criticality</text>
-      <text x="510" y="84" font-family="Arial" font-weight="700" font-size="13" fill="#FFFFFF" opacity="0.9">F</text>
-      <text x="524" y="84" font-family="Arial" font-size="12" fill="#C8DCF4">Failure Mode</text>
-      <text x="510" y="102" font-family="Arial" font-weight="700" font-size="13" fill="#FFFFFF" opacity="0.9">M</text>
-      <text x="524" y="102" font-family="Arial" font-size="12" fill="#C8DCF4">MTBF</text>
-      <text x="510" y="120" font-family="Arial" font-weight="700" font-size="13" fill="#FFFFFF" opacity="0.9">R</text>
-      <text x="524" y="120" font-family="Arial" font-size="12" fill="#C8DCF4">RCA</text>
-      <rect x="40" y="148" width="40" height="3" rx="1.5" fill="#FFFFFF" opacity="0.4"/>
-      <rect x="88" y="148" width="20" height="3" rx="1.5" fill="#FFFFFF" opacity="0.2"/>
-      <rect x="116" y="148" width="10" height="3" rx="1.5" fill="#FFFFFF" opacity="0.1"/>
+      <rect width="680" height="200" fill="#3E67B1"/>
+      <rect x="0" y="0" width="7" height="200" fill="#FFFFFF" opacity="0.3"/>
+      <rect x="0" y="190" width="680" height="10" fill="#292C75"/>
+      <rect x="40" y="24" width="320" height="148" rx="8" fill="#292C75" opacity="0.25"/>
+      <text x="64" y="82" font-family="Arial Black, Arial" font-weight="900" font-size="42" fill="#FFFFFF" letter-spacing="1">GLOSSARY</text>
+      <text x="64" y="116" font-family="Arial" font-size="20" fill="#C8DCF4">Leadership-level definitions for</text>
+      <text x="64" y="142" font-family="Arial" font-size="20" fill="#C8DCF4">Maximo and EAM concepts.</text>
+      <rect x="460" y="28" width="192" height="136" rx="6" fill="#292C75" opacity="0.3"/>
+      <rect x="460" y="28" width="192" height="136" rx="6" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.3"/>
+      <text x="478" y="72" font-family="Arial" font-weight="700" font-size="20" fill="#FFFFFF">A</text>
+      <text x="500" y="72" font-family="Arial" font-size="20" fill="#C8DCF4">Asset Criticality</text>
+      <text x="478" y="100" font-family="Arial" font-weight="700" font-size="20" fill="#FFFFFF">F</text>
+      <text x="500" y="100" font-family="Arial" font-size="20" fill="#C8DCF4">Failure Mode</text>
+      <text x="478" y="128" font-family="Arial" font-weight="700" font-size="20" fill="#FFFFFF">M</text>
+      <text x="500" y="128" font-family="Arial" font-size="20" fill="#C8DCF4">MTBF</text>
+      <text x="478" y="156" font-family="Arial" font-weight="700" font-size="20" fill="#FFFFFF">R</text>
+      <text x="500" y="156" font-family="Arial" font-size="20" fill="#C8DCF4">RCA</text>
     </svg>
     <div style="padding: 1.25rem 1.5rem 1.5rem;">
       <h2>Glossary</h2>
@@ -108,32 +102,29 @@ search: false
 
   <!-- ── FIELD KITS ── -->
   <section class="card" style="padding:0; overflow:hidden;">
-    <svg width="100%" viewBox="0 0 680 160" role="img" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+    <svg width="100%" height="140" viewBox="0 0 680 200" role="img" xmlns="http://www.w3.org/2000/svg" style="display:block;">
       <title>Field Kits and Tools</title>
       <desc>Maven branded header for the Field Kits and Tools section</desc>
-      <rect width="680" height="160" fill="#292C75"/>
-      <rect x="0" y="0" width="6" height="160" fill="#3E67B1"/>
-      <rect x="674" y="0" width="6" height="160" fill="#3E67B1"/>
-      <rect x="0" y="152" width="680" height="8" fill="#3E67B1"/>
-      <rect x="40" y="28" width="280" height="104" rx="8" fill="#3E67B1" opacity="0.18"/>
-      <text x="64" y="68" font-family="Arial Black, Arial" font-weight="900" font-size="26" fill="#FFFFFF" letter-spacing="1">FIELD KITS</text>
-      <text x="64" y="94" font-family="Arial Black, Arial" font-weight="900" font-size="26" fill="#FFFFFF" letter-spacing="1">&amp; TOOLS</text>
-      <text x="64" y="118" font-family="Arial" font-size="13" fill="#A8C0E0">Practical frameworks that translate</text>
-      <text x="64" y="134" font-family="Arial" font-size="13" fill="#A8C0E0">strategy into execution.</text>
-      <rect x="490" y="34" width="148" height="96" rx="6" fill="#3E67B1" opacity="0.25"/>
-      <rect x="506" y="50" width="14" height="14" rx="2" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8"/>
-      <line x1="509" y1="57" x2="512" y2="60" stroke="#A8C0E0" stroke-width="1.5" stroke-linecap="round"/>
-      <line x1="512" y1="60" x2="518" y2="53" stroke="#A8C0E0" stroke-width="1.5" stroke-linecap="round"/>
-      <line x1="528" y1="57" x2="622" y2="57" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-      <rect x="506" y="72" width="14" height="14" rx="2" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8"/>
-      <line x1="509" y1="79" x2="512" y2="82" stroke="#A8C0E0" stroke-width="1.5" stroke-linecap="round"/>
-      <line x1="512" y1="82" x2="518" y2="75" stroke="#A8C0E0" stroke-width="1.5" stroke-linecap="round"/>
-      <line x1="528" y1="79" x2="622" y2="79" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-      <rect x="506" y="94" width="14" height="14" rx="2" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8"/>
-      <line x1="528" y1="101" x2="590" y2="101" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
-      <rect x="40" y="148" width="40" height="3" rx="1.5" fill="#3E67B1"/>
-      <rect x="88" y="148" width="20" height="3" rx="1.5" fill="#3E67B1" opacity="0.5"/>
-      <rect x="116" y="148" width="10" height="3" rx="1.5" fill="#3E67B1" opacity="0.25"/>
+      <rect width="680" height="200" fill="#292C75"/>
+      <rect x="0" y="0" width="7" height="200" fill="#3E67B1"/>
+      <rect x="673" y="0" width="7" height="200" fill="#3E67B1"/>
+      <rect x="0" y="190" width="680" height="10" fill="#3E67B1"/>
+      <rect x="40" y="24" width="360" height="148" rx="8" fill="#3E67B1" opacity="0.18"/>
+      <text x="64" y="78" font-family="Arial Black, Arial" font-weight="900" font-size="38" fill="#FFFFFF" letter-spacing="1">FIELD KITS</text>
+      <text x="64" y="118" font-family="Arial Black, Arial" font-weight="900" font-size="38" fill="#FFFFFF" letter-spacing="1">&amp; TOOLS</text>
+      <text x="64" y="150" font-family="Arial" font-size="20" fill="#A8C0E0">Practical frameworks that translate</text>
+      <text x="64" y="174" font-family="Arial" font-size="20" fill="#A8C0E0">strategy into execution.</text>
+      <rect x="468" y="28" width="180" height="144" rx="6" fill="#3E67B1" opacity="0.25"/>
+      <rect x="484" y="52" width="18" height="18" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.8"/>
+      <line x1="488" y1="61" x2="492" y2="66" stroke="#A8C0E0" stroke-width="2" stroke-linecap="round"/>
+      <line x1="492" y1="66" x2="500" y2="55" stroke="#A8C0E0" stroke-width="2" stroke-linecap="round"/>
+      <line x1="514" y1="61" x2="628" y2="61" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+      <rect x="484" y="85" width="18" height="18" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.8"/>
+      <line x1="488" y1="94" x2="492" y2="99" stroke="#A8C0E0" stroke-width="2" stroke-linecap="round"/>
+      <line x1="492" y1="99" x2="500" y2="88" stroke="#A8C0E0" stroke-width="2" stroke-linecap="round"/>
+      <line x1="514" y1="94" x2="628" y2="94" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+      <rect x="484" y="118" width="18" height="18" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.8"/>
+      <line x1="514" y1="127" x2="600" y2="127" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
     </svg>
     <div style="padding: 1.25rem 1.5rem 1.5rem;">
       <h2>Field Kits &amp; Tools</h2>
