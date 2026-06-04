@@ -85,17 +85,9 @@ search: false
         <li><a href="{{ '/glossary/#data-governance' | relative_url }}">Data Governance</a></li>
         <li><a href="{{ '/glossary/#enterprise-asset-management-eam' | relative_url }}">Enterprise Asset Management (EAM)</a></li>
         <li><a href="{{ '/glossary/#failure-mode' | relative_url }}">Failure Mode</a></li>
-        <li><a href="{{ '/glossary/#hierarchy-integrity' | relative_url }}">Hierarchy Integrity</a></li>
         <li><a href="{{ '/glossary/#internet-of-things-iot' | relative_url }}">Internet of Things (IoT)</a></li>
         <li><a href="{{ '/glossary/#job-plan' | relative_url }}">Job Plan</a></li>
         <li><a href="{{ '/glossary/#key-performance-indicator-kpi' | relative_url }}">Key Performance Indicator (KPI)</a></li>
-        <li><a href="{{ '/glossary/#mean-time-between-failures-mtbf' | relative_url }}">Mean Time Between Failures (MTBF)</a></li>
-        <li><a href="{{ '/glossary/#operational-availability-ao' | relative_url }}">Operational Availability (Ao)</a></li>
-        <li><a href="{{ '/glossary/#predictive-maintenance-pdm' | relative_url }}">Predictive Maintenance (PdM)</a></li>
-        <li><a href="{{ '/glossary/#root-cause-analysis-rca' | relative_url }}">Root Cause Analysis (RCA)</a></li>
-        <li><a href="{{ '/glossary/#standardized-failure-codes' | relative_url }}">Standardized Failure Codes</a></li>
-        <li><a href="{{ '/glossary/#transaction-rollback' | relative_url }}">Transaction Rollback</a></li>
-        <li><a href="{{ '/glossary/#usable-data' | relative_url }}">Usable Data</a></li>
         <li><a href="{{ '/glossary/#work-order-wo' | relative_url }}">Work Order (WO)</a></li>
       </ul>
       <div class="card-cta">
