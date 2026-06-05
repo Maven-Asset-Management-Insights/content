@@ -10,3 +10,4 @@ header_pages:
   - field-kits.md
 plugins:
   - jekyll-sitemap
+google_analytics: G-SBQ2G5F9P5
