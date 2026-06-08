@@ -123,17 +123,11 @@ search: false
       <h2>Field Kits &amp; Tools</h2>
       <p>Practical checklists and frameworks that translate strategy into execution.</p>
       <ul>
-        {% assign kits = site.pages
-          | where_exp: "p", "p.url contains '/field-kits/'"
-          | where_exp: "p", "p.url != '/field-kits/'"
-          | sort: "date"
-          | reverse %}
-        {% for kit in kits limit:5 %}
-          <li>
-            <strong>{{ kit.date | date: "%B %-d, %Y" }}:</strong>
-            <a href="{{ kit.url | relative_url }}">{{ kit.title }}</a>
-          </li>
-        {% endfor %}
+        <li><a href="{{ '/field-kits/maximo-upgrade-process/' | relative_url }}">The Maximo Upgrade Process</a></li>
+        <li><a href="{{ '/field-kits/maximo-readiness-scorecard.html' | relative_url }}">Maximo Readiness Scorecard</a></li>
+        <li><a href="{{ '/field-kits/year-end-maximo/' | relative_url }}">Year-End Maximo Preparation</a></li>
+        <li><a href="{{ '/field-kits/maintenance-goes-mobile-clarios/' | relative_url }}">Maintenance Goes Mobile (Clarios)</a></li>
+        <li><a href="{{ '/field-kits/monitor-demo-practical-path-to-deployment/' | relative_url }}">Monitor Demo and Practical Path to Deployment</a></li>
       </ul>
       <div style="margin-top:14px;">
         <a class="button" href="{{ "/field-kits" | relative_url }}">Explore all kits</a>
