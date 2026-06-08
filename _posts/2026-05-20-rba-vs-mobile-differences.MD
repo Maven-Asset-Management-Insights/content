@@ -29,7 +29,7 @@ One of the most common sources of confusion when customizing Maximo Mobile is th
 
 The RBA application queries the Maximo database directly. It has access to the full object model, all relationships, and any data that exists in the system at the time of the query.
 
-The Maximo Mobile application does not query the Maximo database directly. It queries the local database built on the device — a subset of Maximo data defined by the [Mobile Object Structures](https://maven-asset-management-insights.github.io/content/glossary/#work-order-wo) that populated it. If a relationship or field wasn't pulled into the local database, mobile simply doesn't have it, even if RBA works perfectly.
+The Maximo Mobile application does not query the Maximo database directly. It queries the local database built on the device — a subset of Maximo data defined by the [Mobile Object Structures](https://maven-asset-management-insights.github.io/content/glossary/#mobile-object-structures) that populated it. If a relationship or field wasn't pulled into the local database, mobile simply doesn't have it, even if RBA works perfectly.
 
 This means:
 
