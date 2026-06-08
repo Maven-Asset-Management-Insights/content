@@ -495,7 +495,14 @@ search: true
       </div>
       <p>Mean Time Between Failures is the average operating time between asset failures, helping teams evaluate reliability and compare performance over time.</p>
     </div>
-
+<div class="glossary-term" data-category="maximo mobile">
+      <h3 id="mobile-object-structures">Mobile Object Structures</h3>
+      <div class="glossary-tags">
+        <span>Maximo</span>
+        <span>Mobile</span>
+      </div>
+      <p>Mobile Object Structures are the OSLC-based data structures that define which Maximo records, fields, and relationships are synchronized to a technician's device for use in Maximo Mobile. Because the mobile application queries a local on-device database rather than Maximo directly, only data included in the relevant Mobile Object Structures is available offline. Fields or relationships not defined in these structures will not appear in the mobile application, even when they are accessible in the browser-based application (RBA).</p>
+    </div>
     <div class="glossary-term" data-category="reliability analytics">
       <h3 id="mttr">Mean Time To Repair (MTTR)</h3>
       <div class="glossary-tags">
