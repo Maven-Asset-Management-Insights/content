@@ -2,7 +2,7 @@
 layout: post
 title: "When to Retire an Asset Is a Data Question. Most Organizations Are Answering It with Intuition."
 subtitle: "The retirement decision is only as good as the lifecycle data behind it"
-date: 2026-05-10
+date: 2026-05-9
 categories:
   - insights
   - asset-management
