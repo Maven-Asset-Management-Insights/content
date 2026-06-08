@@ -43,7 +43,7 @@ The Maximo Mobile Code Editor displays the full application XML, starting with t
   version="9.1.22.0">
 ```
 
-Attributes like `id`, `version`, `mas-id`, and `product-name` are environment-specific. Copying them into a destination environment with different values — or a different [Maximo Application Suite](https://maven-asset-management-insights.github.io/content/glossary/#maximo-application-suite-mas) version — can cause compilation errors that are difficult to trace.
+Attributes like `id`, `version`, `mas-id`, and `product-name` are environment-specific. Copying them into a destination environment with different values — or a different Maximo Application Suite version — can cause compilation errors that are difficult to trace.
 
 The safer approach: copy everything below the first line. Paste the `<properties>` block and all subsequent content into the destination environment's existing root element, rather than replacing the root element itself.
 
