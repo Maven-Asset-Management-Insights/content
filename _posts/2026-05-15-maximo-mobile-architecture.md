@@ -39,7 +39,7 @@ This has a practical implication: if your mobile app isn't showing data you expe
 
 ## What this means for configuration work.
 
-Because the mobile app reads from a local database rather than querying Maximo directly, several things work differently than they do in the browser-based [Maximo Application Suite](https://maven-asset-management-insights.github.io/content/glossary/#maximo-application-suite-mas):
+Because the mobile app reads from a local database rather than querying Maximo directly, several things work differently than they do in the browser-based Maximo Application Suite:
 
 - Relationships available in the RBA (browser) application may not exist in the mobile database
 - [Data quality](https://maven-asset-management-insights.github.io/content/glossary/#data-quality) and completeness depend on what the Object Structure is pulling down
