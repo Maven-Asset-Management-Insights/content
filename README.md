@@ -47,7 +47,7 @@ A growing set of leadership-level definitions for Maximo and EAM concepts.
 
 Start here: **glossary.md**
 
-### Field Kits (Quarterly Tools)
+### Field Kits (Usefule Maximo Tools)
 Practical checklists and frameworks that translate strategy into execution.
 
 (Coming soon in `/field-kits/`)
@@ -59,7 +59,7 @@ Maven adds new executive-level entries on an ongoing basis as part of our commit
 
 ---
 
-## About Maven Asset Management Solutions
-Maven Asset Management Solutions partners with organizations to deliver measurable outcomes through IBM Maximo expertise, governance discipline, and dependable execution.
+## About Maven Asset Management
+Maven Asset Management partners with organizations to deliver measurable outcomes through IBM Maximo expertise, governance discipline, and dependable execution.
 
 Learn more at: https://www.mavenasset.com
