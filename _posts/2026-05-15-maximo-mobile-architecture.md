@@ -25,7 +25,7 @@ Most people assume Maximo Mobile works the same way as the browser-based applica
 
 ## Maximo Mobile runs against a local database on the device.
 
-When a technician opens the Maximo Mobile app, they are not querying the Maximo server directly. Instead, the app reads from a local [mobile database](https://maven-asset-management-insights.github.io/content/glossary/#work-order-wo) built on the device. That local database syncs back to Maximo when the device has internet connectivity — which means field teams can continue working in areas with limited or no network access.
+When a technician opens the Maximo Mobile app, they are not querying the Maximo server directly. Instead, the app reads from a local mobile database built on the device. That local database syncs back to Maximo when the device has internet connectivity — which means field teams can continue working in areas with limited or no network access.
 
 This is the core design principle behind Maximo Mobile: it is built for disconnected environments. The local database is what makes offline [work order](https://maven-asset-management-insights.github.io/content/glossary/#work-order-wo) execution, [inspection form](https://maven-asset-management-insights.github.io/content/glossary/#inspection-form) completion, and asset lookup possible when connectivity isn't guaranteed.
 
