@@ -4,8 +4,8 @@ title: Home
 search: false
 ---
 <section class="hero">
-  <h1>Maven's Asset Performance Management Field Glossary</h1>
-  <h2>Start here. What Is the Maven Field Glossary Resource Hub?</h2>
+  <h1>Know the Language. Lead the Initiative.</h1>
+  <h2>Maven's Field Glossary for Maximo and EAM Leaders</h2>
 <div class="video-container" style="max-width: 600px; margin: 1.5rem auto 2rem auto; padding-bottom: 40%;">
   <iframe
     src="https://www.youtube.com/embed/bMbEX0IYHe8"
@@ -16,6 +16,7 @@ search: false
   </iframe>
 </div>
   <p><strong>IBM Maximo &amp; Enterprise Asset Management Clearly Explained: Asset management is challenging enough without adding unnecessary complexity.</strong></p>
+  <p style="margin-top: 1rem;">Maven works with organizations to turn this knowledge into outcomes. <a href="https://www.mavenasset.com">See how Maven can help.</a></p>
 </section>
 
 <div class="grid">
