@@ -30,7 +30,6 @@ search: false
       <rect width="680" height="200" fill="#292C75"/>
       <rect x="0" y="0" width="7" height="200" fill="#3E67B1"/>
       <rect x="0" y="190" width="680" height="10" fill="#3E67B1"/>
-      <rect x="40" y="24" width="360" height="148" rx="8" fill="#3E67B1" opacity="0.18"/>
       <text x="64" y="82" font-family="Arial Black, Arial" font-weight="900" font-size="42" fill="#FFFFFF" letter-spacing="1">INSIGHTS</text>
       <text x="64" y="116" font-family="Arial" font-size="20" fill="#A8C0E0">Maven perspectives on Maximo,</text>
       <text x="64" y="142" font-family="Arial" font-size="20" fill="#A8C0E0">reliability &amp; asset performance.</text>
@@ -67,7 +66,6 @@ search: false
       <rect width="680" height="200" fill="#3E67B1"/>
       <rect x="0" y="0" width="7" height="200" fill="#FFFFFF" opacity="0.3"/>
       <rect x="0" y="190" width="680" height="10" fill="#292C75"/>
-      <rect x="40" y="24" width="320" height="148" rx="8" fill="#292C75" opacity="0.25"/>
       <text x="64" y="82" font-family="Arial Black, Arial" font-weight="900" font-size="42" fill="#FFFFFF" letter-spacing="1">GLOSSARY</text>
       <text x="64" y="116" font-family="Arial" font-size="20" fill="#C8DCF4">Leadership-level definitions for</text>
       <text x="64" y="142" font-family="Arial" font-size="20" fill="#C8DCF4">Maximo and EAM concepts.</text>
@@ -106,12 +104,10 @@ search: false
       <rect x="0" y="0" width="7" height="200" fill="#3E67B1"/>
       <rect x="673" y="0" width="7" height="200" fill="#3E67B1"/>
       <rect x="0" y="190" width="680" height="10" fill="#3E67B1"/>
-      <rect x="40" y="24" width="360" height="148" rx="8" fill="#3E67B1" opacity="0.18"/>
       <text x="64" y="78" font-family="Arial Black, Arial" font-weight="900" font-size="38" fill="#FFFFFF" letter-spacing="1">FIELD KITS</text>
       <text x="64" y="118" font-family="Arial Black, Arial" font-weight="900" font-size="38" fill="#FFFFFF" letter-spacing="1">&amp; TOOLS</text>
       <text x="64" y="150" font-family="Arial" font-size="20" fill="#A8C0E0">Practical frameworks that translate</text>
       <text x="64" y="174" font-family="Arial" font-size="20" fill="#A8C0E0">strategy into execution.</text>
-      <rect x="468" y="28" width="180" height="144" rx="6" fill="#3E67B1" opacity="0.25"/>
       <rect x="484" y="52" width="18" height="18" rx="3" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.8"/>
       <line x1="488" y1="61" x2="492" y2="66" stroke="#A8C0E0" stroke-width="2" stroke-linecap="round"/>
       <line x1="492" y1="66" x2="500" y2="55" stroke="#A8C0E0" stroke-width="2" stroke-linecap="round"/>
