@@ -2,7 +2,7 @@
 layout: post
 title: "Maximo Mobile Works Differently Than You Might Expect"
 subtitle: "Understanding the local database architecture behind Maximo Mobile"
-date: 2026-05-20
+date: 2026-05-15
 categories:
   - insights
   - maximo
