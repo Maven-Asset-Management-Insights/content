@@ -2,7 +2,7 @@
 layout: post
 title: "Migrating Maximo Mobile Configurations Between Environments"
 subtitle: "What to copy, what to skip, and how to avoid compilation errors on the other side"
-date: 2026-05-20
+date: 2026-05-10
 categories:
   - insights
   - maximo
