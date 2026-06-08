@@ -22,7 +22,7 @@ maximo_versions:
     - "7.6+"
 ---
 
-Every [asset](https://maven-asset-management-insights.github.io/content/glossary/#asset) has its day. Eventually, the cost to keep it running outpaces the value it brings. That's your retirement threshold — and it's one of the biggest calls you'll make in asset lifecycle management.
+Every [asset](https://maven-asset-management-insights.github.io/content/glossary/#asset-maximo) has its day. Eventually, the cost to keep it running outpaces the value it brings. That's your retirement threshold — and it's one of the biggest calls you'll make in asset lifecycle management.
 
 Most teams miss the mark here — not because they don't know what they're doing, but because they're flying blind without the right data.
 
