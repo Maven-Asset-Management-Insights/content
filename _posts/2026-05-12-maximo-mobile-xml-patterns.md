@@ -2,7 +2,7 @@
 layout: post
 title: "Three XML Patterns Every Maximo Mobile Developer Should Know"
 subtitle: "Hiding fields, enforcing required inputs, and locking read-only values in mobile application XML"
-date: 2026-05-20
+date: 2026-05-12
 categories:
   - insights
   - maximo
