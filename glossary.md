@@ -121,7 +121,16 @@ search: true
         <span>Data Quality</span>
         <span>Maximo</span>
       </div>
-      <p>Asset Hierarchy is the structured arrangement of assets into parent-child relationships in Maximo, helping teams understand systems, track performance, and analyze maintenance activity effectively.</p>
+      <p>Asset Hierarchy is the structured arrangement of assets into parent-child relationships in Maximo, helping teams understand systems, track performance, and analyze maintenance activity effectively. An Asset Hierarchy is not the same as an Asset Registry — a registry lists assets, while a hierarchy defines how they relate to each other.</p>
+    </div>
+
+    <div class="glossary-term" data-category="strategy analytics">
+      <h3 id="asset-lifecycle">Asset Lifecycle</h3>
+      <div class="glossary-tags">
+        <span>Analytics</span>
+        <span>Strategy</span>
+      </div>
+      <p>Asset Lifecycle is the managed journey of a physical asset from acquisition through commissioning, operation, maintenance, and disposal, including all decisions made along the way. Managing an asset lifecycle is a deliberate strategy — not just tracking how long an asset lasts. See also: Asset Lifespan, Asset Lifecycle Cost.</p>
     </div>
 
     <div class="glossary-term" data-category="strategy analytics">
@@ -131,6 +140,14 @@ search: true
         <span>Strategy</span>
       </div>
       <p>Asset Lifecycle Cost is the total cost of owning and operating an asset from acquisition through disposal, helping organizations make better investment and maintenance decisions.</p>
+    </div>
+
+    <div class="glossary-term" data-category="strategy">
+      <h3 id="asset-lifespan">Asset Lifespan</h3>
+      <div class="glossary-tags">
+        <span>Strategy</span>
+      </div>
+      <p>Asset Lifespan is the total duration an asset operates from commissioning to retirement, measured in time, cycles, or usage. Lifespan describes how long an asset lasts; Asset Lifecycle describes how it is managed throughout that time. Organizations that focus only on lifespan often miss the strategic decisions — maintenance approach, capital reinvestment, decommissioning timing — that define lifecycle management.</p>
     </div>
 
     <div class="glossary-term" data-category="reliability analytics">
@@ -148,7 +165,25 @@ search: true
         <span>Analytics</span>
         <span>Strategy</span>
       </div>
-      <p>Asset Performance Management is a set of capabilities that connect asset condition, risk, and performance data to decisions, helping improve reliability and optimize maintenance strategies.</p>
+      <p>Asset Performance Management is a set of capabilities that connect asset condition, risk, and performance data to decisions, helping improve reliability and optimize maintenance strategies. APM is more narrowly focused on performance data, condition monitoring, and reliability analytics than EAM, which covers the full asset lifecycle including work management, procurement, and compliance. Vendors often use EAM and APM interchangeably — they are not the same.</p>
+    </div>
+
+    <div class="glossary-term" data-category="data-quality maximo">
+      <h3 id="asset-registry">Asset Registry</h3>
+      <div class="glossary-tags">
+        <span>Data Quality</span>
+        <span>Maximo</span>
+      </div>
+      <p>An Asset Registry is a list of assets an organization owns or manages, capturing basic identification information such as asset number, description, location, and classification. A registry is not the same as an Asset Hierarchy — a registry tells you what assets exist, while a hierarchy defines how they relate to each other as systems, subsystems, and components. Many organizations build a registry and assume they have a hierarchy; the gap shows up when they try to roll up costs or analyze failures by system.</p>
+    </div>
+
+    <div class="glossary-term" data-category="reliability analytics">
+      <h3 id="availability">Availability</h3>
+      <div class="glossary-tags">
+        <span>Analytics</span>
+        <span>Reliability</span>
+      </div>
+      <p>Availability is the proportion of time an asset is in a condition to perform its required function, expressed as uptime divided by total time including both scheduled and unscheduled downtime. Availability is often confused with Reliability, but they measure different things: Reliability is the probability an asset will not fail during a defined operating period, while Availability factors in all time the asset is out of service — including planned maintenance. An asset can be highly reliable (rarely fails unexpectedly) but have low availability if it is frequently taken offline for scheduled PMs. See also: Operational Availability (Ao), Reliability.</p>
     </div>
 
 
@@ -165,6 +200,15 @@ search: true
 
 
     <h2 id="C">C</h2>
+
+    <div class="glossary-term" data-category="maintenance strategy">
+      <h3 id="cmms">Computerized Maintenance Management System (CMMS)</h3>
+      <div class="glossary-tags">
+        <span>Maintenance</span>
+        <span>Strategy</span>
+      </div>
+      <p>A Computerized Maintenance Management System (CMMS) is software designed to manage maintenance operations — work orders, preventive maintenance schedules, technician assignments, and spare parts inventory — helping keep equipment running day to day. A CMMS focuses on maintenance execution. Enterprise Asset Management (EAM) expands beyond maintenance to cover the full asset lifecycle, connecting maintenance execution with capital planning, compliance, and strategic decisions. The short version: a CMMS can function within an EAM, but an EAM is not just a CMMS. IBM Maximo is an EAM platform that includes CMMS capabilities and much more. See also: Enterprise Asset Management (EAM).</p>
+    </div>
 
     <div class="glossary-term" data-category="data-quality maintenance">
       <h3 id="closeout-quality">Closeout Quality</h3>
@@ -191,7 +235,7 @@ search: true
         <span>Maintenance</span>
         <span>Reliability</span>
       </div>
-      <p>Condition-Based Maintenance is a strategy where maintenance is performed based on asset condition data, helping reduce unnecessary work and prevent failures.</p>
+      <p>Condition-Based Maintenance is a strategy where maintenance is performed based on asset condition data, helping reduce unnecessary work and prevent failures. CBM triggers maintenance when a condition indicator crosses a defined threshold. It is related to but distinct from Predictive Maintenance (PdM), which goes further by using data models to forecast when a threshold will be crossed before it happens. See also: Predictive Maintenance (PdM).</p>
     </div>
 
     <div class="glossary-term" data-category="maintenance reliability">
@@ -200,7 +244,7 @@ search: true
         <span>Maintenance</span>
         <span>Reliability</span>
       </div>
-      <p>Corrective Maintenance is work performed to restore an asset after a fault is identified, helping return equipment to normal operation and prevent further degradation.</p>
+      <p>Corrective Maintenance is work performed to restore an asset after a fault is identified, helping return equipment to normal operation and prevent further degradation. Corrective Maintenance is often confused with Reactive Maintenance, but they are not the same. Planned corrective maintenance — fixing a known issue on a scheduled timeline — is a legitimate and intentional strategy. Reactive maintenance is the unplanned version: responding to a failure after it occurs. See also: Reactive Work.</p>
     </div>
 
 
@@ -279,6 +323,15 @@ search: true
       <p>Data Standard Enforcement ensures defined naming, coding, and entry rules are consistently followed, helping turn data standards into reliable outcomes.</p>
     </div>
 
+    <div class="glossary-term" data-category="maintenance reliability">
+      <h3 id="deferred-maintenance">Deferred Maintenance</h3>
+      <div class="glossary-tags">
+        <span>Maintenance</span>
+        <span>Reliability</span>
+      </div>
+      <p>Deferred Maintenance is work that has been identified and approved but intentionally postponed past its due date, creating known and documented risk. Deferred maintenance is not the same as backlog. A backlog includes all open, approved work waiting to be scheduled — including work that is current and on track. Deferred maintenance is the subset that has been pushed past when it should have been done. Treating all backlog as deferred distorts the risk picture and makes it harder to prioritize capital requests or justify maintenance investment. See also: Backlog Health.</p>
+    </div>
+
     <div class="glossary-term" data-category="analytics integration maximo">
       <h3 id="digital-twin">Digital Twin</h3>
       <div class="glossary-tags">
@@ -298,7 +351,7 @@ search: true
         <span>Maximo</span>
         <span>Strategy</span>
       </div>
-      <p>Enterprise Asset Management is a structured approach to managing physical assets from acquisition through retirement, helping optimize performance, cost, and risk.</p>
+      <p>Enterprise Asset Management is a structured approach to managing physical assets from acquisition through retirement, helping optimize performance, cost, and risk. EAM expands beyond maintenance operations to cover the full asset lifecycle, connecting work execution with capital planning, compliance, and strategic decisions. It is broader in scope than a CMMS, which focuses on day-to-day maintenance operations. IBM Maximo is an EAM platform. See also: Computerized Maintenance Management System (CMMS), Asset Performance Management (APM).</p>
     </div>
 
     <div class="glossary-term" data-category="strategy maximo">
@@ -477,6 +530,16 @@ search: true
       <p>Master Data Management is a governance discipline that keeps core data consistent across systems, helping organizations maintain trusted records for assets, locations, and materials.</p>
     </div>
 
+    <div class="glossary-term" data-category="maintenance strategy analytics">
+      <h3 id="maintenance-cost">Maintenance Cost</h3>
+      <div class="glossary-tags">
+        <span>Analytics</span>
+        <span>Maintenance</span>
+        <span>Strategy</span>
+      </div>
+      <p>Maintenance Cost is the total expenditure associated with maintaining an asset, including labor, materials, and contractor costs for both planned and unplanned work. Maintenance Cost is one component of Total Cost of Ownership (TCO), but not the whole picture. An asset that is inexpensive to maintain may still carry poor TCO if it is costly to operate, fuel, or eventually decommission. Organizations that optimize only for maintenance spend often miss the larger investment picture. See also: Total Cost of Ownership (TCO), Asset Lifecycle Cost.</p>
+    </div>
+
     <div class="glossary-term" data-category="licensing maximo strategy">
       <h3 id="maximo-application-suite">Maximo Application Suite (MAS)</h3>
       <div class="glossary-tags">
@@ -495,7 +558,8 @@ search: true
       </div>
       <p>Mean Time Between Failures is the average operating time between asset failures, helping teams evaluate reliability and compare performance over time.</p>
     </div>
-<div class="glossary-term" data-category="maximo mobile">
+
+    <div class="glossary-term" data-category="maximo mobile">
       <h3 id="mobile-object-structures">Mobile Object Structures</h3>
       <div class="glossary-tags">
         <span>Maximo</span>
@@ -503,6 +567,7 @@ search: true
       </div>
       <p>Mobile Object Structures are the OSLC-based data structures that define which Maximo records, fields, and relationships are synchronized to a technician's device for use in Maximo Mobile. Because the mobile application queries a local on-device database rather than Maximo directly, only data included in the relevant Mobile Object Structures is available offline. Fields or relationships not defined in these structures will not appear in the mobile application, even when they are accessible in the browser-based application (RBA).</p>
     </div>
+
     <div class="glossary-term" data-category="reliability analytics">
       <h3 id="mttr">Mean Time To Repair (MTTR)</h3>
       <div class="glossary-tags">
@@ -589,7 +654,7 @@ search: true
         <span>Integration</span>
         <span>Maintenance</span>
       </div>
-      <p>Predictive Maintenance is maintenance triggered by condition data or predicted failure risk, helping teams act before equipment performance declines.</p>
+      <p>Predictive Maintenance is maintenance triggered by condition data or predicted failure risk, helping teams act before equipment performance declines. PdM builds on Condition-Based Maintenance by continuously assessing asset condition and using data models to forecast when a threshold will be crossed — before it happens. CBM reacts to condition; PdM anticipates it. Calling a time-based PM schedule "predictive" because it runs in a CMMS is a common misuse of the term. See also: Condition-Based Maintenance (CBM), Preventive Maintenance (PM).</p>
     </div>
 
     <div class="glossary-term" data-category="maintenance analytics">
@@ -607,7 +672,7 @@ search: true
         <span>Maintenance</span>
         <span>Reliability</span>
       </div>
-      <p>Preventive Maintenance is scheduled maintenance performed at defined intervals, helping reduce the likelihood of failure and support reliable asset operation.</p>
+      <p>Preventive Maintenance is scheduled maintenance performed at defined intervals — calendar-based or meter-based — helping reduce the likelihood of failure and support reliable asset operation. Preventive Maintenance is often confused with Predictive Maintenance, but they are not the same. Preventive is interval-driven; Predictive is condition- and data-driven. See also: Predictive Maintenance (PdM), Condition-Based Maintenance (CBM).</p>
     </div>
 
     <div class="glossary-term" data-category="maintenance reliability governance">
@@ -629,7 +694,16 @@ search: true
         <span>Maintenance</span>
         <span>Reliability</span>
       </div>
-      <p>Reactive Work is maintenance performed in response to failures, helping restore operation but often indicating opportunities to improve planning and reliability.</p>
+      <p>Reactive Work is unplanned maintenance performed in response to an unexpected failure, helping restore operation but often indicating opportunities to improve planning and reliability. Reactive work is not the same as Corrective Maintenance. Corrective maintenance can be planned — a known issue addressed on a scheduled timeline. Reactive work is always unplanned. See also: Corrective Maintenance (CM).</p>
+    </div>
+
+    <div class="glossary-term" data-category="reliability analytics">
+      <h3 id="reliability">Reliability</h3>
+      <div class="glossary-tags">
+        <span>Analytics</span>
+        <span>Reliability</span>
+      </div>
+      <p>Reliability is the probability that an asset will perform its required function under defined conditions for a specified period without failure. In reliability engineering, Reliability and Availability are precise and distinct metrics. Reliability measures the likelihood of failure-free operation during a defined period. Availability measures the proportion of total time an asset is operational, including the impact of both scheduled and unscheduled downtime. An asset can be highly reliable — rarely failing unexpectedly — but still have low availability if it is frequently taken offline for planned maintenance. Treating these as the same number in KPI reporting leads to poor decisions. See also: Availability, Operational Availability (Ao), Mean Time Between Failures (MTBF).</p>
     </div>
 
     <div class="glossary-term" data-category="reliability strategy governance">
@@ -714,6 +788,15 @@ search: true
 
     <h2 id="T">T</h2>
 
+    <div class="glossary-term" data-category="analytics strategy">
+      <h3 id="total-cost-of-ownership-tco">Total Cost of Ownership (TCO)</h3>
+      <div class="glossary-tags">
+        <span>Analytics</span>
+        <span>Strategy</span>
+      </div>
+      <p>Total Cost of Ownership is the complete cost of an asset across its entire lifecycle, including acquisition, installation, operation, maintenance, and disposal. TCO is broader than Maintenance Cost, which covers only the expense of keeping an asset running. An asset that is inexpensive to maintain may still carry poor TCO if it is costly to operate, energy-intensive, or expensive to decommission. Organizations that focus only on reducing maintenance spend often underestimate true asset investment. TCO analysis is a key input to capital planning, replacement decisions, and lifecycle strategy. See also: Asset Lifecycle Cost, Maintenance Cost.</p>
+    </div>
+
     <div class="glossary-term" data-category="maximo troubleshooting">
       <h3 id="transaction-rollback">Transaction Rollback</h3>
       <div class="glossary-tags">
@@ -765,7 +848,7 @@ search: true
         <span>Maximo</span>
         <span>Mobile</span>
       </div>
-      <p>Work Order is a structured Maximo record used to plan, execute, and document maintenance work, helping track activity, history, and accountability.</p>
+      <p>Work Order is a structured Maximo record used to plan, execute, and document maintenance work, helping track activity, history, and accountability. A Work Order is not the same as a Work Request. A Work Request is an initial notification that something needs attention — submitted by anyone who identifies a problem. A Work Order is an authorized, planned, and resourced task that flows from a reviewed and approved request. Skipping the discipline of converting requests into properly planned work orders is one of the most common reasons Maximo data quality degrades over time. See also: Work Request.</p>
     </div>
 
     <div class="glossary-term" data-category="maintenance data-quality mobile">
@@ -794,6 +877,15 @@ search: true
         <span>Maintenance</span>
       </div>
       <p>Work Order Data Quality is the consistency and completeness of information captured in work orders, helping improve visibility into maintenance activity and performance.</p>
+    </div>
+
+    <div class="glossary-term" data-category="maximo maintenance">
+      <h3 id="work-request">Work Request</h3>
+      <div class="glossary-tags">
+        <span>Maintenance</span>
+        <span>Maximo</span>
+      </div>
+      <p>A Work Request is an initial notification submitted to the maintenance team indicating that a problem has been identified or work may be needed. It is a trigger, not an authorization. A Work Request becomes a Work Order only after it has been reviewed, approved, planned, and resourced. Maintaining the distinction between requests and work orders is fundamental to data quality and planning discipline in Maximo — collapsing the two produces inaccurate backlog data and undermines the planning process. See also: Work Order (WO).</p>
     </div>
 
     <div class="glossary-term" data-category="maximo maintenance">
