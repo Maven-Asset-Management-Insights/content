@@ -177,6 +177,41 @@ search: true
       <p>An Asset Registry is a list of assets an organization owns or manages, capturing basic identification information such as asset number, description, location, and classification. A registry is not the same as an Asset Hierarchy — a registry tells you what assets exist, while a hierarchy defines how they relate to each other as systems, subsystems, and components. Many organizations build a registry and assume they have a hierarchy; the gap shows up when they try to roll up costs, analyze failures by system, or report on performance at a plant or production line level. A complete, accurate registry is the necessary foundation for building a meaningful hierarchy. See also: Asset Hierarchy, Hierarchy Integrity.</p>
     </div>
 
+    <div class="glossary-term" data-category="strategy">
+      <h3 id="asset-acquisition">Asset Acquisition</h3>
+      <div class="glossary-tags">
+        <span>Strategy</span>
+      </div>
+      <p>Asset Acquisition is the process of procuring, receiving, and putting into service a new physical asset — encompassing specification, vendor selection, procurement, delivery, installation, and handover to operations. How an asset is acquired has direct consequences for its entire operating life: poorly specified assets may not meet operational requirements, assets procured without spare parts strategies create inventory gaps, and assets handed over without proper documentation make commissioning and baseline establishment difficult. For plant managers, acquisition is one of the few points in an asset's life where lifecycle cost can be meaningfully influenced before it is locked in. See also: Commissioning, Asset Baseline, Spare Parts Strategy at Commissioning, Asset Lifecycle.</p>
+    </div>
+
+    <div class="glossary-term" data-category="strategy data-quality">
+      <h3 id="asset-baseline">Asset Baseline</h3>
+      <div class="glossary-tags">
+        <span>Data Quality</span>
+        <span>Strategy</span>
+      </div>
+      <p>An Asset Baseline is the documented reference state of an asset at a defined point in time — typically at commissioning or after a major overhaul — capturing design specifications, installed configuration, performance parameters, and condition. The baseline establishes what "good" looks like for that asset, providing the foundation for measuring degradation, evaluating maintenance effectiveness, and making informed replacement decisions later in the asset's life. In Maximo, asset baseline data is captured through asset records, specifications, and measurement points. Organizations that skip baseline documentation at commissioning often find themselves unable to answer basic questions about asset condition years later. See also: Asset Acquisition, Commissioning, Asset Lifecycle.</p>
+    </div>
+
+    <div class="glossary-term" data-category="strategy analytics">
+      <h3 id="asset-replacement-value-arv">Asset Replacement Value (ARV)</h3>
+      <div class="glossary-tags">
+        <span>Analytics</span>
+        <span>Strategy</span>
+      </div>
+      <p>Asset Replacement Value (ARV) is the estimated cost to replace an asset with a new equivalent at current prices, used as a benchmark for evaluating maintenance investment, insurance coverage, and capital planning decisions. ARV provides critical context for maintenance budget discussions: maintenance spend expressed as a percentage of ARV is a widely used industry benchmark for assessing whether an asset is being appropriately maintained or under-invested. For plant managers and reliability professionals, ARV helps frame conversations with finance and leadership about whether the maintenance budget is adequate relative to the value of the assets it is protecting. See also: Total Cost of Ownership (TCO), Capital Expenditure (CapEx), Maintenance Backlog Ratio.</p>
+    </div>
+
+    <div class="glossary-term" data-category="reliability analytics">
+      <h3 id="asset-utilization">Asset Utilization</h3>
+      <div class="glossary-tags">
+        <span>Analytics</span>
+        <span>Reliability</span>
+      </div>
+      <p>Asset Utilization is the proportion of available time or capacity that an asset is actively being used for its intended productive purpose, expressed as actual output divided by maximum possible output over a defined period. Utilization is distinct from Availability — an asset can be available (ready to operate) but not utilized (not needed or not running). For operations and plant managers, utilization data informs decisions about asset rationalization, capacity planning, and whether investment in reliability improvement will actually translate to business value. A highly reliable asset with very low utilization may not justify significant reliability investment; a heavily utilized asset with poor reliability has an outsized impact on operations. See also: Availability, Asset Performance, Reliability.</p>
+    </div>
+
     <div class="glossary-term" data-category="reliability analytics">
       <h3 id="availability">Availability</h3>
       <div class="glossary-tags">
@@ -195,11 +230,47 @@ search: true
         <span>Maintenance</span>
         <span>Reliability</span>
       </div>
-      <p>Backlog Health is a measure of how manageable, current, and well-prioritized the open maintenance work queue is, helping organizations ensure that critical reliability tasks can be planned and completed without excessive delay. A healthy backlog is not an empty one — some level of approved, queued work is normal and expected. An unhealthy backlog is one where work is aging unaddressed, priority is unclear, critical tasks are buried alongside low-value requests, or the volume has grown beyond the team's capacity to execute. Backlog Health is distinct from Deferred Maintenance: the backlog includes all open approved work, while deferred maintenance is specifically work that has been pushed past its due date. Tracking both separately is important for accurate risk assessment. See also: Deferred Maintenance, Planned vs. Unplanned Work.</p>
+      <p>Backlog Health is a measure of how manageable, current, and well-prioritized the open maintenance work queue is, helping organizations ensure that critical reliability tasks can be planned and completed without excessive delay. A healthy backlog is not an empty one — some level of approved, queued work is normal and expected. An unhealthy backlog is one where work is aging unaddressed, priority is unclear, critical tasks are buried alongside low-value requests, or the volume has grown beyond the team's capacity to execute. Backlog Health is distinct from Deferred Maintenance: the backlog includes all open approved work, while deferred maintenance is specifically work that has been pushed past its due date. Tracking both separately is important for accurate risk assessment. See also: Deferred Maintenance, Planned vs. Unplanned Work, Maintenance Backlog Ratio.</p>
+    </div>
+
+    <div class="glossary-term" data-category="analytics maintenance strategy">
+      <h3 id="maintenance-backlog-ratio">Maintenance Backlog Ratio</h3>
+      <div class="glossary-tags">
+        <span>Analytics</span>
+        <span>Maintenance</span>
+        <span>Strategy</span>
+      </div>
+      <p>Maintenance Backlog Ratio is a financial metric that expresses the total estimated cost of deferred or outstanding maintenance as a percentage of Asset Replacement Value (ARV), used to assess whether a facility or asset portfolio is being adequately maintained relative to its capital value. An industry rule of thumb holds that a backlog ratio above 2–5% of ARV represents meaningful deferred risk; ratios significantly higher indicate chronic under-investment. For plant managers, the backlog ratio is one of the most effective tools for communicating maintenance funding needs to finance and leadership in terms they understand — not work order counts, but capital exposure. See also: Asset Replacement Value (ARV), Deferred Maintenance, Backlog Health.</p>
     </div>
 
 
     <h2 id="C">C</h2>
+
+    <div class="glossary-term" data-category="strategy analytics">
+      <h3 id="capital-expenditure-capex">Capital Expenditure (CapEx)</h3>
+      <div class="glossary-tags">
+        <span>Analytics</span>
+        <span>Strategy</span>
+      </div>
+      <p>Capital Expenditure (CapEx) is spending used to acquire, upgrade, or extend the life of a physical asset — recorded on the balance sheet and depreciated over time rather than expensed immediately. In asset management, CapEx typically funds new asset acquisition, major overhauls, life extension projects, and replacement of end-of-life equipment. Understanding the distinction between CapEx and OpEx matters because the two are funded from different budgets, approved through different processes, and carry different financial implications. For plant managers and reliability professionals, the ability to justify CapEx requests with lifecycle cost data, asset condition evidence, and failure history from Maximo is one of the most valuable outcomes of a well-governed EAM program. See also: Operating Expenditure (OpEx), Capital Plan, Asset Replacement Value (ARV), Total Cost of Ownership (TCO).</p>
+    </div>
+
+    <div class="glossary-term" data-category="strategy analytics">
+      <h3 id="capital-plan">Capital Plan</h3>
+      <div class="glossary-tags">
+        <span>Analytics</span>
+        <span>Strategy</span>
+      </div>
+      <p>A Capital Plan is a multi-year forecast of planned capital expenditures for asset replacement, life extension, and new capacity — aligned to operational priorities, asset condition data, and available funding. Capital plans translate asset lifecycle strategy into financial commitments, helping organizations avoid the reactive scramble of replacing assets only after they fail catastrophically. For plant managers, a credible capital plan is built on asset health data, remaining useful life estimates, and failure history — the kind of evidence that Maximo, when well-maintained, is designed to provide. Organizations without disciplined asset data often find their capital plans are based on age and intuition rather than condition and risk. See also: Capital Expenditure (CapEx), Asset Replacement Value (ARV), Remaining Useful Life (RUL), Lifecycle Replacement Decision.</p>
+    </div>
+
+    <div class="glossary-term" data-category="strategy">
+      <h3 id="commissioning">Commissioning</h3>
+      <div class="glossary-tags">
+        <span>Strategy</span>
+      </div>
+      <p>Commissioning is the structured process of verifying, testing, and formally accepting a new or significantly modified asset into operational service — confirming that it performs to specification before responsibility transfers from the project or installation team to operations and maintenance. Commissioning is a critical lifecycle transition point: assets commissioned without proper documentation, baseline data capture, or PM setup in Maximo start their operating life with structural gaps that are difficult and expensive to close later. For plant managers and reliability professionals, commissioning is the opportunity to establish the asset record, load the baseline, create the initial PM program, and ensure spare parts are stocked before the first failure occurs. See also: Pre-Commissioning, Asset Baseline, Asset Acquisition, Spare Parts Strategy at Commissioning.</p>
+    </div>
 
     <div class="glossary-term" data-category="maintenance strategy">
       <h3 id="cmms">Computerized Maintenance Management System (CMMS)</h3>
@@ -329,7 +400,23 @@ search: true
         <span>Maintenance</span>
         <span>Reliability</span>
       </div>
-      <p>Deferred Maintenance is work that has been identified and approved but intentionally postponed past its due date, creating known and documented risk. Deferred maintenance is not the same as backlog. A backlog includes all open, approved work waiting to be scheduled — including work that is current and on track. Deferred maintenance is the subset that has been pushed past when it should have been done. Treating all backlog as deferred distorts the risk picture and makes it harder to prioritize capital requests or justify maintenance investment. Tracking deferred maintenance separately and explicitly — with clear accountability and risk documentation — is a sign of a mature maintenance organization. See also: Backlog Health, Planned vs. Unplanned Work.</p>
+      <p>Deferred Maintenance is work that has been identified and approved but intentionally postponed past its due date, creating known and documented risk. Deferred maintenance is not the same as backlog. A backlog includes all open, approved work waiting to be scheduled — including work that is current and on track. Deferred maintenance is the subset that has been pushed past when it should have been done. Treating all backlog as deferred distorts the risk picture and makes it harder to prioritize capital requests or justify maintenance investment. Tracking deferred maintenance separately and explicitly — with clear accountability and risk documentation — is a sign of a mature maintenance organization. See also: Backlog Health, Maintenance Backlog Ratio, Planned vs. Unplanned Work.</p>
+    </div>
+
+    <div class="glossary-term" data-category="strategy">
+      <h3 id="decommissioning">Decommissioning</h3>
+      <div class="glossary-tags">
+        <span>Strategy</span>
+      </div>
+      <p>Decommissioning is the planned process of safely retiring an asset from active service — including isolation, removal, remediation of any environmental hazards, and final disposition of the physical equipment. Decommissioning is the final stage of the asset lifecycle and, like commissioning, is more expensive and disruptive when not planned in advance. For plant managers, decommissioning decisions should be driven by lifecycle cost analysis, remaining useful life estimates, and operational strategy — not just by failure or crisis. In Maximo, decommissioned assets should be formally retired in the system to preserve their history while removing them from active maintenance schedules and inventory planning. See also: Asset Disposal, Asset Write-Off, Asset Lifecycle, Lifecycle Replacement Decision.</p>
+    </div>
+
+    <div class="glossary-term" data-category="strategy">
+      <h3 id="asset-disposal">Asset Disposal</h3>
+      <div class="glossary-tags">
+        <span>Strategy</span>
+      </div>
+      <p>Asset Disposal is the process of removing a decommissioned asset from inventory and operational records through sale, transfer, salvage, scrapping, or regulated disposal — including any financial, environmental, and documentation requirements associated with the method chosen. Disposal is not simply the physical removal of equipment; it has accounting, regulatory, and data management dimensions. In Maximo, proper disposal requires retiring the asset record, closing out any open work orders, and capturing final condition and cost data before the record is archived. Incomplete disposal processes leave ghost assets in the system — records that appear active but represent equipment that no longer exists — which distorts asset counts, maintenance plans, and reporting. See also: Decommissioning, Asset Write-Off, Asset Lifecycle.</p>
     </div>
 
     <div class="glossary-term" data-category="analytics integration maximo">
@@ -361,6 +448,15 @@ search: true
         <span>Strategy</span>
       </div>
       <p>EAM Strategy is the organizational plan that defines how asset management practices align with business goals, guiding decisions about maintenance approaches, reliability investment, technology, data governance, and capital planning. A well-defined EAM strategy ensures that Maximo is configured and used in a way that supports operational objectives — not just as a system of record, but as a system of discipline. Organizations without a clear EAM strategy often find their Maximo implementations drifting over time, with data quality degrading and the system failing to deliver the visibility leadership expects. See also: Enterprise Asset Management (EAM), Reliability Strategy.</p>
+    </div>
+
+    <div class="glossary-term" data-category="reliability strategy">
+      <h3 id="end-of-life-eol">End-of-Life (EOL)</h3>
+      <div class="glossary-tags">
+        <span>Reliability</span>
+        <span>Strategy</span>
+      </div>
+      <p>End-of-Life (EOL) is the point in an asset's lifecycle at which it is no longer economical or practical to continue operating and maintaining it — due to deteriorating condition, prohibitive maintenance costs, obsolescence, regulatory requirements, or inability to meet performance standards. EOL is not simply a function of age; an asset can reach end-of-life early due to severe duty cycles or poor maintenance, or exceed its design life through excellent care and operating conditions. For reliability professionals, identifying EOL proactively — using condition data, remaining useful life estimates, and lifecycle cost analysis — is far preferable to discovering it reactively after a catastrophic failure. For plant managers, EOL assets that remain in service without a replacement plan represent accumulating risk. See also: Remaining Useful Life (RUL), Lifecycle Replacement Decision, Decommissioning, Asset Lifecycle Cost.</p>
     </div>
 
     <div class="glossary-term" data-category="data-quality maintenance">
@@ -537,7 +633,7 @@ search: true
         <span>Maintenance</span>
         <span>Strategy</span>
       </div>
-      <p>Maintenance Cost is the total expenditure associated with maintaining an asset, including planned and unplanned labor, materials, contractor costs, and associated overhead. Maintenance Cost is one component of Total Cost of Ownership (TCO), but not the whole picture. An asset that is inexpensive to maintain may still carry poor TCO if it is costly to operate, energy-intensive, or expensive to decommission. Organizations that optimize only for maintenance spend often miss the larger investment picture. Tracking maintenance cost accurately in Maximo — through proper work order costing, labor entry, and material transactions — is a prerequisite for meaningful lifecycle cost analysis. See also: Total Cost of Ownership (TCO), Asset Lifecycle Cost.</p>
+      <p>Maintenance Cost is the total expenditure associated with maintaining an asset, including planned and unplanned labor, materials, contractor costs, and associated overhead. Maintenance Cost is one component of Total Cost of Ownership (TCO), but not the whole picture. An asset that is inexpensive to maintain may still carry poor TCO if it is costly to operate, energy-intensive, or expensive to decommission. Organizations that optimize only for maintenance spend often miss the larger investment picture. Tracking maintenance cost accurately in Maximo — through proper work order costing, labor entry, and material transactions — is a prerequisite for meaningful lifecycle cost analysis. See also: Total Cost of Ownership (TCO), Asset Lifecycle Cost, Maintenance Backlog Ratio.</p>
     </div>
 
     <div class="glossary-term" data-category="licensing maximo strategy">
@@ -589,6 +685,15 @@ search: true
 
     <h2 id="O">O</h2>
 
+    <div class="glossary-term" data-category="strategy analytics">
+      <h3 id="operating-expenditure-opex">Operating Expenditure (OpEx)</h3>
+      <div class="glossary-tags">
+        <span>Analytics</span>
+        <span>Strategy</span>
+      </div>
+      <p>Operating Expenditure (OpEx) is day-to-day spending required to run and maintain operations — expensed in the period incurred rather than capitalized and depreciated over time. In asset management, OpEx covers routine maintenance labor, spare parts consumption, contractor services, and other recurring costs of keeping assets operational. The CapEx versus OpEx distinction matters practically for plant managers and reliability professionals because the two are funded, approved, and reported differently. A major overhaul that extends asset life beyond its original design may qualify as CapEx; routine maintenance does not. Understanding how maintenance activities are classified affects budget planning, financial reporting, and the ability to justify investment. See also: Capital Expenditure (CapEx), Maintenance Cost, Total Cost of Ownership (TCO).</p>
+    </div>
+
     <div class="glossary-term" data-category="reliability analytics">
       <h3 id="operational-availability-ao">Operational Availability (Ao)</h3>
       <div class="glossary-tags">
@@ -609,6 +714,14 @@ search: true
 
 
     <h2 id="P">P</h2>
+
+    <div class="glossary-term" data-category="strategy">
+      <h3 id="pre-commissioning">Pre-Commissioning</h3>
+      <div class="glossary-tags">
+        <span>Strategy</span>
+      </div>
+      <p>Pre-Commissioning is the phase of work performed on a new or significantly modified asset before formal commissioning testing begins — including mechanical completion checks, initial cleaning, lubrication, alignment verification, and safety inspections. Pre-commissioning confirms that an asset is physically ready for the functional testing that commissioning requires. For plant managers and reliability professionals, pre-commissioning is often where data capture disciplines are established: asset records created in Maximo, initial condition documented, and PM programs loaded before the asset enters service. Skipping or compressing pre-commissioning to accelerate startup often creates problems that take years to untangle. See also: Commissioning, Asset Baseline, Asset Acquisition.</p>
+    </div>
 
     <div class="glossary-term" data-category="maintenance reliability">
       <h3 id="planned-vs-unplanned-work">Planned vs. Unplanned Work</h3>
@@ -722,7 +835,34 @@ search: true
         <span>Analytics</span>
         <span>Reliability</span>
       </div>
-      <p>Remaining Useful Life (RUL) is an estimate of how much longer an asset can continue to operate before it is expected to fail or require replacement, based on current condition, historical performance, and usage data. RUL estimates help reliability and capital planning teams prioritize maintenance investment, schedule major repairs or replacements before failure, and avoid both premature replacement and run-to-failure surprises. In IBM MAS, Maximo Health and Maximo Predict can generate RUL estimates from condition data and failure history. The accuracy of RUL estimates depends on the quality of the underlying data and the appropriateness of the model for the asset type. See also: Asset Health Index (AHI), Predictive Analytics, Asset Lifecycle Cost.</p>
+      <p>Remaining Useful Life (RUL) is an estimate of how much longer an asset can continue to operate before it is expected to fail or require replacement, based on current condition, historical performance, and usage data. RUL estimates help reliability and capital planning teams prioritize maintenance investment, schedule major repairs or replacements before failure, and avoid both premature replacement and run-to-failure surprises. In IBM MAS, Maximo Health and Maximo Predict can generate RUL estimates from condition data and failure history. The accuracy of RUL estimates depends on the quality of the underlying data and the appropriateness of the model for the asset type. See also: Asset Health Index (AHI), Predictive Analytics, Asset Lifecycle Cost, Lifecycle Replacement Decision.</p>
+    </div>
+
+    <div class="glossary-term" data-category="reliability strategy">
+      <h3 id="run-to-failure-rtf">Run-to-Failure (RTF)</h3>
+      <div class="glossary-tags">
+        <span>Reliability</span>
+        <span>Strategy</span>
+      </div>
+      <p>Run-to-Failure (RTF) is an intentional maintenance strategy in which no proactive maintenance is performed on an asset — it is allowed to operate until it fails, at which point it is repaired or replaced. RTF is not a default or a sign of neglect; for the right assets, it is the most cost-effective strategy. RTF is appropriate for non-critical assets where failure has no safety or operational consequence, redundancy exists, and the cost of preventive maintenance exceeds the cost of failure. For reliability professionals, identifying which assets are appropriate RTF candidates — and making that decision explicitly rather than by omission — is an important part of maintenance strategy design. Unintentional RTF on critical assets, by contrast, is one of the most costly failures of a reliability program. See also: Reliability Strategy, Asset Criticality, Preventive Maintenance (PM), End-of-Life (EOL).</p>
+    </div>
+
+    <div class="glossary-term" data-category="strategy analytics">
+      <h3 id="lifecycle-replacement-decision">Lifecycle Replacement Decision</h3>
+      <div class="glossary-tags">
+        <span>Analytics</span>
+        <span>Strategy</span>
+      </div>
+      <p>A Lifecycle Replacement Decision is the structured evaluation of whether to continue maintaining an aging or degraded asset or to replace it — weighing the cost and risk of continued operation against the capital and operational cost of acquiring and commissioning a new asset. This decision is one of the most consequential in asset management and is often made poorly — either replacing assets prematurely out of caution or running them far past the point where continued investment makes economic sense. For plant managers and reliability professionals, a defensible replacement decision requires condition data, maintenance cost history, remaining useful life estimates, and lifecycle cost projections — the kind of evidence that a well-governed Maximo implementation is designed to provide. See also: Remaining Useful Life (RUL), Asset Lifecycle Cost, Total Cost of Ownership (TCO), End-of-Life (EOL), Life Extension.</p>
+    </div>
+
+    <div class="glossary-term" data-category="reliability strategy">
+      <h3 id="life-extension">Life Extension</h3>
+      <div class="glossary-tags">
+        <span>Reliability</span>
+        <span>Strategy</span>
+      </div>
+      <p>Life Extension is a deliberate strategy to extend the operating life of an asset beyond its original design life or planned retirement date through targeted investment in major overhauls, component replacement, upgrades, or condition-based interventions. Life extension decisions require careful analysis — the cost of extending an asset's life must be weighed against the cost and benefit of replacement, and the risks of continued operation must be understood and managed. For reliability professionals, life extension programs require updated condition assessments, revised PM strategies, and often enhanced monitoring to manage the higher failure risk that accompanies aging assets. For plant managers, life extension can defer significant CapEx but should be treated as a deliberate decision, not a default. See also: Lifecycle Replacement Decision, Asset Lifecycle Cost, Remaining Useful Life (RUL), Capital Expenditure (CapEx).</p>
     </div>
 
     <div class="glossary-term" data-category="maximo troubleshooting">
@@ -753,6 +893,24 @@ search: true
         <span>Strategy</span>
       </div>
       <p>A Service Level Agreement (SLA) is a documented commitment that defines expected performance standards for a service — including response times, resolution targets, and quality criteria — creating clear accountability between service providers and their customers or stakeholders. In a maintenance context, SLAs may define how quickly different classes of work requests must be acknowledged, planned, and completed. In Maximo, SLA tracking can be configured to monitor response and resolution times against defined targets. SLAs are only meaningful when the underlying data is captured accurately enough to measure compliance. See also: Key Performance Indicator (KPI), Work Request.</p>
+    </div>
+
+    <div class="glossary-term" data-category="maintenance strategy">
+      <h3 id="spare-parts-strategy-commissioning">Spare Parts Strategy at Commissioning</h3>
+      <div class="glossary-tags">
+        <span>Maintenance</span>
+        <span>Strategy</span>
+      </div>
+      <p>Spare Parts Strategy at Commissioning is the process of identifying, procuring, and stocking the initial set of spare parts required to support a new asset before it enters service — based on the asset's criticality, failure modes, lead times for replacement parts, and the operational consequence of downtime. Establishing a spare parts strategy at commissioning is significantly more effective than trying to build it reactively after the first failure reveals a gap. For plant managers and reliability professionals, commissioning is the moment to load stocking requirements into Maximo, establish reorder points, and ensure critical spares are on the shelf before the asset is needed. Deferring this work almost always results in extended downtime during the first major failure event. See also: Commissioning, Asset Criticality, Inventory Optimization.</p>
+    </div>
+
+    <div class="glossary-term" data-category="strategy analytics">
+      <h3 id="asset-write-off">Asset Write-Off</h3>
+      <div class="glossary-tags">
+        <span>Analytics</span>
+        <span>Strategy</span>
+      </div>
+      <p>An Asset Write-Off is the formal accounting and system process of removing a retired or disposed asset's remaining book value from the balance sheet and closing its record in the asset management system. Write-offs are the financial bookend to the asset lifecycle — they recognize that the asset no longer has value or is no longer in service. In Maximo, completing a write-off properly means retiring the asset record, closing open work orders, removing the asset from active PM schedules, and preserving its history in archived form. Assets that are physically gone but still active in Maximo inflate asset counts, distort maintenance metrics, and create inventory planning errors for parts that are no longer needed. See also: Asset Disposal, Decommissioning, Asset Lifecycle.</p>
     </div>
 
     <div class="glossary-term" data-category="maintenance maximo mobile">
