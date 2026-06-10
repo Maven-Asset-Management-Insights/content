@@ -33,7 +33,7 @@ Best for: EHS managers, operations leaders, Maximo administrators, and safety pr
 
 Check each item your program currently fulfills. Score 1 point for each checked box. Tally your score at the end to find your readiness tier.
 
-→ [Download the PDF version](/assets/downloads/maven-maximo-hse-readiness-checklist.pdf)
+→ [Download the PDF version](/assets/maven-hse-readiness-checklist.pdf)
 
 ---
 
