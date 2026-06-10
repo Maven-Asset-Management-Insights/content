@@ -345,5 +345,9 @@ Maven partners with organizations at every stage of this journey, from data foun
 → [Read the full article: AI in Asset Management](https://www.mavenasset.com/blog/ai-in-asset-management/)
 
 ---
+<div style="margin-top:24px;">
+  <a class="button" href="{{ "/assets/downloads/maven-ai-readiness-assessment.pdf" | relative_url }}" download>Download PDF</a>
+</div>
+---
 
 [Back to Field Kits](https://maven-asset-management-insights.github.io/content/field-kits)
