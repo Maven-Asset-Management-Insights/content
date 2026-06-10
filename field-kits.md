@@ -46,6 +46,27 @@ permalink: /field-kits/
   </div>
 </div>
 
+<!-- AI READINESS SCORECARD -->
+<div class="card" style="padding:22px; margin-bottom:18px;">
+  <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
+    Featured Tool
+  </div>
+
+  <h2 style="margin-top:0;">AI Readiness Assessment for Maximo &amp; EAM Programs</h2>
+
+  <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
+    A three-section diagnostic scorecard to assess whether your data foundation, integration architecture, and use case clarity are ready to support meaningful AI investment in Maximo and MAS.
+  </p>
+
+  <div style="margin-top:14px; opacity:.8;">
+    Best for: EAM program owners, operations leaders, IT leads, and reliability teams evaluating AI or MAS analytics capabilities
+  </div>
+
+  <div style="margin-top:18px;">
+    <a class="button" href="{{ "/field-kits/maximo-ai-readiness-assessment-scorecard/" | relative_url }}">View scorecard</a>
+  </div>
+</div>
+
 <!-- ALL KITS -->
 <div class="grid">
 
