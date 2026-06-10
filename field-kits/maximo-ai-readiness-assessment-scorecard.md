@@ -346,7 +346,7 @@ Maven partners with organizations at every stage of this journey, from data foun
 
 ---
 <div style="margin-top:24px;">
-  <a class="button" href="{{ "/assets/downloads/maven-ai-readiness-assessment.pdf" | relative_url }}" download>Download PDF</a>
+  <a class="button" href="{{ "/assets/maven-ai-readiness-assessment.pdf" | relative_url }}" download>Download PDF</a>
 </div>
 ---
 
