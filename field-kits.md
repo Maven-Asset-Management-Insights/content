@@ -30,41 +30,60 @@ permalink: /field-kits/
   </div>
 </div>
 
-<!-- SCORECARD PREVIEW -->
-<div class="card" style="padding:22px; margin-bottom:18px;">
-  <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
-    Featured Tool
+<!-- SCORECARD PREVIEWS -->
+<div class="grid">
+
+  <div class="card" style="padding:22px; margin-bottom:18px;">
+    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
+      Featured Tool
+    </div>
+
+    <h2 style="margin-top:0;">Maximo Readiness Scorecard</h2>
+
+    <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
+      A 20-point scorecard to quickly assess whether Maximo is positioned to drive performance across strategy, reliability execution, and data governance.
+    </p>
+    <div style="margin-top:16px;">
+      <a class="button" href="{{ "/field-kits/maximo-readiness-scorecard.html" | relative_url }}">View scorecard</a>
+    </div>
   </div>
 
-  <h2 style="margin-top:0;">Maximo Readiness Scorecard</h2>
+  <div class="card" style="padding:22px; margin-bottom:18px;">
+    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
+      Featured Tool
+    </div>
 
-  <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
-    A 20-point scorecard to quickly assess whether Maximo is positioned to drive performance across strategy, reliability execution, and data governance.
-  </p>
-  <div style="margin-top:16px;">
-    <a class="button" href="{{ "/field-kits/maximo-readiness-scorecard.html" | relative_url }}">View scorecard</a>
-  </div>
-</div>
+    <h2 style="margin-top:0;">AI Readiness Assessment for Maximo &amp; EAM Programs</h2>
 
-<!-- AI READINESS SCORECARD -->
-<div class="card" style="padding:22px; margin-bottom:18px;">
-  <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
-    Featured Tool
-  </div>
-
-  <h2 style="margin-top:0;">AI Readiness Assessment for Maximo &amp; EAM Programs</h2>
-
-  <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
-    A three-section diagnostic scorecard to assess whether your data foundation, integration architecture, and use case clarity are ready to support meaningful AI investment in Maximo and MAS.
-  </p>
-
-  <div style="margin-top:14px; opacity:.8;">
-    Best for: EAM program owners, operations leaders, IT leads, and reliability teams evaluating AI or MAS analytics capabilities
+    <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
+      A three-section diagnostic scorecard to assess whether your data foundation, integration architecture, and use case clarity are ready to support meaningful AI investment in Maximo and MAS.
+    </p>
+    <div style="margin-top:14px; opacity:.8;">
+      Best for: EAM program owners, operations leaders, IT leads, and reliability teams evaluating AI or MAS analytics capabilities
+    </div>
+    <div style="margin-top:16px;">
+      <a class="button" href="{{ "/field-kits/maximo-ai-readiness-assessment-scorecard/" | relative_url }}">View scorecard</a>
+    </div>
   </div>
 
-  <div style="margin-top:18px;">
-    <a class="button" href="{{ "/field-kits/maximo-ai-readiness-assessment-scorecard/" | relative_url }}">View scorecard</a>
+  <div class="card" style="padding:22px; margin-bottom:18px;">
+    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
+      Featured Tool
+    </div>
+
+    <h2 style="margin-top:0;">Maximo HS&amp;E Readiness Assessment</h2>
+
+    <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
+      A 24-point checklist to evaluate how effectively your organization is leveraging IBM Maximo Health, Safety &amp; Environment (HS&amp;E) across incident management, permit to work, MOC, investigations, regulatory compliance, and personnel certification tracking.
+    </p>
+    <div style="margin-top:14px; opacity:.8;">
+      Best for: EHS managers, operations leaders, Maximo administrators, and safety program owners
+    </div>
+    <div style="margin-top:16px;">
+      <a class="button" href="{{ "/field-kits/maximo-hse-readiness-assessment/" | relative_url }}">View assessment</a>
+    </div>
   </div>
+
 </div>
 
 <!-- ALL KITS -->
