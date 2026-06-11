@@ -280,7 +280,7 @@ If the answer to any of these is "not sure," Maximo HS&E may be the missing piec
 
 Maven's certified Maximo team can help you assess, configure, and optimize your HS&E program — whether you're starting from scratch or looking to get more out of what you already have.
 
-[Read the full article: Is Your Maximo Working as Hard as You Are?](https://www.mavenasset.com/blog/) *(link to be updated when article is published)*
+[Read the full article: Is Your Maximo Working as Hard as You Are?](https://www.mavenasset.com/blog/is-your-maximo-working-as-hard-as-you-are)
 
 Reach out at [mas@mavenasset.com](mailto:mas@mavenasset.com) or visit [mavenasset.com](https://www.mavenasset.com).
 
