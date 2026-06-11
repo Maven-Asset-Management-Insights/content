@@ -33,33 +33,34 @@ search: true
 
  <div class="glossary-filters" id="glossary-filters" aria-label="Glossary category filters"></div>
 
-  <nav id="top" class="glossary-nav" aria-label="Glossary index">
-    <a href="#A">A</a>
-    <a href="#B">B</a>
-    <a href="#C">C</a>
-    <a href="#D">D</a>
-    <a href="#E">E</a>
-    <a href="#F">F</a>
-    <a href="#G">G</a>
-    <a href="#H">H</a>
-    <a href="#I">I</a>
-    <a href="#J">J</a>
-    <a href="#K">K</a>
-    <a href="#L">L</a>
-    <a href="#M">M</a>
-    <a href="#N">N</a>
-    <a href="#O">O</a>
-    <a href="#P">P</a>
-    <a href="#Q">Q</a>
-    <a href="#R">R</a>
-    <a href="#S">S</a>
-    <a href="#T">T</a>
-    <a href="#U">U</a>
-    <a href="#V">V</a>
-    <a href="#W">W</a>
-    <a href="#X">X</a>
-    <a href="#Y">Y</a>
-    <a href="#Z">Z</a>
+ <nav id="top" class="glossary-nav" aria-label="Glossary index">
+    <a href="#" class="glossary-letter-btn is-active-letter" data-letter="all">All</a>
+    <a href="#" class="glossary-letter-btn" data-letter="A">A</a>
+    <a href="#" class="glossary-letter-btn" data-letter="B">B</a>
+    <a href="#" class="glossary-letter-btn" data-letter="C">C</a>
+    <a href="#" class="glossary-letter-btn" data-letter="D">D</a>
+    <a href="#" class="glossary-letter-btn" data-letter="E">E</a>
+    <a href="#" class="glossary-letter-btn" data-letter="F">F</a>
+    <a href="#" class="glossary-letter-btn" data-letter="G">G</a>
+    <a href="#" class="glossary-letter-btn" data-letter="H">H</a>
+    <a href="#" class="glossary-letter-btn" data-letter="I">I</a>
+    <a href="#" class="glossary-letter-btn" data-letter="J">J</a>
+    <a href="#" class="glossary-letter-btn" data-letter="K">K</a>
+    <a href="#" class="glossary-letter-btn" data-letter="L">L</a>
+    <a href="#" class="glossary-letter-btn" data-letter="M">M</a>
+    <a href="#" class="glossary-letter-btn" data-letter="N">N</a>
+    <a href="#" class="glossary-letter-btn" data-letter="O">O</a>
+    <a href="#" class="glossary-letter-btn" data-letter="P">P</a>
+    <a href="#" class="glossary-letter-btn" data-letter="Q">Q</a>
+    <a href="#" class="glossary-letter-btn" data-letter="R">R</a>
+    <a href="#" class="glossary-letter-btn" data-letter="S">S</a>
+    <a href="#" class="glossary-letter-btn" data-letter="T">T</a>
+    <a href="#" class="glossary-letter-btn" data-letter="U">U</a>
+    <a href="#" class="glossary-letter-btn" data-letter="V">V</a>
+    <a href="#" class="glossary-letter-btn" data-letter="W">W</a>
+    <a href="#" class="glossary-letter-btn" data-letter="X">X</a>
+    <a href="#" class="glossary-letter-btn" data-letter="Y">Y</a>
+    <a href="#" class="glossary-letter-btn" data-letter="Z">Z</a>
   </nav>
 
   <div id="glossary-empty" class="glossary-empty" hidden>
@@ -1198,6 +1199,13 @@ search: true
   transform: translateY(-1px);
   box-shadow: 0 6px 14px rgba(62, 103, 177, 0.25);
 }
+  .glossary-nav a.is-active-letter {
+background: var(--maven-blue-primary);
+color: #fff;
+border-color: var(--maven-blue-primary);
+transform: translateY(-1px);
+box-shadow: 0 6px 14px rgba(62, 103, 177, 0.25);
+}
 
 .glossary h2,
 .glossary-term h3,
@@ -1284,6 +1292,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const headings = Array.from(document.querySelectorAll('.glossary h2'));
 
   let activeFilter = 'all';
+  let activeLetter = 'all';
 
   function normalize(text) {
     return (text || '').toLowerCase().trim();
@@ -1300,18 +1309,25 @@ document.addEventListener('DOMContentLoaded', function () {
     return normalize(label).replace(/\s+/g, '-');
   }
 
+  function getTermLetterFromHeading(term) {
+    let el = term;
+    while (el) {
+      el = el.previousElementSibling;
+      if (el && el.tagName === 'H2') {
+        return el.id.toUpperCase();
+      }
+    }
+    return null;
+  }
+
   function sortAndNormalizeTermCategories() {
     terms.forEach(term => {
       const tagContainer = term.querySelector('.glossary-tags');
       if (!tagContainer) return;
-
       const tags = Array.from(tagContainer.querySelectorAll('span'));
-
       tags.sort((a, b) => a.textContent.localeCompare(b.textContent));
-
       tagContainer.innerHTML = '';
       tags.forEach(tag => tagContainer.appendChild(tag));
-
       const sortedSlugs = tags.map(tag => labelToSlug(tag.textContent));
       term.dataset.category = sortedSlugs.join(' ');
     });
@@ -1319,31 +1335,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function collectCategories() {
     const categorySet = new Set();
-
     terms.forEach(term => {
       const raw = normalize(term.dataset.category);
       if (!raw) return;
-
-      raw.split(/\s+/).forEach(cat => {
-        if (cat) categorySet.add(cat);
-      });
+      raw.split(/\s+/).forEach(cat => { if (cat) categorySet.add(cat); });
     });
-
     return Array.from(categorySet).sort((a, b) => a.localeCompare(b));
   }
 
   function renderFilterButtons() {
     const categories = collectCategories();
-
     filtersWrap.innerHTML = '';
-
     const allButton = document.createElement('button');
     allButton.type = 'button';
     allButton.className = 'glossary-filter is-active';
     allButton.dataset.filter = 'all';
     allButton.textContent = 'All';
     filtersWrap.appendChild(allButton);
-
     categories.forEach(category => {
       const button = document.createElement('button');
       button.type = 'button';
@@ -1358,6 +1366,10 @@ document.addEventListener('DOMContentLoaded', function () {
     return Array.from(document.querySelectorAll('.glossary-filter'));
   }
 
+  function getLetterButtons() {
+    return Array.from(document.querySelectorAll('.glossary-letter-btn'));
+  }
+
   function updateGlossary() {
     const query = normalize(searchInput.value);
     let visibleCount = 0;
@@ -1365,19 +1377,20 @@ document.addEventListener('DOMContentLoaded', function () {
     terms.forEach(term => {
       const text = normalize(term.textContent);
       const categories = normalize(term.dataset.category);
+      const termLetter = getTermLetterFromHeading(term);
+
       const matchesSearch = !query || text.includes(query);
       const matchesFilter = activeFilter === 'all' || categories.split(/\s+/).includes(activeFilter);
-      const show = matchesSearch && matchesFilter;
+      const matchesLetter = activeLetter === 'all' || termLetter === activeLetter;
 
+      const show = matchesSearch && matchesFilter && matchesLetter;
       term.classList.toggle('glossary-term-hidden', !show);
-
       if (show) visibleCount += 1;
     });
 
     headings.forEach(heading => {
       let next = heading.nextElementSibling;
       let hasVisibleTerms = false;
-
       while (next && next.tagName !== 'H2') {
         if (next.classList.contains('glossary-term') && !next.classList.contains('glossary-term-hidden')) {
           hasVisibleTerms = true;
@@ -1385,7 +1398,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         next = next.nextElementSibling;
       }
-
       heading.classList.toggle('glossary-letter-hidden', !hasVisibleTerms);
     });
 
@@ -1404,12 +1416,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  function bindLetterEvents() {
+    getLetterButtons().forEach(button => {
+      button.addEventListener('click', function (e) {
+        e.preventDefault();
+        getLetterButtons().forEach(btn => btn.classList.remove('is-active-letter'));
+        button.classList.add('is-active-letter');
+        activeLetter = button.dataset.letter;
+        updateGlossary();
+        document.getElementById('top').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  }
+
   clearButton.addEventListener('click', function () {
     searchInput.value = '';
     activeFilter = 'all';
+    activeLetter = 'all';
     getFilterButtons().forEach(btn => btn.classList.remove('is-active'));
-    const allButton = document.querySelector('.glossary-filter[data-filter="all"]');
-    if (allButton) allButton.classList.add('is-active');
+    const allCatButton = document.querySelector('.glossary-filter[data-filter="all"]');
+    if (allCatButton) allCatButton.classList.add('is-active');
+    getLetterButtons().forEach(btn => btn.classList.remove('is-active-letter'));
+    const allLetterButton = document.querySelector('.glossary-letter-btn[data-letter="all"]');
+    if (allLetterButton) allLetterButton.classList.add('is-active-letter');
     updateGlossary();
     searchInput.focus();
   });
@@ -1419,6 +1448,7 @@ document.addEventListener('DOMContentLoaded', function () {
   sortAndNormalizeTermCategories();
   renderFilterButtons();
   bindFilterEvents();
+  bindLetterEvents();
   updateGlossary();
 });
 </script>
