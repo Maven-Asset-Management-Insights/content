@@ -1310,12 +1310,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function getTermLetterFromHeading(term) {
-    let el = term;
+    let el = term.previousElementSibling;
     while (el) {
-      el = el.previousElementSibling;
-      if (el && el.tagName === 'H2') {
-        return el.id.toUpperCase();
+      if (el.tagName === 'H2') {
+        return el.id ? el.id.toUpperCase() : null;
       }
+      el = el.previousElementSibling;
     }
     return null;
   }
@@ -1381,7 +1381,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const matchesSearch = !query || text.includes(query);
       const matchesFilter = activeFilter === 'all' || categories.split(/\s+/).includes(activeFilter);
-      const matchesLetter = activeLetter === 'all' || termLetter === activeLetter;
+      // KEY FIX: treat null letter as always matching when activeLetter is 'all'
+      const matchesLetter = activeLetter === 'all' || (termLetter !== null && termLetter === activeLetter);
 
       const show = matchesSearch && matchesFilter && matchesLetter;
       term.classList.toggle('glossary-term-hidden', !show);
