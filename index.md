@@ -16,7 +16,7 @@ search: false
   </iframe>
 </div>
   <p><strong>IBM Maximo &amp; Enterprise Asset Management Clearly Explained: Asset management is challenging enough without adding unnecessary complexity.</strong></p>
-  <p style="margin-top: 1rem;">Maven works with organizations to turn this knowledge into outcomes. <a href="https://www.mavenasset.com">See how Maven can help.</a></p>
+ <p style="margin-top: 1rem;">Maven works with organizations to turn this knowledge into outcomes. <a href="https://www.mavenasset.com" style="color:#FFFFFF; font-weight:700; text-decoration:underline; text-underline-offset:3px;">See how Maven can help →</a></p>
 </section>
 
 <div class="grid">
