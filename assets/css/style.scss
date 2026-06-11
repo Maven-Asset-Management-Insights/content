@@ -587,3 +587,16 @@ main.container {
   height: 100%;
   border-radius: 4px;
 }
+
+.hero a,
+.hero a:visited,
+.hero a:active {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.hero a:hover {
+  color: #A8C0E0;
+}
