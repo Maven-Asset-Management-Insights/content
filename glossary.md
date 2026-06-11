@@ -1058,10 +1058,6 @@ search: true
       </div>
       <p>Work Type is a Maximo classification field on the work order that categorizes the nature of the maintenance activity — such as Preventive Maintenance, Corrective Maintenance, Emergency, or Inspection — helping route work through appropriate workflows and enabling reporting on how maintenance resources are distributed across work categories. Work Type is one of the most important fields for measuring planned versus unplanned work ratios and evaluating the overall health of the maintenance program. When Work Type is applied inconsistently or defaulted without thought, the resulting data cannot accurately represent how the maintenance team is spending its time. See also: Planned vs. Unplanned Work, Corrective Maintenance (CM), Preventive Maintenance (PM).</p>
     </div>
-
-
-
-
   </div>
 </div>
 
@@ -1417,7 +1413,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  function bindLetterEvents() {
+ function bindLetterEvents() {
     getLetterButtons().forEach(button => {
       button.addEventListener('click', function (e) {
         e.preventDefault();
@@ -1425,7 +1421,7 @@ document.addEventListener('DOMContentLoaded', function () {
         button.classList.add('is-active-letter');
         activeLetter = button.dataset.letter;
         updateGlossary();
-        document.getElementById('top').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
   }
