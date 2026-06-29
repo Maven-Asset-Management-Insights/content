@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Keeping Job Plans in Maximo Aligned with Real Work"
-date: 2026-02-15
+date: 2026-06-15
 categories: [Maximo, Data Quality, Reliability]
 series: maximo-data-quality-reliability
 tags: [Maximo, job plans, maintenance planning, data quality]
