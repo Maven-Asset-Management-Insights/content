@@ -20,6 +20,6 @@ How can you tell? The system is just a work order machine. Finance, procurement,
 
 Sound familiar? The problem isn't your software. IBM Maximo and MAS can do it all. The real question is: are you using your EAM for everything it's built to handle?
 
-→ [Read the full article](https://www.mavenasset.com/learn/blog/)
+→ [Read the full article](https://www.mavenasset.com/blog/eam-vs-cmms-differences/)
 
 Want more tips and technical know-how? Dive into the [Maven Insights library](https://maven-asset-management-insights.github.io/content/maven-insights/) for guidance you can actually use.
