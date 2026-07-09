@@ -8,6 +8,7 @@ header_pages:
   - maven-insights.md
   - glossary.md
   - field-kits.md
+  - data-readiness-check.html
 plugins:
   - jekyll-sitemap
 google_analytics: G-SBQ2G5F9P5
