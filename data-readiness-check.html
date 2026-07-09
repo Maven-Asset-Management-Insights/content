@@ -29,21 +29,27 @@ permalink: /data-readiness-check/
     --line:#DEE3EF;
   }
   *{box-sizing:border-box;}
-  html,body{margin:0;padding:0;}
+  html,body{margin:0;padding:0;height:100%;}
   body{
     font-family:'Inter',system-ui,sans-serif;
-    background:transparent;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(62,103,177,0.10), transparent 45%),
+      radial-gradient(circle at 100% 100%, rgba(41,44,117,0.08), transparent 50%),
+      var(--bg-light);
     color:var(--ink);
+    min-height:100vh;
     display:flex;
+    flex-direction:column;
+    align-items:center;
     justify-content:center;
-    padding:24px 12px 48px;
+    padding:40px 12px;
   }
   .card{
     width:100%;
-    max-width:560px;
+    max-width:600px;
     background:var(--white);
-    border-radius:14px;
-    box-shadow:0 1px 2px rgba(31,56,100,0.06), 0 12px 32px rgba(31,56,100,0.10);
+    border-radius:16px;
+    box-shadow:0 2px 4px rgba(31,56,100,0.06), 0 20px 48px rgba(31,56,100,0.14);
     overflow:hidden;
     border:1px solid var(--line);
   }
@@ -227,7 +233,7 @@ permalink: /data-readiness-check/
 </head>
 <body>
 
-<div style="width:100%;max-width:560px;margin:0 auto 10px;padding:0 12px;">
+<div style="width:100%;max-width:600px;margin:0 auto 10px;padding:0 12px;">
   <a href="/content/maven-insights/" style="font-family:'Inter',system-ui,sans-serif;font-size:13.5px;font-weight:600;color:#3E67B1;text-decoration:none;">&larr; Back to Maven Insights</a>
 </div>
 
