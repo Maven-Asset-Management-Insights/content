@@ -1,0 +1,491 @@
+---
+layout: null
+title: Maximo Data Readiness Check
+description: An interactive self-assessment that scores how ready your Maximo data is for AI and agentic capabilities.
+permalink: /data-readiness-check/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maximo Data Readiness Check | Maven Asset Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#292C75;
+    --deep-navy:#1F3864;
+    --blue:#3E67B1;
+    --bg-light:#F4F6FB;
+    --ink:#1B1E2B;
+    --sub-ink:#5B6072;
+    --red:#C0392B;
+    --orange:#D4751A;
+    --yellow:#C79A1E;
+    --green:#27AE60;
+    --white:#FFFFFF;
+    --line:#DEE3EF;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    background:transparent;
+    color:var(--ink);
+    display:flex;
+    justify-content:center;
+    padding:24px 12px 48px;
+  }
+  .card{
+    width:100%;
+    max-width:560px;
+    background:var(--white);
+    border-radius:14px;
+    box-shadow:0 1px 2px rgba(31,56,100,0.06), 0 12px 32px rgba(31,56,100,0.10);
+    overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .banner{
+    background:linear-gradient(135deg, var(--navy) 0%, var(--deep-navy) 100%);
+    padding:22px 28px 20px;
+    color:var(--white);
+  }
+  .eyebrow{
+    font-family:'Oswald',sans-serif;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:#AEB8E8;
+    margin:0 0 6px;
+  }
+  .title{
+    font-family:'Oswald',sans-serif;
+    font-size:24px;
+    font-weight:600;
+    letter-spacing:0.01em;
+    margin:0;
+    line-height:1.25;
+  }
+  .body-pad{ padding:26px 28px 30px; }
+
+  /* ---- Gauge ---- */
+  .gauge-wrap{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:6px;
+  }
+  .gauge-svg{ width:260px; max-width:100%; height:auto; overflow:visible; }
+  .zone-label-row{
+    display:flex;
+    justify-content:space-between;
+    width:260px;
+    max-width:100%;
+    margin-top:2px;
+    font-family:'Oswald',sans-serif;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+  }
+  .zone-label-row span:nth-child(1){ color:var(--red); }
+  .zone-label-row span:nth-child(2){ color:var(--orange); }
+  .zone-label-row span:nth-child(3){ color:var(--yellow); }
+  .zone-label-row span:nth-child(4){ color:var(--green); }
+
+  .needle{
+    transform-origin:130px 130px;
+    transition:transform 700ms cubic-bezier(.34,1.4,.64,1);
+  }
+  @media (prefers-reduced-motion: reduce){
+    .needle{ transition:none; }
+  }
+  .score-readout{
+    font-family:'Oswald',sans-serif;
+    font-size:34px;
+    font-weight:700;
+    margin-top:-6px;
+    color:var(--deep-navy);
+  }
+  .score-readout small{
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    font-weight:500;
+    color:var(--sub-ink);
+  }
+
+  /* ---- Progress dots ---- */
+  .dots{
+    display:flex;
+    justify-content:center;
+    gap:7px;
+    margin:18px 0 22px;
+  }
+  .dot{
+    width:8px; height:8px; border-radius:50%;
+    background:var(--line);
+    transition:background 250ms ease, transform 250ms ease;
+  }
+  .dot.done{ background:var(--blue); }
+  .dot.current{ background:var(--navy); transform:scale(1.3); }
+
+  /* ---- Question ---- */
+  .q-label{
+    font-family:'Oswald',sans-serif;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--blue);
+    margin:0 0 8px;
+  }
+  .q-text{
+    font-size:18px;
+    font-weight:600;
+    line-height:1.4;
+    color:var(--ink);
+    margin:0 0 18px;
+  }
+  .options{ display:flex; flex-direction:column; gap:10px; }
+  .opt-btn{
+    text-align:left;
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    font-weight:500;
+    color:var(--ink);
+    background:var(--bg-light);
+    border:1.5px solid var(--line);
+    border-radius:10px;
+    padding:13px 16px;
+    cursor:pointer;
+    transition:border-color 150ms ease, background 150ms ease, transform 100ms ease;
+  }
+  .opt-btn:hover{ border-color:var(--blue); background:#EEF2FB; }
+  .opt-btn:active{ transform:scale(0.99); }
+  .opt-btn:focus-visible{
+    outline:3px solid var(--blue);
+    outline-offset:2px;
+  }
+
+  /* ---- Result ---- */
+  .result-tier{
+    font-family:'Oswald',sans-serif;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:0.01em;
+    margin:2px 0 10px;
+  }
+  .result-desc{
+    font-size:15.5px;
+    line-height:1.55;
+    color:var(--sub-ink);
+    margin:0 0 22px;
+  }
+  .cta-row{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px; }
+  .btn{
+    font-family:'Inter',sans-serif;
+    font-size:14.5px;
+    font-weight:600;
+    border-radius:9px;
+    padding:12px 18px;
+    cursor:pointer;
+    border:1.5px solid transparent;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    transition:transform 100ms ease, opacity 150ms ease;
+  }
+  .btn:active{ transform:scale(0.98); }
+  .btn-primary{ background:var(--navy); color:var(--white); }
+  .btn-primary:hover{ background:var(--deep-navy); }
+  .btn-secondary{ background:var(--white); color:var(--navy); border-color:var(--navy); }
+  .btn-secondary:hover{ background:var(--bg-light); }
+  .btn:focus-visible{ outline:3px solid var(--blue); outline-offset:2px; }
+  .restart-link{
+    background:none; border:none; padding:0;
+    font-family:'Inter',sans-serif; font-size:13.5px; font-weight:600;
+    color:var(--sub-ink); text-decoration:underline; cursor:pointer;
+  }
+  .copy-confirm{
+    font-size:12.5px; color:var(--green); font-weight:600; margin-left:2px;
+    opacity:0; transition:opacity 200ms ease;
+  }
+  .copy-confirm.show{ opacity:1; }
+
+  .hidden{ display:none !important; }
+
+  @media (max-width:400px){
+    .body-pad{ padding:22px 18px 26px; }
+    .banner{ padding:20px 18px 18px; }
+    .title{ font-size:21px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="banner">
+    <p class="eyebrow">Maven Asset Management</p>
+    <h1 class="title">Maximo Data Readiness Check</h1>
+  </div>
+
+  <div class="body-pad">
+
+    <div class="gauge-wrap">
+      <svg class="gauge-svg" viewBox="0 0 260 150" aria-hidden="true">
+        <path d="M 10 130 A 120 120 0 0 1 45.2 45.2"  stroke="#C0392B" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M 45.2 45.2 A 120 120 0 0 1 130 10"  stroke="#D4751A" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M 130 10 A 120 120 0 0 1 214.8 45.2" stroke="#C79A1E" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M 214.8 45.2 A 120 120 0 0 1 250 130" stroke="#27AE60" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <g id="needleGroup" class="needle" style="transform:rotate(-90deg);">
+          <line x1="130" y1="130" x2="130" y2="30" stroke="#1F3864" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="130" cy="130" r="9" fill="#1F3864"/>
+        </g>
+      </svg>
+      <div class="zone-label-row">
+        <span>Reactive</span><span>Emerging</span><span>Structured</span><span>AI-Ready</span>
+      </div>
+      <div class="score-readout" id="scoreReadout">0<small> / 16</small></div>
+    </div>
+
+    <div class="dots" id="dots"></div>
+
+    <!-- Question view -->
+    <div id="questionView">
+      <p class="q-label" id="qCategory">Item Master</p>
+      <p class="q-text" id="qText">Loading question…</p>
+      <div class="options" id="optionsWrap"></div>
+    </div>
+
+    <!-- Result view -->
+    <div id="resultView" class="hidden">
+      <p class="q-label">Your Result</p>
+      <div class="result-tier" id="resultTier">—</div>
+      <p class="result-desc" id="resultDesc"></p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:mas@mavenasset.com?subject=Data%20Readiness%20Check%20follow-up" target="_blank" rel="noopener">Talk to Maven</a>
+        <button class="btn btn-secondary" id="copyBtn">Copy my result</button>
+      </div>
+      <span class="copy-confirm" id="copyConfirm">Copied — paste it anywhere.</span>
+      <div style="margin-top:10px;">
+        <button class="restart-link" id="restartBtn">Start over</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var questions = [
+    {
+      cat: "Item Master",
+      text: "When a new part or asset needs to be added to Maximo, what usually happens?",
+      opts: [
+        { t: "Whoever needs it just adds it", v: 0 },
+        { t: "There's a process, but it isn't always followed", v: 1 },
+        { t: "It goes through a defined review before it goes live", v: 2 }
+      ]
+    },
+    {
+      cat: "Item Master",
+      text: "How often do you run into duplicate or near-duplicate item records?",
+      opts: [
+        { t: "Often — it's a known mess", v: 0 },
+        { t: "Sometimes, we clean it up when we notice", v: 1 },
+        { t: "Rarely — we actively prevent duplicates", v: 2 }
+      ]
+    },
+    {
+      cat: "Failure Coding",
+      text: "When technicians close a work order, how do they record what went wrong?",
+      opts: [
+        { t: "Free text, in their own words", v: 0 },
+        { t: "A mix of codes and text", v: 1 },
+        { t: "Structured problem, cause, and remedy codes", v: 2 }
+      ]
+    },
+    {
+      cat: "Failure Coding",
+      text: "Could you trust a report on top failure causes for a critical asset today?",
+      opts: [
+        { t: "No, the data's too inconsistent", v: 0 },
+        { t: "Mostly, with some gaps", v: 1 },
+        { t: "Yes, without hesitation", v: 2 }
+      ]
+    },
+    {
+      cat: "Work Order & Meter Data",
+      text: "Is completion data (labor, downtime, failure info) required before a work order can close?",
+      opts: [
+        { t: "No, work orders can close with blanks", v: 0 },
+        { t: "Some fields are required", v: 1 },
+        { t: "Yes, completion data is enforced", v: 2 }
+      ]
+    },
+    {
+      cat: "Work Order & Meter Data",
+      text: "How confident are you in your meter reading data — no gaps, no impossible values?",
+      opts: [
+        { t: "Not very — we've never audited it", v: 0 },
+        { t: "Somewhat — we catch the big errors", v: 1 },
+        { t: "Very — it's validated on a regular basis", v: 2 }
+      ]
+    },
+    {
+      cat: "Governance",
+      text: "Who owns data quality standards for Maximo at your organization?",
+      opts: [
+        { t: "No one specific — it's nobody's job", v: 0 },
+        { t: "IT, by default", v: 1 },
+        { t: "A named owner or team, accountable for it", v: 2 }
+      ]
+    },
+    {
+      cat: "Governance",
+      text: "How often is data quality actually reviewed?",
+      opts: [
+        { t: "Never, or only when something breaks", v: 0 },
+        { t: "Occasionally", v: 1 },
+        { t: "On a regular, recurring cadence", v: 2 }
+      ]
+    }
+  ];
+
+  var MAX_SCORE = questions.length * 2; // 16
+  var current = 0;
+  var score = 0;
+
+  var tiers = [
+    { min: 0,  max: 4,  name: "Reactive",   color: "#C0392B",
+      desc: "Your Maximo data lives in silos and spreadsheets. Any AI feature you turn on will sound confident and be wrong just as often. Start with one category above, not all four." },
+    { min: 5,  max: 9,  name: "Emerging",   color: "#D4751A",
+      desc: "The basics exist, but they're inconsistently followed. AI-assisted features might work fine in a demo. They won't hold up at scale until the gaps close." },
+    { min: 10, max: 13, name: "Structured", color: "#C79A1E",
+      desc: "Standards and ownership are in place for most of what matters. You're in a strong position to pilot AI-assisted work order triage, failure analysis, or inventory recommendations." },
+    { min: 14, max: 16, name: "AI-Ready",   color: "#27AE60",
+      desc: "Your data is governed, current, and actually trusted. You're positioned to adopt Maximo's AI and agentic capabilities as they roll out, not scramble to catch up later." }
+  ];
+
+  var dotsEl = document.getElementById('dots');
+  var qCategory = document.getElementById('qCategory');
+  var qText = document.getElementById('qText');
+  var optionsWrap = document.getElementById('optionsWrap');
+  var scoreReadout = document.getElementById('scoreReadout');
+  var needleGroup = document.getElementById('needleGroup');
+  var questionView = document.getElementById('questionView');
+  var resultView = document.getElementById('resultView');
+  var resultTier = document.getElementById('resultTier');
+  var resultDesc = document.getElementById('resultDesc');
+  var copyBtn = document.getElementById('copyBtn');
+  var copyConfirm = document.getElementById('copyConfirm');
+  var restartBtn = document.getElementById('restartBtn');
+
+  function buildDots(){
+    dotsEl.innerHTML = '';
+    for (var i = 0; i < questions.length; i++){
+      var d = document.createElement('div');
+      d.className = 'dot';
+      dotsEl.appendChild(d);
+    }
+  }
+
+  function updateDots(){
+    var dots = dotsEl.children;
+    for (var i = 0; i < dots.length; i++){
+      dots[i].className = 'dot' + (i < current ? ' done' : (i === current ? ' current' : ''));
+    }
+  }
+
+  function updateGauge(animatedScore){
+    var pct = animatedScore / MAX_SCORE;
+    var deg = -90 + (pct * 180);
+    needleGroup.style.transform = 'rotate(' + deg + 'deg)';
+    scoreReadout.innerHTML = animatedScore + '<small> / ' + MAX_SCORE + '</small>';
+  }
+
+  function renderQuestion(){
+    updateDots();
+    var q = questions[current];
+    qCategory.textContent = q.cat;
+    qText.textContent = q.text;
+    optionsWrap.innerHTML = '';
+    q.opts.forEach(function(opt){
+      var btn = document.createElement('button');
+      btn.className = 'opt-btn';
+      btn.type = 'button';
+      btn.textContent = opt.t;
+      btn.addEventListener('click', function(){ answer(opt.v); });
+      optionsWrap.appendChild(btn);
+    });
+  }
+
+  function answer(points){
+    score += points;
+    updateGauge(score);
+    current++;
+    if (current >= questions.length){
+      showResult();
+    } else {
+      renderQuestion();
+    }
+  }
+
+  function getTier(s){
+    for (var i = 0; i < tiers.length; i++){
+      if (s >= tiers[i].min && s <= tiers[i].max) return tiers[i];
+    }
+    return tiers[tiers.length - 1];
+  }
+
+  function showResult(){
+    updateDots();
+    var tier = getTier(score);
+    resultTier.textContent = tier.name + ' — ' + score + ' / ' + MAX_SCORE;
+    resultTier.style.color = tier.color;
+    resultDesc.textContent = tier.desc;
+    questionView.classList.add('hidden');
+    resultView.classList.remove('hidden');
+  }
+
+  function reset(){
+    current = 0;
+    score = 0;
+    updateGauge(0);
+    questionView.classList.remove('hidden');
+    resultView.classList.add('hidden');
+    copyConfirm.classList.remove('show');
+    buildDots();
+    renderQuestion();
+  }
+
+  copyBtn.addEventListener('click', function(){
+    var tier = getTier(score);
+    var text = "I scored " + score + "/" + MAX_SCORE + " (" + tier.name + ") on Maven's Maximo Data Readiness Check. How ready is your Maximo data for AI? mavenasset.com";
+    function showConfirm(){
+      copyConfirm.classList.add('show');
+      setTimeout(function(){ copyConfirm.classList.remove('show'); }, 2500);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(showConfirm).catch(function(){
+        window.prompt('Copy your result:', text);
+      });
+    } else {
+      window.prompt('Copy your result:', text);
+    }
+  });
+
+  restartBtn.addEventListener('click', reset);
+
+  buildDots();
+  renderQuestion();
+  updateGauge(0);
+})();
+</script>
+
+</body>
+</html>
