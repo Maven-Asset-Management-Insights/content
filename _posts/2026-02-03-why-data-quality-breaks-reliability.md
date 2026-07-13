@@ -34,22 +34,22 @@ Data quality problems rarely start in one dramatic failure. They start small, in
 ### Asset Hierarchies
 
 When [asset hierarchies](https://maven-asset-management-insights.github.io/content/glossary/#asset-hierarchy) are inconsistent or poorly maintained, failure history becomes disconnected from the systems it describes, and reporting loses its footing:  
-👉 [How Consistent Asset Hierarchies Improve Reliability in Maximo](/2026/02/12/maximo-asset-hierarchy-problems.html)
+👉 [How Consistent Asset Hierarchies Improve Reliability in Maximo](https://maven-asset-management-insights.github.io/content/2026/02/12/maximo-asset-hierarchy-problems.html)
 
 ### Failure Coding
 
 When [failure codes](https://maven-asset-management-insights.github.io/content/glossary/#failure-code) are applied inconsistently, or not aligned with how failures actually occur, [root cause analysis](https://maven-asset-management-insights.github.io/content/glossary/#root-cause-analysis-rca) becomes guesswork instead of insight:  
-👉 [How to Improve Failure Coding in Maximo for Better Reliability Insights](/2026/02/10/maximo-failure-coding-issues.html)
+👉 [How to Improve Failure Coding in Maximo for Better Reliability Insights](https://maven-asset-management-insights.github.io/content/2026/02/10/maximo-failure-coding-issues.html)
 
 ### Work Orders
 
 Because [work orders](https://maven-asset-management-insights.github.io/content/glossary/#work-order-wo) sit at the intersection of assets, labor, and failure detail, incomplete or inconsistent entries at this level ripple into nearly every other data point in the system:  
-👉 [Improving Work Order Data Quality in Maximo for Better Reliability](/2026/02/18/maximo-work-order-data-quality.html)
+👉 [Improving Work Order Data Quality in Maximo for Better Reliability](https://maven-asset-management-insights.github.io/content/2026/02/18/maximo-work-order-data-quality.html)
 
 ### Job Plans
 
 When [job plans](https://maven-asset-management-insights.github.io/content/glossary/#job-plan) drift away from the work actually being performed, they stop guiding execution and start working against it:  
-👉 [Keeping Job Plans in Maximo Aligned with Real Work](/2026/02/15/maximo-job-plan-issues.html)
+👉 [Keeping Job Plans in Maximo Aligned with Real Work](https://maven-asset-management-insights.github.io/content/2026/02/15/maximo-job-plan-issues.html)
 
 Each of these areas is covered in more depth elsewhere in this series. Together, they account for most of the [data drift](https://maven-asset-management-insights.github.io/content/glossary/#data-drift) organizations experience over time.
 
