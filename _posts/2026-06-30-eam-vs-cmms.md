@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A CMMS Manages Maintenance. An EAM Manages Assets. They Are Not the Same Thing."
-date: 2026-06-29
+date: 2026-06-30
 categories: insights/asset-management/digital-transformation
 tags: eam asset-management cmms reliability maintenance-strategy
 ---
