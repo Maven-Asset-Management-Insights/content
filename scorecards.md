@@ -69,7 +69,7 @@ permalink: /scorecards/
     </div>
 
     <div style="margin-top:18px;">
-      <a class="button" href="{{ "/field-kits/maximo-readiness-scorecard.html" | relative_url }}">View scorecard</a>
+      <a class="button" href="{{ "/field-kits/maximo-readiness-scorecard.html" | relative_url }}">Take the assessment</a>
     </div>
   </div>
 
@@ -89,7 +89,7 @@ permalink: /scorecards/
     </div>
 
     <div style="margin-top:18px;">
-      <a class="button" href="{{ "/field-kits/maximo-ai-readiness-assessment-scorecard/" | relative_url }}">View scorecard</a>
+      <a class="button" href="{{ "/field-kits/maximo-ai-readiness-assessment-scorecard/" | relative_url }}">Take the assessment</a>
     </div>
   </div>
 
