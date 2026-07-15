@@ -26,7 +26,7 @@ permalink: /scorecards/
   </div>
 
   <div style="margin-top:18px;">
-    <a class="button" href="{{ "/scorecards/data-readiness-check.html" | relative_url }}">Take the assessment</a>
+    <a class="button" href="{{ "/scorecards/data-readiness-check" | relative_url }}">Take the assessment</a>
   </div>
 </div>
 
