@@ -159,7 +159,7 @@ search: false
       <h2>Scorecards &amp; Assessments</h2>
       <p>Free tools to assess your Maximo program — no form required.</p>
       <ul>
-        <li><a href="{{ '/scorecards/data-readiness-check.html' | relative_url }}">Maximo Data Readiness Check</a></li>
+        <li><a href="{{ '/scorecards/data-readiness-check' | relative_url }}">Maximo Data Readiness Check</a></li>
         <li><a href="{{ '/scorecards/work-management-assessment/' | relative_url }}">Work Management Value Assessment</a></li>
         <li><a href="{{ '/field-kits/maximo-readiness-scorecard.html' | relative_url }}">Maximo Readiness Scorecard</a></li>
         <li><a href="{{ '/field-kits/maximo-ai-readiness-assessment-scorecard/' | relative_url }}">AI Readiness Assessment</a></li>
