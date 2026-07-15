@@ -1,136 +1,587 @@
 ---
-layout: default
+layout: null
 title: Maximo Readiness Scorecard
-date: 2026-02-26
+description: An interactive assessment to evaluate whether Maximo is driving performance or simply processing transactions — covering strategy alignment, work execution, and data governance.
+permalink: /scorecards/maximo-readiness-assessment/
 ---
-<section class="hero">
-  <h1>Maximo Readiness Scorecard</h1>
-  <p><strong>A leadership-level assessment to understand whether Maximo is driving performance or simply processing transactions.</strong></p>
-</section>
-<div class="grid">
-  <section class="card">
-    <h2>Executive Summary</h2>
-    <p>
-      Maximo becomes a strategic platform only when it is anchored to business priorities, executed with discipline,
-      and governed with trusted data. This scorecard provides a fast, structured way for leaders to evaluate readiness
-      across the dimensions that determine executive value: alignment, reliability execution, and governance.
-    </p>
-    <p style="margin-top:14px;">
-      Use it to establish a shared baseline, identify the highest-impact gaps, and focus modernization and improvement
-      investments where they will materially improve risk, cost, uptime, and compliance outcomes.
-    </p>
-    <div class="card-cta" style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
-      <a class="button" href="{{ '/scorecards/maximo-readiness-scorecard/' | relative_url }}">
-        Take the Interactive Scorecard
-      </a>
-      <a class="button" href="{{ '/assets/maximo-readiness-scorecard.pdf' | relative_url }}"
-         target="_blank" rel="noopener"
-         style="background:transparent; border:1.5px solid currentColor;">
-        Download PDF
-      </a>
-    </div>
-    <div style="margin-top:20px;">
-      <a href="{{ '/scorecards/maximo-readiness/' | relative_url }}" style="display:block; text-decoration:none;">
-        <svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg" role="img"
-             style="width:100%; border-radius:10px; border:1px solid #DEE3EF; display:block; transition:box-shadow 200ms ease;"
-             onmouseover="this.style.boxShadow='0 4px 16px rgba(41,44,117,0.14)'"
-             onmouseout="this.style.boxShadow='none'">
-          <title>Preview of the interactive Maximo Readiness Scorecard</title>
-          <rect width="480" height="300" rx="12" fill="#F4F6FB"/>
-          <rect width="480" height="54" rx="12" fill="#292C75"/>
-          <rect width="480" height="30" y="24" fill="#292C75"/>
-          <text x="20" y="20" font-family="Arial, sans-serif" font-size="9" font-weight="600" fill="#AEB8E8" letter-spacing="2">MAVEN ASSET MANAGEMENT</text>
-          <text x="20" y="40" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Maximo Readiness Scorecard</text>
-          <path d="M 110 180 A 72 72 0 0 1 137.1 129.1" stroke="#C0392B" stroke-width="10" fill="none" stroke-linecap="round"/>
-          <path d="M 137.1 129.1 A 72 72 0 0 1 182 108" stroke="#D4751A" stroke-width="10" fill="none" stroke-linecap="round"/>
-          <path d="M 182 108 A 72 72 0 0 1 226.9 129.1" stroke="#C79A1E" stroke-width="10" fill="none" stroke-linecap="round"/>
-          <path d="M 226.9 129.1 A 72 72 0 0 1 254 180" stroke="#27AE60" stroke-width="10" fill="none" stroke-linecap="round"/>
-          <line x1="182" y1="180" x2="148" y2="130" stroke="#1F3864" stroke-width="2.5" stroke-linecap="round"/>
-          <circle cx="182" cy="180" r="5.5" fill="#1F3864"/>
-          <text x="182" y="202" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1F3864" text-anchor="middle">8</text>
-          <text x="182" y="214" font-family="Arial, sans-serif" font-size="9" fill="#5B6072" text-anchor="middle">/ 26</text>
-          <text x="100" y="192" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#C0392B" text-anchor="middle">REACTIVE</text>
-          <text x="145" y="224" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#D4751A" text-anchor="middle">DEVELOPING</text>
-          <text x="220" y="224" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#C79A1E" text-anchor="middle">STRUCTURED</text>
-          <text x="264" y="192" font-family="Arial, sans-serif" font-size="7.5" font-weight="700" fill="#27AE60" text-anchor="middle">STRATEGIC</text>
-          <circle cx="278" cy="88" r="4" fill="#3E67B1"/>
-          <circle cx="290" cy="88" r="4" fill="#3E67B1"/>
-          <circle cx="302" cy="88" r="4" fill="#3E67B1"/>
-          <circle cx="314" cy="88" r="4" fill="#3E67B1"/>
-          <circle cx="326" cy="88" r="5" fill="#292C75"/>
-          <circle cx="339" cy="88" r="4" fill="#DEE3EF"/>
-          <circle cx="351" cy="88" r="4" fill="#DEE3EF"/>
-          <circle cx="363" cy="88" r="4" fill="#DEE3EF"/>
-          <circle cx="375" cy="88" r="4" fill="#DEE3EF"/>
-          <circle cx="387" cy="88" r="4" fill="#DEE3EF"/>
-          <circle cx="399" cy="88" r="4" fill="#DEE3EF"/>
-          <circle cx="411" cy="88" r="4" fill="#DEE3EF"/>
-          <circle cx="423" cy="88" r="4" fill="#DEE3EF"/>
-          <circle cx="435" cy="88" r="4" fill="#DEE3EF"/>
-          <circle cx="447" cy="88" r="4" fill="#DEE3EF"/>
-          <circle cx="459" cy="88" r="4" fill="#DEE3EF"/>
-          <line x1="20" y1="234" x2="460" y2="234" stroke="#DEE3EF" stroke-width="0.5"/>
-          <text x="20" y="251" font-family="Arial, sans-serif" font-size="8.5" font-weight="700" fill="#3E67B1" letter-spacing="1.5">WORK &amp; RELIABILITY EXECUTION</text>
-          <text x="20" y="265" font-family="Arial, sans-serif" font-size="10.5" font-weight="600" fill="#1B1E2B">Are job plans consistently used before work is</text>
-          <text x="20" y="278" font-family="Arial, sans-serif" font-size="10.5" font-weight="600" fill="#1B1E2B">assigned to technicians?</text>
-          <rect x="20" y="107" width="240" height="28" rx="6" fill="#FFFFFF" stroke="#DEE3EF" stroke-width="1"/>
-          <text x="32" y="125" font-family="Arial, sans-serif" font-size="9.5" fill="#1B1E2B">No — technicians work from memory</text>
-          <rect x="20" y="141" width="240" height="28" rx="6" fill="#FFFFFF" stroke="#DEE3EF" stroke-width="1"/>
-          <text x="32" y="159" font-family="Arial, sans-serif" font-size="9.5" fill="#1B1E2B">Sometimes — for some work types only</text>
-          <rect x="20" y="175" width="240" height="28" rx="6" fill="#FFFFFF" stroke="#3E67B1" stroke-width="1.5"/>
-          <text x="32" y="193" font-family="Arial, sans-serif" font-size="9.5" fill="#1B1E2B">Yes — job plans are standard practice</text>
-          <text x="278" y="108" font-family="Arial, sans-serif" font-size="8.5" fill="#5B6072">Question 5 of 13</text>
-        </svg>
-        <p style="font-size:0.8rem; color:#5B6072; margin:6px 0 0; text-align:center;">Click to take the interactive scorecard →</p>
-      </a>
-    </div>
-  </section>
-  <section class="card">
-    <h2>Who This Is For</h2>
-    <ul>
-      <li><strong>Asset &amp; Reliability Leaders</strong> aligning work execution to measurable performance outcomes</li>
-      <li><strong>Operations &amp; Maintenance Executives</strong> prioritizing investments to reduce unplanned work and recurring failures</li>
-      <li><strong>IT &amp; EAM Product Owners</strong> clarifying platform priorities, integration scope, and governance ownership</li>
-      <li><strong>Finance &amp; Risk Stakeholders</strong> seeking clearer linkage between Maximo, risk exposure, and accountability</li>
-    </ul>
-    <h2 style="margin-top:18px;">How to Use It</h2>
-    <ol>
-      <li>Score each item from <strong>0–2</strong> based on what is consistently true today.</li>
-      <li>Total your score and review the maturity interpretation.</li>
-      <li>Prioritize the top gaps that most constrain executive outcomes (risk, cost, uptime, compliance).</li>
-      <li>Translate gaps into a focused improvement plan with accountable owners and time-bound milestones.</li>
-    </ol>
-  </section>
-  <section class="card">
-    <h2>What It Measures</h2>
-    <p>
-      The scorecard evaluates the readiness signals leaders care about—whether decisions are aligned, execution is predictable,
-      and governance supports scale.
-    </p>
-    <ul>
-      <li><strong>Strategy &amp; Business Alignment</strong> — shared definitions, priorities tied to business outcomes, KPI accountability</li>
-      <li><strong>Work &amp; Reliability Execution</strong> — planned vs. unplanned visibility, standardized job plans/PMs, failure coding discipline</li>
-      <li><strong>Data, Integration &amp; Governance</strong> — inventory strategy support, ERP/ops integration, business-led governance ownership</li>
-    </ul>
-    <p style="margin-top:14px;">
-      The result is a clear, executive-friendly view of whether Maximo is positioned to drive performance—or will remain transactional.
-    </p>
-  </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maximo Readiness Scorecard | Maven Asset Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#292C75;
+    --deep-navy:#1F3864;
+    --blue:#3E67B1;
+    --bg-light:#F4F6FB;
+    --ink:#1B1E2B;
+    --sub-ink:#5B6072;
+    --red:#C0392B;
+    --orange:#D4751A;
+    --yellow:#C79A1E;
+    --green:#27AE60;
+    --white:#FFFFFF;
+    --line:#DEE3EF;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(62,103,177,0.10), transparent 45%),
+      radial-gradient(circle at 100% 100%, rgba(41,44,117,0.08), transparent 50%),
+      var(--bg-light);
+    color:var(--ink);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:40px 12px;
+  }
+  .card{
+    width:100%;
+    max-width:600px;
+    background:var(--white);
+    border-radius:16px;
+    box-shadow:0 2px 4px rgba(31,56,100,0.06), 0 20px 48px rgba(31,56,100,0.14);
+    overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .banner{
+    background:linear-gradient(135deg, var(--navy) 0%, var(--deep-navy) 100%);
+    padding:22px 28px 20px;
+    color:var(--white);
+  }
+  .eyebrow{
+    font-family:'Oswald',sans-serif;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:#AEB8E8;
+    margin:0 0 6px;
+  }
+  .title{
+    font-family:'Oswald',sans-serif;
+    font-size:24px;
+    font-weight:600;
+    letter-spacing:0.01em;
+    margin:0;
+    line-height:1.25;
+  }
+  .body-pad{ padding:26px 28px 30px; }
+
+  /* ---- Gauge ---- */
+  .gauge-wrap{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:6px;
+  }
+  .gauge-svg{ width:260px; max-width:100%; height:auto; overflow:visible; }
+  .zone-label-row{
+    display:flex;
+    justify-content:space-between;
+    width:260px;
+    max-width:100%;
+    margin-top:2px;
+    font-family:'Oswald',sans-serif;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+  }
+  .zone-label-row span:nth-child(1){ color:var(--red); }
+  .zone-label-row span:nth-child(2){ color:var(--orange); }
+  .zone-label-row span:nth-child(3){ color:var(--yellow); }
+  .zone-label-row span:nth-child(4){ color:var(--green); }
+
+  .needle{
+    transform-origin:130px 130px;
+    transition:transform 700ms cubic-bezier(.34,1.4,.64,1);
+  }
+  @media (prefers-reduced-motion: reduce){
+    .needle{ transition:none; }
+  }
+  .score-readout{
+    font-family:'Oswald',sans-serif;
+    font-size:34px;
+    font-weight:700;
+    margin-top:-6px;
+    color:var(--deep-navy);
+  }
+  .score-readout small{
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    font-weight:500;
+    color:var(--sub-ink);
+  }
+
+  /* ---- Progress dots ---- */
+  .dots{
+    display:flex;
+    justify-content:center;
+    gap:7px;
+    margin:18px 0 22px;
+    flex-wrap:wrap;
+  }
+  .dot{
+    width:8px; height:8px; border-radius:50%;
+    background:var(--line);
+    transition:background 250ms ease, transform 250ms ease;
+  }
+  .dot.done{ background:var(--blue); }
+  .dot.current{ background:var(--navy); transform:scale(1.3); }
+
+  /* ---- Question ---- */
+  .q-label{
+    font-family:'Oswald',sans-serif;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--blue);
+    margin:0 0 8px;
+  }
+  .q-text{
+    font-size:18px;
+    font-weight:600;
+    line-height:1.4;
+    color:var(--ink);
+    margin:0 0 18px;
+  }
+  .options{ display:flex; flex-direction:column; gap:10px; }
+  .opt-btn{
+    text-align:left;
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    font-weight:500;
+    color:var(--ink);
+    background:var(--bg-light);
+    border:1.5px solid var(--line);
+    border-radius:10px;
+    padding:13px 16px;
+    cursor:pointer;
+    transition:border-color 150ms ease, background 150ms ease, transform 100ms ease;
+  }
+  .opt-btn:hover{ border-color:var(--blue); background:#EEF2FB; }
+  .opt-btn:active{ transform:scale(0.99); }
+  .opt-btn:focus-visible{ outline:3px solid var(--blue); outline-offset:2px; }
+
+  /* ---- Result ---- */
+  .result-tier{
+    font-family:'Oswald',sans-serif;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:0.01em;
+    margin:2px 0 10px;
+  }
+  .result-desc{
+    font-size:15.5px;
+    line-height:1.55;
+    color:var(--sub-ink);
+    margin:0 0 22px;
+  }
+  .cta-row{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px; }
+  .btn{
+    font-family:'Inter',sans-serif;
+    font-size:14.5px;
+    font-weight:600;
+    border-radius:9px;
+    padding:12px 18px;
+    cursor:pointer;
+    border:1.5px solid transparent;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    transition:transform 100ms ease, opacity 150ms ease;
+  }
+  .btn:active{ transform:scale(0.98); }
+  .btn-primary{ background:var(--navy); color:var(--white); }
+  .btn-primary:hover{ background:var(--deep-navy); }
+  .btn-secondary{ background:var(--white); color:var(--navy); border-color:var(--navy); }
+  .btn-secondary:hover{ background:var(--bg-light); }
+  .btn:focus-visible{ outline:3px solid var(--blue); outline-offset:2px; }
+  .restart-link{
+    background:none; border:none; padding:0;
+    font-family:'Inter',sans-serif; font-size:13.5px; font-weight:600;
+    color:var(--sub-ink); text-decoration:underline; cursor:pointer;
+  }
+  .hidden{ display:none !important; }
+
+  @media (max-width:400px){
+    .body-pad{ padding:22px 18px 26px; }
+    .banner{ padding:20px 18px 18px; }
+    .title{ font-size:21px; }
+  }
+</style>
+</head>
+<body>
+
+<div style="width:100%;max-width:600px;margin:0 auto 10px;padding:0 12px;">
+  <a href="/content/scorecards/" style="font-family:'Inter',system-ui,sans-serif;font-size:13.5px;font-weight:600;color:#3E67B1;text-decoration:none;">&larr; Back to Scorecards</a>
 </div>
-<p class="section-title">Preview</p>
+
 <div class="card">
-  <iframe
-    src="{{ '/assets/maximo-readiness-scorecard.pdf' | relative_url }}"
-    width="100%"
-    height="800px"
-    type="application/pdf"
-    loading="lazy">
-  </iframe>
-  <div style="margin-top:14px;">
-    <a class="button"
-       href="{{ '/assets/maximo-readiness-scorecard.pdf' | relative_url }}"
-       target="_blank" rel="noopener">
-      Open / Download PDF
-    </a>
+  <div class="banner">
+    <p class="eyebrow">Maven Asset Management</p>
+    <h1 class="title">Maximo Readiness Scorecard</h1>
+  </div>
+
+  <div class="body-pad">
+
+    <div class="gauge-wrap">
+      <svg class="gauge-svg" viewBox="0 0 260 150" aria-hidden="true">
+        <path d="M 10 130 A 120 120 0 0 1 45.2 45.2"  stroke="#C0392B" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M 45.2 45.2 A 120 120 0 0 1 130 10"  stroke="#D4751A" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M 130 10 A 120 120 0 0 1 214.8 45.2" stroke="#C79A1E" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M 214.8 45.2 A 120 120 0 0 1 250 130" stroke="#27AE60" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <g id="needleGroup" class="needle" style="transform:rotate(-90deg);">
+          <line x1="130" y1="130" x2="130" y2="30" stroke="#1F3864" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="130" cy="130" r="9" fill="#1F3864"/>
+        </g>
+      </svg>
+      <div class="zone-label-row">
+        <span>Reactive</span><span>Developing</span><span>Structured</span><span>Strategic</span>
+      </div>
+      <div class="score-readout" id="scoreReadout">0<small> / 20</small></div>
+    </div>
+
+    <div class="dots" id="dots"></div>
+
+    <!-- Question view -->
+    <div id="questionView">
+      <p class="q-label" id="qCategory">Strategy &amp; Alignment</p>
+      <p class="q-text" id="qText">Loading question…</p>
+      <div class="options" id="optionsWrap"></div>
+    </div>
+
+    <!-- Result view -->
+    <div id="resultView" class="hidden">
+      <p class="q-label">Your Result</p>
+      <div class="result-tier" id="resultTier">—</div>
+      <p class="result-desc" id="resultDesc"></p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:mas@mavenasset.com?subject=Maximo%20Readiness%20Scorecard%20follow-up" target="_blank" rel="noopener">Talk to Maven</a>
+        <button class="btn btn-secondary" id="downloadBtn">Download my result</button>
+      </div>
+      <div style="margin-top:10px;">
+        <button class="restart-link" id="restartBtn">Start over</button>
+      </div>
+    </div>
+
   </div>
 </div>
+
+<script>
+(function(){
+  var questions = [
+    // Strategy & Business Alignment (7 questions)
+    {
+      cat: "Strategy & Business Alignment",
+      text: "Does your organization have a shared definition of what Maximo is supposed to deliver — beyond tracking work orders?",
+      opts: [
+        { t: "No — different teams have different expectations", v: 0 },
+        { t: "Somewhat — there's general agreement but nothing formal", v: 1 },
+        { t: "Yes — defined outcomes are documented and understood", v: 2 }
+      ]
+    },
+    {
+      cat: "Strategy & Business Alignment",
+      text: "Are Maximo priorities explicitly tied to business outcomes like uptime, cost, compliance, or risk reduction?",
+      opts: [
+        { t: "No — priorities are set by whoever asks loudest", v: 0 },
+        { t: "Partially — some connections exist but aren't formalized", v: 1 },
+        { t: "Yes — priorities are linked to measurable business outcomes", v: 2 }
+      ]
+    },
+    {
+      cat: "Strategy & Business Alignment",
+      text: "Do leaders use Maximo data to make decisions — or do they rely on spreadsheets and institutional knowledge?",
+      opts: [
+        { t: "Spreadsheets and memory — Maximo isn't trusted for decisions", v: 0 },
+        { t: "Mixed — Maximo is consulted but not the primary source", v: 1 },
+        { t: "Maximo is the primary source for operational decisions", v: 2 }
+      ]
+    },
+    {
+      cat: "Strategy & Business Alignment",
+      text: "Is there a defined owner accountable for Maximo performance and outcomes?",
+      opts: [
+        { t: "No — ownership is unclear or shared with no accountability", v: 0 },
+        { t: "Somewhat — IT owns the system but not the outcomes", v: 1 },
+        { t: "Yes — a named business owner is accountable for outcomes", v: 2 }
+      ]
+    },
+    // Work & Reliability Execution (7 questions)
+    {
+      cat: "Work & Reliability Execution",
+      text: "Can you see the ratio of planned to unplanned work — and is it trending in the right direction?",
+      opts: [
+        { t: "No — we don't track this", v: 0 },
+        { t: "We track it but don't act on it consistently", v: 1 },
+        { t: "Yes — we track, review, and act on it regularly", v: 2 }
+      ]
+    },
+    {
+      cat: "Work & Reliability Execution",
+      text: "Are job plans and standard procedures consistently used before work orders are assigned to technicians?",
+      opts: [
+        { t: "No — technicians work from memory or verbal instruction", v: 0 },
+        { t: "Sometimes — for some work types but not consistently", v: 1 },
+        { t: "Yes — job plans are standard practice across work types", v: 2 }
+      ]
+    },
+    {
+      cat: "Work & Reliability Execution",
+      text: "Are PM schedules reviewed and optimized based on actual failure history — or are they running on original frequencies?",
+      opts: [
+        { t: "Original frequencies — we haven't reviewed them in years", v: 0 },
+        { t: "We've reviewed some, but not systematically", v: 1 },
+        { t: "Yes — PM strategies are regularly reviewed and adjusted", v: 2 }
+      ]
+    },
+    {
+      cat: "Work & Reliability Execution",
+      text: "Do technicians consistently apply structured failure codes when closing work orders?",
+      opts: [
+        { t: "No — free text or blank fields are the norm", v: 0 },
+        { t: "Some do — quality varies by crew and supervisor", v: 1 },
+        { t: "Yes — failure coding is enforced and consistently applied", v: 2 }
+      ]
+    },
+    {
+      cat: "Work & Reliability Execution",
+      text: "Can you identify your top recurring failures for critical assets using data in Maximo?",
+      opts: [
+        { t: "No — we rely on who's been here the longest", v: 0 },
+        { t: "For some assets, but the data isn't complete enough to trust", v: 1 },
+        { t: "Yes — the history in Maximo supports meaningful failure analysis", v: 2 }
+      ]
+    },
+    // Data, Integration & Governance (6 questions, scored out of 2 each but PDF shows 9 items — we use 6 key ones)
+    {
+      cat: "Data, Integration & Governance",
+      text: "Is inventory strategy in Maximo based on asset criticality and failure history — or on intuition and habit?",
+      opts: [
+        { t: "Intuition and habit — stocking decisions aren't data-driven", v: 0 },
+        { t: "Partially — some critical items are managed well, others aren't", v: 1 },
+        { t: "Yes — stocking decisions are tied to criticality and failure data", v: 2 }
+      ]
+    },
+    {
+      cat: "Data, Integration & Governance",
+      text: "Is Maximo integrated with ERP, finance, or operational systems in a stable, maintained way?",
+      opts: [
+        { t: "No — systems are siloed or integrations are unreliable", v: 0 },
+        { t: "Partially — some integrations exist but require frequent fixes", v: 1 },
+        { t: "Yes — integrations are stable, documented, and maintained", v: 2 }
+      ]
+    },
+    {
+      cat: "Data, Integration & Governance",
+      text: "Who owns data quality standards for Maximo — and are those standards actively enforced?",
+      opts: [
+        { t: "No one specific — data quality is nobody's job", v: 0 },
+        { t: "IT owns the system but not the data standards", v: 1 },
+        { t: "A named business owner is accountable for data quality standards", v: 2 }
+      ]
+    },
+    {
+      cat: "Data, Integration & Governance",
+      text: "Is Maximo data accurate and trusted enough that you could present it to an auditor or executive today?",
+      opts: [
+        { t: "No — we would need to clean it up first", v: 0 },
+        { t: "For some areas yes, but not consistently across the system", v: 1 },
+        { t: "Yes — data integrity is maintained and we stand behind it", v: 2 }
+      ]
+    }
+  ];
+
+  var MAX_SCORE = questions.length * 2; // 26 (13 questions × 2)
+  var current = 0;
+  var score = 0;
+  var answerLog = [];
+
+  var tiers = [
+    { min: 0,  max: 8,  name: "Reactive",   color: "#C0392B",
+      desc: "Maximo is functioning as a transaction log, not a management system. Priorities are unclear, data isn't trusted, and decisions happen outside the system. The platform has the capability — the foundation underneath it needs work first." },
+    { min: 9,  max: 14, name: "Developing",  color: "#D4751A",
+      desc: "Some of the right practices are in place, but they're inconsistent. Maximo captures activity but doesn't reliably support decisions. Targeted improvements in planning discipline, failure coding, and governance accountability will unlock meaningful value." },
+    { min: 15, max: 20, name: "Structured",  color: "#C79A1E",
+      desc: "Core practices are established and generally followed. Maximo is trusted for most operational decisions. The opportunity now is to tighten governance, deepen reliability analytics, and connect the system more directly to business outcomes." },
+    { min: 21, max: 26, name: "Strategic",   color: "#27AE60",
+      desc: "Maximo is operating as a strategic platform. Decisions are grounded in data, execution is disciplined, and governance is active. The focus now is continuous improvement — AI readiness, predictive maintenance, and extracting maximum value from MAS capabilities." }
+  ];
+
+  var dotsEl = document.getElementById('dots');
+  var qCategory = document.getElementById('qCategory');
+  var qText = document.getElementById('qText');
+  var optionsWrap = document.getElementById('optionsWrap');
+  var scoreReadout = document.getElementById('scoreReadout');
+  var needleGroup = document.getElementById('needleGroup');
+  var questionView = document.getElementById('questionView');
+  var resultView = document.getElementById('resultView');
+  var resultTier = document.getElementById('resultTier');
+  var resultDesc = document.getElementById('resultDesc');
+  var downloadBtn = document.getElementById('downloadBtn');
+  var restartBtn = document.getElementById('restartBtn');
+
+  // Update max score display
+  scoreReadout.innerHTML = '0<small> / ' + MAX_SCORE + '</small>';
+
+  function buildDots(){
+    dotsEl.innerHTML = '';
+    for (var i = 0; i < questions.length; i++){
+      var d = document.createElement('div');
+      d.className = 'dot';
+      dotsEl.appendChild(d);
+    }
+  }
+
+  function updateDots(){
+    var dots = dotsEl.children;
+    for (var i = 0; i < dots.length; i++){
+      dots[i].className = 'dot' + (i < current ? ' done' : (i === current ? ' current' : ''));
+    }
+  }
+
+  function updateGauge(s){
+    var pct = s / MAX_SCORE;
+    var deg = -90 + (pct * 180);
+    needleGroup.style.transform = 'rotate(' + deg + 'deg)';
+    scoreReadout.innerHTML = s + '<small> / ' + MAX_SCORE + '</small>';
+  }
+
+  function renderQuestion(){
+    updateDots();
+    var q = questions[current];
+    qCategory.textContent = q.cat;
+    qText.textContent = q.text;
+    optionsWrap.innerHTML = '';
+    q.opts.forEach(function(opt){
+      var btn = document.createElement('button');
+      btn.className = 'opt-btn';
+      btn.type = 'button';
+      btn.textContent = opt.t;
+      (function(o){ btn.addEventListener('click', function(){ answer(o.v, o.t); }); })(opt);
+      optionsWrap.appendChild(btn);
+    });
+  }
+
+  function answer(points, answerText){
+    score += points;
+    answerLog.push({ v: points, t: answerText });
+    updateGauge(score);
+    current++;
+    if (current >= questions.length){
+      showResult();
+    } else {
+      renderQuestion();
+    }
+  }
+
+  function getTier(s){
+    for (var i = 0; i < tiers.length; i++){
+      if (s >= tiers[i].min && s <= tiers[i].max) return tiers[i];
+    }
+    return tiers[tiers.length - 1];
+  }
+
+  function showResult(){
+    updateDots();
+    var tier = getTier(score);
+    resultTier.textContent = tier.name + ' — ' + score + ' / ' + MAX_SCORE;
+    resultTier.style.color = tier.color;
+    resultDesc.textContent = tier.desc;
+    questionView.classList.add('hidden');
+    resultView.classList.remove('hidden');
+  }
+
+  function reset(){
+    current = 0;
+    score = 0;
+    answerLog = [];
+    updateGauge(0);
+    questionView.classList.remove('hidden');
+    resultView.classList.add('hidden');
+    buildDots();
+    renderQuestion();
+  }
+
+  downloadBtn.addEventListener('click', function(){
+    var tier = getTier(score);
+
+    var rows = answerLog.map(function(a, i){
+      var scoreLabel = a.v === 2 ? 'Strong (2)' : a.v === 1 ? 'Partial (1)' : 'Gap (0)';
+      return '<tr style="background:' + (i % 2 === 0 ? '#f7f8fc' : '#ffffff') + '">'
+        + '<td style="padding:7px 10px;font-size:12px;color:#5B6072;font-weight:600;white-space:nowrap;">' + questions[i].cat + '</td>'
+        + '<td style="padding:7px 10px;font-size:12px;color:#1B1E2B;">' + questions[i].text + '</td>'
+        + '<td style="padding:7px 10px;font-size:12px;color:#1B1E2B;">' + a.t + '</td>'
+        + '<td style="padding:7px 10px;font-size:12px;font-weight:700;color:' + (a.v === 2 ? '#27AE60' : a.v === 1 ? '#C79A1E' : '#C0392B') + ';text-align:center;">' + scoreLabel + '</td>'
+        + '</tr>';
+    }).join('');
+
+    var html = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/>'
+      + '<title>Maximo Readiness Scorecard — Result</title>'
+      + '<style>'
+      + 'body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:0;color:#1B1E2B;}'
+      + '.header{background:linear-gradient(135deg,#292C75,#1F3864);padding:28px 36px;color:#fff;}'
+      + '.eyebrow{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#AEB8E8;margin:0 0 6px;}'
+      + '.title{font-size:22px;font-weight:700;margin:0;}'
+      + '.body{padding:28px 36px;}'
+      + '.tier-box{border-left:5px solid ' + tier.color + ';padding:14px 18px;background:#f4f6fb;margin-bottom:24px;border-radius:0 8px 8px 0;}'
+      + '.tier-label{font-size:22px;font-weight:700;color:' + tier.color + ';margin:0 0 6px;}'
+      + '.tier-score{font-size:13px;color:#5B6072;margin:0 0 10px;}'
+      + '.tier-desc{font-size:13.5px;line-height:1.6;color:#1B1E2B;margin:0;}'
+      + '.section-title{font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#3E67B1;margin:24px 0 10px;}'
+      + 'table{width:100%;border-collapse:collapse;font-size:12px;}'
+      + 'th{background:#292C75;color:#fff;padding:8px 10px;text-align:left;font-size:11px;letter-spacing:0.05em;}'
+      + 'td{border-bottom:1px solid #DEE3EF;vertical-align:top;}'
+      + '.footer{margin-top:32px;padding-top:16px;border-top:1px solid #DEE3EF;font-size:11px;color:#5B6072;}'
+      + '@media print{body{-webkit-print-color-adjust:exact;print-color-adjust:exact;}}'
+      + '</style></head><body>'
+      + '<div class="header"><p class="eyebrow">Maven Asset Management</p><h1 class="title">Maximo Readiness Scorecard</h1></div>'
+      + '<div class="body">'
+      + '<div class="tier-box">'
+      + '<div class="tier-label">' + tier.name + '</div>'
+      + '<div class="tier-score">Score: ' + score + ' / ' + MAX_SCORE + '</div>'
+      + '<p class="tier-desc">' + tier.desc + '</p>'
+      + '</div>'
+      + '<div class="section-title">Your Responses</div>'
+      + '<table><thead><tr><th>Category</th><th>Question</th><th>Your Answer</th><th style="text-align:center;">Score</th></tr></thead>'
+      + '<tbody>' + rows + '</tbody></table>'
+      + '<div class="footer">'
+      + '<strong>Maven Asset Management Solutions</strong> &nbsp;|&nbsp; mavenasset.com &nbsp;|&nbsp; mas@mavenasset.com &nbsp;|&nbsp; 813-231-4690<br/>'
+      + 'To discuss your results, reach out at mavenasset.com/contact'
+      + '</div>'
+      + '</div></body></html>';
+
+    var blob = new Blob([html], { type: 'text/html' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'maven-maximo-readiness-scorecard-result.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+  restartBtn.addEventListener('click', reset);
+
+  buildDots();
+  renderQuestion();
+  updateGauge(0);
+})();
+</script>
+
+</body>
+</html>
