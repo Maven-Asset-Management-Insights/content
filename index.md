@@ -135,6 +135,42 @@ search: false
     </div>
   </section>
 
+  <!-- ── SCORECARDS ── -->
+  <section class="card" style="padding:0; overflow:hidden;">
+    <svg width="100%" height="140" viewBox="0 0 680 200" role="img" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+      <title>Scorecards and Assessments</title>
+      <desc>Maven branded header for the Scorecards and Assessments section</desc>
+      <rect width="680" height="200" fill="#292C75"/>
+      <rect x="0" y="0" width="7" height="200" fill="#3E67B1"/>
+      <rect x="673" y="0" width="7" height="200" fill="#3E67B1"/>
+      <rect x="0" y="190" width="680" height="10" fill="#3E67B1"/>
+      <text x="64" y="78" font-family="Arial Black, Arial" font-weight="900" font-size="38" fill="#FFFFFF" letter-spacing="1">SCORECARDS</text>
+      <text x="64" y="118" font-family="Arial Black, Arial" font-weight="900" font-size="38" fill="#FFFFFF" letter-spacing="1">&amp; ASSESSMENTS</text>
+      <text x="64" y="150" font-family="Arial" font-size="20" fill="#A8C0E0">Know where your Maximo program</text>
+      <text x="64" y="174" font-family="Arial" font-size="20" fill="#A8C0E0">stands — and where to focus next.</text>
+      <!-- Gauge icon -->
+      <path d="M 564 148 A 52 52 0 0 1 584 104" stroke="#3E67B1" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.6"/>
+      <path d="M 584 104 A 52 52 0 0 1 616 104" stroke="#3E67B1" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.8"/>
+      <path d="M 616 104 A 52 52 0 0 1 636 148" stroke="#3E67B1" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <line x1="600" y1="148" x2="586" y2="112" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" opacity="0.9"/>
+      <circle cx="600" cy="148" r="6" fill="#FFFFFF" opacity="0.9"/>
+    </svg>
+    <div style="padding: 1.25rem 1.5rem 1.5rem;">
+      <h2>Scorecards &amp; Assessments</h2>
+      <p>Free tools to assess your Maximo program — no form required.</p>
+      <ul>
+        <li><a href="{{ '/scorecards/data-readiness-check.html' | relative_url }}">Maximo Data Readiness Check</a></li>
+        <li><a href="{{ '/scorecards/work-management-assessment/' | relative_url }}">Work Management Value Assessment</a></li>
+        <li><a href="{{ '/field-kits/maximo-readiness-scorecard.html' | relative_url }}">Maximo Readiness Scorecard</a></li>
+        <li><a href="{{ '/field-kits/maximo-ai-readiness-assessment-scorecard/' | relative_url }}">AI Readiness Assessment</a></li>
+        <li><a href="{{ '/field-kits/maximo-hse-readiness-assessment/' | relative_url }}">HS&amp;E Readiness Assessment</a></li>
+      </ul>
+      <div style="margin-top:14px;">
+        <a class="button" href="{{ "/scorecards/" | relative_url }}">View all scorecards</a>
+      </div>
+    </div>
+  </section>
+
 </div>
 
 <p class="section-title">Why we built this</p>
