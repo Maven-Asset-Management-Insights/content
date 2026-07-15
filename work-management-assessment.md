@@ -1,0 +1,622 @@
+---
+layout: null
+title: Maximo Work Management Value Assessment
+description: An interactive self-assessment that scores how effectively your work management process is driving maintenance decisions in Maximo.
+permalink: /work-management-assessment/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maximo Work Management Value Assessment | Maven Asset Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#292C75;
+    --deep-navy:#1F3864;
+    --blue:#3E67B1;
+    --bg-light:#F4F6FB;
+    --ink:#1B1E2B;
+    --sub-ink:#5B6072;
+    --red:#C0392B;
+    --orange:#D4751A;
+    --yellow:#C79A1E;
+    --green:#27AE60;
+    --white:#FFFFFF;
+    --line:#DEE3EF;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(62,103,177,0.10), transparent 45%),
+      radial-gradient(circle at 100% 100%, rgba(41,44,117,0.08), transparent 50%),
+      var(--bg-light);
+    color:var(--ink);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:40px 12px;
+  }
+  .card{
+    width:100%;
+    max-width:600px;
+    background:var(--white);
+    border-radius:16px;
+    box-shadow:0 2px 4px rgba(31,56,100,0.06), 0 20px 48px rgba(31,56,100,0.14);
+    overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .banner{
+    background:linear-gradient(135deg, var(--navy) 0%, var(--deep-navy) 100%);
+    padding:22px 28px 20px;
+    color:var(--white);
+  }
+  .eyebrow{
+    font-family:'Oswald',sans-serif;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:#AEB8E8;
+    margin:0 0 6px;
+  }
+  .title{
+    font-family:'Oswald',sans-serif;
+    font-size:24px;
+    font-weight:600;
+    letter-spacing:0.01em;
+    margin:0;
+    line-height:1.25;
+  }
+  .body-pad{ padding:26px 28px 30px; }
+
+  /* ---- Gauge ---- */
+  .gauge-wrap{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:6px;
+  }
+  .gauge-svg{ width:260px; max-width:100%; height:auto; overflow:visible; }
+  .zone-label-row{
+    display:flex;
+    justify-content:space-between;
+    width:260px;
+    max-width:100%;
+    margin-top:2px;
+    font-family:'Oswald',sans-serif;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+  }
+  .zone-label-row span:nth-child(1){ color:var(--red); }
+  .zone-label-row span:nth-child(2){ color:var(--orange); }
+  .zone-label-row span:nth-child(3){ color:var(--yellow); }
+  .zone-label-row span:nth-child(4){ color:var(--green); }
+
+  .needle{
+    transform-origin:130px 130px;
+    transition:transform 700ms cubic-bezier(.34,1.4,.64,1);
+  }
+  @media (prefers-reduced-motion: reduce){
+    .needle{ transition:none; }
+  }
+  .score-readout{
+    font-family:'Oswald',sans-serif;
+    font-size:34px;
+    font-weight:700;
+    margin-top:-6px;
+    color:var(--deep-navy);
+  }
+  .score-readout small{
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    font-weight:500;
+    color:var(--sub-ink);
+  }
+
+  /* ---- Progress dots ---- */
+  .dots{
+    display:flex;
+    justify-content:center;
+    gap:7px;
+    margin:18px 0 22px;
+  }
+  .dot{
+    width:8px; height:8px; border-radius:50%;
+    background:var(--line);
+    transition:background 250ms ease, transform 250ms ease;
+  }
+  .dot.done{ background:var(--blue); }
+  .dot.current{ background:var(--navy); transform:scale(1.3); }
+
+  /* ---- Question ---- */
+  .q-label{
+    font-family:'Oswald',sans-serif;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--blue);
+    margin:0 0 8px;
+  }
+  .q-text{
+    font-size:18px;
+    font-weight:600;
+    line-height:1.4;
+    color:var(--ink);
+    margin:0 0 18px;
+  }
+  .options{ display:flex; flex-direction:column; gap:10px; }
+  .opt-btn{
+    text-align:left;
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    font-weight:500;
+    color:var(--ink);
+    background:var(--bg-light);
+    border:1.5px solid var(--line);
+    border-radius:10px;
+    padding:13px 16px;
+    cursor:pointer;
+    transition:border-color 150ms ease, background 150ms ease, transform 100ms ease;
+  }
+  .opt-btn:hover{ border-color:var(--blue); background:#EEF2FB; }
+  .opt-btn:active{ transform:scale(0.99); }
+  .opt-btn:focus-visible{
+    outline:3px solid var(--blue);
+    outline-offset:2px;
+  }
+
+  /* ---- Result ---- */
+  .result-tier{
+    font-family:'Oswald',sans-serif;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:0.01em;
+    margin:2px 0 10px;
+  }
+  .result-desc{
+    font-size:15.5px;
+    line-height:1.55;
+    color:var(--sub-ink);
+    margin:0 0 22px;
+  }
+  .cta-row{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px; }
+  .btn{
+    font-family:'Inter',sans-serif;
+    font-size:14.5px;
+    font-weight:600;
+    border-radius:9px;
+    padding:12px 18px;
+    cursor:pointer;
+    border:1.5px solid transparent;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    transition:transform 100ms ease, opacity 150ms ease;
+  }
+  .btn:active{ transform:scale(0.98); }
+  .btn-primary{ background:var(--navy); color:var(--white); }
+  .btn-primary:hover{ background:var(--deep-navy); }
+  .btn-secondary{ background:var(--white); color:var(--navy); border-color:var(--navy); }
+  .btn-secondary:hover{ background:var(--bg-light); }
+  .btn:focus-visible{ outline:3px solid var(--blue); outline-offset:2px; }
+  .restart-link{
+    background:none; border:none; padding:0;
+    font-family:'Inter',sans-serif; font-size:13.5px; font-weight:600;
+    color:var(--sub-ink); text-decoration:underline; cursor:pointer;
+  }
+  .copy-confirm{
+    font-size:12.5px; color:var(--green); font-weight:600; margin-left:2px;
+    opacity:0; transition:opacity 200ms ease;
+  }
+  .copy-confirm.show{ opacity:1; }
+
+  .hidden{ display:none !important; }
+
+  @media (max-width:400px){
+    .body-pad{ padding:22px 18px 26px; }
+    .banner{ padding:20px 18px 18px; }
+    .title{ font-size:21px; }
+  }
+</style>
+</head>
+<body>
+
+<div style="width:100%;max-width:600px;margin:0 auto 10px;padding:0 12px;">
+  <a href="/content/field-kits/" style="font-family:'Inter',system-ui,sans-serif;font-size:13.5px;font-weight:600;color:#3E67B1;text-decoration:none;">&larr; Back to Field Kits</a>
+</div>
+
+<div class="card">
+  <div class="banner">
+    <p class="eyebrow">Maven Asset Management</p>
+    <h1 class="title">Maximo Work Management Value Assessment</h1>
+  </div>
+
+  <div class="body-pad">
+
+    <div class="gauge-wrap">
+      <svg class="gauge-svg" viewBox="0 0 260 150" aria-hidden="true">
+        <path d="M 10 130 A 120 120 0 0 1 45.2 45.2"  stroke="#C0392B" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M 45.2 45.2 A 120 120 0 0 1 130 10"  stroke="#D4751A" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M 130 10 A 120 120 0 0 1 214.8 45.2" stroke="#C79A1E" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M 214.8 45.2 A 120 120 0 0 1 250 130" stroke="#27AE60" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <g id="needleGroup" class="needle" style="transform:rotate(-90deg);">
+          <line x1="130" y1="130" x2="130" y2="30" stroke="#1F3864" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="130" cy="130" r="9" fill="#1F3864"/>
+        </g>
+      </svg>
+      <div class="zone-label-row">
+        <span>Critical</span><span>At Risk</span><span>Developing</span><span>Strong</span>
+      </div>
+      <div class="score-readout" id="scoreReadout">0<small> / 28</small></div>
+    </div>
+
+    <div class="dots" id="dots"></div>
+
+    <!-- Question view -->
+    <div id="questionView">
+      <p class="q-label" id="qCategory">Prioritization</p>
+      <p class="q-text" id="qText">Loading question…</p>
+      <div class="options" id="optionsWrap"></div>
+    </div>
+
+    <!-- Result view -->
+    <div id="resultView" class="hidden">
+      <p class="q-label">Your Result</p>
+      <div class="result-tier" id="resultTier">—</div>
+      <p class="result-desc" id="resultDesc"></p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:mas@mavenasset.com?subject=Work%20Management%20Assessment%20follow-up" target="_blank" rel="noopener">Talk to Maven</a>
+        <button class="btn btn-secondary" id="downloadBtn">Download my result</button>
+      </div>
+      <div style="margin-top:10px;">
+        <button class="restart-link" id="restartBtn">Start over</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var questions = [
+    {
+      cat: "Work Prioritization",
+      text: "Can your team quickly distinguish between emergency work and work that can wait?",
+      opts: [
+        { t: "Not reliably — everything feels urgent", v: 0 },
+        { t: "Usually, but it depends on who's asking", v: 1 },
+        { t: "Yes — priority is set consistently in Maximo", v: 2 }
+      ]
+    },
+    {
+      cat: "Work Prioritization",
+      text: "Do supervisors trust the priorities coming out of Maximo without maintaining separate spreadsheets?",
+      opts: [
+        { t: "No — spreadsheets are the real system", v: 0 },
+        { t: "Somewhat — they check Maximo but verify elsewhere", v: 1 },
+        { t: "Yes — Maximo is the authoritative source", v: 2 }
+      ]
+    },
+    {
+      cat: "Planning & Preparation",
+      text: "Is work consistently planned before technicians begin the job?",
+      opts: [
+        { t: "Rarely — techs figure it out when they get there", v: 0 },
+        { t: "Sometimes — depends on the planner and the work type", v: 1 },
+        { t: "Yes — planned work orders are the standard, not the exception", v: 2 }
+      ]
+    },
+    {
+      cat: "Planning & Preparation",
+      text: "Do technicians have everything they need — parts, instructions, permits — before arriving at the asset?",
+      opts: [
+        { t: "No — trips back to the shop are common", v: 0 },
+        { t: "Sometimes — it varies by job and planner", v: 1 },
+        { t: "Yes — work packages are complete before work starts", v: 2 }
+      ]
+    },
+    {
+      cat: "Maintenance History",
+      text: "Would someone unfamiliar with an asset understand what was repaired simply by reading the work order?",
+      opts: [
+        { t: "No — notes are missing or too vague to follow", v: 0 },
+        { t: "Sometimes — quality varies a lot by technician", v: 1 },
+        { t: "Yes — closeout data is consistently complete", v: 2 }
+      ]
+    },
+    {
+      cat: "Maintenance History",
+      text: "Are failure details complete enough to identify recurring problems?",
+      opts: [
+        { t: "No — failure codes are blank or generic", v: 0 },
+        { t: "Partially — some crews code well, others don't", v: 1 },
+        { t: "Yes — structured failure codes are consistently applied", v: 2 }
+      ]
+    },
+    {
+      cat: "Maintenance History",
+      text: "Can you confidently answer why an asset has failed repeatedly?",
+      opts: [
+        { t: "No — we rely on tribal knowledge", v: 0 },
+        { t: "Sometimes — for well-known assets only", v: 1 },
+        { t: "Yes — the history in Maximo tells the story", v: 2 }
+      ]
+    },
+    {
+      cat: "Work Flow Efficiency",
+      text: "Are work orders spending more time being worked than waiting?",
+      opts: [
+        { t: "No — most time is spent waiting or stalled", v: 0 },
+        { t: "Hard to say — we don't track it", v: 1 },
+        { t: "Yes — we monitor flow and act when work stalls", v: 2 }
+      ]
+    },
+    {
+      cat: "Work Flow Efficiency",
+      text: "Can you identify where work typically stalls in the process?",
+      opts: [
+        { t: "No — we only notice when something's overdue", v: 0 },
+        { t: "Somewhat — we have a sense but not solid data", v: 1 },
+        { t: "Yes — we can point to specific stages and act on them", v: 2 }
+      ]
+    },
+    {
+      cat: "Work Flow Efficiency",
+      text: "Are aging work orders the exception rather than the norm?",
+      opts: [
+        { t: "No — the backlog is full of old open work orders", v: 0 },
+        { t: "Mostly — but we don't review them consistently", v: 1 },
+        { t: "Yes — we actively manage aging work and close the gaps", v: 2 }
+      ]
+    },
+    {
+      cat: "Data-Driven Decisions",
+      text: "Can management identify maintenance trends without exporting data to spreadsheets?",
+      opts: [
+        { t: "No — everything goes through Excel first", v: 0 },
+        { t: "Sometimes — for basic questions only", v: 1 },
+        { t: "Yes — Maximo reports are trusted and used directly", v: 2 }
+      ]
+    },
+    {
+      cat: "Data-Driven Decisions",
+      text: "Are maintenance priorities based on information in Maximo rather than tribal knowledge?",
+      opts: [
+        { t: "No — experienced people drive decisions, not data", v: 0 },
+        { t: "Partially — data is consulted but not always trusted", v: 1 },
+        { t: "Yes — decisions are grounded in what Maximo shows", v: 2 }
+      ]
+    },
+    {
+      cat: "Data-Driven Decisions",
+      text: "Does your work history in Maximo influence future maintenance decisions and PM strategy?",
+      opts: [
+        { t: "No — PM schedules haven't changed in years", v: 0 },
+        { t: "Occasionally — when something bad happens", v: 1 },
+        { t: "Yes — we use failure history to refine our maintenance approach", v: 2 }
+      ]
+    },
+    {
+      cat: "Data-Driven Decisions",
+      text: "When a critical asset fails repeatedly, can leadership get the full picture from Maximo alone?",
+      opts: [
+        { t: "No — we piece it together from memory and emails", v: 0 },
+        { t: "Partially — some history is there, some isn't", v: 1 },
+        { t: "Yes — the work history speaks for itself", v: 2 }
+      ]
+    }
+  ];
+
+  var MAX_SCORE = questions.length * 2; // 28
+
+  var tiers = [
+    { min: 0,  max: 6,  name: "Critical Gaps",   color: "#C0392B",
+      desc: "Maximo is being used as a record system, not a work management tool. Priorities live in people's heads, history is incomplete, and decisions depend on who you ask. The system can't drive improvement until the process underneath it is fixed." },
+    { min: 7,  max: 13, name: "At Risk",          color: "#D4751A",
+      desc: "Work gets done, but Maximo isn't capturing enough to learn from it. Planning is inconsistent, closeout quality varies, and leadership is working around the system rather than with it. Targeted process and data improvements will unlock meaningful value." },
+    { min: 14, max: 20, name: "Developing",       color: "#C79A1E",
+      desc: "Core work management practices are in place but inconsistently followed. You have the foundation — now it's about tightening standards, improving closeout discipline, and building the trust that makes Maximo the system everyone relies on." },
+    { min: 21, max: 28, name: "Strong Foundation", color: "#27AE60",
+      desc: "Maximo is working as a work management system, not just a tracker. Work is planned, history is trusted, and decisions are grounded in data. The focus now is continuous improvement — reliability strategy, PM optimization, and getting more from what you've built." }
+  ];
+
+  var current = 0;
+  var score = 0;
+  var answerLog = [];
+
+  var dotsEl = document.getElementById('dots');
+  var qCategory = document.getElementById('qCategory');
+  var qText = document.getElementById('qText');
+  var optionsWrap = document.getElementById('optionsWrap');
+  var scoreReadout = document.getElementById('scoreReadout');
+  var needleGroup = document.getElementById('needleGroup');
+  var questionView = document.getElementById('questionView');
+  var resultView = document.getElementById('resultView');
+  var resultTier = document.getElementById('resultTier');
+  var resultDesc = document.getElementById('resultDesc');
+  var copyBtn = document.getElementById('copyBtn');
+  var copyConfirm = document.getElementById('copyConfirm');
+  var restartBtn = document.getElementById('restartBtn');
+
+  function buildDots(){
+    dotsEl.innerHTML = '';
+    for (var i = 0; i < questions.length; i++){
+      var d = document.createElement('div');
+      d.className = 'dot';
+      dotsEl.appendChild(d);
+    }
+  }
+
+  function updateDots(){
+    var dots = dotsEl.children;
+    for (var i = 0; i < dots.length; i++){
+      dots[i].className = 'dot' + (i < current ? ' done' : (i === current ? ' current' : ''));
+    }
+  }
+
+  function updateGauge(s){
+    var pct = s / MAX_SCORE;
+    var deg = -90 + (pct * 180);
+    needleGroup.style.transform = 'rotate(' + deg + 'deg)';
+    scoreReadout.innerHTML = s + '<small> / ' + MAX_SCORE + '</small>';
+  }
+
+  function renderQuestion(){
+    updateDots();
+    var q = questions[current];
+    qCategory.textContent = q.cat;
+    qText.textContent = q.text;
+    optionsWrap.innerHTML = '';
+    q.opts.forEach(function(opt){
+      var btn = document.createElement('button');
+      btn.className = 'opt-btn';
+      btn.type = 'button';
+      btn.textContent = opt.t;
+      (function(o){ btn.addEventListener('click', function(){ answer(o.v, o.t); }); })(opt);
+      optionsWrap.appendChild(btn);
+    });
+  }
+
+  function answer(points, answerText){
+    score += points;
+    answerLog.push({ v: points, t: answerText });
+    updateGauge(score);
+    current++;
+    if (current >= questions.length){
+      showResult();
+    } else {
+      renderQuestion();
+    }
+  }
+
+  function getTier(s){
+    for (var i = 0; i < tiers.length; i++){
+      if (s >= tiers[i].min && s <= tiers[i].max) return tiers[i];
+    }
+    return tiers[tiers.length - 1];
+  }
+
+  function showResult(){
+    updateDots();
+    var tier = getTier(score);
+    resultTier.textContent = tier.name + ' — ' + score + ' / ' + MAX_SCORE;
+    resultTier.style.color = tier.color;
+    resultDesc.textContent = tier.desc;
+    questionView.classList.add('hidden');
+    resultView.classList.remove('hidden');
+  }
+
+  function reset(){
+    current = 0;
+    score = 0;
+    answerLog = [];
+    updateGauge(0);
+    questionView.classList.remove('hidden');
+    resultView.classList.add('hidden');
+    copyConfirm.classList.remove('show');
+    buildDots();
+    renderQuestion();
+  }
+
+  var downloadBtn = document.getElementById('downloadBtn');
+
+  downloadBtn.addEventListener('click', function(){
+    var tier = getTier(score);
+
+    // Section labels for answers
+    var sectionLabels = [
+      "Work Prioritization",
+      "Work Prioritization",
+      "Planning & Preparation",
+      "Planning & Preparation",
+      "Maintenance History",
+      "Maintenance History",
+      "Maintenance History",
+      "Work Flow Efficiency",
+      "Work Flow Efficiency",
+      "Work Flow Efficiency",
+      "Data-Driven Decisions",
+      "Data-Driven Decisions",
+      "Data-Driven Decisions",
+      "Data-Driven Decisions"
+    ];
+
+    // Build answer log (stored during quiz)
+    var rows = answerLog.map(function(a, i){
+      var scoreLabel = a.v === 2 ? 'Strong (2)' : a.v === 1 ? 'Partial (1)' : 'Gap (0)';
+      return '<tr style="background:' + (i % 2 === 0 ? '#f7f8fc' : '#ffffff') + '">'
+        + '<td style="padding:7px 10px;font-size:12px;color:#5B6072;font-weight:600;white-space:nowrap;">' + sectionLabels[i] + '</td>'
+        + '<td style="padding:7px 10px;font-size:12px;color:#1B1E2B;">' + questions[i].text + '</td>'
+        + '<td style="padding:7px 10px;font-size:12px;color:#1B1E2B;">' + a.t + '</td>'
+        + '<td style="padding:7px 10px;font-size:12px;font-weight:700;color:' + (a.v === 2 ? '#27AE60' : a.v === 1 ? '#C79A1E' : '#C0392B') + ';text-align:center;">' + scoreLabel + '</td>'
+        + '</tr>';
+    }).join('');
+
+    var html = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/>'
+      + '<title>Maximo Work Management Value Assessment — Result</title>'
+      + '<style>'
+      + 'body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:0;color:#1B1E2B;}'
+      + '.header{background:linear-gradient(135deg,#292C75,#1F3864);padding:28px 36px;color:#fff;}'
+      + '.eyebrow{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#AEB8E8;margin:0 0 6px;}'
+      + '.title{font-size:22px;font-weight:700;margin:0;}'
+      + '.body{padding:28px 36px;}'
+      + '.tier-box{border-left:5px solid ' + tier.color + ';padding:14px 18px;background:#f4f6fb;margin-bottom:24px;border-radius:0 8px 8px 0;}'
+      + '.tier-label{font-size:22px;font-weight:700;color:' + tier.color + ';margin:0 0 6px;}'
+      + '.tier-score{font-size:13px;color:#5B6072;margin:0 0 10px;}'
+      + '.tier-desc{font-size:13.5px;line-height:1.6;color:#1B1E2B;margin:0;}'
+      + '.section-title{font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#3E67B1;margin:24px 0 10px;}'
+      + 'table{width:100%;border-collapse:collapse;font-size:12px;}'
+      + 'th{background:#292C75;color:#fff;padding:8px 10px;text-align:left;font-size:11px;letter-spacing:0.05em;}'
+      + 'td{border-bottom:1px solid #DEE3EF;vertical-align:top;}'
+      + '.footer{margin-top:32px;padding-top:16px;border-top:1px solid #DEE3EF;font-size:11px;color:#5B6072;}'
+      + '@media print{body{-webkit-print-color-adjust:exact;print-color-adjust:exact;}}'
+      + '</style></head><body>'
+      + '<div class="header"><p class="eyebrow">Maven Asset Management</p><h1 class="title">Maximo Work Management Value Assessment</h1></div>'
+      + '<div class="body">'
+      + '<div class="tier-box">'
+      + '<div class="tier-label">' + tier.name + '</div>'
+      + '<div class="tier-score">Score: ' + score + ' / ' + MAX_SCORE + '</div>'
+      + '<p class="tier-desc">' + tier.desc + '</p>'
+      + '</div>'
+      + '<div class="section-title">Your Responses</div>'
+      + '<table><thead><tr><th>Category</th><th>Question</th><th>Your Answer</th><th style="text-align:center;">Score</th></tr></thead>'
+      + '<tbody>' + rows + '</tbody></table>'
+      + '<div class="footer">'
+      + '<strong>Maven Asset Management Solutions</strong> &nbsp;|&nbsp; mavenasset.com &nbsp;|&nbsp; mas@mavenasset.com &nbsp;|&nbsp; 813-231-4690<br/>'
+      + 'To discuss your results, reach out at mavenasset.com/contact'
+      + '</div>'
+      + '</div></body></html>';
+
+    var blob = new Blob([html], { type: 'text/html' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'maven-work-management-assessment-result.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+  restartBtn.addEventListener('click', reset);
+
+  buildDots();
+  renderQuestion();
+  updateGauge(0);
+})();
+</script>
+
+</body>
+</html>
