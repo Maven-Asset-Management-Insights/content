@@ -1,0 +1,680 @@
+---
+layout: null
+title: Maximo HS&E Readiness Assessment
+description: An interactive 24-point assessment to evaluate how effectively your organization is leveraging IBM Maximo Health, Safety & Environment (HS&E) to protect people, assets, and operations.
+permalink: /scorecards/hse-readiness-assessment/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maximo HS&E Readiness Assessment | Maven Asset Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#292C75;
+    --deep-navy:#1F3864;
+    --blue:#3E67B1;
+    --bg-light:#F4F6FB;
+    --ink:#1B1E2B;
+    --sub-ink:#5B6072;
+    --red:#C0392B;
+    --orange:#D4751A;
+    --yellow:#C79A1E;
+    --green:#27AE60;
+    --white:#FFFFFF;
+    --line:#DEE3EF;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(62,103,177,0.10), transparent 45%),
+      radial-gradient(circle at 100% 100%, rgba(41,44,117,0.08), transparent 50%),
+      var(--bg-light);
+    color:var(--ink);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:40px 12px;
+  }
+  .card{
+    width:100%;
+    max-width:600px;
+    background:var(--white);
+    border-radius:16px;
+    box-shadow:0 2px 4px rgba(31,56,100,0.06), 0 20px 48px rgba(31,56,100,0.14);
+    overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .banner{
+    background:linear-gradient(135deg, var(--navy) 0%, var(--deep-navy) 100%);
+    padding:22px 28px 20px;
+    color:var(--white);
+  }
+  .eyebrow{
+    font-family:'Oswald',sans-serif;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:#AEB8E8;
+    margin:0 0 6px;
+  }
+  .title{
+    font-family:'Oswald',sans-serif;
+    font-size:24px;
+    font-weight:600;
+    letter-spacing:0.01em;
+    margin:0;
+    line-height:1.25;
+  }
+  .body-pad{ padding:26px 28px 30px; }
+  .gauge-wrap{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:6px;
+  }
+  .gauge-svg{ width:260px; max-width:100%; height:auto; overflow:visible; }
+  .zone-label-row{
+    display:flex;
+    justify-content:space-between;
+    width:260px;
+    max-width:100%;
+    margin-top:2px;
+    font-family:'Oswald',sans-serif;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+  }
+  .zone-label-row span:nth-child(1){ color:var(--red); }
+  .zone-label-row span:nth-child(2){ color:var(--orange); }
+  .zone-label-row span:nth-child(3){ color:var(--yellow); }
+  .zone-label-row span:nth-child(4){ color:var(--green); }
+  .needle{
+    transform-origin:130px 130px;
+    transition:transform 700ms cubic-bezier(.34,1.4,.64,1);
+  }
+  @media (prefers-reduced-motion: reduce){ .needle{ transition:none; } }
+  .score-readout{
+    font-family:'Oswald',sans-serif;
+    font-size:34px;
+    font-weight:700;
+    margin-top:-6px;
+    color:var(--deep-navy);
+  }
+  .score-readout small{
+    font-family:'Inter',sans-serif;
+    font-size:13px;
+    font-weight:500;
+    color:var(--sub-ink);
+  }
+  .dots{
+    display:flex;
+    justify-content:center;
+    gap:6px;
+    margin:18px 0 22px;
+    flex-wrap:wrap;
+  }
+  .dot{
+    width:7px; height:7px; border-radius:50%;
+    background:var(--line);
+    transition:background 250ms ease, transform 250ms ease;
+  }
+  .dot.done{ background:var(--blue); }
+  .dot.current{ background:var(--navy); transform:scale(1.3); }
+  .q-label{
+    font-family:'Oswald',sans-serif;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--blue);
+    margin:0 0 8px;
+  }
+  .q-text{
+    font-size:18px;
+    font-weight:600;
+    line-height:1.4;
+    color:var(--ink);
+    margin:0 0 18px;
+  }
+  .options{ display:flex; flex-direction:column; gap:10px; }
+  .opt-btn{
+    text-align:left;
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    font-weight:500;
+    color:var(--ink);
+    background:var(--bg-light);
+    border:1.5px solid var(--line);
+    border-radius:10px;
+    padding:13px 16px;
+    cursor:pointer;
+    transition:border-color 150ms ease, background 150ms ease, transform 100ms ease;
+  }
+  .opt-btn:hover{ border-color:var(--blue); background:#EEF2FB; }
+  .opt-btn:active{ transform:scale(0.99); }
+  .opt-btn:focus-visible{ outline:3px solid var(--blue); outline-offset:2px; }
+  .result-tier{
+    font-family:'Oswald',sans-serif;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:0.01em;
+    margin:2px 0 10px;
+  }
+  .result-desc{
+    font-size:15.5px;
+    line-height:1.55;
+    color:var(--sub-ink);
+    margin:0 0 22px;
+  }
+  .cta-row{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px; }
+  .btn{
+    font-family:'Inter',sans-serif;
+    font-size:14.5px;
+    font-weight:600;
+    border-radius:9px;
+    padding:12px 18px;
+    cursor:pointer;
+    border:1.5px solid transparent;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    transition:transform 100ms ease, opacity 150ms ease;
+  }
+  .btn:active{ transform:scale(0.98); }
+  .btn-primary{ background:var(--navy); color:var(--white); }
+  .btn-primary:hover{ background:var(--deep-navy); }
+  .btn-secondary{ background:var(--white); color:var(--navy); border-color:var(--navy); }
+  .btn-secondary:hover{ background:var(--bg-light); }
+  .btn:focus-visible{ outline:3px solid var(--blue); outline-offset:2px; }
+  .restart-link{
+    background:none; border:none; padding:0;
+    font-family:'Inter',sans-serif; font-size:13.5px; font-weight:600;
+    color:var(--sub-ink); text-decoration:underline; cursor:pointer;
+  }
+  .hidden{ display:none !important; }
+  @media (max-width:400px){
+    .body-pad{ padding:22px 18px 26px; }
+    .banner{ padding:20px 18px 18px; }
+    .title{ font-size:21px; }
+  }
+</style>
+</head>
+<body>
+
+<div style="width:100%;max-width:600px;margin:0 auto 10px;padding:0 12px;">
+  <a href="/content/scorecards/" style="font-family:'Inter',system-ui,sans-serif;font-size:13.5px;font-weight:600;color:#3E67B1;text-decoration:none;">&larr; Back to Scorecards</a>
+</div>
+
+<div class="card">
+  <div class="banner">
+    <p class="eyebrow">Maven Asset Management</p>
+    <h1 class="title">Maximo HS&amp;E Readiness Assessment</h1>
+  </div>
+
+  <div class="body-pad">
+
+    <div class="gauge-wrap">
+      <svg class="gauge-svg" viewBox="0 0 260 150" aria-hidden="true">
+        <path d="M 10 130 A 120 120 0 0 1 45.2 45.2"  stroke="#C0392B" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M 45.2 45.2 A 120 120 0 0 1 130 10"  stroke="#D4751A" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M 130 10 A 120 120 0 0 1 214.8 45.2" stroke="#C79A1E" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <path d="M 214.8 45.2 A 120 120 0 0 1 250 130" stroke="#27AE60" stroke-width="16" fill="none" stroke-linecap="round"/>
+        <g id="needleGroup" class="needle" style="transform:rotate(-90deg);">
+          <line x1="130" y1="130" x2="130" y2="30" stroke="#1F3864" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="130" cy="130" r="9" fill="#1F3864"/>
+        </g>
+      </svg>
+      <div class="zone-label-row">
+        <span>Foundation</span><span>Developing</span><span>Advancing</span><span>Optimized</span>
+      </div>
+      <div class="score-readout" id="scoreReadout">0<small> / 24</small></div>
+    </div>
+
+    <div class="dots" id="dots"></div>
+
+    <div id="questionView">
+      <p class="q-label" id="qCategory">Incident Management</p>
+      <p class="q-text" id="qText">Loading question…</p>
+      <div class="options" id="optionsWrap"></div>
+    </div>
+
+    <div id="resultView" class="hidden">
+      <p class="q-label">Your Result</p>
+      <div class="result-tier" id="resultTier">—</div>
+      <p class="result-desc" id="resultDesc"></p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:mas@mavenasset.com?subject=HS%26E%20Readiness%20Assessment%20follow-up" target="_blank" rel="noopener">Talk to Maven</a>
+        <button class="btn btn-secondary" id="downloadBtn">Download my result</button>
+      </div>
+      <div style="margin-top:10px;">
+        <button class="restart-link" id="restartBtn">Start over</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function(){
+  var questions = [
+    // Incident Management
+    {
+      cat: "Incident Management",
+      text: "Are all incidents — work, personnel, health, safety, and environmental — reported in Maximo rather than email or spreadsheets?",
+      opts: [
+        { t: "No — incidents go to email, spreadsheets, or paper", v: 0 },
+        { t: "Some are — it depends on the type or the site", v: 1 },
+        { t: "Yes — Maximo is the system of record for all incidents", v: 2 }
+      ]
+    },
+    {
+      cat: "Incident Management",
+      text: "Are incident records linked to the relevant assets, locations, and work orders?",
+      opts: [
+        { t: "No — incidents exist as standalone records", v: 0 },
+        { t: "Sometimes — linking is inconsistent", v: 1 },
+        { t: "Yes — incidents are consistently linked to assets and work orders", v: 2 }
+      ]
+    },
+    {
+      cat: "Incident Management",
+      text: "Do open incidents have assigned owners and tracked resolution deadlines?",
+      opts: [
+        { t: "No — open incidents aren't formally tracked", v: 0 },
+        { t: "Partially — some have owners but deadlines aren't enforced", v: 1 },
+        { t: "Yes — every open incident has an owner and a tracked deadline", v: 2 }
+      ]
+    },
+    {
+      cat: "Incident Management",
+      text: "Are near-misses and observations captured — not just recordable incidents?",
+      opts: [
+        { t: "No — only recordable incidents are logged", v: 0 },
+        { t: "Occasionally — it depends on the crew or supervisor", v: 1 },
+        { t: "Yes — near-misses and observations are routinely captured", v: 2 }
+      ]
+    },
+    // Permit to Work
+    {
+      cat: "Permit to Work",
+      text: "Are permits to work issued, approved, and closed entirely within Maximo?",
+      opts: [
+        { t: "No — permits are handled on paper or outside the system", v: 0 },
+        { t: "Partially — some permit types are in Maximo, others aren't", v: 1 },
+        { t: "Yes — the full permit lifecycle is managed in Maximo", v: 2 }
+      ]
+    },
+    {
+      cat: "Permit to Work",
+      text: "Are hazardous energy isolation (LOTO) steps documented per permit?",
+      opts: [
+        { t: "No — LOTO steps aren't tracked in the system", v: 0 },
+        { t: "For some high-risk tasks — not consistently", v: 1 },
+        { t: "Yes — LOTO steps are documented on every relevant permit", v: 2 }
+      ]
+    },
+    {
+      cat: "Permit to Work",
+      text: "Can workers begin high-risk tasks without a valid, system-generated permit?",
+      opts: [
+        { t: "Yes — there's no system control preventing it", v: 0 },
+        { t: "It's discouraged but not enforced by the system", v: 1 },
+        { t: "No — the system prevents work from starting without a valid permit", v: 2 }
+      ]
+    },
+    {
+      cat: "Permit to Work",
+      text: "Is permit history accessible and auditable by safety managers at any time?",
+      opts: [
+        { t: "No — permit records are hard to find or incomplete", v: 0 },
+        { t: "Somewhat — recent permits are accessible but history is patchy", v: 1 },
+        { t: "Yes — full permit history is available and audit-ready", v: 2 }
+      ]
+    },
+    // Management of Change
+    {
+      cat: "Management of Change (MOC)",
+      text: "Do all changes to processes, equipment, or procedures require a formal MOC record?",
+      opts: [
+        { t: "No — changes are made informally without a formal record", v: 0 },
+        { t: "For major changes — smaller changes often bypass the process", v: 1 },
+        { t: "Yes — all changes go through a formal MOC record", v: 2 }
+      ]
+    },
+    {
+      cat: "Management of Change (MOC)",
+      text: "Do MOC reviews include a risk assessment before changes are approved?",
+      opts: [
+        { t: "No — changes are approved without a formal risk review", v: 0 },
+        { t: "Sometimes — depends on the change and who's reviewing it", v: 1 },
+        { t: "Yes — risk assessment is required before any MOC is approved", v: 2 }
+      ]
+    },
+    {
+      cat: "Management of Change (MOC)",
+      text: "Are affected work orders, assets, and locations linked to each MOC record?",
+      opts: [
+        { t: "No — MOC records are standalone", v: 0 },
+        { t: "Inconsistently — linking depends on who creates the record", v: 1 },
+        { t: "Yes — MOC records are consistently linked to affected records", v: 2 }
+      ]
+    },
+    {
+      cat: "Management of Change (MOC)",
+      text: "Are outstanding MOC actions tracked to completion before changes go live?",
+      opts: [
+        { t: "No — changes can go live with open actions", v: 0 },
+        { t: "Partially — we try but it isn't enforced", v: 1 },
+        { t: "Yes — open MOC actions must close before implementation", v: 2 }
+      ]
+    },
+    // Investigations & RCA
+    {
+      cat: "Investigations & Root Cause Analysis",
+      text: "Do recurring incidents trigger a formal investigation workflow in Maximo?",
+      opts: [
+        { t: "No — investigations are informal or ad hoc", v: 0 },
+        { t: "For serious incidents — recurring minor ones often don't", v: 1 },
+        { t: "Yes — recurring incidents automatically trigger an investigation workflow", v: 2 }
+      ]
+    },
+    {
+      cat: "Investigations & Root Cause Analysis",
+      text: "Are root cause analysis findings documented and linked to corrective actions?",
+      opts: [
+        { t: "No — RCA findings aren't formally captured", v: 0 },
+        { t: "Sometimes — documentation quality varies significantly", v: 1 },
+        { t: "Yes — RCA findings are always documented and linked to actions", v: 2 }
+      ]
+    },
+    {
+      cat: "Investigations & Root Cause Analysis",
+      text: "Are corrective actions from investigations tracked to closure?",
+      opts: [
+        { t: "No — actions are assigned but rarely followed to completion", v: 0 },
+        { t: "Partially — some are tracked, others fall through the cracks", v: 1 },
+        { t: "Yes — all corrective actions have owners and are tracked to closure", v: 2 }
+      ]
+    },
+    {
+      cat: "Investigations & Root Cause Analysis",
+      text: "Are defect elimination and failure reporting consistently coded for trend analysis?",
+      opts: [
+        { t: "No — failure data is too inconsistent to analyze", v: 0 },
+        { t: "Partially — some coding exists but isn't consistently applied", v: 1 },
+        { t: "Yes — failure codes are standardized and consistently used", v: 2 }
+      ]
+    },
+    // Regulatory Compliance
+    {
+      cat: "Regulatory Compliance",
+      text: "Are regulatory requirements mapped to specific assets and locations in Maximo?",
+      opts: [
+        { t: "No — regulatory requirements aren't tracked in the system", v: 0 },
+        { t: "For some regulations — not comprehensively", v: 1 },
+        { t: "Yes — requirements are mapped to specific assets and locations", v: 2 }
+      ]
+    },
+    {
+      cat: "Regulatory Compliance",
+      text: "Can compliance status be demonstrated to an auditor within one business day?",
+      opts: [
+        { t: "No — an audit would require significant preparation", v: 0 },
+        { t: "For some areas — but not comprehensively", v: 1 },
+        { t: "Yes — compliance status is audit-ready at any time", v: 2 }
+      ]
+    },
+    {
+      cat: "Regulatory Compliance",
+      text: "Are environmental consents and regulatory permits tracked within Maximo?",
+      opts: [
+        { t: "No — they're managed in spreadsheets or separate systems", v: 0 },
+        { t: "Some are — others are managed outside the system", v: 1 },
+        { t: "Yes — all consents and permits are tracked in Maximo", v: 2 }
+      ]
+    },
+    {
+      cat: "Regulatory Compliance",
+      text: "Do compliance gaps automatically generate work orders or action items?",
+      opts: [
+        { t: "No — gaps are identified manually, if at all", v: 0 },
+        { t: "For some compliance types — not consistently", v: 1 },
+        { t: "Yes — compliance gaps automatically trigger work orders or actions", v: 2 }
+      ]
+    },
+    // Personnel Certification Tracking
+    {
+      cat: "Personnel Certification Tracking",
+      text: "Are worker certifications and qualifications stored in Maximo?",
+      opts: [
+        { t: "No — certifications are tracked in spreadsheets or HR systems only", v: 0 },
+        { t: "Some are — but the records are incomplete", v: 1 },
+        { t: "Yes — all certifications and qualifications are in Maximo", v: 2 }
+      ]
+    },
+    {
+      cat: "Personnel Certification Tracking",
+      text: "Do expiring certifications trigger automated alerts before they lapse?",
+      opts: [
+        { t: "No — expirations are caught manually, or after the fact", v: 0 },
+        { t: "For some certification types — not all", v: 1 },
+        { t: "Yes — alerts are automated and go out before certifications lapse", v: 2 }
+      ]
+    },
+    {
+      cat: "Personnel Certification Tracking",
+      text: "Can workers be assigned to tasks requiring certifications they don't hold?",
+      opts: [
+        { t: "Yes — there's no system control preventing it", v: 0 },
+        { t: "It's checked informally by supervisors — not enforced by the system", v: 1 },
+        { t: "No — the system prevents assignment without the required certification", v: 2 }
+      ]
+    },
+    {
+      cat: "Personnel Certification Tracking",
+      text: "Are craft and labor records current and reconciled with HR records?",
+      opts: [
+        { t: "No — Maximo and HR records are out of sync", v: 0 },
+        { t: "Periodically — but not on a regular, reliable cadence", v: 1 },
+        { t: "Yes — records are reconciled regularly and kept current", v: 2 }
+      ]
+    }
+  ];
+
+  var MAX_SCORE = 24; // 12 questions × 2, but we score Yes=2, Partial=1, No=0 across 24 items
+  // Each question scores 0 or 1 (checkbox style) but we use 0/1/2 scale — max is 24×... wait
+  // Actually: 24 questions × 1 point each in original = 24 max
+  // Our 0/1/2 scale = 24 questions × 2 = 48 max
+  // We'll keep 0/1/2 and set max to 48 for richer nuance, tiers proportionally scaled
+  MAX_SCORE = questions.length * 2; // 48
+
+  var tiers = [
+    { min: 0,  max: 15, name: "Foundation Stage", color: "#C0392B",
+      desc: "Safety data is fragmented and HS&E processes live outside Maximo. Significant risk of compliance gaps and reactive incident management. Start with incident reporting and permit to work — get those into the system before expanding scope." },
+    { min: 16, max: 31, name: "Developing Stage",  color: "#D4751A",
+      desc: "Core HS&E processes exist but aren't fully integrated. Manual effort is high, traceability has gaps, and audit readiness requires preparation. Focus on closing the gaps in your weakest sections and enforcing system controls where they exist." },
+    { min: 32, max: 40, name: "Advancing Stage",   color: "#C79A1E",
+      desc: "Strong HS&E fundamentals are in place. The focus now is automation, trend analysis, and audit readiness. Tighten certification tracking, improve failure coding discipline, and work toward compliance gaps triggering automatic actions." },
+    { min: 41, max: 48, name: "Optimized Stage",   color: "#27AE60",
+      desc: "Maximo HS&E is fully embedded in operations. Safety is proactive, data-driven, and audit-ready. The system is enforcing controls, tracking certifications, and generating actions automatically. Focus on continuous improvement and leveraging trend data." }
+  ];
+
+  var current = 0;
+  var score = 0;
+  var answerLog = [];
+
+  var dotsEl = document.getElementById('dots');
+  var qCategory = document.getElementById('qCategory');
+  var qText = document.getElementById('qText');
+  var optionsWrap = document.getElementById('optionsWrap');
+  var scoreReadout = document.getElementById('scoreReadout');
+  var needleGroup = document.getElementById('needleGroup');
+  var questionView = document.getElementById('questionView');
+  var resultView = document.getElementById('resultView');
+  var resultTier = document.getElementById('resultTier');
+  var resultDesc = document.getElementById('resultDesc');
+  var downloadBtn = document.getElementById('downloadBtn');
+  var restartBtn = document.getElementById('restartBtn');
+
+  scoreReadout.innerHTML = '0<small> / ' + MAX_SCORE + '</small>';
+
+  function buildDots(){
+    dotsEl.innerHTML = '';
+    for(var i = 0; i < questions.length; i++){
+      var d = document.createElement('div');
+      d.className = 'dot';
+      dotsEl.appendChild(d);
+    }
+  }
+
+  function updateDots(){
+    var dots = dotsEl.children;
+    for(var i = 0; i < dots.length; i++){
+      dots[i].className = 'dot' + (i < current ? ' done' : (i === current ? ' current' : ''));
+    }
+  }
+
+  function updateGauge(s){
+    var pct = s / MAX_SCORE;
+    var deg = -90 + (pct * 180);
+    needleGroup.style.transform = 'rotate(' + deg + 'deg)';
+    scoreReadout.innerHTML = s + '<small> / ' + MAX_SCORE + '</small>';
+  }
+
+  function renderQuestion(){
+    updateDots();
+    var q = questions[current];
+    qCategory.textContent = q.cat;
+    qText.textContent = q.text;
+    optionsWrap.innerHTML = '';
+    q.opts.forEach(function(opt){
+      var btn = document.createElement('button');
+      btn.className = 'opt-btn';
+      btn.type = 'button';
+      btn.textContent = opt.t;
+      (function(o){ btn.addEventListener('click', function(){ answer(o.v, o.t); }); })(opt);
+      optionsWrap.appendChild(btn);
+    });
+  }
+
+  function answer(points, answerText){
+    score += points;
+    answerLog.push({ v: points, t: answerText });
+    updateGauge(score);
+    current++;
+    if(current >= questions.length){
+      showResult();
+    } else {
+      renderQuestion();
+    }
+  }
+
+  function getTier(s){
+    for(var i = 0; i < tiers.length; i++){
+      if(s >= tiers[i].min && s <= tiers[i].max) return tiers[i];
+    }
+    return tiers[tiers.length - 1];
+  }
+
+  function showResult(){
+    updateDots();
+    var tier = getTier(score);
+    resultTier.textContent = tier.name + ' — ' + score + ' / ' + MAX_SCORE;
+    resultTier.style.color = tier.color;
+    resultDesc.textContent = tier.desc;
+    questionView.classList.add('hidden');
+    resultView.classList.remove('hidden');
+  }
+
+  function reset(){
+    current = 0;
+    score = 0;
+    answerLog = [];
+    updateGauge(0);
+    questionView.classList.remove('hidden');
+    resultView.classList.add('hidden');
+    buildDots();
+    renderQuestion();
+  }
+
+  downloadBtn.addEventListener('click', function(){
+    var tier = getTier(score);
+
+    var rows = answerLog.map(function(a, i){
+      var scoreLabel = a.v === 2 ? 'Strong (2)' : a.v === 1 ? 'Partial (1)' : 'Gap (0)';
+      return '<tr style="background:' + (i % 2 === 0 ? '#f7f8fc' : '#ffffff') + '">'
+        + '<td style="padding:7px 10px;font-size:12px;color:#5B6072;font-weight:600;white-space:nowrap;">' + questions[i].cat + '</td>'
+        + '<td style="padding:7px 10px;font-size:12px;color:#1B1E2B;">' + questions[i].text + '</td>'
+        + '<td style="padding:7px 10px;font-size:12px;color:#1B1E2B;">' + a.t + '</td>'
+        + '<td style="padding:7px 10px;font-size:12px;font-weight:700;color:' + (a.v === 2 ? '#27AE60' : a.v === 1 ? '#C79A1E' : '#C0392B') + ';text-align:center;">' + scoreLabel + '</td>'
+        + '</tr>';
+    }).join('');
+
+    var html = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/>'
+      + '<title>Maximo HS&amp;E Readiness Assessment — Result</title>'
+      + '<style>'
+      + 'body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:0;color:#1B1E2B;}'
+      + '.header{background:linear-gradient(135deg,#292C75,#1F3864);padding:28px 36px;color:#fff;}'
+      + '.eyebrow{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#AEB8E8;margin:0 0 6px;}'
+      + '.title{font-size:22px;font-weight:700;margin:0;}'
+      + '.body{padding:28px 36px;}'
+      + '.tier-box{border-left:5px solid ' + tier.color + ';padding:14px 18px;background:#f4f6fb;margin-bottom:24px;border-radius:0 8px 8px 0;}'
+      + '.tier-label{font-size:22px;font-weight:700;color:' + tier.color + ';margin:0 0 6px;}'
+      + '.tier-score{font-size:13px;color:#5B6072;margin:0 0 10px;}'
+      + '.tier-desc{font-size:13.5px;line-height:1.6;color:#1B1E2B;margin:0;}'
+      + '.section-title{font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#3E67B1;margin:24px 0 10px;}'
+      + 'table{width:100%;border-collapse:collapse;font-size:12px;}'
+      + 'th{background:#292C75;color:#fff;padding:8px 10px;text-align:left;font-size:11px;letter-spacing:0.05em;}'
+      + 'td{border-bottom:1px solid #DEE3EF;vertical-align:top;}'
+      + '.footer{margin-top:32px;padding-top:16px;border-top:1px solid #DEE3EF;font-size:11px;color:#5B6072;}'
+      + '@media print{body{-webkit-print-color-adjust:exact;print-color-adjust:exact;}}'
+      + '</style></head><body>'
+      + '<div class="header"><p class="eyebrow">Maven Asset Management</p><h1 class="title">Maximo HS&amp;E Readiness Assessment</h1></div>'
+      + '<div class="body">'
+      + '<div class="tier-box">'
+      + '<div class="tier-label">' + tier.name + '</div>'
+      + '<div class="tier-score">Score: ' + score + ' / ' + MAX_SCORE + '</div>'
+      + '<p class="tier-desc">' + tier.desc + '</p>'
+      + '</div>'
+      + '<div class="section-title">Your Responses</div>'
+      + '<table><thead><tr><th>Category</th><th>Question</th><th>Your Answer</th><th style="text-align:center;">Score</th></tr></thead>'
+      + '<tbody>' + rows + '</tbody></table>'
+      + '<div class="footer">'
+      + '<strong>Maven Asset Management</strong> &nbsp;|&nbsp; mavenasset.com &nbsp;|&nbsp; mas@mavenasset.com &nbsp;|&nbsp; 813-231-4690<br/>'
+      + 'To discuss your results, reach out at mavenasset.com/contact'
+      + '</div>'
+      + '</div></body></html>';
+
+    var blob = new Blob([html], { type: 'text/html' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'maven-hse-readiness-assessment-result.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+  restartBtn.addEventListener('click', reset);
+
+  buildDots();
+  renderQuestion();
+  updateGauge(0);
+})();
+</script>
+
+</body>
+</html>
