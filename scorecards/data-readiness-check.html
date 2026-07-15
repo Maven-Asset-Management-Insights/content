@@ -216,11 +216,6 @@ permalink: /scorecards/data-readiness-check/
     font-family:'Inter',sans-serif; font-size:13.5px; font-weight:600;
     color:var(--sub-ink); text-decoration:underline; cursor:pointer;
   }
-  .copy-confirm{
-    font-size:12.5px; color:var(--green); font-weight:600; margin-left:2px;
-    opacity:0; transition:opacity 200ms ease;
-  }
-  .copy-confirm.show{ opacity:1; }
 
   .hidden{ display:none !important; }
 
@@ -234,7 +229,7 @@ permalink: /scorecards/data-readiness-check/
 <body>
 
 <div style="width:100%;max-width:600px;margin:0 auto 10px;padding:0 12px;">
-  <a href="/content/maven-insights/" style="font-family:'Inter',system-ui,sans-serif;font-size:13.5px;font-weight:600;color:#3E67B1;text-decoration:none;">&larr; Back to Maven Insights</a>
+  <a href="/content/scorecards/" style="font-family:'Inter',system-ui,sans-serif;font-size:13.5px;font-weight:600;color:#3E67B1;text-decoration:none;">&larr; Back to Scorecards</a>
 </div>
 
 <div class="card">
@@ -278,9 +273,8 @@ permalink: /scorecards/data-readiness-check/
       <p class="result-desc" id="resultDesc"></p>
       <div class="cta-row">
         <a class="btn btn-primary" href="mailto:mas@mavenasset.com?subject=Data%20Readiness%20Check%20follow-up" target="_blank" rel="noopener">Talk to Maven</a>
-        <button class="btn btn-secondary" id="copyBtn">Copy my result</button>
+        <button class="btn btn-secondary" id="downloadBtn">Download my result</button>
       </div>
-      <span class="copy-confirm" id="copyConfirm">Copied — paste it anywhere.</span>
       <div style="margin-top:10px;">
         <button class="restart-link" id="restartBtn">Start over</button>
       </div>
@@ -369,6 +363,7 @@ permalink: /scorecards/data-readiness-check/
   var MAX_SCORE = questions.length * 2; // 16
   var current = 0;
   var score = 0;
+  var answerLog = [];
 
   var tiers = [
     { min: 0,  max: 4,  name: "Reactive",   color: "#C0392B",
@@ -391,8 +386,7 @@ permalink: /scorecards/data-readiness-check/
   var resultView = document.getElementById('resultView');
   var resultTier = document.getElementById('resultTier');
   var resultDesc = document.getElementById('resultDesc');
-  var copyBtn = document.getElementById('copyBtn');
-  var copyConfirm = document.getElementById('copyConfirm');
+  var downloadBtn = document.getElementById('downloadBtn');
   var restartBtn = document.getElementById('restartBtn');
 
   function buildDots(){
@@ -429,13 +423,14 @@ permalink: /scorecards/data-readiness-check/
       btn.className = 'opt-btn';
       btn.type = 'button';
       btn.textContent = opt.t;
-      btn.addEventListener('click', function(){ answer(opt.v); });
+      (function(o){ btn.addEventListener('click', function(){ answer(o.v, o.t); }); })(opt);
       optionsWrap.appendChild(btn);
     });
   }
 
-  function answer(points){
+  function answer(points, answerText){
     score += points;
+    answerLog.push({ v: points, t: answerText });
     updateGauge(score);
     current++;
     if (current >= questions.length){
@@ -465,28 +460,82 @@ permalink: /scorecards/data-readiness-check/
   function reset(){
     current = 0;
     score = 0;
+    answerLog = [];
     updateGauge(0);
     questionView.classList.remove('hidden');
     resultView.classList.add('hidden');
-    copyConfirm.classList.remove('show');
     buildDots();
     renderQuestion();
   }
 
-  copyBtn.addEventListener('click', function(){
+  downloadBtn.addEventListener('click', function(){
     var tier = getTier(score);
-    var text = "I scored " + score + "/" + MAX_SCORE + " (" + tier.name + ") on Maven's Maximo Data Readiness Check. How ready is your Maximo data for AI? mavenasset.com";
-    function showConfirm(){
-      copyConfirm.classList.add('show');
-      setTimeout(function(){ copyConfirm.classList.remove('show'); }, 2500);
-    }
-    if (navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(text).then(showConfirm).catch(function(){
-        window.prompt('Copy your result:', text);
-      });
-    } else {
-      window.prompt('Copy your result:', text);
-    }
+
+    var sectionLabels = [
+      "Item Master",
+      "Item Master",
+      "Failure Coding",
+      "Failure Coding",
+      "Work Order & Meter Data",
+      "Work Order & Meter Data",
+      "Governance",
+      "Governance"
+    ];
+
+    var rows = answerLog.map(function(a, i){
+      var scoreLabel = a.v === 2 ? 'Strong (2)' : a.v === 1 ? 'Partial (1)' : 'Gap (0)';
+      return '<tr style="background:' + (i % 2 === 0 ? '#f7f8fc' : '#ffffff') + '">'
+        + '<td style="padding:7px 10px;font-size:12px;color:#5B6072;font-weight:600;white-space:nowrap;">' + sectionLabels[i] + '</td>'
+        + '<td style="padding:7px 10px;font-size:12px;color:#1B1E2B;">' + questions[i].text + '</td>'
+        + '<td style="padding:7px 10px;font-size:12px;color:#1B1E2B;">' + a.t + '</td>'
+        + '<td style="padding:7px 10px;font-size:12px;font-weight:700;color:' + (a.v === 2 ? '#27AE60' : a.v === 1 ? '#C79A1E' : '#C0392B') + ';text-align:center;">' + scoreLabel + '</td>'
+        + '</tr>';
+    }).join('');
+
+    var html = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/>'
+      + '<title>Maximo Data Readiness Check — Result</title>'
+      + '<style>'
+      + 'body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:0;color:#1B1E2B;}'
+      + '.header{background:linear-gradient(135deg,#292C75,#1F3864);padding:28px 36px;color:#fff;}'
+      + '.eyebrow{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#AEB8E8;margin:0 0 6px;}'
+      + '.title{font-size:22px;font-weight:700;margin:0;}'
+      + '.body{padding:28px 36px;}'
+      + '.tier-box{border-left:5px solid ' + tier.color + ';padding:14px 18px;background:#f4f6fb;margin-bottom:24px;border-radius:0 8px 8px 0;}'
+      + '.tier-label{font-size:22px;font-weight:700;color:' + tier.color + ';margin:0 0 6px;}'
+      + '.tier-score{font-size:13px;color:#5B6072;margin:0 0 10px;}'
+      + '.tier-desc{font-size:13.5px;line-height:1.6;color:#1B1E2B;margin:0;}'
+      + '.section-title{font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#3E67B1;margin:24px 0 10px;}'
+      + 'table{width:100%;border-collapse:collapse;font-size:12px;}'
+      + 'th{background:#292C75;color:#fff;padding:8px 10px;text-align:left;font-size:11px;letter-spacing:0.05em;}'
+      + 'td{border-bottom:1px solid #DEE3EF;vertical-align:top;}'
+      + '.footer{margin-top:32px;padding-top:16px;border-top:1px solid #DEE3EF;font-size:11px;color:#5B6072;}'
+      + '@media print{body{-webkit-print-color-adjust:exact;print-color-adjust:exact;}}'
+      + '</style></head><body>'
+      + '<div class="header"><p class="eyebrow">Maven Asset Management</p><h1 class="title">Maximo Data Readiness Check</h1></div>'
+      + '<div class="body">'
+      + '<div class="tier-box">'
+      + '<div class="tier-label">' + tier.name + '</div>'
+      + '<div class="tier-score">Score: ' + score + ' / ' + MAX_SCORE + '</div>'
+      + '<p class="tier-desc">' + tier.desc + '</p>'
+      + '</div>'
+      + '<div class="section-title">Your Responses</div>'
+      + '<table><thead><tr><th>Category</th><th>Question</th><th>Your Answer</th><th style="text-align:center;">Score</th></tr></thead>'
+      + '<tbody>' + rows + '</tbody></table>'
+      + '<div class="footer">'
+      + '<strong>Maven Asset Management Solutions</strong> &nbsp;|&nbsp; mavenasset.com &nbsp;|&nbsp; mas@mavenasset.com &nbsp;|&nbsp; 813-231-4690<br/>'
+      + 'To discuss your results, reach out at mavenasset.com/contact'
+      + '</div>'
+      + '</div></body></html>';
+
+    var blob = new Blob([html], { type: 'text/html' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'maven-data-readiness-check-result.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   });
 
   restartBtn.addEventListener('click', reset);
