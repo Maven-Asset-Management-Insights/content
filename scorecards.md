@@ -89,7 +89,7 @@ permalink: /scorecards/
     </div>
 
     <div style="margin-top:18px;">
-      <a class="button" href="{{ "/field-kits/maximo-ai-readiness-assessment-scorecard/" | relative_url }}">Take the assessment</a>
+      <a class="button" href="{{ "/scorecards/ai-readiness-assessment/" | relative_url }}">Take the assessment</a>
     </div>
   </div>
 
