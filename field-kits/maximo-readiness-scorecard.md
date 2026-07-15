@@ -21,7 +21,7 @@ date: 2026-02-26
     </p>
     <div class="card-cta" style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
       <a class="button"
-         href="{{ '/scorecards/maximo-readiness/' | relative_url }}">
+         href="{{ '/scorecards/maximo-readiness-assessment/' | relative_url }}">
         Take the Interactive Scorecard
       </a>
       <a class="button"
