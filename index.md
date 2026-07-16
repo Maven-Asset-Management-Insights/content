@@ -19,7 +19,7 @@ search: false
  <p style="margin-top: 1rem;">Maven works with organizations to turn this knowledge into outcomes. <a href="https://www.mavenasset.com" style="color:#FFFFFF; font-weight:700; text-decoration:underline; text-underline-offset:3px;">See how Maven can help →</a></p>
 </section>
 
-<div class="grid">
+<div class="grid" style="display:grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
 
   <!-- ── INSIGHTS ── -->
   <section class="card" style="padding:0; overflow:hidden;">
