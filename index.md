@@ -163,7 +163,7 @@ search: false
         <li><a href="{{ '/scorecards/work-management-assessment/' | relative_url }}">Work Management Value Assessment</a></li>
         <li><a href="{{ '/scorecards/maximo-readiness-scorecard.html' | relative_url }}">Maximo Readiness Scorecard</a></li>
         <li><a href="{{ '/scorecards/maximo-ai-readiness-assessment/' | relative_url }}">AI Readiness Assessment</a></li>
-        <li><a href="{{ '/scorecards/maximo-hse-readiness-assessment/' | relative_url }}">HS&amp;E Readiness Assessment</a></li>
+        <li><a href="{{ '/scorecards/hse-readiness-assessment/' | relative_url }}">HS&amp;E Readiness Assessment</a></li>
       </ul>
       <div style="margin-top:14px;">
         <a class="button" href="{{ "/scorecards/" | relative_url }}">View all scorecards</a>
