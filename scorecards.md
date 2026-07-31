@@ -58,6 +58,26 @@ permalink: /scorecards/
       Interactive Scorecard
     </div>
 
+    <h2 style="margin-top:0;">Maximo Planning Value Assessment</h2>
+
+    <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
+      A 12-question interactive scorecard that scores whether your planning function is reducing field delays, producing reusable plans, and creating measurable value — covering plan accuracy, standardization, productivity impact, and outcome measurement.
+    </p>
+
+    <div style="margin-top:14px; opacity:.8;">
+      Best for: Maintenance planners, reliability teams, and EAM program owners evaluating planning maturity
+    </div>
+
+    <div style="margin-top:18px;">
+      <a class="button" href="{{ "/scorecards/planning-value-assessment/" | relative_url }}">Take the assessment</a>
+    </div>
+  </div>
+
+  <div class="card" style="padding:22px; margin-bottom:18px;">
+    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
+      Interactive Scorecard
+    </div>
+
     <h2 style="margin-top:0;">AI Readiness Assessment for Maximo &amp; EAM Programs</h2>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
