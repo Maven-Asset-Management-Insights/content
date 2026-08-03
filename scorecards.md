@@ -15,23 +15,43 @@ permalink: /scorecards/
     Featured Scorecard
   </div>
 
-  <h2 style="margin-top:0;">Maximo Data Readiness Check</h2>
+  <h2 style="margin-top:0;">AI Readiness Assessment for Maximo &amp; EAM Programs</h2>
 
   <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
-    An interactive 8-question assessment that scores how ready your Maximo data is for AI and agentic capabilities — covering item master governance, failure coding, work order data, and data ownership.
+    A 15-question interactive scorecard that scores whether your data foundation, integration architecture, and use case clarity are ready to support meaningful AI investment in Maximo and MAS. 30 points total.
   </p>
 
   <div style="margin-top:14px; opacity:.8;">
-    Best for: EAM program owners, IT leads, and reliability teams evaluating AI or MAS analytics capabilities
+    Best for: EAM program owners, operations leaders, IT leads, and reliability teams evaluating AI or MAS analytics capabilities
   </div>
 
   <div style="margin-top:18px;">
-    <a class="button" href="{{ "/scorecards/data-readiness-check/" | relative_url }}">Take the assessment</a>
+    <a class="button" href="{{ "/scorecards/ai-readiness-assessment/" | relative_url }}">Take the assessment</a>
   </div>
 </div>
 
 <!-- INTERACTIVE SCORECARDS GRID -->
 <div class="grid">
+
+  <div class="card" style="padding:22px; margin-bottom:18px;">
+    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
+      Interactive Scorecard
+    </div>
+
+    <h2 style="margin-top:0;">Maximo Data Readiness Check</h2>
+
+    <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
+      An interactive 8-question assessment that scores how ready your Maximo data is for AI and agentic capabilities — covering item master governance, failure coding, work order data, and data ownership.
+    </p>
+
+    <div style="margin-top:14px; opacity:.8;">
+      Best for: EAM program owners, IT leads, and reliability teams evaluating AI or MAS analytics capabilities
+    </div>
+
+    <div style="margin-top:18px;">
+      <a class="button" href="{{ "/scorecards/data-readiness-check/" | relative_url }}">Take the assessment</a>
+    </div>
+  </div>
 
   <div class="card" style="padding:22px; margin-bottom:18px;">
     <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
@@ -98,18 +118,38 @@ permalink: /scorecards/
       Interactive Scorecard
     </div>
 
-    <h2 style="margin-top:0;">AI Readiness Assessment for Maximo &amp; EAM Programs</h2>
+    <h2 style="margin-top:0;">Maximo Reliability Value Assessment</h2>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
-      A 15-question interactive scorecard that scores whether your data foundation, integration architecture, and use case clarity are ready to support meaningful AI investment in Maximo and MAS. 30 points total.
+      A 12-question interactive scorecard that scores whether failures are becoming less common, maintenance strategy is improving, and reliability gains can be demonstrated with data — covering failure reduction, strategy refinement, measurement discipline, and continuous improvement.
     </p>
 
     <div style="margin-top:14px; opacity:.8;">
-      Best for: EAM program owners, operations leaders, IT leads, and reliability teams evaluating AI or MAS analytics capabilities
+      Best for: Reliability engineers, maintenance managers, and EAM program owners evaluating reliability program maturity
     </div>
 
     <div style="margin-top:18px;">
-      <a class="button" href="{{ "/scorecards/ai-readiness-assessment/" | relative_url }}">Take the assessment</a>
+      <a class="button" href="{{ "/scorecards/reliability-value-assessment/" | relative_url }}">Take the assessment</a>
+    </div>
+  </div>
+
+  <div class="card" style="padding:22px; margin-bottom:18px;">
+    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
+      Interactive Scorecard
+    </div>
+
+    <h2 style="margin-top:0;">Maximo Time Management Value Assessment</h2>
+
+    <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
+      A 12-question interactive scorecard that scores whether technician time is visible, trusted, and driving staffing decisions — covering labor visibility, data trust, planning accuracy, and workforce decision-making.
+    </p>
+
+    <div style="margin-top:14px; opacity:.8;">
+      Best for: Maintenance supervisors, workforce planners, and EAM program owners evaluating labor management maturity
+    </div>
+
+    <div style="margin-top:18px;">
+      <a class="button" href="{{ "/scorecards/time-management-value-assessment/" | relative_url }}">Take the assessment</a>
     </div>
   </div>
 
