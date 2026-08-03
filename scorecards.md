@@ -14,17 +14,16 @@ permalink: /scorecards/
   <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
     Featured Scorecard
   </div>
-
   <h2 style="margin-top:0;">AI Readiness Assessment for Maximo &amp; EAM Programs</h2>
-
   <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
     A 15-question interactive scorecard that scores whether your data foundation, integration architecture, and use case clarity are ready to support meaningful AI investment in Maximo and MAS. 30 points total.
   </p>
-
   <div style="margin-top:14px; opacity:.8;">
     Best for: EAM program owners, operations leaders, IT leads, and reliability teams evaluating AI or MAS analytics capabilities
   </div>
-
+  <div style="margin-top:10px; color:#27AE60; font-weight:600; font-size:0.95rem;">
+    Get a feel for our scorecards with this one first — open access, no email needed. Then sign up once to unlock the full library, including every scorecard we add going forward.
+  </div>
   <div style="margin-top:18px;">
     <a class="button" href="{{ "/scorecards/ai-readiness-assessment/" | relative_url }}">Take the assessment</a>
   </div>
@@ -198,6 +197,6 @@ permalink: /scorecards/
 <p class="section-title">Why use a scorecard?</p>
 <div class="card">
   <p>
-    Scorecards give teams a shared, honest starting point. They surface gaps that are easy to overlook when you're close to the work, and they make it easier to prioritize where to focus — whether you're preparing for an AI initiative, evaluating your HS&amp;E program, or assessing overall Maximo program health. All of Maven's scorecards are free to use, no form required.
+    Scorecards give teams a shared, honest starting point. They surface gaps that are easy to overlook when you're close to the work, and they make it easier to prioritize where to focus — whether you're preparing for an AI initiative, evaluating your HS&amp;E program, or assessing overall Maximo program health. Start with the AI Readiness Assessment above, no form required, then sign up once to unlock our full library of scorecards.
   </p>
 </div>
