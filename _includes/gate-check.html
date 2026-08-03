@@ -1,0 +1,9 @@
+<script>
+(function() {
+  var unlocked = localStorage.getItem('maven_scorecard_unlocked');
+  if (!unlocked) {
+    var here = window.location.pathname;
+    window.location.replace('{{ "/scorecards/access/" | relative_url }}?redirect=' + encodeURIComponent(here));
+  }
+})();
+</script>
