@@ -78,6 +78,26 @@ permalink: /scorecards/
       Interactive Scorecard
     </div>
 
+    <h2 style="margin-top:0;">Maximo Scheduling Value Assessment</h2>
+
+    <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
+      A 12-question interactive scorecard that scores whether your scheduling process is realistic, uses labor effectively, improves execution, and earns leadership's trust — covering schedule compliance, labor balancing, idle time reduction, and workload predictability.
+    </p>
+
+    <div style="margin-top:14px; opacity:.8;">
+      Best for: Maintenance schedulers, operations leaders, and EAM program owners evaluating scheduling maturity
+    </div>
+
+    <div style="margin-top:18px;">
+      <a class="button" href="{{ "/scorecards/scheduling-value-assessment/" | relative_url }}">Take the assessment</a>
+    </div>
+  </div>
+
+  <div class="card" style="padding:22px; margin-bottom:18px;">
+    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
+      Interactive Scorecard
+    </div>
+
     <h2 style="margin-top:0;">AI Readiness Assessment for Maximo &amp; EAM Programs</h2>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
@@ -129,7 +149,7 @@ permalink: /scorecards/
     </div>
 
     <div style="margin-top:18px;">
-      <a class="button" href="{{ "/field-kits/maximo-readiness-scorecard.html" | relative_url }}">Take the assessment</a>
+      <a class="button" href="{{ "/field-kits/maximo-readiness-scorecard.html" | relative_url }}">View scorecard</a>
     </div>
   </div>
 
