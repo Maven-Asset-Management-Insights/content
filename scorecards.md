@@ -137,6 +137,46 @@ permalink: /scorecards/
       Interactive Scorecard
     </div>
 
+    <h2 style="margin-top:0;">Maximo Asset Health Value Assessment</h2>
+
+    <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
+      A 12-question interactive scorecard that scores whether asset health scoring is catching declining assets early, is trusted, and is delivering measurable business value — covering early detection, data trust, behavioral impact, and business outcomes.
+    </p>
+
+    <div style="margin-top:14px; opacity:.8;">
+      Best for: Reliability engineers, maintenance managers, and EAM program owners evaluating asset health program maturity
+    </div>
+
+    <div style="margin-top:18px;">
+      <a class="button" href="{{ "/scorecards/asset-health-value-assessment/" | relative_url }}">Take the assessment</a>
+    </div>
+  </div>
+
+  <div class="card" style="padding:22px; margin-bottom:18px;">
+    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
+      Interactive Scorecard
+    </div>
+
+    <h2 style="margin-top:0;">Maximo IoT Value Assessment</h2>
+
+    <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
+      A 12-question interactive scorecard that scores whether sensor data is driving action, improving visibility, and delivering ROI — covering alert quality, real-time visibility, maintenance impact, and business value.
+    </p>
+
+    <div style="margin-top:14px; opacity:.8;">
+      Best for: IT leads, reliability engineers, and EAM program owners evaluating IoT and condition monitoring maturity
+    </div>
+
+    <div style="margin-top:18px;">
+      <a class="button" href="{{ "/scorecards/iot-value-assessment/" | relative_url }}">Take the assessment</a>
+    </div>
+  </div>
+
+  <div class="card" style="padding:22px; margin-bottom:18px;">
+    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
+      Interactive Scorecard
+    </div>
+
     <h2 style="margin-top:0;">Maximo Time Management Value Assessment</h2>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
@@ -149,6 +189,26 @@ permalink: /scorecards/
 
     <div style="margin-top:18px;">
       <a class="button" href="{{ "/scorecards/time-management-value-assessment/" | relative_url }}">Take the assessment</a>
+    </div>
+  </div>
+
+  <div class="card" style="padding:22px; margin-bottom:18px;">
+    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.85rem; opacity:.75; margin-bottom:8px;">
+      Interactive Scorecard
+    </div>
+
+    <h2 style="margin-top:0;">Maximo Capability Assessment</h2>
+
+    <p style="font-size:1.05rem; line-height:1.55; margin-top:10px;">
+      A 10-question interactive scorecard that scores whether Maximo is helping your organization make better decisions — covering information-driven decision-making, reduced administrative effort, and measurable operational improvement.
+    </p>
+
+    <div style="margin-top:14px; opacity:.8;">
+      Best for: EAM program owners, operations leaders, and IT leadership evaluating Maximo's overall business impact
+    </div>
+
+    <div style="margin-top:18px;">
+      <a class="button" href="{{ "/scorecards/capability-assessment/" | relative_url }}">Take the assessment</a>
     </div>
   </div>
 
