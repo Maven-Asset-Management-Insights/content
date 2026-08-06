@@ -135,7 +135,8 @@ search: false
     </div>
   </section>
 
-  <!-- ── SCORECARDS ── -->
+{% comment %}
+<!-- ── SCORECARDS ── -->
   <section class="card" style="padding:0; overflow:hidden;">
     <svg width="100%" height="140" viewBox="0 0 680 200" role="img" xmlns="http://www.w3.org/2000/svg" style="display:block;">
       <title>Scorecards and Assessments</title>
@@ -170,8 +171,7 @@ search: false
       </div>
     </div>
   </section>
-
-</div>
+{% endcomment %}
 
 <p class="section-title">Why we built this</p>
 <div class="card">
