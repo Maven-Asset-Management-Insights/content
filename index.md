@@ -172,7 +172,7 @@ search: false
     </div>
   </section>
 {% endcomment %}
-
+</div>
 <p class="section-title">Why we built this</p>
 <div class="card">
   <p>
