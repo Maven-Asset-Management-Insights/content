@@ -7,6 +7,14 @@ permalink: /scorecards/iot-value-assessment/
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+(function() {
+  if (!localStorage.getItem('maven_scorecard_unlocked')) {
+    var here = window.location.pathname + window.location.search;
+    window.location.replace('{{ "/scorecards/access/" | relative_url }}?redirect=' + encodeURIComponent(here));
+  }
+})();
+</script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Maximo IoT Value Assessment | Maven Asset Management</title>
