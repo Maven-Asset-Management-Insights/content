@@ -7,7 +7,15 @@ permalink: /scorecards/capability-assessment/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
+<script>
+(function() {
+  if (!localStorage.getItem('maven_scorecard_unlocked')) {
+    var here = window.location.pathname + window.location.search;
+    window.location.replace('{{ "/scorecards/access/" | relative_url }}?redirect=' + encodeURIComponent(here));
+  }
+})();
+</script>
+  <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Maximo Capability Assessment | Maven Asset Management</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
