@@ -38,11 +38,11 @@ permalink: /scorecards/access/
   var params = new URLSearchParams(window.location.search);
   var redirect = params.get('redirect') || '{{ "/scorecards/" | relative_url }}';
 
-  var FORM_ACTION = "https://docs.google.com/forms/d/e/1FAIpQLSfMx_zeTRqnk0hl78ED_EIb8iLghxBwUHwpCFYyjMxK9hKXWQ/formResponse";
-  var FIRST_NAME_ENTRY = "entry.1773261783";
-  var LAST_NAME_ENTRY = "entry.1478130085";
-  var COMPANY_ENTRY = "entry.1072261245";
-  var EMAIL_ENTRY = "entry.1057769451";
+  var FORM_ACTION = "https://docs.google.com/forms/d/e/1FAIpQLSeN8GCIAUdm8PlZiv2fS-iPQ1fSrks31gsXYmIAai3f7LnBnw/formResponse";
+  var FIRST_NAME_ENTRY = "entry.652899686";
+  var LAST_NAME_ENTRY = "entry.440147331";
+  var COMPANY_ENTRY = "entry.1482266971";
+  var EMAIL_ENTRY = "entry.438271960";
 
   var BLOCKED_DOMAINS = [
     "gmail.com", "yahoo.com", "hotmail.com", "outlook.com", "aol.com",
@@ -52,3 +52,52 @@ permalink: /scorecards/access/
 
   var form = document.getElementById('accessForm');
   var errorMsg = document.getElementById('formError');
+
+  function getDomain(email) {
+    var parts = email.split('@');
+    return parts.length === 2 ? parts[1].toLowerCase().trim() : '';
+  }
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var firstName = document.getElementById('firstNameField').value.trim();
+    var lastName = document.getElementById('lastNameField').value.trim();
+    var company = document.getElementById('companyField').value.trim();
+    var email = document.getElementById('emailField').value.trim();
+    var emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+    if (!emailValid) {
+      errorMsg.textContent = 'Please enter a valid email address.';
+      errorMsg.style.display = 'block';
+      return;
+    }
+    if (!company) {
+      errorMsg.textContent = 'Please enter your company name.';
+      errorMsg.style.display = 'block';
+      return;
+    }
+    if (BLOCKED_DOMAINS.indexOf(getDomain(email)) !== -1) {
+      errorMsg.textContent = 'Please use your work email address.';
+      errorMsg.style.display = 'block';
+      return;
+    }
+    errorMsg.style.display = 'none';
+
+    var body = new URLSearchParams();
+    body.append(FIRST_NAME_ENTRY, firstName);
+    body.append(LAST_NAME_ENTRY, lastName);
+    body.append(COMPANY_ENTRY, company);
+    body.append(EMAIL_ENTRY, email);
+
+    fetch(FORM_ACTION, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: body.toString()
+    }).finally(function() {
+      localStorage.setItem('maven_scorecard_unlocked', 'true');
+      window.location.href = redirect;
+    });
+  });
+})();
+</script>
