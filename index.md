@@ -15,6 +15,11 @@ search: false
     allowfullscreen>
   </iframe>
 </div>
+<p style="text-align:center; margin: 0 0 1.25rem;">
+  <a href="{{ "/scorecards/" | relative_url }}" style="display:inline-block; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.4); color:#FFFFFF; font-weight:700; padding:8px 18px; border-radius:999px; text-decoration:none; letter-spacing:.02em;">
+    🆕 New: Value Assessment Scorecards — benchmark your Maximo program in minutes →
+  </a>
+</p>
   <p><strong>IBM Maximo &amp; Enterprise Asset Management Clearly Explained: Asset management is challenging enough without adding unnecessary complexity.</strong></p>
  <p style="margin-top: 1rem;">Maven works with organizations to turn this knowledge into outcomes. <a href="https://www.mavenasset.com" style="color:#FFFFFF; font-weight:700; text-decoration:underline; text-underline-offset:3px;">See how Maven can help →</a></p>
 </section>
