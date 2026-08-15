@@ -13,17 +13,6 @@ In this Field Kit, we outline a practical path for connecting IoT and OT data to
 
 Maven Asset Management brings deep expertise in condition monitoring and IoT-to-Maximo integration, helping organizations move from "we have sensors" to "our sensors are driving better decisions."
 ---
-## 🎥 Featured Video
-<div class="youtube-container">
-  <iframe
-    src="https://www.youtube.com/embed/_9-HVZwddaI"
-    title="Sensor Data in Maximo Monitor"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
----
 ## Key Business Benefits
 - Detect anomalies earlier through real-time condition data instead of calendar-based inspections
 - Reduce reactive work by auto-generating work orders when thresholds are crossed
