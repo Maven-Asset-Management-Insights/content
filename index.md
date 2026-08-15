@@ -134,8 +134,7 @@ search: false
       </div>
     </div>
   </section>
-</div>
-<!-- ── SCORECARDS ── -->
+  <!-- ── SCORECARDS ── -->
   <section class="card" style="padding:0; overflow:hidden;">
     <svg width="100%" height="140" viewBox="0 0 680 200" role="img" xmlns="http://www.w3.org/2000/svg" style="display:block;">
       <title>Scorecards &amp; Assessments</title>
@@ -166,6 +165,7 @@ search: false
       </div>
     </div>
   </section>
+</div>
 <p class="section-title">Why we built this</p>
 <div class="card">
   <p>
