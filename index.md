@@ -135,6 +135,37 @@ search: false
     </div>
   </section>
 </div>
+<!-- ── SCORECARDS ── -->
+  <section class="card" style="padding:0; overflow:hidden;">
+    <svg width="100%" height="140" viewBox="0 0 680 200" role="img" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+      <title>Scorecards &amp; Assessments</title>
+      <desc>Maven branded header for the Scorecards section</desc>
+      <rect width="680" height="200" fill="#3E67B1"/>
+      <rect x="0" y="0" width="7" height="200" fill="#292C75" opacity="0.3"/>
+      <rect x="0" y="190" width="680" height="10" fill="#292C75"/>
+      <text x="64" y="78" font-family="Arial Black, Arial" font-weight="900" font-size="38" fill="#FFFFFF" letter-spacing="1">SCORECARDS</text>
+      <text x="64" y="118" font-family="Arial" font-size="20" fill="#C8DCF4">Interactive tools to benchmark</text>
+      <text x="64" y="142" font-family="Arial" font-size="20" fill="#C8DCF4">where your program stands.</text>
+      <circle cx="586" cy="100" r="52" fill="#292C75" opacity="0.18"/>
+      <path d="M 552 122 A 42 42 0 0 1 620 122" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.4" stroke-linecap="round"/>
+      <line x1="586" y1="100" x2="608" y2="80" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="586" cy="100" r="4" fill="#FFFFFF"/>
+    </svg>
+    <div style="padding: 1.25rem 1.5rem 1.5rem;">
+      <h2>Scorecards &amp; Assessments</h2>
+      <p>Interactive scorecards to quickly assess where your Maximo program stands and where to focus next.</p>
+      <ul>
+        <li><a href="{{ '/scorecards/ai-readiness-assessment/' | relative_url }}">AI Readiness Assessment for Maximo &amp; EAM Programs</a></li>
+        <li><a href="{{ '/scorecards/data-readiness-check/' | relative_url }}">Maximo Data Readiness Check</a></li>
+        <li><a href="{{ '/scorecards/work-management-assessment/' | relative_url }}">Maximo Work Management Value Assessment</a></li>
+        <li><a href="{{ '/scorecards/reliability-value-assessment/' | relative_url }}">Maximo Reliability Value Assessment</a></li>
+        <li><a href="{{ '/scorecards/hse-readiness-assessment/' | relative_url }}">Maximo HS&amp;E Readiness Assessment</a></li>
+      </ul>
+      <div style="margin-top:14px;">
+        <a class="button" href="{{ "/scorecards" | relative_url }}">View all scorecards</a>
+      </div>
+    </div>
+  </section>
 <p class="section-title">Why we built this</p>
 <div class="card">
   <p>
