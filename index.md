@@ -16,7 +16,7 @@ search: false
   </iframe>
 </div>
 <p style="text-align:center; margin: 0 0 1.25rem;">
-  <a href="{{ "/scorecards/" | relative_url }}" style="display:inline-block; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.4); color:#FFFFFF; font-weight:700; padding:8px 18px; border-radius:999px; text-decoration:none; letter-spacing:.02em;">
+  <a href="{{ "/scorecards/" | relative_url }}" style="display:block; width:fit-content; margin:0 auto; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.4); color:#FFFFFF; font-weight:700; padding:8px 18px; border-radius:999px; text-decoration:none; letter-spacing:.02em;">
     🆕 New: Value Assessment Scorecards — benchmark your Maximo program in minutes →
   </a>
 </p>
