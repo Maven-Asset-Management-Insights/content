@@ -3,7 +3,7 @@ layout: default
 title: Home
 search: false
 ---
-<section class="hero">
+<section class="hero" style="text-align:center;">
   <h1>Know the Language. Lead the Initiative.</h1>
   <h2>Maven's Field Glossary for Maximo and EAM Leaders</h2>
 <div class="video-container" style="max-width: 600px; margin: 1.5rem auto 2rem auto; padding-bottom: 40%;">
