@@ -15,15 +15,14 @@ search: false
     allowfullscreen>
   </iframe>
 </div>
-<p style="text-align:center; margin: 0 0 1.25rem;">
+<p style="text-align:center; margin: 0 auto 1.25rem;">
   <a href="{{ "/scorecards/" | relative_url }}" style="display:block; width:fit-content; margin:0 auto; background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.4); color:#FFFFFF; font-weight:700; padding:8px 18px; border-radius:999px; text-decoration:none; letter-spacing:.02em;">
     🆕 New: Value Assessment Scorecards — benchmark your Maximo program in minutes →
   </a>
 </p>
-  <p style="text-align:center;"><strong>IBM Maximo &amp; Enterprise Asset Management Clearly Explained: Asset management is challenging enough without adding unnecessary complexity.</strong></p>
- <p style="text-align:center; margin-top: 1rem;">Maven works with organizations to turn this knowledge into outcomes. <a href="https://www.mavenasset.com" style="color:#FFFFFF; font-weight:700; text-decoration:underline; text-underline-offset:3px;">See how Maven can help →</a></p>
+  <p style="text-align:center; margin:0 auto;"><strong>IBM Maximo &amp; Enterprise Asset Management Clearly Explained: Asset management is challenging enough without adding unnecessary complexity.</strong></p>
+ <p style="text-align:center; margin:1rem auto 0;">Maven works with organizations to turn this knowledge into outcomes. <a href="https://www.mavenasset.com" style="color:#FFFFFF; font-weight:700; text-decoration:underline; text-underline-offset:3px;">See how Maven can help →</a></p>
 </section>
-
 <div class="grid" style="display:grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
 
   <!-- ── INSIGHTS ── -->
