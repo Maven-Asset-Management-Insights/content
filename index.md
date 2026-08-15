@@ -4,8 +4,8 @@ title: Home
 search: false
 ---
 <section class="hero" style="text-align:center;">
-  <h1>Know the Language. Lead the Initiative.</h1>
-  <h2>Maven's Field Glossary for Maximo and EAM Leaders</h2>
+  <h1 style="text-align:center;">Know the Language. Lead the Initiative.</h1>
+  <h2 style="text-align:center;">Maven's Field Glossary for Maximo and EAM Leaders</h2>
 <div class="video-container" style="max-width: 600px; margin: 1.5rem auto 2rem auto; padding-bottom: 40%;">
   <iframe
     src="https://www.youtube.com/embed/bMbEX0IYHe8"
@@ -20,8 +20,8 @@ search: false
     🆕 New: Value Assessment Scorecards — benchmark your Maximo program in minutes →
   </a>
 </p>
-  <p><strong>IBM Maximo &amp; Enterprise Asset Management Clearly Explained: Asset management is challenging enough without adding unnecessary complexity.</strong></p>
- <p style="margin-top: 1rem;">Maven works with organizations to turn this knowledge into outcomes. <a href="https://www.mavenasset.com" style="color:#FFFFFF; font-weight:700; text-decoration:underline; text-underline-offset:3px;">See how Maven can help →</a></p>
+  <p style="text-align:center;"><strong>IBM Maximo &amp; Enterprise Asset Management Clearly Explained: Asset management is challenging enough without adding unnecessary complexity.</strong></p>
+ <p style="text-align:center; margin-top: 1rem;">Maven works with organizations to turn this knowledge into outcomes. <a href="https://www.mavenasset.com" style="color:#FFFFFF; font-weight:700; text-decoration:underline; text-underline-offset:3px;">See how Maven can help →</a></p>
 </section>
 
 <div class="grid" style="display:grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
