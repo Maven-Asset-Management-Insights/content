@@ -96,5 +96,19 @@ permalink: /field-kits/
       <a class="button" href="{{ "/field-kits/monitor-demo-practical-path-to-deployment/" | relative_url }}">View kit</a>
     </div>
   </section>
-
+<section class="card">
+    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.8rem; opacity:.7; margin-bottom:8px;">
+      Field Kit
+    </div>
+    <h2 style="margin-top:0;">Maximo + IoT: A Field Kit for Turning Sensor Data into Action</h2>
+    <p>
+      A practical framework for connecting IoT sensor data to Maximo, deciding what to instrument first, and turning raw signals into trusted alerts and prioritized work.
+    </p>
+    <div style="margin-top:12px; opacity:.8;">
+      Best for: Operations leaders, Reliability engineers, EAM owners exploring condition monitoring
+    </div>
+    <div style="margin-top:16px;">
+      <a class="button" href="{{ "/field-kits/maximo-iot-field-kit/" | relative_url }}">View kit</a>
+    </div>
+  </section>
 </div>
