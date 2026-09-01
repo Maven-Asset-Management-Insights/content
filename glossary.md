@@ -621,7 +621,14 @@ search: true
       </div>
       <p>A Lifecycle Replacement Decision is the structured evaluation of whether to continue maintaining an aging or degraded asset or to replace it — weighing the cost and risk of continued operation against the capital and operational cost of acquiring and commissioning a new asset. This decision is one of the most consequential in asset management and is often made poorly — either replacing assets prematurely out of caution or running them far past the point where continued investment makes economic sense. For plant managers and reliability professionals, a defensible replacement decision requires condition data, maintenance cost history, remaining useful life estimates, and lifecycle cost projections — the kind of evidence that a well-governed Maximo implementation is designed to provide. See also: Remaining Useful Life (RUL), Asset Lifecycle Cost, Total Cost of Ownership (TCO), End-of-Life (EOL), Life Extension.</p>
     </div>
-
+    <div class="glossary-term" data-category="data-quality maximo">
+      <h3 id="location">Location</h3>
+      <div class="glossary-tags">
+        <span>Data Quality</span>
+        <span>Maximo</span>
+      </div>
+      <p>A Location in Maximo is a record representing a physical or logical place where assets are installed, operated, or stored, distinct from the Asset record itself, which represents the physical equipment. Locations form their own hierarchy — site, building, floor, system, and so on — that can exist independently of the asset hierarchy, though the two are typically connected as assets move in and out of locations over time. This distinction matters because assets get swapped, repaired, or replaced while a location and its operating history often persist regardless of which physical unit currently sits there. Poorly maintained location records — locations without a clear hierarchy, or location history lost when assets are moved — limit an organization's ability to analyze performance by physical area or trace an asset's installation history. See also: Asset, Asset Hierarchy, Asset Registry.</p>
+    </div>
 
     <h2 id="M">M</h2>
 
