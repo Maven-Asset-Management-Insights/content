@@ -240,18 +240,6 @@ search: true
     </div>
 
 
-    <h2 id="B">B</h2>
-
-    <div class="glossary-term" data-category="maintenance reliability">
-      <h3 id="backlog-health">Backlog Health</h3>
-      <div class="glossary-tags">
-        <span>Maintenance</span>
-        <span>Reliability</span>
-      </div>
-      <p>Backlog Health is a measure of how manageable, current, and well-prioritized the open maintenance work queue is, helping organizations ensure that critical reliability tasks can be planned and completed without excessive delay. A healthy backlog is not an empty one — some level of approved, queued work is normal and expected. An unhealthy backlog is one where work is aging unaddressed, priority is unclear, critical tasks are buried alongside low-value requests, or the volume has grown beyond the team's capacity to execute. Backlog Health is distinct from Deferred Maintenance: the backlog includes all open approved work, while deferred maintenance is specifically work that has been pushed past its due date. Tracking both separately is important for accurate risk assessment. See also: Deferred Maintenance, Planned vs. Unplanned Work, Maintenance Backlog Ratio.</p>
-    </div>
-
-
     <h2 id="C">C</h2>
 
     <div class="glossary-term" data-category="strategy analytics">
@@ -416,7 +404,7 @@ search: true
         <span>Maintenance</span>
         <span>Reliability</span>
       </div>
-      <p>Deferred Maintenance is work that has been identified and approved but intentionally postponed past its due date, creating known and documented risk. Deferred maintenance is not the same as backlog. A backlog includes all open, approved work waiting to be scheduled — including work that is current and on track. Deferred maintenance is the subset that has been pushed past when it should have been done. Treating all backlog as deferred distorts the risk picture and makes it harder to prioritize capital requests or justify maintenance investment. Tracking deferred maintenance separately and explicitly — with clear accountability and risk documentation — is a sign of a mature maintenance organization. See also: Backlog Health, Maintenance Backlog Ratio, Planned vs. Unplanned Work.</p>
+      <p>Deferred Maintenance is work that has been identified and approved but intentionally postponed past its due date, creating known and documented risk. Deferred maintenance is not the same as backlog. A backlog includes all open, approved work waiting to be scheduled — including work that is current and on track. Deferred maintenance is the subset that has been pushed past when it should have been done. Treating all backlog as deferred distorts the risk picture and makes it harder to prioritize capital requests or justify maintenance investment. Tracking deferred maintenance separately and explicitly — with clear accountability and risk documentation — is a sign of a mature maintenance organization. See also: Maintenance Backlog Health, Maintenance Backlog Ratio, Planned vs. Unplanned Work.</p>
     </div>
 
     <div class="glossary-term" data-category="analytics integration maximo">
@@ -637,6 +625,15 @@ search: true
 
     <h2 id="M">M</h2>
 
+    <div class="glossary-term" data-category="maintenance reliability">
+      <h3 id="maintenance-backlog-health">Maintenance Backlog Health</h3>
+      <div class="glossary-tags">
+        <span>Maintenance</span>
+        <span>Reliability</span>
+      </div>
+      <p>Maintenance Backlog Health is a measure of how manageable, current, and well-prioritized the open maintenance work queue is, helping organizations ensure that critical reliability tasks can be planned and completed without excessive delay. A healthy backlog is not an empty one — some level of approved, queued work is normal and expected. An unhealthy backlog is one where work is aging unaddressed, priority is unclear, critical tasks are buried alongside low-value requests, or the volume has grown beyond the team's capacity to execute. Maintenance Backlog Health is distinct from Deferred Maintenance: the backlog includes all open approved work, while deferred maintenance is specifically work that has been pushed past its due date. Tracking both separately is important for accurate risk assessment. See also: Deferred Maintenance, Planned vs. Unplanned Work, Maintenance Backlog Ratio.</p>
+    </div>
+
     <div class="glossary-term" data-category="analytics maintenance strategy">
       <h3 id="maintenance-backlog-ratio">Maintenance Backlog Ratio</h3>
       <div class="glossary-tags">
@@ -644,7 +641,7 @@ search: true
         <span>Maintenance</span>
         <span>Strategy</span>
       </div>
-      <p>Maintenance Backlog Ratio is a financial metric that expresses the total estimated cost of deferred or outstanding maintenance as a percentage of Asset Replacement Value (ARV), used to assess whether a facility or asset portfolio is being adequately maintained relative to its capital value. An industry rule of thumb holds that a backlog ratio above 2–5% of ARV represents meaningful deferred risk; ratios significantly higher indicate chronic under-investment. For plant managers, the backlog ratio is one of the most effective tools for communicating maintenance funding needs to finance and leadership in terms they understand — not work order counts, but capital exposure. See also: Asset Replacement Value (ARV), Deferred Maintenance, Backlog Health.</p>
+      <p>Maintenance Backlog Ratio is a financial metric that expresses the total estimated cost of deferred maintenance as a percentage of Asset Replacement Value (ARV), used to assess whether a facility or asset portfolio is being adequately maintained relative to its capital value. An industry rule of thumb holds that a backlog ratio above 2–5% of ARV represents meaningful deferred risk; ratios significantly higher indicate chronic under-investment. For plant managers, the backlog ratio is one of the most effective tools for communicating maintenance funding needs to finance and leadership in terms they understand — not work order counts, but capital exposure. See also: Asset Replacement Value (ARV), Deferred Maintenance, Maintenance Backlog Health.</p>
     </div>
 
     <div class="glossary-term" data-category="maintenance strategy analytics">
@@ -752,7 +749,7 @@ search: true
         <span>Maintenance</span>
         <span>Reliability</span>
       </div>
-      <p>Planned vs. Unplanned Work is a ratio that measures the proportion of maintenance activity that was anticipated and prepared in advance versus work that was triggered by unexpected failures or urgent requests. A high planned work percentage indicates a proactive, reliability-focused maintenance organization. A high unplanned work percentage indicates a reactive one — where resources are consumed responding to failures rather than preventing them. Most mature maintenance organizations target 80% or more planned work. Tracking this ratio in Maximo requires consistent Work Type classification and disciplined work order management. See also: Work Type, Reactive Work, Backlog Health, Planning and Scheduling.</p>
+      <p>Planned vs. Unplanned Work is a ratio that measures the proportion of maintenance activity that was anticipated and prepared in advance versus work that was triggered by unexpected failures or urgent requests. A high planned work percentage indicates a proactive, reliability-focused maintenance organization. A high unplanned work percentage indicates a reactive one — where resources are consumed responding to failures rather than preventing them. Most mature maintenance organizations target 80% or more planned work. Tracking this ratio in Maximo requires consistent Work Type classification and disciplined work order management. See also: Work Type, Reactive Work, Maintenance Backlog Health, Planning and Scheduling.</p>
     </div>
 
     <div class="glossary-term" data-category="maintenance analytics">
@@ -1047,7 +1044,7 @@ search: true
         <span>Maintenance</span>
         <span>Maximo</span>
       </div>
-      <p>A Work Request is an initial notification submitted to the maintenance team indicating that a problem has been identified or that work may be needed — submitted by anyone who observes an issue, not just maintenance personnel. A Work Request is a trigger, not an authorization. It becomes a Work Order only after it has been reviewed, prioritized, approved, planned, and resourced by the maintenance planning function. Maintaining the distinction between requests and work orders is fundamental to data quality and planning discipline in Maximo — collapsing the two, or allowing work to be executed directly from requests without proper planning, undermines backlog visibility, resource management, and maintenance history. See also: Work Order (WO), Backlog Health, Planning and Scheduling.</p>
+      <p>A Work Request is an initial notification submitted to the maintenance team indicating that a problem has been identified or that work may be needed — submitted by anyone who observes an issue, not just maintenance personnel. A Work Request is a trigger, not an authorization. It becomes a Work Order only after it has been reviewed, prioritized, approved, planned, and resourced by the maintenance planning function. Maintaining the distinction between requests and work orders is fundamental to data quality and planning discipline in Maximo — collapsing the two, or allowing work to be executed directly from requests without proper planning, undermines backlog visibility, resource management, and maintenance history. See also: Work Order (WO), Maintenance Backlog Health, Planning and Scheduling.</p>
     </div>
 
     <div class="glossary-term" data-category="maximo maintenance">
