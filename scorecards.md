@@ -53,6 +53,11 @@ permalink: /scorecards/
     font-size: .85rem;
     opacity: .75;
   }
+  .scorecard-subnote {
+    font-size: 0.88rem;
+    opacity: .75;
+    margin-top: 6px;
+  }
 </style>
 
 <section class="hero">
@@ -93,7 +98,10 @@ permalink: /scorecards/
     Best for: EAM program owners, operations leaders, IT leads, and reliability teams evaluating AI or MAS analytics capabilities
   </div>
   <div style="margin-top:10px; color:#27AE60; font-weight:600; font-size:0.95rem;">
-    Get a feel for our scorecards with this one first — open access, no email needed. Then sign up once to unlock the full library, including every scorecard we add going forward.
+    Open to everyone, no sign-up required — take this one first. Sign up once and you'll unlock our full library, including every scorecard we add going forward.
+  </div>
+  <div class="scorecard-subnote">
+    One sign-up, no spam. We'll never sell or share your info, and we won't fill your inbox — just access to the scorecards, present and future.
   </div>
 </div>
 
@@ -450,6 +458,6 @@ permalink: /scorecards/
 <p class="section-title">Why use a scorecard?</p>
 <div class="card">
   <p>
-    Scorecards give teams a shared, honest starting point. They surface gaps that are easy to overlook when you're close to the work, and they make it easier to prioritize where to focus — whether you're preparing for an AI initiative, evaluating your HS&amp;E program, or assessing overall Maximo program health. Start with the AI Readiness Assessment above, no form required, then sign up once to unlock our full library of scorecards.
+    Scorecards give teams a shared, honest starting point. They surface gaps that are easy to overlook when you're close to the work, and they make it easier to prioritize where to focus — whether you're preparing for an AI initiative, evaluating your HS&amp;E program, or assessing overall Maximo program health. Start with the AI Readiness Assessment above — it's open to everyone, no sign-up needed. From there, one quick sign-up unlocks our full library, including every scorecard we add going forward. No spam, ever — just access.
   </p>
 </div>
