@@ -7,6 +7,7 @@ permalink: /scorecards/unlocked/
 <section class="hero">
   <h1>You're all set!</h1>
   <p><strong>Redirecting you to your scorecard...</strong></p>
+  <p style="opacity:.85; font-size:0.95rem;">No spam, ever — just access to the scorecards, present and future.</p>
 </section>
 
 <div class="card" style="padding:22px; max-width:520px; margin:0 auto; text-align:center;">
@@ -46,7 +47,9 @@ permalink: /scorecards/unlocked/
     });
   }
 
-  // Redirect to the requested scorecard
-  window.location.href = redirect;
+  // Redirect to the requested scorecard (short delay so the confirmation message is visible)
+  setTimeout(function() {
+    window.location.href = redirect;
+  }, 1200);
 })();
 </script>
