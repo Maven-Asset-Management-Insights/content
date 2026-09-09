@@ -6,6 +6,7 @@ permalink: /scorecards/access/
 <section class="hero">
   <h1>Unlock All Scorecards</h1>
   <p><strong>Enter your info once to get instant access to every Maven scorecard and assessment.</strong></p>
+  <p style="opacity:.85; font-size:0.95rem;">No spam, ever — just access to the scorecards, present and future.</p>
 </section>
 
 <div class="card" style="padding:26px; max-width:560px; margin:0 auto;">
