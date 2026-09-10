@@ -93,7 +93,7 @@ permalink: /scorecards/
       <span class="scorecard-badge">15 Questions · 30 Points</span>
     </div>
   </div>
-<img src="{{ "assets/img/AI Readiness image.png" | relative_url }}" alt="AI Readiness gauge" style="width:100%; max-width:420px; display:block; margin:0 auto 14px;">
+<img src="{{ "/assets/img/ai-readiness-gauge.png" | relative_url }}" alt="AI Readiness gauge" style="width:100%; max-width:420px; display:block; margin:0 auto 14px;">
   <h2 style="margin-top:0;">AI Readiness Assessment for Maximo &amp; EAM Programs</h2>
   <div style="margin-top:10px;">
     <a class="button" href="{{ "/scorecards/ai-readiness-assessment/" | relative_url }}">Take the assessment</a>
