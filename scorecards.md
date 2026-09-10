@@ -72,45 +72,45 @@ permalink: /scorecards/
   </p>
 </div>
 
-<!-- FEATURED SCORECARD -->
-<div class="card" style="padding:22px; margin-bottom:18px;">
-  <div class="scorecard-visual">
-    <div class="scorecard-icon">
-      <!-- AI / circuit-brain icon -->
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M9 4.5a2.5 2.5 0 0 0-2.5 2.5v.2A2.8 2.8 0 0 0 4.5 10v1a2.8 2.8 0 0 0 2 2.68V15a2.5 2.5 0 0 0 2.5 2.5" />
-        <path d="M15 4.5a2.5 2.5 0 0 1 2.5 2.5v.2a2.8 2.8 0 0 1 2 2.8v1a2.8 2.8 0 0 1-2 2.68V15a2.5 2.5 0 0 1-2.5 2.5" />
-        <path d="M9 4.5h6" />
-        <path d="M9 17.5h6" />
-        <circle cx="9" cy="9.5" r="0.9" fill="var(--scorecard-icon-color, #1B6B93)" stroke="none" />
-        <circle cx="15" cy="9.5" r="0.9" fill="var(--scorecard-icon-color, #1B6B93)" stroke="none" />
-        <circle cx="12" cy="13" r="0.9" fill="var(--scorecard-icon-color, #1B6B93)" stroke="none" />
-        <path d="M9 9.5h2.3M15 9.5h-2.3M12 13v-1.7" />
-      </svg>
-    </div>
-    <div class="scorecard-meta">
-      <div class="scorecard-kicker">Featured Scorecard</div>
-      <span class="scorecard-badge">15 Questions · 30 Points</span>
-    </div>
-  </div>
-<img src="{{ "/assets/img/ai-readiness-image.png" | relative_url }}" alt="AI Readiness gauge" style="width:100%; max-width:420px; display:block; margin:0 0 14px 0; border:1px solid #E0E0E0; border-radius:12px;">
-  <h2 style="margin-top:0;">AI Readiness Assessment for Maximo &amp; EAM Programs</h2>
-  <div style="margin-top:10px;">
-    <a class="button" href="{{ "/scorecards/ai-readiness-assessment/" | relative_url }}">Take the assessment</a>
-  </div>
-  <p style="font-size:1.05rem; line-height:1.55; margin-top:14px;">
-    A 15-question interactive scorecard that scores whether your data foundation, integration architecture, and use case clarity are ready to support meaningful AI investment in Maximo and MAS. 30 points total.
-  </p>
-  <div style="margin-top:14px; opacity:.8;">
-    Best for: EAM program owners, operations leaders, IT leads, and reliability teams evaluating AI or MAS analytics capabilities
-  </div>
-  <div style="margin-top:10px; color:#27AE60; font-weight:600; font-size:0.95rem;">
-    Open to everyone, no sign-up required — take this one first. Sign up once and you'll unlock our full library, including every scorecard we add going forward.
-  </div>
-</div>
-
 <!-- INTERACTIVE SCORECARDS GRID -->
 <div class="grid">
+
+  <!-- FEATURED SCORECARD -->
+  <div class="card" style="padding:22px; margin-bottom:18px;">
+    <div class="scorecard-visual">
+      <div class="scorecard-icon">
+        <!-- AI / circuit-brain icon -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 4.5a2.5 2.5 0 0 0-2.5 2.5v.2A2.8 2.8 0 0 0 4.5 10v1a2.8 2.8 0 0 0 2 2.68V15a2.5 2.5 0 0 0 2.5 2.5" />
+          <path d="M15 4.5a2.5 2.5 0 0 1 2.5 2.5v.2a2.8 2.8 0 0 1 2 2.8v1a2.8 2.8 0 0 1-2 2.68V15a2.5 2.5 0 0 1-2.5 2.5" />
+          <path d="M9 4.5h6" />
+          <path d="M9 17.5h6" />
+          <circle cx="9" cy="9.5" r="0.9" fill="var(--scorecard-icon-color, #1B6B93)" stroke="none" />
+          <circle cx="15" cy="9.5" r="0.9" fill="var(--scorecard-icon-color, #1B6B93)" stroke="none" />
+          <circle cx="12" cy="13" r="0.9" fill="var(--scorecard-icon-color, #1B6B93)" stroke="none" />
+          <path d="M9 9.5h2.3M15 9.5h-2.3M12 13v-1.7" />
+        </svg>
+      </div>
+      <div class="scorecard-meta">
+        <div class="scorecard-kicker">Featured Scorecard</div>
+        <span class="scorecard-badge">15 Questions · 30 Points</span>
+      </div>
+    </div>
+    <img src="{{ "/assets/img/ai-readiness-gauge.svg" | relative_url }}" alt="AI Readiness gauge" style="width:100%; max-width:420px; display:block; margin:0 0 14px 0; border:1px solid #E0E0E0; border-radius:12px;">
+    <h2 style="margin-top:0;">AI Readiness Assessment for Maximo &amp; EAM Programs</h2>
+    <div style="margin-top:10px;">
+      <a class="button" href="{{ "/scorecards/ai-readiness-assessment/" | relative_url }}">Take the assessment</a>
+    </div>
+    <p style="font-size:1.05rem; line-height:1.55; margin-top:14px;">
+      A 15-question interactive scorecard that scores whether your data foundation, integration architecture, and use case clarity are ready to support meaningful AI investment in Maximo and MAS. 30 points total.
+    </p>
+    <div style="margin-top:14px; opacity:.8;">
+      Best for: EAM program owners, operations leaders, IT leads, and reliability teams evaluating AI or MAS analytics capabilities
+    </div>
+    <div style="margin-top:10px; color:#27AE60; font-weight:600; font-size:0.95rem;">
+      Open to everyone, no sign-up required — take this one first. Sign up once and you'll unlock our full library, including every scorecard we add going forward.
+    </div>
+  </div>
 
   <div class="card" style="padding:22px; margin-bottom:18px;">
     <div class="scorecard-visual">
