@@ -107,9 +107,6 @@ permalink: /scorecards/
   <div style="margin-top:10px; color:#27AE60; font-weight:600; font-size:0.95rem;">
     Open to everyone, no sign-up required — take this one first. Sign up once and you'll unlock our full library, including every scorecard we add going forward.
   </div>
-  <div class="scorecard-subnote">
-    One sign-up, no spam. We'll never sell or share your info, and we won't fill your inbox — just access to the scorecards, present and future.
-  </div>
 </div>
 
 <!-- INTERACTIVE SCORECARDS GRID -->
