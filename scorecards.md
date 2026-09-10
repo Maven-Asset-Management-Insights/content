@@ -96,7 +96,7 @@ permalink: /scorecards/
         <span class="scorecard-badge">15 Questions · 30 Points</span>
       </div>
     </div>
-    <img src="{{ "/assets/img/ai-readiness-image.png" | relative_url }}" alt="AI Readiness gauge" style="width:100%; max-width:420px; display:block; margin:0 0 14px 0; border:1px solid #E0E0E0; border-radius:12px;">
+    <img src="{{ "/assets/img/ai-readiness-gauge.svg" | relative_url }}" alt="AI Readiness gauge" style="width:100%; max-width:420px; display:block; margin:0 0 14px 0; border:1px solid #E0E0E0; border-radius:12px;">
     <h2 style="margin-top:0;">AI Readiness Assessment for Maximo &amp; EAM Programs</h2>
     <div style="margin-top:10px;">
       <a class="button" href="{{ "/scorecards/ai-readiness-assessment/" | relative_url }}">Take the assessment</a>
@@ -160,6 +160,7 @@ permalink: /scorecards/
       </div>
     </div>
 
+    <img src="{{ "/assets/img/maximo-work-management.png" | relative_url }}" alt="Maximo Work Management gauge" style="width:100%; max-width:420px; display:block; margin:0 0 14px 0; border:1px solid #E0E0E0; border-radius:12px;">
     <h2 style="margin-top:0;">Maximo Work Management Value Assessment</h2>
 
     <div style="margin-top:10px;">
