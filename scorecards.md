@@ -128,6 +128,7 @@ permalink: /scorecards/
       </div>
     </div>
 
+    <img src="{{ "/assets/img/maximo-data-readiness.png" | relative_url }}" alt="Maximo Data Readiness gauge" style="width:100%; max-width:420px; display:block; margin:0 0 14px 0; border:1px solid #E0E0E0; border-radius:12px;">
     <h2 style="margin-top:0;">Maximo Data Readiness Check</h2>
 
     <div style="margin-top:10px;">
