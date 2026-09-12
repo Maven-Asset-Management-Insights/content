@@ -580,38 +580,38 @@ permalink: /scorecards/ai-readiness-assessment/
     dataTrust: {
       flag: "Recommended next, based on your Data Trust answers",
       title: "Maximo Data Readiness Check",
-      slug: "/scorecards/data-readiness-check/",
+      slug: '{{ "/scorecards/data-readiness-check/" | relative_url }}',
       count: 8,
       preview: "When technicians close a work order, how do they record what went..."
     },
     integration: {
       flag: "Recommended next, based on your Integration Architecture answers",
       title: "Maximo IoT Value Assessment",
-      slug: "/scorecards/iot-value-assessment/",
+      slug: '{{ "/scorecards/iot-value-assessment/" | relative_url }}',
       count: 12,
       preview: "When a sensor reading looks abnormal, does anyone actually see it..."
     },
     useCase: {
       flag: "Recommended next, based on your Use Case Readiness answers",
       title: "Maximo Capability Assessment",
-      slug: "/scorecards/capability-assessment/",
+      slug: '{{ "/scorecards/capability-assessment/" | relative_url }}',
       count: 10,
       preview: "When leadership needs a decision made, is Maximo data the first..."
     }
   };
 
   var LIBRARY = [
-    { title:"Data Readiness Check", slug:"/scorecards/data-readiness-check/" },
-    { title:"Work Management", slug:"/scorecards/work-management-assessment/" },
-    { title:"Planning", slug:"/scorecards/planning-value-assessment/" },
-    { title:"Scheduling", slug:"/scorecards/scheduling-value-assessment/" },
-    { title:"Reliability", slug:"/scorecards/reliability-value-assessment/" },
-    { title:"Asset Health", slug:"/scorecards/asset-health-value-assessment/" },
-    { title:"IoT", slug:"/scorecards/iot-value-assessment/" },
-    { title:"Time Management", slug:"/scorecards/time-management-value-assessment/" },
-    { title:"Capability", slug:"/scorecards/capability-assessment/" },
-    { title:"HS&E Readiness", slug:"/scorecards/hse-readiness-assessment/" },
-    { title:"Readiness Scorecard", slug:"/field-kits/maximo-readiness-scorecard.html" }
+    { title:"Data Readiness Check", slug: '{{ "/scorecards/data-readiness-check/" | relative_url }}' },
+    { title:"Work Management", slug: '{{ "/scorecards/work-management-assessment/" | relative_url }}' },
+    { title:"Planning", slug: '{{ "/scorecards/planning-value-assessment/" | relative_url }}' },
+    { title:"Scheduling", slug: '{{ "/scorecards/scheduling-value-assessment/" | relative_url }}' },
+    { title:"Reliability", slug: '{{ "/scorecards/reliability-value-assessment/" | relative_url }}' },
+    { title:"Asset Health", slug: '{{ "/scorecards/asset-health-value-assessment/" | relative_url }}' },
+    { title:"IoT", slug: '{{ "/scorecards/iot-value-assessment/" | relative_url }}' },
+    { title:"Time Management", slug: '{{ "/scorecards/time-management-value-assessment/" | relative_url }}' },
+    { title:"Capability", slug: '{{ "/scorecards/capability-assessment/" | relative_url }}' },
+    { title:"HS&E Readiness", slug: '{{ "/scorecards/hse-readiness-assessment/" | relative_url }}' },
+    { title:"Readiness Scorecard", slug: '{{ "/field-kits/maximo-readiness-scorecard.html" | relative_url }}' }
   ];
 
   function pickRecommendation(){
@@ -638,7 +638,7 @@ permalink: /scorecards/ai-readiness-assessment/
   }
 
   function accessUrl(targetSlug){
-    return '/scorecards/access/?redirect=' + encodeURIComponent(targetSlug);
+    return '{{ "/scorecards/access/" | relative_url }}?redirect=' + encodeURIComponent(targetSlug);
   }
 
   function renderRecommendation(){
