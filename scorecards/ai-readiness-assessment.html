@@ -203,10 +203,135 @@ permalink: /scorecards/ai-readiness-assessment/
     color:var(--sub-ink); text-decoration:underline; cursor:pointer;
   }
   .hidden{ display:none !important; }
+
+  /* --- New: recommendation card --- */
+  .next-up{
+    border:1.5px solid var(--line);
+    border-radius:10px;
+    padding:18px 20px;
+    margin:0 0 20px;
+  }
+  .next-up .flag{
+    font-family:'Oswald',sans-serif;
+    font-size:10.5px;
+    font-weight:600;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--blue);
+    margin:0 0 8px;
+  }
+  .next-up h3{
+    margin:0 0 8px;
+    font-size:16px;
+    font-family:'Oswald',sans-serif;
+    color:var(--deep-navy);
+  }
+  .next-up h3 a{ color:inherit; text-decoration:none; }
+  .preview-line{
+    filter:blur(3.5px);
+    user-select:none;
+    font-size:13px;
+    color:#9096B8;
+    line-height:1.5;
+    margin:0 0 4px;
+  }
+  .lock-row{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    margin-top:10px;
+    font-size:12px;
+    color:var(--sub-ink);
+    font-weight:600;
+  }
+  .lock-row svg{ width:13px; height:13px; flex:none; }
+
+  /* --- New: library chip strip --- */
+  .library{ margin:0 0 22px; }
+  .library h4{
+    font-family:'Oswald',sans-serif;
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--deep-navy);
+    margin:0 0 10px;
+  }
+  .chip-grid{ display:flex; flex-wrap:wrap; gap:8px; }
+  .chip{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    background:var(--bg-light);
+    color:var(--deep-navy);
+    font-size:12px;
+    font-weight:600;
+    padding:6px 12px;
+    border-radius:999px;
+    text-decoration:none;
+  }
+  .chip svg{ width:10px; height:10px; flex:none; color:#9096B8; }
+
+  /* --- New: unlock value list --- */
+  .unlock{ margin:0 0 22px; }
+  .unlock h4{
+    font-family:'Oswald',sans-serif;
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--deep-navy);
+    margin:0 0 10px;
+  }
+  .unlock ul{ list-style:none; margin:0; padding:0; }
+  .unlock li{
+    display:flex;
+    gap:9px;
+    align-items:flex-start;
+    font-size:13.5px;
+    line-height:1.5;
+    margin-bottom:8px;
+    color:var(--ink);
+  }
+  .unlock li svg{ flex:none; width:14px; height:14px; margin-top:2px; color:var(--green); }
+
+  /* --- New: email capture band --- */
+  .no-signup-label{ font-size:12px; color:var(--sub-ink); margin:0 0 8px; }
+  .capture{
+    background:linear-gradient(135deg, var(--navy) 0%, var(--deep-navy) 100%);
+    margin:26px -28px -30px;
+    padding:22px 28px 26px;
+  }
+  .capture h3{
+    color:#fff;
+    font-family:'Oswald',sans-serif;
+    font-size:15px;
+    margin:0 0 4px;
+  }
+  .capture p.sub{
+    color:#AEB8E8;
+    font-size:12.5px;
+    margin:0 0 14px;
+  }
+  .capture .unlock-btn{
+    display:inline-block;
+    background:#fff;
+    color:var(--navy);
+    border:none;
+    border-radius:8px;
+    padding:11px 18px;
+    font-size:13.5px;
+    font-weight:700;
+    cursor:pointer;
+    white-space:nowrap;
+    text-decoration:none;
+  }
+  .capture .unlock-btn:hover{ background:var(--bg-light); }
+  .trust{ color:#8A90C4; font-size:11px; margin:11px 0 0; }
+
   @media (max-width:400px){
     .body-pad{ padding:22px 18px 26px; }
     .banner{ padding:20px 18px 18px; }
     .title{ font-size:19px; }
+    .capture{ margin:26px -18px -26px; padding:20px 18px 22px; }
   }
 </style>
 </head>
@@ -253,6 +378,32 @@ permalink: /scorecards/ai-readiness-assessment/
       <p class="q-label">Your Result</p>
       <div class="result-tier" id="resultTier">—</div>
       <p class="result-desc" id="resultDesc"></p>
+
+      <div class="next-up" id="nextUp">
+        <p class="flag" id="nextUpFlag"></p>
+        <h3 id="nextUpTitle"></h3>
+        <p class="preview-line" id="nextUpPreview"></p>
+        <div class="lock-row">
+          <span id="nextUpIcon"></span>
+          <span id="nextUpMeta"></span>
+        </div>
+      </div>
+
+      <div class="library">
+        <h4>Plus the rest of the library</h4>
+        <div class="chip-grid" id="libraryChips"></div>
+      </div>
+
+      <div class="unlock">
+        <h4>What signing up gets you</h4>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> All 11 remaining scorecards, unlocked right now</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Every new scorecard we publish, automatically</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> A downloadable PDF of each result</li>
+        </ul>
+      </div>
+
+      <p class="no-signup-label">Prefer not to sign up yet? These don't need it:</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="mailto:mas@mavenasset.com?subject=AI%20Readiness%20Assessment%20follow-up" target="_blank" rel="noopener">Talk to Maven</a>
         <button class="btn btn-secondary" id="downloadBtn">Download my result</button>
@@ -260,6 +411,8 @@ permalink: /scorecards/ai-readiness-assessment/
       <div style="margin-top:10px;">
         <button class="restart-link" id="restartBtn">Start over</button>
       </div>
+
+      <div class="capture" id="captureBox"></div>
     </div>
 
   </div>
@@ -422,6 +575,109 @@ permalink: /scorecards/ai-readiness-assessment/
       desc: "Your foundations support meaningful AI deployment. Focus on prioritizing use cases by business impact and executing with governance. The capability is there — now it's about disciplined execution." }
   ];
 
+  // --- New: recommendation engine, driven by real subscores ---
+  var RECOMMENDATIONS = {
+    dataTrust: {
+      flag: "Recommended next, based on your Data Trust answers",
+      title: "Maximo Data Readiness Check",
+      slug: "/scorecards/data-readiness-check/",
+      count: 8,
+      preview: "When technicians close a work order, how do they record what went..."
+    },
+    integration: {
+      flag: "Recommended next, based on your Integration Architecture answers",
+      title: "Maximo IoT Value Assessment",
+      slug: "/scorecards/iot-value-assessment/",
+      count: 12,
+      preview: "When a sensor reading looks abnormal, does anyone actually see it..."
+    },
+    useCase: {
+      flag: "Recommended next, based on your Use Case Readiness answers",
+      title: "Maximo Capability Assessment",
+      slug: "/scorecards/capability-assessment/",
+      count: 10,
+      preview: "When leadership needs a decision made, is Maximo data the first..."
+    }
+  };
+
+  var LIBRARY = [
+    { title:"Data Readiness Check", slug:"/scorecards/data-readiness-check/" },
+    { title:"Work Management", slug:"/scorecards/work-management-assessment/" },
+    { title:"Planning", slug:"/scorecards/planning-value-assessment/" },
+    { title:"Scheduling", slug:"/scorecards/scheduling-value-assessment/" },
+    { title:"Reliability", slug:"/scorecards/reliability-value-assessment/" },
+    { title:"Asset Health", slug:"/scorecards/asset-health-value-assessment/" },
+    { title:"IoT", slug:"/scorecards/iot-value-assessment/" },
+    { title:"Time Management", slug:"/scorecards/time-management-value-assessment/" },
+    { title:"Capability", slug:"/scorecards/capability-assessment/" },
+    { title:"HS&E Readiness", slug:"/scorecards/hse-readiness-assessment/" },
+    { title:"Readiness Scorecard", slug:"/field-kits/maximo-readiness-scorecard.html" }
+  ];
+
+  function pickRecommendation(){
+    var groups = { dataTrust: 0, integration: 0, useCase: 0 };
+    for(var i = 0; i < answerLog.length; i++){
+      var cat = questions[i].cat;
+      var v = answerLog[i].v;
+      if(cat.indexOf('Data Trust') > -1) groups.dataTrust += v;
+      else if(cat.indexOf('Integration Architecture') > -1) groups.integration += v;
+      else if(cat.indexOf('Use Case Readiness') > -1) groups.useCase += v;
+    }
+    var weakestKey = 'dataTrust';
+    var weakestVal = groups.dataTrust;
+    if(groups.integration < weakestVal){ weakestKey = 'integration'; weakestVal = groups.integration; }
+    if(groups.useCase < weakestVal){ weakestKey = 'useCase'; weakestVal = groups.useCase; }
+    return RECOMMENDATIONS[weakestKey];
+  }
+
+  var LOCK_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
+  var CHECK_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>';
+
+  function isUnlocked(){
+    return !!localStorage.getItem('maven_scorecard_unlocked');
+  }
+
+  function accessUrl(targetSlug){
+    return '/scorecards/access/?redirect=' + encodeURIComponent(targetSlug);
+  }
+
+  function renderRecommendation(){
+    var rec = pickRecommendation();
+    var unlocked = isUnlocked();
+
+    document.getElementById('nextUpFlag').textContent = rec.flag;
+    document.getElementById('nextUpTitle').innerHTML = '<a href="' + (unlocked ? rec.slug : accessUrl(rec.slug)) + '">' + rec.title + '</a>';
+
+    var previewEl = document.getElementById('nextUpPreview');
+    previewEl.style.display = unlocked ? 'none' : '';
+    previewEl.textContent = unlocked ? '' : ('"' + rec.preview + '"');
+
+    document.getElementById('nextUpIcon').innerHTML = unlocked ? CHECK_ICON : LOCK_ICON;
+    document.getElementById('nextUpMeta').textContent = rec.count + ' questions' + (unlocked ? ' · already unlocked' : ' · unlocks with sign-up');
+
+    var chipsWrap = document.getElementById('libraryChips');
+    chipsWrap.innerHTML = '';
+    LIBRARY.filter(function(item){ return item.slug !== rec.slug; }).forEach(function(item){
+      var a = document.createElement('a');
+      a.className = 'chip';
+      a.href = unlocked ? item.slug : accessUrl(item.slug);
+      a.innerHTML = (unlocked ? CHECK_ICON : LOCK_ICON) + item.title;
+      chipsWrap.appendChild(a);
+    });
+
+    var captureBox = document.getElementById('captureBox');
+    if(unlocked){
+      captureBox.innerHTML = '<h3>You already have full access</h3>'
+        + '<p class="sub">Jump straight into the ' + rec.title + ', or pick anything from the library above.</p>'
+        + '<a class="unlock-btn" href="' + rec.slug + '">Go to ' + rec.title + '</a>';
+    } else {
+      captureBox.innerHTML = '<h3>Unlock the rest with one sign-up</h3>'
+        + '<p class="sub">Starting with the ' + rec.title + ', matched to what you just told us.</p>'
+        + '<a class="unlock-btn" href="' + accessUrl(rec.slug) + '">Unlock my results</a>'
+        + '<p class="trust">No spam, ever — just access to the scorecards, present and future.</p>';
+    }
+  }
+
   var dotsEl = document.getElementById('dots');
   var qCategory = document.getElementById('qCategory');
   var qText = document.getElementById('qText');
@@ -499,6 +755,7 @@ permalink: /scorecards/ai-readiness-assessment/
     resultTier.textContent = tier.name + ' — ' + score + ' / ' + MAX_SCORE;
     resultTier.style.color = tier.color;
     resultDesc.textContent = tier.desc;
+    renderRecommendation();
     questionView.classList.add('hidden');
     resultView.classList.remove('hidden');
   }
