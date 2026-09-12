@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Readiness Assessment — Result</title>
+---
+layout: default
+title: AI Readiness Assessment - Result (Mockup)
+permalink: /scorecards/result-mockup/
+---
+
 <style>
   :root{
     --navy:#292C75;
@@ -298,8 +298,6 @@
   }
   .footer-links a:hover{ text-decoration:underline; }
 </style>
-</head>
-<body>
 
 <div class="screen">
 
@@ -388,6 +386,3 @@
   </div>
 
 </div>
-
-</body>
-</html>
