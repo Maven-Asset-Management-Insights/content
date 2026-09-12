@@ -15,8 +15,8 @@ permalink: /scorecards/result-mockup/
     --green:#2E9E5B;
     --tint:#E9EDF7;
   }
-  *{box-sizing:border-box;}
-  body{
+  .mockup-wrap, .mockup-wrap *{box-sizing:border-box;}
+  .mockup-wrap{
     margin:0;
     background:var(--offwhite);
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -299,6 +299,7 @@ permalink: /scorecards/result-mockup/
   .footer-links a:hover{ text-decoration:underline; }
 </style>
 
+<div class="mockup-wrap">
 <div class="screen">
 
   <div class="header">
@@ -385,4 +386,5 @@ permalink: /scorecards/result-mockup/
     <a href="#">Talk to Maven</a> &nbsp;&middot;&nbsp; <a href="#">Download this result only</a>
   </div>
 
+</div>
 </div>
