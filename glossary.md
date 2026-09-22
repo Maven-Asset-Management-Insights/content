@@ -986,6 +986,25 @@ search: true
 
 
     <h2 id="W">W</h2>
+        <div class="glossary-term" data-category="maintenance maximo">
+      <h3 id="warranty-contract">Warranty Contract</h3>
+      <div class="glossary-tags">
+        <span>Maintenance</span>
+        <span>Maximo</span>
+      </div>
+      <p>A Warranty Contract in Maximo is a record that captures a manufacturer's or vendor's commitment to cover specified parts, labor, or repairs for a defined asset or component over a defined coverage period, at no cost or reduced cost to the owning organization. Warranty Contracts exist in Maximo independent of the assets they cover; the connection only becomes useful once assets are associated with the correct contract and coverage terms. Organizations that don't maintain this link often discover coverage after the fact, once a repair invoice has already been paid that a warranty claim would have covered. See also: Warranty Contract Line, Asset, Corrective Maintenance (CM), Maintenance Cost.</p>
+    </div>
+
+    <div class="glossary-term" data-category="data-quality maximo">
+      <h3 id="warranty-contract-line">Warranty Contract Line</h3>
+      <div class="glossary-tags">
+        <span>Data Quality</span>
+        <span>Maximo</span>
+      </div>
+      <p>A Warranty Contract Line is the specific entry within a Warranty Contract that ties coverage terms, such as which parts, labor, or components are included and for how long, to one or more Asset records in Maximo. The contract line is what makes coverage checkable at the point of decision: before a work order is authorized, a planner or technician can see whether the asset in question is still covered rather than assuming the repair cost falls to the maintenance budget by default. Missing or incomplete contract line associations are a common and costly gap, since they leave covered repairs indistinguishable from ones the organization is actually responsible for paying. See also: Warranty Contract, Asset, Maintenance Cost, Asset Lifecycle Cost.</p>
+    </div>
+
+    <h2 id="W">W</h2>
 
     <div class="glossary-term" data-category="maintenance strategy governance">
       <h3 id="work-management-consistency">Work Management Consistency</h3>
