@@ -95,7 +95,7 @@ Navigate to:
 
 This tab controls the company name and product name shown in the upper left corner of the header. By default, these read "IBM" and "Maximo Application Suite."
 
-![Header configuration tab showing the default IBM company name and Maximo Application Suite product name]({{ 'assets/img/02-header-config-default.png' | relative_url }})
+![Header configuration tab showing the default IBM company name and Maximo Application Suite product name]({{ 'assets/img/03-header-config-branded.png' | relative_url }})
 
 ### Steps
 
