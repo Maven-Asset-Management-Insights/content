@@ -135,7 +135,7 @@ Navigate to:
 }
 ```
 
-![CSS customization tab with the header background set to royal blue]({{ '/assets/img/field-kits/mas-saas-ui-customization/04-css-header-color.png' | relative_url }})
+![CSS customization tab with the header background set to royal blue]({{ 'assets/img/04-css-header-color.png' | relative_url }})
 
 > **Warning:** Some CSS classes are shared across multiple applications, which can cause unexpected results. Classes may also change or be removed when you upgrade. To return to the default styling, turn **Enable CSS customization** off.
 
