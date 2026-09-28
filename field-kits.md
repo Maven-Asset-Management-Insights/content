@@ -37,6 +37,25 @@ permalink: /field-kits/
     <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.8rem; opacity:.7; margin-bottom:8px;">
       Field Kit
     </div>
+    <h2 style="margin-top:0;">MAS SaaS: Unlock Suite Administration and Brand Your Interface</h2>
+    <p>
+      IBM now lets MAS SaaS administrators manage Suite Configurations, Authentication, and User Sessions, but the access isn't granted automatically. Learn how to request it from IBM and customize your header name, logo, and color.
+    </p>
+    <div style="margin-top:12px; opacity:.8;">
+      Best for: MAS SaaS administrators, EAM technical leads, IT support teams
+    </div>
+    <div style="margin-top:8px; font-size:.9rem; opacity:.7;">
+      Contributed by Randi Wagner, Senior Consultant
+    </div>
+    <div style="margin-top:16px;">
+      <a class="button" href="{{ "/field-kits/mas-saas-ui-customization/" | relative_url }}">View kit</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.8rem; opacity:.7; margin-bottom:8px;">
+      Field Kit
+    </div>
     <h2 style="margin-top:0;">Resolving Inspection Form Revision Errors in Maximo</h2>
     <p>
       A field-tested troubleshooting guide for the -803 database error and inconsistent revision behavior in Maximo Inspection Forms — including root cause diagnosis, a safe resolution sequence, and key lessons learned.
@@ -96,7 +115,8 @@ permalink: /field-kits/
       <a class="button" href="{{ "/field-kits/monitor-demo-practical-path-to-deployment/" | relative_url }}">View kit</a>
     </div>
   </section>
-<section class="card">
+
+  <section class="card">
     <div style="letter-spacing:.08em; text-transform:uppercase; font-size:.8rem; opacity:.7; margin-bottom:8px;">
       Field Kit
     </div>
@@ -111,4 +131,5 @@ permalink: /field-kits/
       <a class="button" href="{{ "/field-kits/maximo-iot-field-kit/" | relative_url }}">View kit</a>
     </div>
   </section>
+
 </div>
