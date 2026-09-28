@@ -126,7 +126,8 @@ search: false
     <div style="padding: 1.25rem 1.5rem 1.5rem;">
       <h2>Field Kits &amp; Tools</h2>
       <p>Practical checklists and frameworks that translate strategy into execution.</p>
-      <ul>
+            <ul>
+        <li><a href="{{ '/field-kits/mas-saas-ui-customization/' | relative_url }}">MAS SaaS: Unlock Suite Administration and Brand Your Interface</a></li>
         <li><a href="{{ '/field-kits/maximo-upgrade-process/' | relative_url }}">The Maximo Upgrade Process</a></li>
         <li><a href="{{ '/field-kits/maximo-readiness-scorecard.html' | relative_url }}">Maximo Readiness Scorecard</a></li>
         <li><a href="{{ '/field-kits/year-end-maximo/' | relative_url }}">Year-End Maximo Preparation</a></li>
