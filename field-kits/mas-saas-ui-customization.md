@@ -108,7 +108,7 @@ This tab controls the company name and product name shown in the upper left corn
 
 Here's the result in Maven's demo environment, with the header now reading "Maven Asset Management DEMO02":
 
-![Header configuration with Maven Asset Management as the company name and MVNDEMO02 as the product name]({{ 'assets/img/03-header-config-branded.png' | relative_url }})
+![Header configuration with Maven Asset Management as the company name and DEMO02 as the product name]({{ 'assets/img/03-header-config-branded.png' | relative_url }})
 
 > **Best Practice:** Use the product name to show which environment users are in (for example, PROD, TEST, or DEV). It's a simple way to keep people from making changes in the wrong system.
 
