@@ -4,6 +4,14 @@ title: "MAS SaaS: Unlock Suite Administration and Brand Your Interface"
 description: "IBM now allows MAS SaaS administrators to manage Suite Configurations, Authentication, and User Sessions, but the access isn't granted automatically. Here's how to request it and customize your header."
 permalink: /field-kits/mas-saas-ui-customization/
 ---
+<style>
+  img {
+    max-width: min(100%, 900px);
+    height: auto;
+    display: block;
+    margin: 1.25rem auto;
+  }
+</style>
 
 # MAS SaaS: Unlock Suite Administration and Brand Your Interface
 
