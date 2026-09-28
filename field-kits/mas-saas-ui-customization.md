@@ -75,7 +75,7 @@ Navigate to:
 
 From here you can see your current SAML and SMTP configurations, along with options to customize the user interface. Select **User interface customization**.
 
-![MAS Suite Administration Configurations page with User interface customization highlighted]({{ '/assets/img/field-kits/mas-saas-ui-customization/01-configurations-app.png' | relative_url }})
+![MAS Suite Administration Configurations page with User interface customization highlighted]({{ 'assets/img/01-configurations-app.png' | relative_url }})
 
 ---
 
