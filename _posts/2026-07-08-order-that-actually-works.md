@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nobody Overhauls Asset Management Overnight. Here's the Order That Actually Works."
-date: 2026-06-29 09:00:00 -0400
+date: 2026-07-08 09:00:00 -0400
 categories: [insights, asset-management, digital-transformation]
 tags: [asset-lifecycle-management, data-quality, maintenance-strategy, predictive-maintenance, maximo]
 excerpt: "If your asset management program feels like it needs a total rebuild, take a breath. It doesn't happen in one sprint."
