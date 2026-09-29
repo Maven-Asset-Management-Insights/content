@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Agentic AI in Maximo: When AI Stops Answering and Starts Doing"
-date: 2026-10-06 09:00:00 -0400
+date: 2026-08-15 09:00:00 -0400
 categories: [insights, ai, maximo]
 tags: [agentic-ai, ai-readiness, data-quality, maximo-application-suite, maximo]
 excerpt: "An AI assistant tells you what's in Maximo. An AI agent changes what's in Maximo. That shift raises the stakes on everything underneath."
