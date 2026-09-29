@@ -12,14 +12,21 @@ Planning answers how. Scheduling answers when. They sound like one job, and in a
 
 ### The two roles at a glance
 
-| | Planner | Scheduler |
-|---|---|---|
-| **Core question** | How does this job get done? | When does this job get done? |
-| **Time horizon** | Weeks ahead | This week and next |
-| **Works from** | Approved work requests and the backlog | Work that's been planned and is ready to go |
-| **Builds** | The work package: steps, crafts, parts, tools, permits, estimates | The weekly schedule: who does what, and on which day |
-| **Watches** | Parts availability, job plan quality, estimate accuracy | Crew capacity, equipment downtime windows, shifting priorities |
-| **Hands off** | A job the crew can start without hunting for anything | A schedule the crew can actually follow |
+<div style="overflow-x:auto;">
+<table style="border-collapse:collapse; width:100%; margin:0 0 1.5em 0;">
+  <thead>
+    <tr><th style="border:1px solid #292C75; padding:10px 12px; text-align:left; background:#292C75; color:#FFFFFF;"></th><th style="border:1px solid #292C75; padding:10px 12px; text-align:left; background:#292C75; color:#FFFFFF;">Planner</th><th style="border:1px solid #292C75; padding:10px 12px; text-align:left; background:#292C75; color:#FFFFFF;">Scheduler</th></tr>
+  </thead>
+  <tbody>
+    <tr><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top; font-weight:bold; color:#292C75; white-space:nowrap;">Core question</td><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top;">How does this job get done?</td><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top;">When does this job get done?</td></tr>
+    <tr><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top; font-weight:bold; color:#292C75; white-space:nowrap; background:#F3F5FA;">Time horizon</td><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top; background:#F3F5FA;">Weeks ahead</td><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top; background:#F3F5FA;">This week and next</td></tr>
+    <tr><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top; font-weight:bold; color:#292C75; white-space:nowrap;">Works from</td><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top;">Approved work requests and the backlog</td><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top;">Work that's been planned and is ready to go</td></tr>
+    <tr><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top; font-weight:bold; color:#292C75; white-space:nowrap; background:#F3F5FA;">Builds</td><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top; background:#F3F5FA;">The work package: steps, crafts, parts, tools, permits, estimates</td><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top; background:#F3F5FA;">The weekly schedule: who does what, and on which day</td></tr>
+    <tr><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top; font-weight:bold; color:#292C75; white-space:nowrap;">Watches</td><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top;">Parts availability, job plan quality, estimate accuracy</td><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top;">Crew capacity, equipment downtime windows, shifting priorities</td></tr>
+    <tr><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top; font-weight:bold; color:#292C75; white-space:nowrap; background:#F3F5FA;">Hands off</td><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top; background:#F3F5FA;">A job the crew can start without hunting for anything</td><td style="border:1px solid #B0C2DE; padding:10px 12px; text-align:left; vertical-align:top; background:#F3F5FA;">A schedule the crew can actually follow</td></tr>
+  </tbody>
+</table>
+</div>
 
 ### Where the handoff happens
 
