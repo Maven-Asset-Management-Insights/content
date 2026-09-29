@@ -21,7 +21,7 @@ If your organization runs Maximo Application Suite (MAS) as an IBM SaaS customer
 
 IBM previously blocked SaaS customers from several Suite Administration applications. That has changed. Administrators can now manage identity provider (IdP) settings, API keys, and user interface customization.
 
-There's a catch. IBM rolled this out quietly and did not grant the new security to existing SaaS clients. Most customers don't know they are missing it. You have to ask.
+There's a catch. IBM recently introduced new security capabilities, but they are not automatically available to existing SaaS clients. Most customers don't know they are missing it. You have to ask.
 
 ---
 
