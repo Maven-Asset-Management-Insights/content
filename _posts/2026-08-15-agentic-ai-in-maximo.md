@@ -5,7 +5,6 @@ date: 2026-10-06 09:00:00 -0400
 categories: [insights, ai, maximo]
 tags: [agentic-ai, ai-readiness, data-quality, maximo-application-suite, maximo]
 excerpt: "An AI assistant tells you what's in Maximo. An AI agent changes what's in Maximo. That shift raises the stakes on everything underneath."
-permalink: /2026/10/06/agentic-ai-in-maximo.html
 ---
 
 An AI assistant tells you what's in Maximo. An AI agent changes what's in Maximo. That's the real shift behind all the agentic AI news this year, including the agentic workflows IBM introduced in [Maximo Application Suite 9.2](https://www.ibm.com/new/announcements/introducing-maximo-application-suite-9-2).
