@@ -5,7 +5,6 @@ date: 2026-09-29 09:00:00 -0400
 categories: [insights, maintenance, planning-and-scheduling]
 tags: [planning-and-scheduling, job-plans, work-management, maximo]
 excerpt: "Planning answers how. Scheduling answers when. When one person owns both, the urgent question wins every time."
-permalink: /2026/09/29/planner-vs-scheduler.html
 ---
 
 Planning answers how. Scheduling answers when. They sound like one job, and in a lot of Maximo shops one person does both. That's usually where work management starts to slip.
