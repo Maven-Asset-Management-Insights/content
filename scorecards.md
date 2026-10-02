@@ -105,7 +105,7 @@ permalink: /scorecards/
   <div class="scorecard-strip__inner">
     <p class="scorecard-strip__text">
       <strong>How does your Maximo program measure up?</strong>
-      Start with the free AI Readiness Assessment. No sign-up needed.
+      Start with the AI Readiness Assessment — it's open to everyone, no sign-up needed. From there, one quick sign-up unlocks our full library, including every scorecard we add going forward. No spam, ever — just access.
     </p>
     <div class="scorecard-strip__actions">
       <a class="scorecard-strip__btn" id="stripTakeAssessment"
@@ -128,7 +128,7 @@ permalink: /scorecards/
 <p class="section-title">Why use a scorecard?</p>
 <div class="card">
   <p>
-    Scorecards give teams a shared, honest starting point. They surface gaps that are easy to overlook when you're close to the work, and they make it easier to prioritize where to focus — whether you're preparing for an AI initiative, evaluating your HS&amp;E program, or assessing overall Maximo program health. Start with the AI Readiness Assessment above — it's open to everyone, no sign-up needed. From there, one quick sign-up unlocks our full library, including every scorecard we add going forward. No spam, ever — just access.
+    Scorecards give teams a shared, honest starting point. They surface gaps that are easy to overlook when you're close to the work, and they make it easier to prioritize where to focus — whether you're preparing for an AI initiative, evaluating your HS&amp;E program, or assessing overall Maximo program health.
   </p>
 </div>
 
