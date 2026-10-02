@@ -88,7 +88,37 @@ permalink: /scorecards/
     height: 13px;
     flex: none;
   }
+  /* Featured strip on the Scorecards page (matches the site-wide strip) */
+  .scorecard-strip--page {
+    border: 1px solid #F3DDBF;
+    border-radius: 12px;
+    margin: 0 0 22px 0;
+  }
+  .scorecard-strip--page .scorecard-strip__inner {
+    padding: 12px 18px;
+  }
+  .scorecard-strip__unlock[hidden] { display: none; }
 </style>
+
+<!-- FEATURED SCORECARD STRIP (same message as the site-wide strip) -->
+<div class="scorecard-strip scorecard-strip--page" role="region" aria-label="Featured scorecard">
+  <div class="scorecard-strip__inner">
+    <p class="scorecard-strip__text">
+      <strong>How does your Maximo program measure up?</strong>
+      Start with the free AI Readiness Assessment. No sign-up needed.
+    </p>
+    <div class="scorecard-strip__actions">
+      <a class="scorecard-strip__btn" id="stripTakeAssessment"
+         href="{{ "/scorecards/ai-readiness-assessment/" | relative_url }}">
+        Take the assessment
+      </a>
+      <a class="scorecard-strip__link scorecard-strip__unlock" id="stripUnlockLibrary"
+         href="{{ "/scorecards/access/" | relative_url }}?redirect={{ "/scorecards/" | relative_url | url_encode }}">
+        Unlock the full library
+      </a>
+    </div>
+  </div>
+</div>
 
 <section class="hero">
   <h1>Scorecards &amp; Assessments</h1>
@@ -534,6 +564,26 @@ permalink: /scorecards/
   </div>
 
 </div>
+
+<script>
+(function(){
+  // Featured strip: hide "Unlock the full library" for visitors who are
+  // already unlocked, and send GA4 clicks for the unlock link.
+  var unlockLink = document.getElementById('stripUnlockLibrary');
+  if (!unlockLink) return;
+  var unlocked = false;
+  try { unlocked = !!localStorage.getItem('maven_scorecard_unlocked'); } catch (e) {}
+  if (unlocked) { unlockLink.hidden = true; return; }
+  unlockLink.addEventListener('click', function(){
+    if (typeof gtag === 'function') {
+      gtag('event', 'featured_scorecard_click', {
+        link_location: 'strip_unlock_library',
+        page_path: window.location.pathname
+      });
+    }
+  });
+})();
+</script>
 
 <script>
 (function(){
