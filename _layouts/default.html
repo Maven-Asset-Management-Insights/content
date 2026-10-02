@@ -15,6 +15,103 @@
 
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 
+    <!-- Featured Scorecards styles (nav highlight + site-wide strip) -->
+    <style>
+      /* Scorecards nav link: featured pill */
+      .nav a.nav-feature {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: #EAF2F6;
+        color: #1B6B93;
+        font-weight: 700;
+        border: 1px solid #C9DEE8;
+        text-decoration: none;
+      }
+      .nav a.nav-feature:hover,
+      .nav a.nav-feature:focus-visible {
+        background: #1B6B93;
+        color: #FFFFFF;
+        border-color: #1B6B93;
+      }
+      .nav a.nav-feature[aria-current="page"] {
+        background: #1B6B93;
+        color: #FFFFFF;
+        border-color: #1B6B93;
+      }
+      .nav a.nav-feature svg {
+        width: 15px;
+        height: 15px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      /* Site-wide featured scorecard strip */
+      .scorecard-strip {
+        background: #FFF4E5;
+        border-bottom: 1px solid #F3DDBF;
+      }
+      .scorecard-strip__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .scorecard-strip__text {
+        margin: 0;
+        color: #5A3A12;
+        font-size: 0.98rem;
+        line-height: 1.45;
+      }
+      .scorecard-strip__text strong {
+        color: #B9691E;
+      }
+      .scorecard-strip__actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px 14px;
+      }
+      .scorecard-strip__btn {
+        display: inline-block;
+        padding: 7px 14px;
+        border-radius: 8px;
+        background: #B9691E;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 0.92rem;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+      .scorecard-strip__btn:hover,
+      .scorecard-strip__btn:focus-visible {
+        background: #9A5617;
+        color: #FFFFFF;
+      }
+      .scorecard-strip__link {
+        color: #B9691E;
+        font-weight: 600;
+        font-size: 0.92rem;
+        white-space: nowrap;
+      }
+      .nav a.nav-feature:focus-visible,
+      .scorecard-strip a:focus-visible {
+        outline: 2px solid #1B6B93;
+        outline-offset: 2px;
+      }
+      @media (max-width: 640px) {
+        .scorecard-strip__inner { justify-content: flex-start; }
+      }
+    </style>
+
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SBQ2G5F9P5"></script>
 <script>
@@ -42,10 +139,20 @@
 
        <nav class="nav">
 <a href="{{ "/" | relative_url }}">Home</a>
+
+<!-- FEATURED: Scorecards -->
+<a class="nav-feature" id="navScorecards" href="{{ "/scorecards/" | relative_url }}"
+   {% if page.url contains '/scorecards/' %}aria-current="page"{% endif %}>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M4 15.5a8 8 0 1 1 16 0" />
+    <path d="M12 15.5l4-5" />
+  </svg>
+  Scorecards
+</a>
+
 <a href="{{ "/maven-insights/" | relative_url }}">Maven Insights</a>
 <a href="{{ "/glossary/" | relative_url }}">Glossary</a>
 <a href="{{ "/field-kits/" | relative_url }}">Field Kits</a>
-<a href="{{ "/scorecards/" | relative_url }}">Scorecards</a>
 <a href="{{ "/search/" | relative_url }}">Search</a>
 
   <a class="cta" href="https://www.mavenasset.com/learn/blog/" target="_blank" rel="noopener">
@@ -63,6 +170,28 @@
 
       </div>
     </header>
+
+    <!-- Featured Scorecard Strip (hidden on scorecard pages) -->
+    {% unless page.url contains '/scorecards/' %}
+    <div class="scorecard-strip" role="region" aria-label="Featured scorecard">
+      <div class="container scorecard-strip__inner">
+        <p class="scorecard-strip__text">
+          <strong>How does your Maximo program measure up?</strong>
+          Start with the free AI Readiness Assessment. No sign-up needed.
+        </p>
+        <div class="scorecard-strip__actions">
+          <a class="scorecard-strip__btn" id="stripTakeAssessment"
+             href="{{ "/scorecards/ai-readiness-assessment/" | relative_url }}">
+            Take the assessment
+          </a>
+          <a class="scorecard-strip__link" id="stripAllScorecards"
+             href="{{ "/scorecards/" | relative_url }}">
+            See all scorecards
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endunless %}
 
     <!-- Page Content -->
  <main class="container">
@@ -160,6 +289,25 @@
     a.href =
       "mailto:mas@mavenasset.com" +
       "?subject=" + encodeURIComponent(subject);
+  })();
+</script>
+
+  <!-- Featured Scorecards GA4 click tracking -->
+<script>
+  (function () {
+    function track(id, label) {
+      var el = document.getElementById(id);
+      if (!el || typeof gtag !== "function") return;
+      el.addEventListener("click", function () {
+        gtag("event", "featured_scorecard_click", {
+          link_location: label,
+          page_path: window.location.pathname
+        });
+      });
+    }
+    track("navScorecards", "nav_scorecards");
+    track("stripTakeAssessment", "strip_ai_readiness");
+    track("stripAllScorecards", "strip_all_scorecards");
   })();
 </script>
    </body>
