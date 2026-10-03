@@ -40,6 +40,8 @@ Most SaaS administrators today only see:
 
 > **Note:** Once your local MAXADMIN account has these privileges, it can enable them for your other administrator accounts.
 
+![Comparison of the two Suite menu items most SaaS admins see today and the five they can request from IBM]({{ 'assets/img/05-mas-saas-suite-access.png' | relative_url }}){: style="max-width: 540px;"}
+
 ---
 
 ## Step 1: Log a Case with IBM
