@@ -144,7 +144,7 @@ Navigate to:
 ---
 
 ## Resources
-
+- Maven blog: [MAS SaaS Admin Access: What’s Now Available](https://www.mavenasset.com/blog/mas-saas-admin-access-you-can-request-today/){:target="_blank" rel="noopener"}
 - IBM documentation: [Updating the user interface](https://www.ibm.com/docs/en/masv-and-l/cd?topic=interface-updating-user){:target="_blank" rel="noopener"}
 - IBM support: [Override the MAS header color using CSS customization](https://www.ibm.com/support/pages/override-maximo-application-suite-header-color-using-css-customization-mas-admin-dashboard){:target="_blank" rel="noopener"}
 
