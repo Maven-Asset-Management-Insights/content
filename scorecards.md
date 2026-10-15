@@ -483,19 +483,19 @@ permalink: /scorecards/
         </svg>
       </div>
       <div class="scorecard-meta">
-        <div class="scorecard-kicker">Printable Scorecard</div>
-        <span class="scorecard-badge">20 Points</span>
+        <div class="scorecard-kicker">Interactive Scorecard</div>
+        <span class="scorecard-badge">13 Questions</span>
       </div>
     </div>
 
     <h2 style="margin-top:0;">Maximo Readiness Scorecard</h2>
 
     <div style="margin-top:10px;">
-      <a class="button" href="{{ "/field-kits/maximo-readiness-scorecard.html" | relative_url }}">View scorecard</a>
+      <a class="button" href="{{ "/scorecards/maximo-readiness-assessment/" | relative_url }}">Take the assessment</a>
     </div>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:14px;">
-      A 20-point scorecard to quickly assess whether Maximo is positioned to drive performance across strategy, reliability execution, and data governance.
+      A 13-question interactive scorecard that scores whether Maximo is driving performance or simply processing transactions, covering strategy and business alignment, work and reliability execution, and data governance.
     </p>
 
     <div style="margin-top:14px; opacity:.8;">
