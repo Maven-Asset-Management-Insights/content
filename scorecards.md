@@ -74,20 +74,6 @@ permalink: /scorecards/
     position: relative;
     z-index: 10;
   }
-  .scorecard-lock-note {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 10px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #5B6072;
-  }
-  .scorecard-lock-note svg {
-    width: 13px;
-    height: 13px;
-    flex: none;
-  }
   /* Featured strip on the Scorecards page (matches the site-wide strip) */
   .scorecard-strip--page {
     border: 1px solid #F3DDBF;
@@ -97,7 +83,6 @@ permalink: /scorecards/
   .scorecard-strip--page .scorecard-strip__inner {
     padding: 12px 18px;
   }
-  .scorecard-strip__unlock[hidden] { display: none; }
 </style>
 
 <!-- FEATURED SCORECARD STRIP (same message as the site-wide strip) -->
@@ -105,16 +90,15 @@ permalink: /scorecards/
   <div class="scorecard-strip__inner">
     <p class="scorecard-strip__text">
       <strong>How does your Maximo program measure up?</strong>
-      Start with the AI Readiness Assessment — it's open to everyone, no sign-up needed. From there, one quick sign-up unlocks our full library, including every scorecard we add going forward. No spam, ever — just access.
+      Every scorecard is free and open to everyone, no sign-up needed. Start with the AI Readiness Assessment, then explore the full library.
     </p>
     <div class="scorecard-strip__actions">
       <a class="scorecard-strip__btn" id="stripTakeAssessment"
          href="{{ "/scorecards/ai-readiness-assessment/" | relative_url }}">
         Take the assessment
       </a>
-      <a class="scorecard-strip__link scorecard-strip__unlock" id="stripUnlockLibrary"
-         href="{{ "/scorecards/access/" | relative_url }}?redirect={{ "/scorecards/" | relative_url | url_encode }}">
-        Unlock the full library
+      <a class="scorecard-strip__link" id="stripBrowseLibrary" href="#scorecard-library">
+        Browse the full library
       </a>
     </div>
   </div>
@@ -133,9 +117,9 @@ permalink: /scorecards/
 </div>
 
 <!-- INTERACTIVE SCORECARDS GRID -->
-<div class="grid">
+<div class="grid" id="scorecard-library">
 
-  <!-- FEATURED SCORECARD — stays ungated, this is the test-drive -->
+  <!-- FEATURED SCORECARD -->
   <div class="card" style="padding:22px; margin-bottom:18px;">
     <div class="scorecard-visual">
       <div class="scorecard-icon">
@@ -168,7 +152,7 @@ permalink: /scorecards/
       Best for: EAM program owners, operations leaders, IT leads, and reliability teams evaluating AI or MAS analytics capabilities
     </div>
     <div style="margin-top:10px; color:#27AE60; font-weight:600; font-size:0.95rem;">
-      Open to everyone, no sign-up required — take this one first. Sign up once and you'll unlock our full library, including every scorecard we add going forward.
+      A great place to start. Every scorecard in the library is free, with no sign-up required.
     </div>
   </div>
 
@@ -192,7 +176,7 @@ permalink: /scorecards/
     <h2 style="margin-top:0;">Maximo Data Readiness Check</h2>
 
     <div style="margin-top:10px;">
-      <a class="button gate-link" data-target="{{ "/scorecards/data-readiness-check/" | relative_url }}" href="{{ "/scorecards/data-readiness-check/" | relative_url }}">Take the assessment</a>
+      <a class="button" href="{{ "/scorecards/data-readiness-check/" | relative_url }}">Take the assessment</a>
     </div>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:14px;">
@@ -201,10 +185,6 @@ permalink: /scorecards/
 
     <div style="margin-top:14px; opacity:.8;">
       Best for: EAM program owners, IT leads, and reliability teams evaluating AI or MAS analytics capabilities
-    </div>
-    <div class="scorecard-lock-note">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-      Unlocks with sign-up
     </div>
   </div>
 
@@ -228,7 +208,7 @@ permalink: /scorecards/
     <h2 style="margin-top:0;">Maximo Work Management Value Assessment</h2>
 
     <div style="margin-top:10px;">
-      <a class="button gate-link" data-target="{{ "/scorecards/work-management-assessment/" | relative_url }}" href="{{ "/scorecards/work-management-assessment/" | relative_url }}">Take the assessment</a>
+      <a class="button" href="{{ "/scorecards/work-management-assessment/" | relative_url }}">Take the assessment</a>
     </div>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:14px;">
@@ -237,10 +217,6 @@ permalink: /scorecards/
 
     <div style="margin-top:14px; opacity:.8;">
       Best for: Maintenance managers, reliability teams, and EAM program owners evaluating work management maturity
-    </div>
-    <div class="scorecard-lock-note">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-      Unlocks with sign-up
     </div>
   </div>
 
@@ -264,7 +240,7 @@ permalink: /scorecards/
     <h2 style="margin-top:0;">Maximo Planning Value Assessment</h2>
 
     <div style="margin-top:10px;">
-      <a class="button gate-link" data-target="{{ "/scorecards/planning-value-assessment/" | relative_url }}" href="{{ "/scorecards/planning-value-assessment/" | relative_url }}">Take the assessment</a>
+      <a class="button" href="{{ "/scorecards/planning-value-assessment/" | relative_url }}">Take the assessment</a>
     </div>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:14px;">
@@ -273,10 +249,6 @@ permalink: /scorecards/
 
     <div style="margin-top:14px; opacity:.8;">
       Best for: Maintenance planners, reliability teams, and EAM program owners evaluating planning maturity
-    </div>
-    <div class="scorecard-lock-note">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-      Unlocks with sign-up
     </div>
   </div>
 
@@ -299,7 +271,7 @@ permalink: /scorecards/
     <h2 style="margin-top:0;">Maximo Scheduling Value Assessment</h2>
 
     <div style="margin-top:10px;">
-      <a class="button gate-link" data-target="{{ "/scorecards/scheduling-value-assessment/" | relative_url }}" href="{{ "/scorecards/scheduling-value-assessment/" | relative_url }}">Take the assessment</a>
+      <a class="button" href="{{ "/scorecards/scheduling-value-assessment/" | relative_url }}">Take the assessment</a>
     </div>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:14px;">
@@ -308,10 +280,6 @@ permalink: /scorecards/
 
     <div style="margin-top:14px; opacity:.8;">
       Best for: Maintenance schedulers, operations leaders, and EAM program owners evaluating scheduling maturity
-    </div>
-    <div class="scorecard-lock-note">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-      Unlocks with sign-up
     </div>
   </div>
 
@@ -333,7 +301,7 @@ permalink: /scorecards/
     <h2 style="margin-top:0;">Maximo Reliability Value Assessment</h2>
 
     <div style="margin-top:10px;">
-      <a class="button gate-link" data-target="{{ "/scorecards/reliability-value-assessment/" | relative_url }}" href="{{ "/scorecards/reliability-value-assessment/" | relative_url }}">Take the assessment</a>
+      <a class="button" href="{{ "/scorecards/reliability-value-assessment/" | relative_url }}">Take the assessment</a>
     </div>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:14px;">
@@ -342,10 +310,6 @@ permalink: /scorecards/
 
     <div style="margin-top:14px; opacity:.8;">
       Best for: Reliability engineers, maintenance managers, and EAM program owners evaluating reliability program maturity
-    </div>
-    <div class="scorecard-lock-note">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-      Unlocks with sign-up
     </div>
   </div>
 
@@ -367,7 +331,7 @@ permalink: /scorecards/
     <h2 style="margin-top:0;">Maximo Asset Health Value Assessment</h2>
 
     <div style="margin-top:10px;">
-      <a class="button gate-link" data-target="{{ "/scorecards/asset-health-value-assessment/" | relative_url }}" href="{{ "/scorecards/asset-health-value-assessment/" | relative_url }}">Take the assessment</a>
+      <a class="button" href="{{ "/scorecards/asset-health-value-assessment/" | relative_url }}">Take the assessment</a>
     </div>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:14px;">
@@ -376,10 +340,6 @@ permalink: /scorecards/
 
     <div style="margin-top:14px; opacity:.8;">
       Best for: Reliability engineers, maintenance managers, and EAM program owners evaluating asset health program maturity
-    </div>
-    <div class="scorecard-lock-note">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-      Unlocks with sign-up
     </div>
   </div>
 
@@ -403,7 +363,7 @@ permalink: /scorecards/
     <h2 style="margin-top:0;">Maximo IoT Value Assessment</h2>
 
     <div style="margin-top:10px;">
-      <a class="button gate-link" data-target="{{ "/scorecards/iot-value-assessment/" | relative_url }}" href="{{ "/scorecards/iot-value-assessment/" | relative_url }}">Take the assessment</a>
+      <a class="button" href="{{ "/scorecards/iot-value-assessment/" | relative_url }}">Take the assessment</a>
     </div>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:14px;">
@@ -412,10 +372,6 @@ permalink: /scorecards/
 
     <div style="margin-top:14px; opacity:.8;">
       Best for: IT leads, reliability engineers, and EAM program owners evaluating IoT and condition monitoring maturity
-    </div>
-    <div class="scorecard-lock-note">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-      Unlocks with sign-up
     </div>
   </div>
 
@@ -440,7 +396,7 @@ permalink: /scorecards/
     <h2 style="margin-top:0;">Maximo Time Management Value Assessment</h2>
 
     <div style="margin-top:10px;">
-      <a class="button gate-link" data-target="{{ "/scorecards/time-management-value-assessment/" | relative_url }}" href="{{ "/scorecards/time-management-value-assessment/" | relative_url }}">Take the assessment</a>
+      <a class="button" href="{{ "/scorecards/time-management-value-assessment/" | relative_url }}">Take the assessment</a>
     </div>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:14px;">
@@ -449,10 +405,6 @@ permalink: /scorecards/
 
     <div style="margin-top:14px; opacity:.8;">
       Best for: Maintenance supervisors, workforce planners, and EAM program owners evaluating labor management maturity
-    </div>
-    <div class="scorecard-lock-note">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-      Unlocks with sign-up
     </div>
   </div>
 
@@ -476,7 +428,7 @@ permalink: /scorecards/
     <h2 style="margin-top:0;">Maximo Capability Assessment</h2>
 
     <div style="margin-top:10px;">
-      <a class="button gate-link" data-target="{{ "/scorecards/capability-assessment/" | relative_url }}" href="{{ "/scorecards/capability-assessment/" | relative_url }}">Take the assessment</a>
+      <a class="button" href="{{ "/scorecards/capability-assessment/" | relative_url }}">Take the assessment</a>
     </div>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:14px;">
@@ -485,10 +437,6 @@ permalink: /scorecards/
 
     <div style="margin-top:14px; opacity:.8;">
       Best for: EAM program owners, operations leaders, and IT leadership evaluating Maximo's overall business impact
-    </div>
-    <div class="scorecard-lock-note">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-      Unlocks with sign-up
     </div>
   </div>
 
@@ -512,7 +460,7 @@ permalink: /scorecards/
     <h2 style="margin-top:0;">Maximo HS&amp;E Readiness Assessment</h2>
 
     <div style="margin-top:10px;">
-      <a class="button gate-link" data-target="{{ "/scorecards/hse-readiness-assessment/" | relative_url }}" href="{{ "/scorecards/hse-readiness-assessment/" | relative_url }}">Take the assessment</a>
+      <a class="button" href="{{ "/scorecards/hse-readiness-assessment/" | relative_url }}">Take the assessment</a>
     </div>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:14px;">
@@ -521,10 +469,6 @@ permalink: /scorecards/
 
     <div style="margin-top:14px; opacity:.8;">
       Best for: EHS managers, operations leaders, Maximo administrators, and safety program owners
-    </div>
-    <div class="scorecard-lock-note">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-      Unlocks with sign-up
     </div>
   </div>
 
@@ -547,7 +491,7 @@ permalink: /scorecards/
     <h2 style="margin-top:0;">Maximo Readiness Scorecard</h2>
 
     <div style="margin-top:10px;">
-      <a class="button gate-link" data-target="{{ "/field-kits/maximo-readiness-scorecard.html" | relative_url }}" href="{{ "/field-kits/maximo-readiness-scorecard.html" | relative_url }}">View scorecard</a>
+      <a class="button" href="{{ "/field-kits/maximo-readiness-scorecard.html" | relative_url }}">View scorecard</a>
     </div>
 
     <p style="font-size:1.05rem; line-height:1.55; margin-top:14px;">
@@ -557,47 +501,22 @@ permalink: /scorecards/
     <div style="margin-top:14px; opacity:.8;">
       Best for: EAM owners, operations leaders, and IT leadership evaluating overall Maximo program health
     </div>
-    <div class="scorecard-lock-note">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
-      Unlocks with sign-up
-    </div>
   </div>
 
 </div>
 
 <script>
 (function(){
-  // Featured strip: hide "Unlock the full library" for visitors who are
-  // already unlocked, and send GA4 clicks for the unlock link.
-  var unlockLink = document.getElementById('stripUnlockLibrary');
-  if (!unlockLink) return;
-  var unlocked = false;
-  try { unlocked = !!localStorage.getItem('maven_scorecard_unlocked'); } catch (e) {}
-  if (unlocked) { unlockLink.hidden = true; return; }
-  unlockLink.addEventListener('click', function(){
+  // GA4: track clicks on the strip's "Browse the full library" link
+  var link = document.getElementById('stripBrowseLibrary');
+  if (!link) return;
+  link.addEventListener('click', function(){
     if (typeof gtag === 'function') {
       gtag('event', 'featured_scorecard_click', {
-        link_location: 'strip_unlock_library',
+        link_location: 'strip_browse_library',
         page_path: window.location.pathname
       });
     }
-  });
-})();
-</script>
-
-<script>
-(function(){
-  // AI Readiness Assessment stays a direct link no matter what — it's the
-  // free test-drive scorecard. Every other "Take the assessment" button
-  // carries the .gate-link class and gets rewritten here, unless this
-  // visitor is already unlocked, in which case the direct links are left
-  // exactly as they are.
-  var unlocked = !!localStorage.getItem('maven_scorecard_unlocked');
-  if (unlocked) return;
-
-  document.querySelectorAll('.gate-link').forEach(function(link){
-    var target = link.getAttribute('data-target') || link.getAttribute('href');
-    link.setAttribute('href', '{{ "/scorecards/access/" | relative_url }}?redirect=' + encodeURIComponent(target));
   });
 })();
 </script>
