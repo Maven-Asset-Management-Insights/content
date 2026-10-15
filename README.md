@@ -47,10 +47,8 @@ A growing set of leadership-level definitions for Maximo and EAM concepts.
 
 Start here: **glossary.md**
 
-### Field Kits (Usefule Maximo Tools)
+### Field Kits (Useful Maximo Tools)
 Practical checklists and frameworks that translate strategy into execution.
-
-(Coming soon in `/field-kits/`)
 
 ---
 
