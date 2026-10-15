@@ -400,20 +400,11 @@ permalink: /scorecards/ai-readiness-assessment/
       </div>
 
       <div class="library">
-        <h4>Plus the rest of the library</h4>
+        <h4>Explore the rest of the library</h4>
         <div class="chip-grid" id="libraryChips"></div>
       </div>
 
-      <div class="unlock">
-        <h4>What signing up gets you</h4>
-        <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> All 11 remaining scorecards, unlocked right now</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Every new scorecard we publish, automatically</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> A downloadable PDF of each result</li>
-        </ul>
-      </div>
-
-      <p class="no-signup-label">Prefer not to sign up yet? These don't need it:</p>
+      <p class="no-signup-label">Want to talk through your results or keep a copy?</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="mailto:mas@mavenasset.com?subject=AI%20Readiness%20Assessment%20follow-up" target="_blank" rel="noopener">Talk to Maven</a>
         <button class="btn btn-secondary" id="downloadBtn">Download my result</button>
@@ -640,52 +631,35 @@ permalink: /scorecards/ai-readiness-assessment/
     return RECOMMENDATIONS[weakestKey];
   }
 
-  var LOCK_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>';
-  var CHECK_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>';
-
-  function isUnlocked(){
-    return !!localStorage.getItem('maven_scorecard_unlocked');
-  }
-
-  function accessUrl(targetSlug){
-    return '{{ "/scorecards/access/" | relative_url }}?redirect=' + encodeURIComponent(targetSlug);
-  }
+  var ARROW_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
 
   function renderRecommendation(){
     var rec = pickRecommendation();
-    var unlocked = isUnlocked();
 
     document.getElementById('nextUpFlag').textContent = rec.flag;
-    document.getElementById('nextUpTitle').innerHTML = '<a href="' + (unlocked ? rec.slug : accessUrl(rec.slug)) + '">' + rec.title + '</a>';
+    document.getElementById('nextUpTitle').innerHTML = '<a href="' + rec.slug + '">' + rec.title + '</a>';
 
     var previewEl = document.getElementById('nextUpPreview');
-    previewEl.style.display = unlocked ? 'none' : '';
-    previewEl.textContent = unlocked ? '' : ('"' + rec.preview + '"');
+    previewEl.style.display = 'none';
+    previewEl.textContent = '';
 
-    document.getElementById('nextUpIcon').innerHTML = unlocked ? CHECK_ICON : LOCK_ICON;
-    document.getElementById('nextUpMeta').textContent = rec.count + ' questions' + (unlocked ? ' · already unlocked' : ' · unlocks with sign-up');
+    document.getElementById('nextUpIcon').innerHTML = ARROW_ICON;
+    document.getElementById('nextUpMeta').textContent = rec.count + ' questions · free, no sign-up';
 
     var chipsWrap = document.getElementById('libraryChips');
     chipsWrap.innerHTML = '';
     LIBRARY.filter(function(item){ return item.slug !== rec.slug; }).forEach(function(item){
       var a = document.createElement('a');
       a.className = 'chip';
-      a.href = unlocked ? item.slug : accessUrl(item.slug);
-      a.innerHTML = (unlocked ? CHECK_ICON : LOCK_ICON) + item.title;
+      a.href = item.slug;
+      a.innerHTML = ARROW_ICON + item.title;
       chipsWrap.appendChild(a);
     });
 
     var captureBox = document.getElementById('captureBox');
-    if(unlocked){
-      captureBox.innerHTML = '<h3>You already have full access</h3>'
-        + '<p class="sub">Jump straight into the ' + rec.title + ', or pick anything from the library above.</p>'
-        + '<a class="unlock-btn" href="' + rec.slug + '">Go to ' + rec.title + '</a>';
-    } else {
-      captureBox.innerHTML = '<h3>Unlock the rest with one sign-up</h3>'
-        + '<p class="sub">Starting with the ' + rec.title + ', matched to what you just told us.</p>'
-        + '<a class="unlock-btn" href="' + accessUrl(rec.slug) + '">Unlock my results</a>'
-        + '<p class="trust">No spam, ever — just access to the scorecards, present and future.</p>';
-    }
+    captureBox.innerHTML = '<h3>Ready for your next scorecard?</h3>'
+      + '<p class="sub">Start with the ' + rec.title + ', matched to what you just told us.</p>'
+      + '<a class="unlock-btn" href="' + rec.slug + '">Take the ' + rec.title + '</a>';
   }
 
   var dotsEl = document.getElementById('dots');
